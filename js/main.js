@@ -519,21 +519,21 @@ const i18n = {
         findings: {
           EN: [
             {
-              num: "01",
+              num: "1",
               title: "Attendance",
               problem: "Staff currently record attendance using fingerprint scanners available at only two locations, often causing rushing and queues during shift changes.",
               opportunityLabel: "Design opportunity:",
               opportunity: "Enable mobile check-in and check-out within authorized hospital areas."
             },
             {
-              num: "02",
+              num: "2",
               title: "E-Consult",
               problem: "Consultation requests are shared across multiple LINE groups, making it difficult to confirm whether the assigned doctor has reviewed a request—especially in urgent cases.",
               opportunityLabel: "Design opportunity:",
               opportunity: "Centralize requests with clear urgency and read-status indicators."
             },
             {
-              num: "03",
+              num: "3",
               title: "Queue Management",
               problem: "Some departments lack dedicated queue-calling equipment, making it difficult for nurses to manage patient queues efficiently.",
               opportunityLabel: "Design opportunity:",
@@ -542,21 +542,21 @@ const i18n = {
           ],
           TH: [
             {
-              num: "01",
+              num: "1",
               title: "การลงเวลาเข้างาน",
               problem: "ปัจจุบันบุคลากรต้องลงเวลาด้วยเครื่องสแกนลายนิ้วมือซึ่งมีเพียงสองจุด ทำให้ต้องเร่งเดินทางไปยังจุดสแกนและอาจต้องรอคิวในช่วงเปลี่ยนกะ",
               opportunityLabel: "โอกาสในการออกแบบ:",
               opportunity: "พัฒนาระบบลงเวลาเข้า–ออกงานผ่านโทรศัพท์มือถือภายในพื้นที่ที่โรงพยาบาลกำหนด"
             },
             {
-              num: "02",
+              num: "2",
               title: "ระบบ E-Consult",
               problem: "คำขอปรึกษาแพทย์ถูกส่งผ่านกลุ่ม LINE หลายกลุ่ม ทำให้ตรวจสอบได้ยากว่าแพทย์ผู้รับผิดชอบได้อ่านคำขอแล้วหรือไม่ โดยเฉพาะคำขอที่มีความเร่งด่วน",
               opportunityLabel: "โอกาสในการออกแบบ:",
               opportunity: "รวมคำขอปรึกษาไว้ในระบบเดียว พร้อมแสดงระดับความเร่งด่วนและสถานะการอ่านอย่างชัดเจน"
             },
             {
-              num: "03",
+              num: "3",
               title: "ระบบจัดการคิว",
               problem: "บางแผนกไม่มีอุปกรณ์สำหรับเรียกคิวโดยเฉพาะ เช่น ไมโครโฟน ลำโพง หรือจอแสดงหมายเลข ทำให้พยาบาลหน้าห้องตรวจจัดการและเรียกคิวผู้ป่วยได้ไม่สะดวก",
               opportunityLabel: "โอกาสในการออกแบบ:",
@@ -693,7 +693,7 @@ const i18n = {
         },
         groups: [
           {
-            num: "01",
+            num: "1",
             heading: {
               EN: "Station & Room Setup",
               TH: "การตั้งค่าจุดให้บริการและห้องตรวจ"
@@ -708,7 +708,7 @@ const i18n = {
             ]
           },
           {
-            num: "02",
+            num: "2",
             heading: {
               EN: "Queue Identification",
               TH: "การระบุคิวผู้ป่วย"
@@ -731,7 +731,7 @@ const i18n = {
             ]
           },
           {
-            num: "03",
+            num: "3",
             heading: {
               EN: "Queue Controls",
               TH: "การควบคุมคิว"
@@ -769,7 +769,7 @@ const i18n = {
         },
         groups: [
           {
-            num: "01",
+            num: "1",
             heading: {
               EN: "Request List & Details",
               TH: "รายการและรายละเอียดคำขอ"
@@ -784,7 +784,7 @@ const i18n = {
             ]
           },
           {
-            num: "02",
+            num: "2",
             heading: {
               EN: "Important Notifications",
               TH: "การแจ้งเตือนที่สำคัญ"
@@ -822,7 +822,7 @@ const i18n = {
         },
         groups: [
           {
-            num: "01",
+            num: "1",
             heading: {
               EN: "Context-Aware Attendance Action",
               TH: "ปุ่มลงเวลาที่ปรับตามสถานะ"
@@ -837,7 +837,7 @@ const i18n = {
             ]
           },
           {
-            num: "02",
+            num: "2",
             heading: {
               EN: "Location Verification",
               TH: "การตรวจสอบตำแหน่ง"
@@ -858,7 +858,7 @@ const i18n = {
             ]
           },
           {
-            num: "03",
+            num: "3",
             heading: {
               EN: "Secure Identity Confirmation",
               TH: "การยืนยันตัวตนอย่างปลอดภัย"
@@ -878,7 +878,7 @@ const i18n = {
             fallbackImage: "projects/My SUTH App/check in-check out/PIN.png"
           },
           {
-            num: "04",
+            num: "4",
             heading: {
               EN: "Confirmation & Attendance History",
               TH: "การแสดงผลและประวัติการลงเวลา"
@@ -928,7 +928,7 @@ const i18n = {
           TH: "หน้าจอหลักของแอปเป็นโครงสร้างพื้นฐานที่ผู้ใช้ทุกบทบาทใช้งานร่วมกัน โดยหน้าหลักทำหน้าที่เป็น Dashboard กลาง ขณะที่หน้าระบบงาน การแจ้งเตือน และโปรไฟล์ รองรับการเข้าถึงบริการ การติดตามข้อมูล และการตั้งค่าส่วนบุคคล"
         },
         home: {
-          num: "01",
+          num: "1",
           heading: {
             EN: "Home Dashboard",
             TH: "หน้าหลัก"
@@ -940,7 +940,7 @@ const i18n = {
           image: "projects/My SUTH App/core Screen/HOME.png",
           annotations: [
             {
-              num: "01",
+              num: "1",
               label: {
                 EN: "Latest Attendance",
                 TH: "การลงเวลาล่าสุด"
@@ -951,7 +951,7 @@ const i18n = {
               }
             },
             {
-              num: "02",
+              num: "2",
               label: {
                 EN: "Pending Updates",
                 TH: "รายการที่รอเปิดอ่าน"
@@ -962,7 +962,7 @@ const i18n = {
               }
             },
             {
-              num: "03",
+              num: "3",
               label: {
                 EN: "Recent Services",
                 TH: "เมนูที่ใช้ล่าสุด"
@@ -980,7 +980,7 @@ const i18n = {
         },
         supportingScreens: [
           {
-            num: "02",
+            num: "2",
             heading: {
               EN: "Work Systems",
               TH: "ระบบงาน"
@@ -992,7 +992,7 @@ const i18n = {
             image: "projects/My SUTH App/core Screen/work.png"
           },
           {
-            num: "03",
+            num: "3",
             heading: {
               EN: "Notifications",
               TH: "การแจ้งเตือน"
@@ -1004,7 +1004,7 @@ const i18n = {
             image: "projects/My SUTH App/core Screen/notification.png"
           },
           {
-            num: "04",
+            num: "4",
             heading: {
               EN: "Profile & Settings",
               TH: "โปรไฟล์และการตั้งค่า"
@@ -1367,7 +1367,7 @@ const i18n = {
         },
         cards: [
           {
-            num: "01",
+            num: "1",
             icon: "eye",
             title: {
               EN: "Make Progress Visible",
@@ -1379,7 +1379,7 @@ const i18n = {
             }
           },
           {
-            num: "02",
+            num: "2",
             icon: "flame",
             title: {
               EN: "Reward Consistency",
@@ -1391,7 +1391,7 @@ const i18n = {
             }
           },
           {
-            num: "03",
+            num: "3",
             icon: "layers",
             title: {
               EN: "Support Different Types of Goals",
@@ -1403,7 +1403,7 @@ const i18n = {
             }
           },
           {
-            num: "04",
+            num: "4",
             icon: "heart-handshake",
             title: {
               EN: "Encourage, Not Punish",
@@ -1437,7 +1437,7 @@ const i18n = {
         },
         solutions: [
           {
-            num: "01",
+            num: "1",
             title: {
               EN: "A Clear View of What Needs Attention",
               TH: "มองเห็นสิ่งที่ควรทำได้อย่างชัดเจน"
@@ -1472,7 +1472,7 @@ const i18n = {
             ]
           },
           {
-            num: "02",
+            num: "2",
             type: "comparison",
             title: {
               EN: "Flexible Goal Types for Different Behaviors",
@@ -1516,7 +1516,7 @@ const i18n = {
             ]
           },
           {
-            num: "03",
+            num: "3",
             type: "detailComparison",
             title: {
               EN: "Making Consistency Visible",
@@ -1712,25 +1712,25 @@ const i18n = {
         },
         directions: [
           {
-            num: "01",
+            num: "1",
             icon: "palette",
             title: { EN: "Playful Visual Identity", TH: "Visual Identity ที่มีเอกลักษณ์" },
             desc: { EN: "A brighter and more distinctive personality.", TH: "เพิ่มความสดใสและบุคลิกที่จดจำได้" }
           },
           {
-            num: "02",
+            num: "2",
             icon: "smile",
             title: { EN: "Mascot Companion", TH: "Mascot Companion" },
             desc: { EN: "A friendly character that celebrates progress and encourages users along the way.", TH: "เพื่อนร่วมทางที่คอยฉลองความสำเร็จและให้กำลังใจ" }
           },
           {
-            num: "03",
+            num: "3",
             icon: "sparkles",
             title: { EN: "Micro-interactions", TH: "Micro-interactions" },
             desc: { EN: "Meaningful animations for check-ins, streaks, and milestones.", TH: "เพิ่ม Animation สำหรับ Check-in, Streak และ Milestone" }
           },
           {
-            num: "04",
+            num: "4",
             icon: "brain",
             title: { EN: "Smarter Guidance", TH: "Smarter Guidance" },
             desc: { EN: "More personalized AI support based on each user's goals and progress.", TH: "พัฒนา AI ให้สามารถแนะนำผู้ใช้ตามเป้าหมายและความก้าวหน้าของแต่ละคน" }
