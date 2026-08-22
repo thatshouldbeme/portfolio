@@ -211,8 +211,11 @@ body.lang-th .outline {
 .star{width:44px;height:44px;background:linear-gradient(135deg,var(--lime),var(--sunset));clip-path:polygon(50% 0,62% 36%,100% 50%,62% 64%,50% 100%,38% 64%,0 50%,38% 36%)}
 
 /* overlay */
-.overlay{position:fixed;inset:0;background:rgba(244,247,250,0.92);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);z-index:120;overflow:auto;display:none}.overlay.show{display:block}.back{position:fixed;left:22px;top:22px;z-index:130;background:white;border:1px solid rgba(85,104,175,0.2);box-shadow:0 6px 20px rgba(85,104,175,0.15);padding:10px 18px;border-radius:14px;font-weight:950;cursor:pointer;transition:all .2s ease}.back:hover{transform:translateY(-2px);background:var(--sky-blue);color:white}.shell{max-width:1320px;margin:auto;padding:80px 3vw}.hero{min-height:48vh;display:grid;grid-template-columns:1fr 1.15fr;align-items:center;gap:40px}.hero h1{font-size:clamp(26px,3.8vw,44px);line-height:1.1;letter-spacing:-.04em;margin:10px 0 12px;font-weight:950}.case{padding:45px 0;border-top:1px solid rgba(30,36,50,0.1);display:block;width:100%}.case h2{font-size:clamp(28px,3.5vw,48px);margin:0 0 12px}
-.modal-project-tabs{display:flex;align-items:center;gap:10px;margin-bottom:28px;padding-bottom:16px;border-bottom:1px solid rgba(30,36,50,0.1);overflow-x:auto;scrollbar-width:none}
+.overlay{position:fixed;inset:0;background:rgba(244,247,250,0.92);
+  backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);z-index:120;overflow:auto;display:none}.overlay.show{display:block}.back{position:fixed;left:22px;top:22px;z-index:130;background:white;border:1px solid rgba(85,104,175,0.2);box-shadow:0 6px 20px rgba(85,104,175,0.15);padding:10px 18px;border-radius:14px;font-weight:950;cursor:pointer;transition:all .2s ease}.back:hover{transform:translateY(-2px);background:var(--sky-blue);color:white}.modal-lang-btn{position:fixed;right:22px;top:22px;z-index:130;background:white;border:1px solid rgba(85,104,175,0.2);box-shadow:0 6px 20px rgba(85,104,175,0.15);padding:10px 18px;border-radius:14px;font:900 11px/1 monospace;letter-spacing:.06em;color:var(--ink);cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all .2s ease}.modal-lang-btn:hover{transform:translateY(-2px);background:var(--sky-blue);color:white}
+@media(max-width:640px){.modal-lang-btn{right:12px;top:14px;padding:8px 12px;font-size:10px;border-radius:10px}}
+.shell{max-width:1320px;margin:auto;padding:80px 3vw}.hero{min-height:48vh;display:grid;grid-template-columns:1fr 1.15fr;align-items:center;gap:40px}.hero h1{font-size:clamp(26px,3.8vw,44px);line-height:1.1;letter-spacing:-.04em;margin:10px 0 12px;font-weight:950}.case{padding:45px 0;border-top:1px solid rgba(30,36,50,0.1);display:block;width:100%}.case h2{font-size:clamp(28px,3.5vw,48px);margin:0 0 12px}
+.modal-project-tabs{display:flex;align-items:center;gap:10px;margin-bottom:28px;padding-bottom:16px;border-bottom:1px solid rgba(30,36,50,0.1);overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;scroll-behavior:smooth}
 .modal-project-tabs::-webkit-scrollbar{display:none}
 .project-tab{padding:9px 16px;border-radius:12px;background:rgba(255,255,255,0.75);border:1px solid rgba(85,104,175,0.18);font:900 11px/1 monospace;color:var(--ink);cursor:pointer;white-space:nowrap;transition:all .2s ease}
 .project-tab.active,.project-tab:hover{background:var(--sky-blue);color:white;border-color:var(--sky-blue);box-shadow:0 6px 16px rgba(85,104,175,0.25)}
@@ -462,7 +465,7 @@ body.lang-th .outline {
 <div class="layer projects-title" data-speed="1.03"><span class="kicker">03 / FEATURED PROJECTS</span><h2 class="subdisplay">CASE<br/><span class="outline">STUDIES.</span></h2></div>
 <div class="layer projects-rail" data-speed=".82">
   <article class="project" data-project="mysuth-app"><div><small>MOBILE APP / HEALTHCARE / UX DESIGN</small><h3>My SUTH App</h3><p style="font-size:13px;margin:6px 0;opacity:.8">“Hospital Management System”</p><div class="thumb-frame"><img src="projects/mySUTH.png" alt="My SUTH App Cover"/></div></div></article>
-  <article class="project" data-project="goal-app"><div><small>WEB APP / AI ASSISTANT / UX RESEARCH</small><h3>Goal Management Web App</h3><p style="font-size:13px;margin:6px 0;opacity:.8">“Small steps, big achievements”</p><div class="thumb-frame"><img src="projects/goalflame.png" alt="Goal Management Web App Cover"/></div></div></article>
+  <article class="project" data-project="goal-app"><div><small>Mobile APP / AI ASSISTANT / UX RESEARCH</small><h3>Goal Management Mobile App</h3><p style="font-size:13px;margin:6px 0;opacity:.8">“Small steps, big achievements”</p><div class="thumb-frame"><img src="projects/goalflame.png" alt="Goal Management Mobile App Cover"/></div></div></article>
   <article class="project" data-project="dormitory-app"><div><small>UX REDESIGN / MANAGEMENT SYSTEM</small><h3>Smart Dormitory System</h3><p style="font-size:13px;margin:6px 0;opacity:.8">“A smarter way to manage dormitory life.”</p><div class="thumb-frame"><img src="projects/dormitory.png" alt="Smart Dormitory System Cover"/></div></div></article>
   <article class="project" data-project="kiosk-app"><div><small>INTERACTION DESIGN / WAYFINDING / KIOSK</small><h3>Kiosk Redesign</h3><p style="font-size:13px;margin:6px 0;opacity:.8">“Find Your Way, Faster.”</p><div class="thumb-frame"><img src="projects/Keyosk.png" alt="Kiosk Redesign Cover"/></div></div></article>
 </div>
@@ -600,7 +603,7 @@ body.lang-th .outline {
 </div>
 </div>
 </main>
-<section class="overlay" id="overlay"><button class="back" id="back"><i data-lucide="arrow-left" class="icon-inline"></i> BACK TO PORTFOLIO</button><div class="shell" id="shell"></div></section>
+<section class="overlay" id="overlay"><button class="back" id="back"><i data-lucide="arrow-left" class="icon-inline"></i> BACK TO PORTFOLIO</button><button class="modal-lang-btn" id="modalLangToggleBtn"><i data-lucide="globe" class="icon-inline"></i> TH</button><div class="shell" id="shell"></div></section>
 
 <!-- Floating Quick Action Dock -->
 <div class="quick-dock" id="quickDock">
@@ -774,12 +777,12 @@ const i18n = {
       },
       "goal-app": {
         tag: {
-          EN: "WEB APP / AI ASSISTANT / UX RESEARCH",
-          TH: "เว็บแอป / ผู้ช่วย AI / การวิจัย UX"
+          EN: "Mobile APP / AI ASSISTANT / UX RESEARCH",
+          TH: "แอปมือถือ / ผู้ช่วย AI / การวิจัย UX"
         },
         title: {
-          EN: "Goal Management Web App",
-          TH: "เว็บแอปจัดการเป้าหมายชีวิต"
+          EN: "Goal Management Mobile App",
+          TH: "แอปมือถือจัดการเป้าหมายชีวิต"
         },
         desc: {
           EN: "“Small steps, big achievements”",
@@ -1032,7 +1035,7 @@ const i18n = {
       },
       goal: {
         EN: "02 / GOAL MANAGEMENT",
-        TH: "02 / เว็บแอปจัดการเป้าหมาย"
+        TH: "02 / แอปจัดการเป้าหมาย"
       },
       dormitory: {
         EN: "03 / SMART DORMITORY",
@@ -1796,8 +1799,572 @@ const i18n = {
         TH: "“ก้าวทีละนิด เพื่อความสำเร็จที่ยิ่งใหญ่”"
       },
       overview: {
-        EN: "An application designed to help users effectively manage and achieve their goals — whether short-term, long-term, major life goals, or small daily tasks. Integrated with an AI assistant for personalized step-by-step planning.",
-        TH: "แอปพลิเคชันที่ออกแบบมาเพื่อช่วยให้ผู้ใช้จัดการและบรรลุเป้าหมายได้อย่างมีประสิทธิภาพ ไม่ว่าจะเป็นเป้าหมายระยะสั้น ระยะยาว เป้าหมายใหญ่ในชีวิต หรือภารกิจเล็กๆ ประจำวัน พร้อมผู้ช่วย AI วางแผนทีละขั้นตอนอย่างตรงจุด"
+        EN: "A mobile goal-tracking application designed to help users stay consistent with their personal goals through lightweight check-ins, streak-based motivation, progress tracking, and AI-assisted guidance.",
+        TH: "แอปพลิเคชันบนมือถือสำหรับติดตามเป้าหมาย ออกแบบมาเพื่อช่วยให้ผู้ใช้สามารถทำเป้าหมายส่วนตัวได้อย่างสม่ำเสมอ ผ่านการ Check-in ที่เรียบง่าย การสร้างแรงจูงใจด้วยระบบ Streak การติดตามความก้าวหน้า และแนวคิดการใช้ AI เป็นผู้ช่วยในการทำเป้าหมาย"
+      },
+      meta: {
+        role: {
+          EN: "UX/UI Designer",
+          TH: "UX/UI Designer"
+        },
+        team: {
+          EN: "2 UX/UI Designers · 1 Developer",
+          TH: "UX/UI Designer 2 คน · Developer 1 คน"
+        },
+        duration: {
+          EN: "3 Months",
+          TH: "3 เดือน"
+        },
+        responsibilities: {
+          EN: "User Research · UX Analysis · Persona · User Journey · UI Design · Prototyping · User Testing",
+          TH: "User Research · UX Analysis · Persona · User Journey · UI Design · Prototyping · User Testing"
+        },
+        labels: {
+          role: { EN: "Role", TH: "บทบาท" },
+          team: { EN: "Team", TH: "ทีม" },
+          duration: { EN: "Duration", TH: "ระยะเวลา" },
+          responsibilities: { EN: "Responsibilities", TH: "ความรับผิดชอบ" }
+        }
+      },
+      researchPivot: {
+        heading: {
+          EN: "Research & Product Pivot",
+          TH: "การวิจัยและการเปลี่ยนทิศทางของผลิตภัณฑ์"
+        },
+        initialIdea: {
+          title: {
+            EN: "Starting with a Different Idea",
+            TH: "จุดเริ่มต้นจากแนวคิดที่แตกต่าง"
+          },
+          desc: {
+            EN: "The project initially began as a <b>focus and productivity app</b>, designed to help users stay focused while maintaining healthy work habits. The concept combined focused work sessions with scheduled breaks and stretching reminders before continuing.",
+            TH: "ในช่วงแรก โปรเจกต์เริ่มต้นจากแนวคิดในการสร้าง <b>แอปพลิเคชันสำหรับช่วยโฟกัสและเพิ่มประสิทธิภาพในการทำงาน</b> โดยต้องการให้ผู้ใช้สามารถจดจ่อกับงานได้โดยไม่ละเลยสุขภาพ จึงออกแบบแนวคิดให้มีช่วงเวลาพักและการแจ้งเตือนให้ยืดเส้นยืดสาย ก่อนกลับไปทำงานหรืออ่านหนังสือต่อ"
+          },
+          flow: [
+            { EN: "Focus", TH: "Focus" },
+            { EN: "Break", TH: "Break" },
+            { EN: "Stretch", TH: "Stretch" },
+            { EN: "Continue", TH: "Continue" }
+          ]
+        },
+        userResearch: {
+          title: {
+            EN: "User Research",
+            TH: "การวิจัยผู้ใช้"
+          },
+          statNum: { EN: "32", TH: "32" },
+          statLabel: { EN: "Participants", TH: "ผู้เข้าร่วมแบบสำรวจ" },
+          statSub: { EN: "16 Male · 16 Female", TH: "ชาย 16 คน · หญิง 16 คน" },
+          desc: {
+            EN: "Before moving forward with the concept, we conducted a survey with <b>32 participants — 16 male and 16 female —</b> to better understand their behaviors, motivations, and challenges.<br><br>The research revealed a broader problem: <b>many participants already had personal goals they wanted to achieve, but struggled to take consistent action or maintain progress over time.</b> Falling behind often made it harder to stay motivated and continue toward those goals.",
+            TH: "ก่อนพัฒนาแนวคิดต่อ ทีมได้ทำแบบสำรวจกับผู้เข้าร่วมจำนวน <b>32 คน — ผู้ชาย 16 คน และผู้หญิง 16 คน —</b> เพื่อทำความเข้าใจพฤติกรรม แรงจูงใจ และปัญหาของผู้ใช้มากขึ้น<br><br>ผลการสำรวจทำให้พบปัญหาที่กว้างกว่าแนวคิดตั้งต้น คือ <b>ผู้เข้าร่วมจำนวนมากมีเป้าหมายที่อยากทำให้สำเร็จอยู่แล้ว แต่มีปัญหาในการลงมือทำอย่างสม่ำเสมอและรักษาความต่อเนื่องในระยะยาว</b> และเมื่อทำตามแผนไม่ได้ แรงจูงใจในการทำเป้าหมายต่อก็มักลดลง"
+          }
+        },
+        keyFindings: {
+          title: {
+            EN: "Key Findings",
+            TH: "สิ่งสำคัญที่ค้นพบ"
+          },
+          items: [
+            {
+              EN: "Many participants already had goals they wanted to achieve.",
+              TH: "ผู้เข้าร่วมจำนวนมากมีเป้าหมายที่ต้องการทำให้สำเร็จอยู่แล้ว",
+              highlight: false
+            },
+            {
+              EN: "Maintaining consistency was a greater challenge than setting goals.",
+              TH: "ปัญหาสำคัญไม่ได้อยู่ที่การตั้งเป้าหมาย แต่อยู่ที่การรักษาความสม่ำเสมอ",
+              highlight: true
+            },
+            {
+              EN: "Falling behind could reduce motivation to continue.",
+              TH: "การทำตามแผนไม่ได้อาจทำให้แรงจูงใจในการทำต่อไปลดลง",
+              highlight: false
+            },
+            {
+              EN: "Visible progress and small achievements could help reinforce motivation.",
+              TH: "การมองเห็นความก้าวหน้าและความสำเร็จเล็ก ๆ สามารถช่วยเสริมแรงจูงใจได้",
+              highlight: false
+            }
+          ]
+        },
+        productPivot: {
+          title: {
+            EN: "From Focus to Goal Management",
+            TH: "จาก Focus App สู่ Goal Management"
+          },
+          desc: {
+            EN: "These findings shifted the direction of the project from helping users stay focused during individual work sessions to helping them <b>stay consistent with their longer-term goals</b>.<br><br>This led to the concept of a <b>Goal Management App</b> focused on progress tracking, consistency, and motivation, with AI-assisted guidance envisioned to support users throughout their goal journey.",
+            TH: "ผลการวิจัยทำให้ทีมเปลี่ยนทิศทางของโปรเจกต์ จากการช่วยให้ผู้ใช้ <b>โฟกัสกับงานในแต่ละครั้ง</b> ไปสู่การช่วยให้ผู้ใช้ <b>รักษาความสม่ำเสมอในการทำเป้าหมายระยะยาว</b><br><br>จึงพัฒนาแนวคิดมาเป็น <b>Goal Management App</b> ที่เน้นการติดตามความก้าวหน้า การสร้างความสม่ำเสมอ และแรงจูงใจ โดยมีแนวคิดให้ AI เป็นผู้ช่วยแนะนำและสนับสนุนผู้ใช้ระหว่างการทำเป้าหมาย"
+          },
+          progression: [
+            { EN: "Focus & Healthy Productivity", TH: "Focus & Healthy Productivity" },
+            { EN: "User Research", TH: "การวิจัยผู้ใช้" },
+            { EN: "Consistency Problem", TH: "พบปัญหาด้านความสม่ำเสมอ" },
+            { EN: "Goal Management", TH: "Goal Management" }
+          ]
+        }
+      },
+      understandingUser: {
+        heading: {
+          EN: "Understanding the User",
+          TH: "ทำความเข้าใจผู้ใช้"
+        },
+        intro: {
+          EN: "Based on the research findings, we developed a primary persona to represent users who have clear goals but struggle to maintain consistent progress. The persona helped us better understand the user's motivations, frustrations, and behaviors before exploring where challenges occurred throughout their journey.",
+          TH: "จากผลการวิจัย ทีมได้พัฒนา Persona หลักเพื่อเป็นตัวแทนของผู้ใช้ที่มีเป้าหมายชัดเจน แต่มีปัญหาในการรักษาความสม่ำเสมอในการทำเป้าหมาย Persona ช่วยให้ทีมเข้าใจแรงจูงใจ ปัญหา และพฤติกรรมของผู้ใช้ ก่อนนำมาวิเคราะห์ต่อว่าปัญหาเกิดขึ้นในช่วงใดของเส้นทางการทำเป้าหมาย"
+        },
+        persona: {
+          title: {
+            EN: "Primary Persona — Suthida",
+            TH: "Persona หลัก — Suthida"
+          },
+          sub: {
+            EN: "20 · University Student",
+            TH: "อายุ 20 ปี · นักศึกษามหาวิทยาลัย"
+          },
+          desc: {
+            EN: "Suthida is a university student who regularly plans her assignments and personal goals. Although she knows what she wants to achieve, unexpected tasks and changing schedules often disrupt her plans, making it difficult to stay consistent and motivated.",
+            TH: "Suthida เป็นนักศึกษาที่มีการวางแผนงาน การเรียน และเป้าหมายของตัวเองอยู่เสมอ แม้จะรู้ว่าตัวเองต้องการทำอะไรให้สำเร็จ แต่งานที่เข้ามาโดยไม่คาดคิดและตารางเวลาที่เปลี่ยนแปลง มักทำให้แผนที่วางไว้ถูกรบกวน ส่งผลให้รักษาความสม่ำเสมอและแรงจูงใจได้ยาก"
+          },
+          image: "projects/Goal Flame/Suthida.jpeg",
+          goalsHeading: { EN: "Goals", TH: "เป้าหมาย" },
+          goals: [
+            { EN: "Complete assignments and projects on time", TH: "ทำงานและโปรเจกต์ให้เสร็จตามกำหนด" },
+            { EN: "Maintain consistent progress toward her goals", TH: "รักษาความสม่ำเสมอในการทำเป้าหมาย" },
+            { EN: "Achieve a satisfying academic performance", TH: "มีผลการเรียนที่น่าพึงพอใจ" }
+          ],
+          painHeading: { EN: "Pain Points", TH: "ปัญหา" },
+          painPoints: [
+            { EN: "Struggles to follow plans consistently", TH: "ทำตามแผนได้ไม่สม่ำเสมอ" },
+            { EN: "Unexpected tasks can disrupt her schedule", TH: "งานที่เข้ามากะทันหันทำให้แผนถูกรบกวน" },
+            { EN: "Feels stressed when deadlines approach", TH: "รู้สึกเครียดเมื่อใกล้ถึงกำหนดส่ง" },
+            { EN: "Loses motivation after falling behind", TH: "แรงจูงใจลดลงเมื่อทำตามแผนไม่ได้" }
+          ],
+          needsHeading: { EN: "Needs", TH: "ความต้องการ" },
+          needs: [
+            { EN: "A simple way to track progress", TH: "วิธีติดตามความก้าวหน้าที่เข้าใจง่าย" },
+            { EN: "Flexibility when plans change", TH: "ความยืดหยุ่นเมื่อแผนเปลี่ยนแปลง" },
+            { EN: "Motivation to keep moving forward", TH: "แรงจูงใจให้กลับมาทำเป้าหมายต่อ" }
+          ],
+          quote: {
+            EN: "“I already have a plan, but sometimes I don't have the motivation to start.”",
+            TH: "“ฉันมีแผนอยู่แล้ว แต่บางครั้งก็ไม่มีแรงจูงใจที่จะเริ่มทำ”"
+          }
+        },
+        userJourney: {
+          title: {
+            EN: "As-Is User Journey",
+            TH: "User Journey ปัจจุบัน"
+          },
+          intro: {
+            EN: "We mapped Suthida's existing journey to understand how her motivation and behavior changed while working toward a goal.",
+            TH: "ทีมได้นำ Persona มาสร้าง As-Is User Journey เพื่อดูว่าพฤติกรรมและความรู้สึกของผู้ใช้เปลี่ยนแปลงอย่างไรระหว่างการทำเป้าหมาย"
+          },
+          flow: [
+            { EN: "Plan", TH: "วางแผน" },
+            { EN: "Start", TH: "เริ่มลงมือทำ" },
+            { EN: "Disruption", TH: "มีสิ่งรบกวนแผน" },
+            { EN: "Fall Behind", TH: "ทำไม่ทันแผน" },
+            { EN: "Replan", TH: "วางแผนใหม่" }
+          ],
+          finding: {
+            EN: "The journey revealed that the main challenge was not creating a goal or making a plan. The difficulty appeared when unexpected situations interrupted the plan, causing users to fall behind and lose motivation.",
+            TH: "Journey ทำให้เห็นว่าปัญหาหลักไม่ได้อยู่ที่การตั้งเป้าหมายหรือการวางแผน แต่เกิดขึ้นเมื่อมีเหตุการณ์ที่ไม่คาดคิดเข้ามารบกวน ทำให้ผู้ใช้ทำตามแผนไม่ได้และเริ่มสูญเสียแรงจูงใจ"
+          },
+          image: "projects/Goal Flame/User journey.jpg"
+        },
+        keyInsight: {
+          title: {
+            EN: "The problem wasn't setting a goal. It was staying consistent when life interrupted the plan.",
+            TH: "ปัญหาไม่ใช่การตั้งเป้าหมาย แต่คือการรักษาความสม่ำเสมอเมื่อสิ่งที่เกิดขึ้นจริงไม่เป็นไปตามแผน"
+          },
+          desc: {
+            EN: "This insight became the foundation for exploring ways to make progress more visible, encourage consistency, and help users continue even when their original plans did not go as expected.",
+            TH: "Insight นี้จึงกลายเป็นพื้นฐานในการหาแนวทางออกแบบที่ช่วยให้ผู้ใช้ มองเห็นความก้าวหน้า รักษาความสม่ำเสมอ และสามารถกลับมาทำเป้าหมายต่อได้ แม้แผนเดิมจะไม่เป็นไปตามที่ตั้งใจไว้"
+          }
+        }
+      },
+      designOpportunities: {
+        heading: {
+          EN: "Design Opportunities",
+          TH: "โอกาสในการออกแบบ"
+        },
+        intro: {
+          EN: "Insights from the research, persona, and user journey highlighted several opportunities to help users maintain progress without making goal management feel overwhelming. These opportunities became the foundation for the key design decisions.",
+          TH: "จากข้อมูลการวิจัย Persona และ User Journey ทำให้เห็นโอกาสในการออกแบบที่สามารถช่วยให้ผู้ใช้รักษาความต่อเนื่องในการทำเป้าหมาย โดยไม่ทำให้การจัดการเป้าหมายรู้สึกซับซ้อนหรือสร้างแรงกดดัน แนวคิดเหล่านี้จึงถูกนำมาใช้เป็นพื้นฐานในการตัดสินใจด้านการออกแบบ"
+        },
+        cards: [
+          {
+            num: "01",
+            icon: "eye",
+            title: {
+              EN: "Make Progress Visible",
+              TH: "ทำให้ความก้าวหน้ามองเห็นได้ชัดเจน"
+            },
+            desc: {
+              EN: "Help users clearly see how much they have accomplished and what still needs to be done, making small actions feel meaningful.",
+              TH: "ช่วยให้ผู้ใช้เห็นว่าตัวเองทำสำเร็จไปแล้วมากน้อยเพียงใด และยังเหลืออะไรที่ต้องทำ เพื่อให้การลงมือทำในแต่ละครั้งรู้สึกมีความหมาย"
+            }
+          },
+          {
+            num: "02",
+            icon: "flame",
+            title: {
+              EN: "Reward Consistency",
+              TH: "สร้างแรงจูงใจจากความสม่ำเสมอ"
+            },
+            desc: {
+              EN: "Turn repeated actions into visible progress to encourage users to keep working toward their goals over time.",
+              TH: "เปลี่ยนการลงมือทำอย่างต่อเนื่องให้กลายเป็นความก้าวหน้าที่มองเห็นได้ เพื่อกระตุ้นให้ผู้ใช้อยากทำเป้าหมายต่อไป"
+            }
+          },
+          {
+            num: "03",
+            icon: "layers",
+            title: {
+              EN: "Support Different Types of Goals",
+              TH: "รองรับเป้าหมายที่แตกต่างกัน"
+            },
+            desc: {
+              EN: "Provide flexible ways to manage both structured goals with multiple tasks and recurring goals that rely on consistent actions.",
+              TH: "ออกแบบให้สามารถจัดการได้ทั้งเป้าหมายที่มีหลายขั้นตอนหรือ Task และเป้าหมายที่เน้นการทำกิจกรรมอย่างสม่ำเสมอ"
+            }
+          },
+          {
+            num: "04",
+            icon: "heart-handshake",
+            title: {
+              EN: "Encourage, Not Punish",
+              TH: "ส่งเสริมให้ทำต่อ แทนการทำให้รู้สึกล้มเหลว"
+            },
+            desc: {
+              EN: "When users fall behind, the experience should encourage them to continue rather than make them feel that their previous progress has been lost.",
+              TH: "เมื่อผู้ใช้ทำไม่เป็นไปตามแผน ประสบการณ์ควรช่วยกระตุ้นให้กลับมาทำต่อ แทนที่จะทำให้รู้สึกว่าความก้าวหน้าที่ผ่านมาสูญเปล่า"
+            }
+          }
+        ],
+        direction: {
+          label: {
+            EN: "DESIGN DIRECTION",
+            TH: "DESIGN DIRECTION"
+          },
+          quote: {
+            EN: "Make every small step visible, rewarding, and easier to continue.",
+            TH: "ทำให้ทุกก้าวเล็ก ๆ มองเห็นได้ รู้สึกมีคุณค่า และอยากทำต่อไป"
+          }
+        }
+      },
+      keyUxSolutions: {
+        heading: {
+          EN: "Key UX Solutions & UI Design",
+          TH: "แนวทางการแก้ปัญหา UX และการออกแบบ UI"
+        },
+        intro: {
+          EN: "Based on the research insights and design opportunities, the experience was designed around making goals easier to manage, progress easier to understand, and consistent actions more rewarding. The interface supports different types of goals while keeping the overall experience simple and encouraging.",
+          TH: "จากข้อมูลการวิจัยและโอกาสในการออกแบบ ประสบการณ์ใช้งานถูกออกแบบโดยเน้นให้ผู้ใช้สามารถจัดการเป้าหมายได้ง่ายขึ้น มองเห็นความก้าวหน้าได้ชัดเจน และรู้สึกว่าการลงมือทำอย่างสม่ำเสมอมีคุณค่า โดยระบบรองรับลักษณะของเป้าหมายที่แตกต่างกัน ในขณะที่ยังคงประสบการณ์ใช้งานให้เรียบง่ายและช่วยส่งเสริมแรงจูงใจ"
+        },
+        solutions: [
+          {
+            num: "01",
+            title: {
+              EN: "A Clear View of What Needs Attention",
+              TH: "มองเห็นสิ่งที่ควรทำได้อย่างชัดเจน"
+            },
+            desc: {
+              EN: "The Home screen gives users a quick overview of their current progress and highlights goals that still require action during the week. Goals that have reached their weekly target are visually distinguished, helping users quickly understand what has been completed and what still needs attention.<br><br>The Goals screen brings all goals into one place, making it easier to review ongoing goals and access their details without navigating through multiple sections.",
+              TH: "หน้าหลักช่วยให้ผู้ใช้เห็นภาพรวมความก้าวหน้า และให้ความสำคัญกับเป้าหมายที่ยังต้องดำเนินการในสัปดาห์นั้น เป้าหมายที่ทำครบตามจำนวนครั้งที่กำหนดแล้วจะแสดงสถานะที่แตกต่างอย่างชัดเจน ทำให้ผู้ใช้สามารถรู้ได้อย่างรวดเร็วว่าเป้าหมายใดเสร็จแล้วและเป้าหมายใดยังต้องดำเนินการต่อ<br><br>หน้ารวมเป้าหมายรวบรวมเป้าหมายทั้งหมดไว้ในพื้นที่เดียว เพื่อให้ผู้ใช้สามารถตรวจสอบเป้าหมายที่กำลังดำเนินการและเข้าถึงรายละเอียดของแต่ละเป้าหมายได้ง่าย"
+            },
+            purposeLabel: {
+              EN: "DESIGN PURPOSE",
+              TH: "เป้าหมายของการออกแบบ"
+            },
+            purposeIntro: {
+              EN: "Help users answer a simple question at a glance:",
+              TH: "ช่วยให้ผู้ใช้ตอบคำถามง่าย ๆ ได้ทันทีว่า:"
+            },
+            purposeQuote: {
+              EN: "What should I work on next?",
+              TH: "ต่อไปฉันควรทำอะไร?"
+            },
+            screens: [
+              {
+                label: { EN: "Home Screen", TH: "หน้าหลัก" },
+                image: "projects/Goal Flame/หน้าแรก.png",
+                primary: true
+              },
+              {
+                label: { EN: "All Goals Screen", TH: "หน้ารวมเป้าหมาย" },
+                image: "projects/Goal Flame/หน้าเป้าหมาย.png",
+                primary: false
+              }
+            ]
+          },
+          {
+            num: "02",
+            type: "comparison",
+            title: {
+              EN: "Flexible Goal Types for Different Behaviors",
+              TH: "รูปแบบเป้าหมายที่ยืดหยุ่นตามพฤติกรรม"
+            },
+            intro: {
+              EN: "Not every goal needs to be managed in the same way. The goal creation flow therefore supports two approaches based on how users want to track their progress.",
+              TH: "เป้าหมายแต่ละประเภทไม่จำเป็นต้องถูกจัดการด้วยวิธีเดียวกัน ระบบจึงรองรับการสร้างเป้าหมาย 2 รูปแบบ ตามลักษณะของสิ่งที่ผู้ใช้ต้องการติดตาม"
+            },
+            summary: {
+              EN: "This flexibility allows users to choose a tracking method that better matches the nature of each goal without adding unnecessary complexity.",
+              TH: "รูปแบบนี้ช่วยให้ผู้ใช้เลือกวิธีติดตามที่เหมาะกับลักษณะของแต่ละเป้าหมาย โดยไม่เพิ่มความซับซ้อนที่ไม่จำเป็น"
+            },
+            purposeLabel: {
+              EN: "DESIGN PURPOSE",
+              TH: "เป้าหมายของการออกแบบ"
+            },
+            purposeQuote: {
+              EN: "Adapt goal management to the way users actually take action, rather than forcing every goal into the same structure.",
+              TH: "ปรับวิธีจัดการเป้าหมายให้สอดคล้องกับวิธีที่ผู้ใช้ลงมือทำจริง แทนการบังคับให้ทุกเป้าหมายใช้โครงสร้างเดียวกัน"
+            },
+            comparisonItems: [
+              {
+                badge: { EN: "GOAL WITH TASKS", TH: "เป้าหมายแบบมีภารกิจ" },
+                subtitle: { EN: "Structured / Multi-step Goals", TH: "เป้าหมายขนาดใหญ่ / มีขั้นตอนชัดเจน" },
+                desc: {
+                  EN: "Designed for larger or structured goals that can be broken down into actionable steps.",
+                  TH: "เหมาะสำหรับเป้าหมายขนาดใหญ่หรือมีขั้นตอนชัดเจน ซึ่งสามารถแบ่งออกเป็น Task ย่อย ๆ เพื่อให้ลงมือทำได้ง่ายขึ้น"
+                },
+                image: "projects/Goal Flame/หน้าเพิ่มเป้าหมาย มีภารกิจ.png"
+              },
+              {
+                badge: { EN: "GOAL WITHOUT TASKS", TH: "เป้าหมายแบบไม่มีภารกิจ" },
+                subtitle: { EN: "Recurring / Consistency-based Goals", TH: "เป้าหมายแบบต่อเนื่อง / เน้นความสม่ำเสมอ" },
+                desc: {
+                  EN: "Designed for recurring behaviors, allowing users to define how many times they want to complete an activity each week and track it through simple check-ins.",
+                  TH: "เหมาะสำหรับกิจกรรมที่ต้องอาศัยความสม่ำเสมอ โดยผู้ใช้สามารถกำหนดจำนวนครั้งที่ต้องการทำในแต่ละสัปดาห์ และติดตามความก้าวหน้าผ่านการ Check-in"
+                },
+                image: "projects/Goal Flame/หน้าเพิ่มเป้าหมาย.png"
+              }
+            ]
+          },
+          {
+            num: "03",
+            type: "detailComparison",
+            title: {
+              EN: "Making Consistency Visible",
+              TH: "ทำให้ความสม่ำเสมอมองเห็นได้"
+            },
+            intro: {
+              EN: "Goal details focus on showing users where they are now and what they need to do next.<br><br>For recurring goals, users can see their weekly check-in target, remaining actions, available time, and accumulated streak. Check-ins are limited to once per day to encourage consistent behavior rather than completing multiple check-ins at once.<br><br>For structured goals, progress is connected to individual tasks, allowing users to see how completing smaller actions contributes to the larger goal.<br><br>The streak concept uses a familiar 🔥 visual metaphor to transform repeated actions into visible progress and make consistency feel rewarding.",
+              TH: "หน้ารายละเอียดเป้าหมายถูกออกแบบให้ผู้ใช้เข้าใจได้ว่าปัจจุบันตัวเองอยู่ตรงไหน และยังต้องทำอะไรต่อเพื่อไปถึงเป้าหมาย<br><br>สำหรับเป้าหมายที่ทำซ้ำ ผู้ใช้สามารถดูจำนวน Check-in ที่กำหนดในแต่ละสัปดาห์ จำนวนครั้งที่ยังเหลือ ระยะเวลาที่เหลือ และ Streak ที่สะสมไว้ โดยสามารถ Check-in ได้วันละหนึ่งครั้ง เพื่อส่งเสริมความสม่ำเสมอ แทนการทำหลายครั้งในวันเดียวเพื่อให้ครบเป้าหมาย<br><br>สำหรับเป้าหมายแบบมีภารกิจ ความก้าวหน้าจะเชื่อมโยงกับ Task ย่อย ทำให้ผู้ใช้เห็นว่าการทำสิ่งเล็ก ๆ ให้สำเร็จแต่ละครั้งกำลังพาเข้าใกล้เป้าหมายใหญ่ขึ้นอย่างไร<br><br>แนวคิด Streak ใช้สัญลักษณ์ 🔥 ที่คุ้นเคยเพื่อเปลี่ยนการลงมือทำซ้ำ ๆ ให้กลายเป็นความก้าวหน้าที่มองเห็นได้ และสร้างความรู้สึกอยากรักษาความต่อเนื่อง"
+            },
+            purposeLabel: {
+              EN: "DESIGN PURPOSE",
+              TH: "เป้าหมายของการออกแบบ"
+            },
+            purposeQuote: {
+              EN: "Turn small actions into visible progress that encourages users to keep moving forward.",
+              TH: "เปลี่ยนการลงมือทำเล็ก ๆ ให้กลายเป็นความก้าวหน้าที่มองเห็นได้ และกระตุ้นให้ผู้ใช้อยากทำต่ออย่างสม่ำเสมอ"
+            },
+            comparisonItems: [
+              {
+                badge: { EN: "RECURRING GOAL", TH: "เป้าหมายแบบทำซ้ำ" },
+                subtitle: { EN: "Consistency through Check-ins & Streak", TH: "สร้างความสม่ำเสมอด้วย Check-in & Streak" },
+                desc: {
+                  EN: "Check-ins are limited to max 1 per day to build daily consistency across multiple days rather than completing several check-ins at once.",
+                  TH: "กำหนดให้ Check-in ได้วันละ 1 ครั้ง เพื่อส่งเสริมให้เกิดความสม่ำเสมอในทุก ๆ วันอย่างแท้จริง แทนการรีบทำหลายครั้งในวันเดียว"
+                },
+                image: "projects/Goal Flame/รายละเอียด.png",
+                highlights: [
+                  { EN: "Weekly Target & Remaining Check-ins", TH: "เป้าหมายประจำสัปดาห์ & จำนวนที่เหลือ" },
+                  { EN: "🔥 Streak Concept", TH: "แนวคิด 🔥 Streak" },
+                  { EN: "Max 1 Check-in per Day", TH: "จำกัด Check-in 1 ครั้งต่อวัน" }
+                ]
+              },
+              {
+                badge: { EN: "STRUCTURED GOAL", TH: "เป้าหมายแบบมีขั้นตอน" },
+                subtitle: { EN: "Progress through Task Completion", TH: "ความก้าวหน้าผ่านการทำ Task ให้สำเร็จ" },
+                desc: {
+                  EN: "Progress is tied directly to individual tasks, showing how small actions add up to larger goal achievements.",
+                  TH: "ความก้าวหน้าถูกเชื่อมโยงกับ Task ย่อย ช่วยให้เห็นว่าแต่ละขั้นตอนเล็ก ๆ ขับเคลื่อนเป้าหมายใหญ่ได้อย่างไร"
+                },
+                image: "projects/Goal Flame/รายละเอียด มีภารกิจ.png",
+                highlights: [
+                  { EN: "Sub-tasks Breakdown", TH: "การย่อย Task ออกเป็นขั้นตอน" },
+                  { EN: "Task Completion Track", TH: "การติดตามผลตาม Task ย่อย" },
+                  { EN: "Overall Goal Progress Connection", TH: "ความเชื่อมโยงกับเป้าหมายใหญ่" }
+                ]
+              }
+            ]
+          },
+          {
+            num: "04",
+            type: "dashboard",
+            title: {
+              EN: "Seeing Progress Beyond Today",
+              TH: "มองเห็นความก้าวหน้าในระยะยาว"
+            },
+            desc: {
+              EN: "The Dashboard provides a broader view of the user's progress beyond individual goals. Users can review what they have accomplished, see the status of active and completed goals, and explore their consistency across weekly, monthly, and yearly periods.<br><br>Progress data and completion percentages help users recognize patterns over time and reflect on how consistently they have worked toward each goal.",
+              TH: "Dashboard ช่วยให้ผู้ใช้มองเห็นความก้าวหน้าในภาพรวมที่มากกว่าเป้าหมายในแต่ละวัน ผู้ใช้สามารถดูสิ่งที่ทำสำเร็จ สถานะของเป้าหมายที่กำลังดำเนินการและเป้าหมายที่สำเร็จแล้ว รวมถึงดูรูปแบบความสม่ำเสมอในระดับรายสัปดาห์ รายเดือน และรายปี<br><br>ข้อมูลความก้าวหน้าและเปอร์เซ็นต์ความสำเร็จช่วยให้ผู้ใช้มองเห็นรูปแบบพฤติกรรมของตัวเองในระยะยาว และสะท้อนว่าตนเองสามารถรักษาความสม่ำเสมอในแต่ละเป้าหมายได้มากน้อยเพียงใด"
+            },
+            levels: [
+              { label: { EN: "Today", TH: "วันนี้" }, value: { EN: "What has been accomplished", TH: "สิ่งที่ทำสำเร็จแล้ว" } },
+              { label: { EN: "Current Goals", TH: "เป้าหมายปัจจุบัน" }, value: { EN: "Active and completed goals", TH: "เป้าหมายที่กำลังทำและสำเร็จแล้ว" } },
+              { label: { EN: "Consistency", TH: "ความสม่ำเสมอ" }, value: { EN: "Weekly · Monthly · Yearly", TH: "รายสัปดาห์ · รายเดือน · รายปี" } },
+              { label: { EN: "Progress", TH: "ความก้าวหน้า" }, value: { EN: "Completion percentage", TH: "เปอร์เซ็นต์ความสำเร็จ" } }
+            ],
+            purposeLabel: {
+              EN: "DESIGN PURPOSE",
+              TH: "เป้าหมายของการออกแบบ"
+            },
+            purposeQuote: {
+              EN: "Help users see that small, repeated actions can gradually contribute to meaningful long-term progress.",
+              TH: "ช่วยให้ผู้ใช้เห็นว่าการลงมือทำเล็ก ๆ อย่างต่อเนื่องสามารถสะสมและนำไปสู่ความก้าวหน้าที่มีความหมายในระยะยาวได้"
+            },
+            image: "projects/Goal Flame/หน้าสรุปผล.png"
+          }
+        ],
+        aiAssistance: {
+          title: {
+            EN: "AI Assistance Concept",
+            TH: "แนวคิด AI Assistance"
+          },
+          statusBadge: {
+            EN: "CONCEPT / NOT FULLY IMPLEMENTED",
+            TH: "แนวคิด / ยังไม่ได้พัฒนาอย่างเต็มรูปแบบ"
+          },
+          desc: {
+            EN: "AI was originally envisioned as a supportive companion throughout the goal journey, providing personalized suggestions, encouragement, and guidance based on each user's progress.<br><br>Rather than replacing the user's decisions, the concept was intended to help users determine their next step and maintain motivation when progress slowed down.<br><br>Due to the project's technical and time constraints, this concept was not fully implemented and remained part of the proposed experience.",
+            TH: "เดิม AI ถูกวางแนวคิดให้ทำหน้าที่เป็นผู้ช่วยระหว่างการทำเป้าหมาย โดยสามารถให้คำแนะนำ กำลังใจ และแนวทางที่เหมาะสมตามความก้าวหน้าของผู้ใช้แต่ละคน<br><br>แนวคิดนี้ไม่ได้ต้องการให้ AI ตัดสินใจแทนผู้ใช้ แต่ช่วยให้ผู้ใช้มองเห็นว่าควรทำอะไรต่อ และช่วยรักษาแรงจูงใจเมื่อความก้าวหน้าเริ่มลดลง<br><br>อย่างไรก็ตาม ด้วยข้อจำกัดด้านเทคนิคและระยะเวลาของโครงการ แนวคิด AI ดังกล่าวยังไม่สามารถพัฒนาได้อย่างเต็มรูปแบบ และยังคงอยู่ในระดับแนวคิดของประสบการณ์ที่วางแผนไว้"
+          },
+          pillars: [
+            {
+              label: { EN: "Original Vision", TH: "แนวคิดดั้งเดิม" },
+              text: { EN: "Personalized suggestions, encouragement, and guidance", TH: "คำแนะนำ กำลังใจ และแนวทางเฉพาะบุคคล" }
+            },
+            {
+              label: { EN: "Role of AI", TH: "บทบาทของ AI" },
+              text: { EN: "Support user decisions, not make decisions for them", TH: "สนับสนุนการตัดสินใจ ไม่ใช่ตัดสินใจแทน" }
+            },
+            {
+              label: { EN: "Project Reality", TH: "สถานะการพัฒนา" },
+              text: { EN: "Concept not fully implemented due to technical and time constraints", TH: "ยังไม่ได้พัฒนาเต็มรูปแบบเนื่องจากข้อจำกัดด้านเทคนิคและเวลา" }
+            }
+          ]
+        }
+      },
+      testingOutcome: {
+        heading: {
+          EN: "Testing, Outcome & Limitations",
+          TH: "การทดสอบ ผลลัพธ์ และข้อจำกัดของโครงการ"
+        },
+        testing: {
+          title: { EN: "Prototype Testing", TH: "การทดสอบ Prototype" },
+          stat1Num: { EN: "10", TH: "10 คน" },
+          stat1Label: { EN: "Participants", TH: "ผู้เข้าร่วมทดสอบ" },
+          stat2Num: { EN: "90%", TH: "90%" },
+          stat2Label: { EN: "High Satisfaction", TH: "มีความพึงพอใจในระดับสูง" },
+          desc: {
+            EN: "The design prototype was tested with <b>10 participants</b> to evaluate the overall experience and gather feedback on the proposed solution. After completing the prototype tasks, participants provided feedback through a Google Form questionnaire.<br><br>Overall, the response was positive, with <b>90% of participants reporting a high level of satisfaction</b> with the prototype.",
+            TH: "Design Prototype ถูกนำไปทดสอบกับผู้ใช้จำนวน <b>10 คน</b> เพื่อประเมินประสบการณ์โดยรวมและเก็บความคิดเห็นต่อแนวทางการออกแบบ หลังจากทดลองทำ Task ผ่าน Prototype ผู้เข้าร่วมได้ประเมินประสบการณ์ผ่านแบบสอบถาม Google Form<br><br>ผลตอบรับโดยรวมเป็นไปในเชิงบวก โดย <b>90% ของผู้เข้าร่วมมีความพึงพอใจต่อ Prototype ในระดับสูง</b>"
+          },
+          flow: [
+            { EN: "Design Prototype", TH: "Design Prototype" },
+            { EN: "Prototype Tasks", TH: "ทดลองทำ Task" },
+            { EN: "Google Form Feedback", TH: "แบบสอบถาม Google Form" }
+          ]
+        },
+        outcome: {
+          title: { EN: "Project Outcome", TH: "ผลลัพธ์ของโครงการ" },
+          progression: [
+            { EN: "User Research", TH: "User Research" },
+            { EN: "Product Pivot", TH: "Product Pivot" },
+            { EN: "UX/UI Design", TH: "UX/UI Design" },
+            { EN: "Design Prototype", TH: "Design Prototype" },
+            { EN: "Prototype Testing", TH: "การทดสอบ Prototype" }
+          ],
+          desc: {
+            EN: "The project successfully progressed from initial research and a product pivot to a complete UX/UI prototype for the Goal Management experience. The final design explored goal creation, task and check-in based tracking, streak-based motivation, progress monitoring, and dashboard visualization.<br><br>However, the developed application did not fully reflect the final UX/UI design, so the proposed experience was primarily evaluated through the <b>design prototype</b> rather than the implemented product.",
+            TH: "โปรเจกต์สามารถพัฒนาตั้งแต่การทำ User Research การเปลี่ยนทิศทางของ Product ไปจนถึงการสร้าง UX/UI Prototype สำหรับ Goal Management ที่ครอบคลุมการสร้างเป้าหมาย การติดตามแบบ Task และ Check-in การสร้างแรงจูงใจด้วย Streak การติดตามความก้าวหน้า และ Dashboard สรุปผล<br><br>อย่างไรก็ตาม แอปพลิเคชันที่ถูกพัฒนาขึ้นไม่ได้สะท้อน UX/UI Design ขั้นสุดท้ายได้ครบถ้วน แนวทางการออกแบบจึงได้รับการประเมินผ่าน <b>Design Prototype เป็นหลัก</b> มากกว่าผลิตภัณฑ์ที่พัฒนาขึ้นจริง"
+          }
+        },
+        limitations: {
+          title: { EN: "Limitations", TH: "ข้อจำกัด" },
+          items: [
+            {
+              badge: { EN: "TIME", TH: "เวลา" },
+              title: { EN: "3-Month Project", TH: "โปรเจกต์ 3 เดือน" },
+              desc: {
+                EN: "Limited the amount of development and design iteration possible.",
+                TH: "มีระยะเวลาดำเนินงานประมาณ 3 เดือน ทำให้มีข้อจำกัดด้านการพัฒนาและการปรับปรุงงานในแต่ละรอบ"
+              }
+            },
+            {
+              badge: { EN: "ALIGNMENT", TH: "การทำงานร่วมกัน" },
+              title: { EN: "Design–Development Alignment", TH: "การสอดคล้องระหว่างการออกแบบและการพัฒนา" },
+              desc: {
+                EN: "Communication gaps resulted in differences between the final UX/UI design and the implemented application.",
+                TH: "ช่องว่างในการสื่อสารระหว่างฝ่ายออกแบบและฝ่ายพัฒนายังทำให้บางส่วนของแอปพลิเคชันที่พัฒนาขึ้นแตกต่างจากประสบการณ์ที่ออกแบบไว้"
+              }
+            },
+            {
+              badge: { EN: "AI IMPLEMENTATION", TH: "การพัฒนา AI" },
+              title: { EN: "AI Implementation", TH: "การพัฒนาฟังก์ชัน AI" },
+              desc: {
+                EN: "The planned personalized AI assistance could not be fully implemented. The developed version supported only basic calculations rather than the personalized guidance originally envisioned.",
+                TH: "ฟังก์ชัน AI ที่วางแผนไว้ไม่สามารถพัฒนาได้อย่างเต็มรูปแบบภายใต้ข้อจำกัดด้านเวลาและเทคนิค โดยเวอร์ชันที่พัฒนาขึ้นสามารถรองรับได้เพียงการคำนวณพื้นฐาน"
+              }
+            }
+          ]
+        },
+        finalStatus: {
+          label: { EN: "FINAL STATUS", TH: "สถานะสุดท้าย" },
+          text: { EN: "Design Prototype Completed", TH: "Design Prototype Completed" }
+        },
+        keyLearning: {
+          quote: {
+            EN: "These limitations highlighted the importance of continuous designer–developer communication, shared product requirements, and early implementation reviews throughout the development process.",
+            TH: "ข้อจำกัดเหล่านี้ทำให้เห็นถึงความสำคัญของการสื่อสารระหว่าง Designer และ Developer อย่างต่อเนื่อง การกำหนด Product Requirements ร่วมกัน และการตรวจสอบ Implementation ตั้งแต่ช่วงต้นของกระบวนการพัฒนา"
+          }
+        }
+      },
+      reflectionFuture: {
+        heading: {
+          EN: "Reflection & Future Direction",
+          TH: "การสะท้อนผลและแนวทางการพัฒนาต่อ"
+        },
+        reflection: {
+          EN: "Goal management is not only about tracking progress, but also about creating an experience that encourages users to keep going.",
+          TH: "การจัดการเป้าหมายไม่ใช่เพียงการติดตามความก้าวหน้า แต่ประสบการณ์ควรช่วยสร้างแรงจูงใจให้ผู้ใช้อยากทำต่ออย่างสม่ำเสมอ"
+        },
+        futureIntro: {
+          EN: "If redesigned today, I would focus on making the experience more engaging and supportive through:",
+          TH: "หากได้กลับมาออกแบบใหม่ จะเน้นพัฒนาประสบการณ์ให้สนุกและเป็นมิตรมากขึ้นผ่าน:"
+        },
+        directions: [
+          {
+            num: "01",
+            icon: "palette",
+            title: { EN: "Playful Visual Identity", TH: "Visual Identity ที่มีเอกลักษณ์" },
+            desc: { EN: "A brighter and more distinctive personality.", TH: "เพิ่มความสดใสและบุคลิกที่จดจำได้" }
+          },
+          {
+            num: "02",
+            icon: "smile",
+            title: { EN: "Mascot Companion", TH: "Mascot Companion" },
+            desc: { EN: "A friendly character that celebrates progress and encourages users along the way.", TH: "เพื่อนร่วมทางที่คอยฉลองความสำเร็จและให้กำลังใจ" }
+          },
+          {
+            num: "03",
+            icon: "sparkles",
+            title: { EN: "Micro-interactions", TH: "Micro-interactions" },
+            desc: { EN: "Meaningful animations for check-ins, streaks, and milestones.", TH: "เพิ่ม Animation สำหรับ Check-in, Streak และ Milestone" }
+          },
+          {
+            num: "04",
+            icon: "brain",
+            title: { EN: "Smarter Guidance", TH: "Smarter Guidance" },
+            desc: { EN: "More personalized AI support based on each user's goals and progress.", TH: "พัฒนา AI ให้สามารถแนะนำผู้ใช้ตามเป้าหมายและความก้าวหน้าของแต่ละคน" }
+          }
+        ]
       },
       problem: {
         EN: "• Students set goals but struggle to achieve them consistently.<br>• Existing tools focus on task management rather than motivation.<br>• Large goals feel overwhelming without clear steps.<br>• Many goals are abandoned before completion.",
@@ -2044,6 +2611,7 @@ const i18n = {
 };
 
 let currentLang = 'EN';
+let overlay, shell;
 
 function setLanguage(lang) {
   currentLang = lang;
@@ -2298,12 +2866,19 @@ function setLanguage(lang) {
     }
   }
 
+  // Update language toggle buttons text
+  document.querySelectorAll('#langToggleBtn, #mobileLangToggleBtn, #modalLangToggleBtn').forEach(btn => {
+    btn.innerHTML = `<i data-lucide="globe" style="width:14px;height:14px;color:var(--sky-blue)"></i> ${lang === 'EN' ? 'TH' : 'EN'}`;
+  });
+
   // Update open modal view if currently visible
   if (typeof overlay !== 'undefined' && overlay && overlay.classList.contains('show')) {
+    const tabsContainer = shell ? shell.querySelector('.modal-project-tabs') : null;
+    const currentNavScroll = tabsContainer ? tabsContainer.scrollLeft : 0;
     if (typeof currentActiveModalPid !== 'undefined' && currentActiveModalPid) {
-      renderCaseModal(currentActiveModalPid);
+      renderCaseModal(currentActiveModalPid, false, currentNavScroll);
     } else if (typeof currentActiveMiniType !== 'undefined' && currentActiveMiniType) {
-      renderMiniProjectModal(currentActiveMiniType);
+      renderMiniProjectModal(currentActiveMiniType, false, currentNavScroll);
     }
   }
 
@@ -2311,7 +2886,7 @@ function setLanguage(lang) {
 }
 
 function initLanguageToggle() {
-  document.querySelectorAll('#langToggleBtn, #mobileLangToggleBtn').forEach(btn => {
+  document.querySelectorAll('#langToggleBtn, #mobileLangToggleBtn, #modalLangToggleBtn').forEach(btn => {
     btn.onclick = (e) => {
       e.stopPropagation();
       setLanguage(currentLang === 'EN' ? 'TH' : 'EN');
@@ -2528,7 +3103,7 @@ const caseData={
     subtitle:'“Small steps, big achievements”',
     coverImage:'projects/goalflame.png',
     figmaLink:'https://www.figma.com/proto/K9K6o8hmdLaupuxksRrlH4/goal-project?node-id=679-10555&viewport=50%2C357%2C0.1&t=8MNyz0Hq1UjV8MlV-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=679%3A10869&page-id=679%3A3305',
-    overview:'An application designed to help users effectively manage and achieve their goals — whether short-term, long-term, major life goals, or small daily tasks. Integrated with an AI assistant for personalized step-by-step planning.',
+    overview:'A mobile goal-tracking application designed to help users stay consistent with their personal goals through lightweight check-ins, streak-based motivation, progress tracking, and AI-assisted guidance.',
     problem:'• Students set goals but struggle to achieve them consistently.<br>• Existing tools focus on task management rather than motivation.<br>• Large goals feel overwhelming without clear steps.<br>• Many goals are abandoned before completion.',
     personaName:'Suthida Laothong (Age 20, 2nd-year Communication Arts)',
     personaImage:'projects/Goal Flame/persona_page-0001.jpg',
@@ -2661,17 +3236,61 @@ const caseData={
   }
 };
 
-const overlay=document.getElementById('overlay'),shell=document.getElementById('shell');
+overlay = document.getElementById('overlay');
+shell = document.getElementById('shell');
 
 let currentActiveModalPid = null;
+let currentActiveMiniType = null;
+let savedPortfolioScrollPos = 0;
+let isModalOpen = false;
 
-function renderCaseModal(pid){
+function saveScrollPosition() {
+  if (!isModalOpen) {
+    savedPortfolioScrollPos = window.scrollY || window.pageYOffset || document.documentElement.scrollTop || 0;
+  }
+}
+
+function restoreScrollPosition() {
+  window.scrollTo({ top: savedPortfolioScrollPos, behavior: 'instant' });
+  requestAnimationFrame(() => {
+    window.scrollTo({ top: savedPortfolioScrollPos, behavior: 'instant' });
+  });
+}
+
+function closeModal(updateHistory = true) {
+  isModalOpen = false;
+  currentActiveModalPid = null;
+  currentActiveMiniType = null;
+  overlay.classList.remove('show');
+  document.body.style.overflow = '';
+  restoreScrollPosition();
+
+  if (updateHistory && (window.location.hash.startsWith('#project-') || window.location.hash.startsWith('#mini-'))) {
+    history.pushState(null, '', window.location.pathname + window.location.search);
+  }
+}
+
+function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
   const data=caseData[pid];
   if(!data) return;
+
+  if (!isModalOpen) {
+    saveScrollPosition();
+    isModalOpen = true;
+  }
+
   currentActiveModalPid = pid;
+  currentActiveMiniType = null;
   const lang = currentLang || 'EN';
   overlay.classList.add('show');
   document.body.style.overflow='hidden';
+
+  if (pushHistory) {
+    const newHash = '#project-' + pid;
+    if (window.location.hash !== newHash) {
+      history.pushState({ modalType: 'case', pid: pid }, '', newHash);
+    }
+  }
 
   // Determine active project i18n data (e.g. My SUTH App, Goal Management, Smart Dormitory, Kiosk Redesign)
   let projI18n = null;
@@ -2752,16 +3371,16 @@ function renderCaseModal(pid){
   let metaHtml = '';
   if (projI18n?.meta) {
     const m = projI18n.meta;
-    const l = m.labels;
+    const l = m.labels || {};
     metaHtml = `
       <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));gap:12px;padding:16px 18px;background:rgba(255,255,255,0.75);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.85);border-radius:18px;box-shadow:0 4px 16px rgba(30,36,50,0.05);margin-top:18px;font-size:13px">
-        <div><b style="color:var(--sky-blue);font:900 10px/1 monospace;display:block;margin-bottom:4px;letter-spacing:.05em">${l.role[lang]}</b><span>${m.role[lang]}</span></div>
-        <div><b style="color:var(--sky-blue);font:900 10px/1 monospace;display:block;margin-bottom:4px;letter-spacing:.05em">${l.team[lang]}</b><span>${m.team[lang]}</span></div>
-        <div><b style="color:var(--sky-blue);font:900 10px/1 monospace;display:block;margin-bottom:4px;letter-spacing:.05em">${l.duration[lang]}</b><span>${m.duration[lang]}</span></div>
-        <div><b style="color:var(--sky-blue);font:900 10px/1 monospace;display:block;margin-bottom:4px;letter-spacing:.05em">${l.tools[lang]}</b><span>${m.tools[lang]}</span></div>
-        <div style="grid-column:1 / -1"><b style="color:var(--sky-blue);font:900 10px/1 monospace;display:block;margin-bottom:4px;letter-spacing:.05em">${l.responsibilities[lang]}</b><span>${m.responsibilities[lang]}</span></div>
-        <div><b style="color:var(--electric-rose);font:900 10px/1 monospace;display:block;margin-bottom:4px;letter-spacing:.05em">${l.status[lang]}</b><span style="display:inline-block;padding:4px 10px;background:rgba(236,23,99,0.12);color:var(--electric-rose);font-weight:900;border-radius:8px;font-size:12px">${m.status[lang]}</span></div>
-        <div><b style="color:var(--sky-blue);font:900 10px/1 monospace;display:block;margin-bottom:4px;letter-spacing:.05em">${l.phase[lang]}</b><span style="display:inline-block;padding:4px 10px;background:rgba(85,104,175,0.12);color:var(--sky-blue);font-weight:900;border-radius:8px;font-size:12px">${m.phase[lang]}</span></div>
+        ${m.role && l.role ? `<div><b style="color:var(--sky-blue);font:900 10px/1 monospace;display:block;margin-bottom:4px;letter-spacing:.05em">${l.role[lang]}</b><span>${m.role[lang]}</span></div>` : ''}
+        ${m.team && l.team ? `<div><b style="color:var(--sky-blue);font:900 10px/1 monospace;display:block;margin-bottom:4px;letter-spacing:.05em">${l.team[lang]}</b><span>${m.team[lang]}</span></div>` : ''}
+        ${m.duration && l.duration ? `<div><b style="color:var(--sky-blue);font:900 10px/1 monospace;display:block;margin-bottom:4px;letter-spacing:.05em">${l.duration[lang]}</b><span>${m.duration[lang]}</span></div>` : ''}
+        ${m.tools && l.tools ? `<div><b style="color:var(--sky-blue);font:900 10px/1 monospace;display:block;margin-bottom:4px;letter-spacing:.05em">${l.tools[lang]}</b><span>${m.tools[lang]}</span></div>` : ''}
+        ${m.responsibilities && l.responsibilities ? `<div style="grid-column:1 / -1"><b style="color:var(--sky-blue);font:900 10px/1 monospace;display:block;margin-bottom:4px;letter-spacing:.05em">${l.responsibilities[lang]}</b><span>${m.responsibilities[lang]}</span></div>` : ''}
+        ${m.status && l.status ? `<div><b style="color:var(--electric-rose);font:900 10px/1 monospace;display:block;margin-bottom:4px;letter-spacing:.05em">${l.status[lang]}</b><span style="display:inline-block;padding:4px 10px;background:rgba(236,23,99,0.12);color:var(--electric-rose);font-weight:900;border-radius:8px;font-size:12px">${m.status[lang]}</span></div>` : ''}
+        ${m.phase && l.phase ? `<div><b style="color:var(--sky-blue);font:900 10px/1 monospace;display:block;margin-bottom:4px;letter-spacing:.05em">${l.phase[lang]}</b><span style="display:inline-block;padding:4px 10px;background:rgba(85,104,175,0.12);color:var(--sky-blue);font-weight:900;border-radius:8px;font-size:12px">${m.phase[lang]}</span></div>` : ''}
       </div>
     `;
   }
@@ -3367,6 +3986,526 @@ function renderCaseModal(pid){
     `;
   }
 
+  let researchPivotHtml = '';
+  if (projI18n?.researchPivot) {
+    const rp = projI18n.researchPivot;
+    const initialFlow = rp.initialIdea.flow;
+    const findingsList = rp.keyFindings.items;
+    const progressionFlow = rp.productPivot.progression;
+
+    researchPivotHtml = `
+      <section class="case">
+        <div>
+          <h2><i data-lucide="compass" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${rp.heading[lang]}</h2>
+
+          <!-- 1. Initial Idea -->
+          <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:20px;margin-top:18px;margin-bottom:24px">
+            <h3 style="font-size:18px;font-weight:900;color:#0f172a;margin:0 0 10px;display:flex;align-items:center;gap:10px">
+              <i data-lucide="lightbulb" style="width:20px;height:20px;color:var(--sunset)"></i>
+              ${rp.initialIdea.title[lang]}
+            </h3>
+            <p style="font-size:15px;line-height:1.75;color:#475569;margin:0">${rp.initialIdea.desc[lang]}</p>
+            
+            <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:16px;padding:12px 18px;background:rgba(241,245,249,0.7);border-radius:14px;border:1px solid rgba(226,232,240,0.8)">
+              ${initialFlow.map((step, idx) => `
+                <span style="font:900 12px/1 monospace;color:var(--ink);background:#fff;padding:6px 12px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.04)">${step[lang]}</span>
+                ${idx < initialFlow.length - 1 ? `<i data-lucide="arrow-right" style="width:14px;height:14px;color:var(--sky-blue)"></i>` : ''}
+              `).join('')}
+            </div>
+          </div>
+
+          <!-- 2. User Research -->
+          <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:20px;margin-bottom:24px;display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));gap:24px;align-items:center">
+            <div style="background:linear-gradient(135deg,rgba(85,104,175,0.08),rgba(206,234,238,0.3));border:1.5px solid rgba(85,104,175,0.2);padding:20px;border-radius:18px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center">
+              <span style="font-size:44px;font-weight:950;line-height:1;color:var(--sky-blue);font-family:Syne,sans-serif">${rp.userResearch.statNum[lang]}</span>
+              <span style="font-size:13px;font-weight:900;color:var(--ink);margin-top:4px">${rp.userResearch.statLabel[lang]}</span>
+              <span style="font-size:11px;font-weight:800;color:#64748b;margin-top:2px;font-family:monospace">${rp.userResearch.statSub[lang]}</span>
+            </div>
+            <div>
+              <h3 style="font-size:18px;font-weight:900;color:#0f172a;margin:0 0 10px;display:flex;align-items:center;gap:10px">
+                <i data-lucide="users" style="width:20px;height:20px;color:var(--sky-blue)"></i>
+                ${rp.userResearch.title[lang]}
+              </h3>
+              <p style="font-size:15px;line-height:1.75;color:#475569;margin:0">${rp.userResearch.desc[lang]}</p>
+            </div>
+          </div>
+
+          <!-- 3. Key Findings -->
+          <div style="margin-bottom:24px">
+            <h3 style="font-size:18px;font-weight:900;color:#0f172a;margin:0 0 16px;display:flex;align-items:center;gap:10px">
+              <i data-lucide="key" style="width:20px;height:20px;color:var(--sky-blue)"></i>
+              ${rp.keyFindings.title[lang]}
+            </h3>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:16px">
+              ${findingsList.map(item => item.highlight ? `
+                <div style="background:linear-gradient(135deg,rgba(243,120,38,0.08),rgba(254,243,199,0.4));border:1.5px solid rgba(243,120,38,0.35);padding:20px;border-radius:18px;box-shadow:0 6px 20px rgba(243,120,38,0.08)">
+                  <b style="color:var(--sunset);font:900 11px/1 monospace;display:block;margin-bottom:6px;letter-spacing:.05em">KEY INSIGHT</b>
+                  <p style="font-size:15px;line-height:1.65;font-weight:800;color:#0f172a;margin:0">${item[lang]}</p>
+                </div>
+              ` : `
+                <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 4px 16px rgba(30,36,50,0.04);padding:20px;border-radius:18px">
+                  <p style="font-size:14px;line-height:1.65;color:#334155;margin:0">${item[lang]}</p>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <!-- 4. Product Pivot -->
+          <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:20px">
+            <h3 style="font-size:18px;font-weight:900;color:#0f172a;margin:0 0 10px;display:flex;align-items:center;gap:10px">
+              <i data-lucide="git-commit" style="width:20px;height:20px;color:var(--teal)"></i>
+              ${rp.productPivot.title[lang]}
+            </h3>
+            <p style="font-size:15px;line-height:1.75;color:#475569;margin:0 0 18px">${rp.productPivot.desc[lang]}</p>
+            
+            <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:14px 20px;background:linear-gradient(135deg,rgba(85,104,175,0.06),rgba(206,234,238,0.25));border-radius:16px;border:1px solid rgba(85,104,175,0.18)">
+              ${progressionFlow.map((step, idx) => `
+                <span style="font:900 12px/1 monospace;color:var(--ink);background:#fff;padding:8px 14px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.05)">${step[lang]}</span>
+                ${idx < progressionFlow.length - 1 ? `<i data-lucide="arrow-right" style="width:16px;height:16px;color:var(--sky-blue)"></i>` : ''}
+              `).join('')}
+            </div>
+          </div>
+        </div>
+      </section>
+    `;
+  }
+
+  let understandingUserHtml = '';
+  if (projI18n?.understandingUser) {
+    const uu = projI18n.understandingUser;
+    const p = uu.persona;
+    const uj = uu.userJourney;
+    const ki = uu.keyInsight;
+
+    understandingUserHtml = `
+      <section class="case">
+        <div>
+          <h2><i data-lucide="users" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${uu.heading[lang]}</h2>
+          <p style="font-size:15px;line-height:1.75;color:#475569;margin:0 0 28px;max-width:900px">${uu.intro[lang]}</p>
+
+          <!-- 2. Primary Persona — Suthida (2-Column Grid) -->
+          <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:24px;margin-bottom:32px">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:28px;align-items:start">
+              
+              <!-- LEFT: Suthida Image -->
+              <div>
+                <div style="width:100%;border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(30,36,50,0.12);background:#fff;padding:8px;box-sizing:border-box">
+                  <img src="${encodeURI(p.image)}" alt="${p.title[lang]}" style="width:100%;height:auto;display:block;border-radius:12px;object-fit:contain"/>
+                </div>
+              </div>
+
+              <!-- RIGHT: Persona Details -->
+              <div>
+                <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:6px">
+                  <h3 style="font-size:20px;font-weight:900;color:#0f172a;margin:0">${p.title[lang]}</h3>
+                  <span style="font:800 12px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 10px;border-radius:8px">${p.sub[lang]}</span>
+                </div>
+                <p style="font-size:14px;line-height:1.7;color:#475569;margin:0 0 16px">${p.desc[lang]}</p>
+
+                <!-- Goals, Pain Points, Needs -->
+                <div style="display:grid;gap:14px;margin-bottom:16px">
+                  <div style="background:rgba(241,245,249,0.6);padding:14px 16px;border-radius:14px;border-left:3.5px solid var(--sky-blue)">
+                    <b style="font-size:11px;color:var(--sky-blue);display:block;margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em">${p.goalsHeading[lang]}</b>
+                    <ul style="margin:0;padding:0;list-style:none;font-size:13px;line-height:1.6;color:#334155;display:grid;gap:4px">
+                      ${p.goals.map(g => `<li>• ${g[lang]}</li>`).join('')}
+                    </ul>
+                  </div>
+
+                  <div style="background:rgba(241,245,249,0.6);padding:14px 16px;border-radius:14px;border-left:3.5px solid var(--sunset)">
+                    <b style="font-size:11px;color:var(--sunset);display:block;margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em">${p.painHeading[lang]}</b>
+                    <ul style="margin:0;padding:0;list-style:none;font-size:13px;line-height:1.6;color:#334155;display:grid;gap:4px">
+                      ${p.painPoints.map(pp => `<li>• ${pp[lang]}</li>`).join('')}
+                    </ul>
+                  </div>
+
+                  <div style="background:rgba(241,245,249,0.6);padding:14px 16px;border-radius:14px;border-left:3.5px solid var(--teal)">
+                    <b style="font-size:11px;color:var(--teal);display:block;margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em">${p.needsHeading[lang]}</b>
+                    <ul style="margin:0;padding:0;list-style:none;font-size:13px;line-height:1.6;color:#334155;display:grid;gap:4px">
+                      ${p.needs.map(n => `<li>• ${n[lang]}</li>`).join('')}
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Quote Box -->
+                <div style="background:linear-gradient(135deg,rgba(85,104,175,0.08),rgba(206,234,238,0.3));border:1.5px solid rgba(85,104,175,0.25);padding:16px 20px;border-radius:16px">
+                  <p style="font-size:14px;line-height:1.65;font-weight:800;color:var(--ink);font-style:italic;margin:0">${p.quote[lang]}</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 3. As-Is User Journey (2-Column Reversed Grid) -->
+          <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:24px;margin-bottom:32px">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:28px;align-items:center">
+              
+              <!-- LEFT: Journey Content -->
+              <div>
+                <h3 style="font-size:20px;font-weight:900;color:#0f172a;margin:0 0 10px;display:flex;align-items:center;gap:10px">
+                  <i data-lucide="map" style="width:20px;height:20px;color:var(--sky-blue)"></i>
+                  ${uj.title[lang]}
+                </h3>
+                <p style="font-size:14px;line-height:1.7;color:#475569;margin:0 0 16px">${uj.intro[lang]}</p>
+
+                <!-- Progression Flow -->
+                <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:16px;padding:12px 16px;background:rgba(241,245,249,0.7);border-radius:14px;border:1px solid rgba(226,232,240,0.8)">
+                  ${uj.flow.map((step, idx) => `
+                    <span style="font:900 11px/1 monospace;color:var(--ink);background:#fff;padding:6px 10px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.04)">${step[lang]}</span>
+                    ${idx < uj.flow.length - 1 ? `<i data-lucide="arrow-right" style="width:12px;height:12px;color:var(--sky-blue)"></i>` : ''}
+                  `).join('')}
+                </div>
+
+                <p style="font-size:14px;line-height:1.75;color:#334155;background:rgba(241,245,249,0.6);padding:14px 18px;border-radius:14px;margin:0">${uj.finding[lang]}</p>
+              </div>
+
+              <!-- RIGHT: User Journey Image -->
+              <div>
+                <div style="width:100%;border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(30,36,50,0.12);background:#fff;padding:8px;box-sizing:border-box">
+                  <img src="${encodeURI(uj.image)}" alt="${uj.title[lang]}" style="width:100%;height:auto;display:block;border-radius:12px;object-fit:contain"/>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 4. Key Insight Banner -->
+          <div style="background:linear-gradient(135deg,rgba(243,120,38,0.08),rgba(254,243,199,0.45));border:1.5px solid rgba(243,120,38,0.35);padding:24px 28px;border-radius:22px;box-shadow:0 8px 24px rgba(243,120,38,0.08)">
+            <b style="color:var(--sunset);font:900 11px/1 monospace;display:block;margin-bottom:8px;letter-spacing:.05em">KEY INSIGHT</b>
+            <h3 style="font-size:clamp(18px,2.5vw,22px);font-weight:900;color:#0f172a;line-height:1.4;margin:0 0 10px">${ki.title[lang]}</h3>
+            <p style="font-size:14px;line-height:1.7;color:#475569;margin:0">${ki.desc[lang]}</p>
+          </div>
+
+        </div>
+      </section>
+    `;
+  }
+
+  let designOpportunitiesHtml = '';
+  if (projI18n?.designOpportunities) {
+    const doData = projI18n.designOpportunities;
+    const cardsList = doData.cards;
+    const dir = doData.direction;
+
+    designOpportunitiesHtml = `
+      <section class="case">
+        <div>
+          <h2><i data-lucide="sparkles" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${doData.heading[lang]}</h2>
+          <p style="font-size:15px;line-height:1.75;color:#475569;margin:0 0 24px;max-width:900px">${doData.intro[lang]}</p>
+
+          <!-- 2 x 2 Opportunity Cards Grid -->
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:20px">
+            ${cardsList.map(card => `
+              <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:22px 24px;border-radius:20px;display:flex;flex-direction:column;justify-content:space-between">
+                <div>
+                  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+                    <span style="font:900 11px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 10px;border-radius:8px">OPPORTUNITY ${card.num}</span>
+                    <i data-lucide="${card.icon}" style="width:20px;height:20px;color:var(--sunset)"></i>
+                  </div>
+                  <h3 style="font-size:18px;font-weight:900;color:#0f172a;margin:0 0 8px">${card.title[lang]}</h3>
+                </div>
+                <p style="font-size:14px;line-height:1.65;color:#475569;margin:0">${card.desc[lang]}</p>
+              </div>
+            `).join('')}
+          </div>
+
+        </div>
+      </section>
+    `;
+  }
+
+  let keyUxSolutionsHtml = '';
+  if (projI18n?.keyUxSolutions) {
+    const ks = projI18n.keyUxSolutions;
+    const solList = ks.solutions;
+
+    keyUxSolutionsHtml = `
+      <section class="case">
+        <div>
+          <h2><i data-lucide="layout" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${ks.heading[lang]}</h2>
+          <p style="font-size:15px;line-height:1.75;color:#475569;margin:0 0 28px;max-width:900px">${ks.intro[lang]}</p>
+
+          ${solList.map(sol => `
+            <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:28px;border-radius:24px;margin-bottom:32px">
+              
+              <!-- Solution Number & Title -->
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px">
+                <span style="font-size:32px;font-weight:950;color:var(--sky-blue);line-height:1;font-family:Syne,sans-serif">${sol.num}</span>
+                <div style="height:24px;width:2px;background:rgba(85,104,175,0.25)"></div>
+                <h3 style="font-size:clamp(18px,2.5vw,22px);font-weight:900;color:#0f172a;margin:0">${sol.title[lang]}</h3>
+              </div>
+
+              ${sol.intro ? `<p style="font-size:15px;line-height:1.75;color:#475569;margin:0 0 20px">${sol.intro[lang]}</p>` : ''}
+
+              ${sol.comparisonItems ? `
+                <!-- Solution 02 Comparison Showcase Grid -->
+                <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:24px;align-items:start;margin-bottom:20px">
+                  ${sol.comparisonItems.map(item => `
+                    <div style="background:rgba(241,245,249,0.6);border:1px solid rgba(226,232,240,0.9);border-radius:20px;padding:20px;display:flex;flex-direction:column;gap:12px">
+                      <div style="display:flex;flex-direction:column;gap:4px">
+                        <span style="font:900 11px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 10px;border-radius:8px;align-self:flex-start">${item.badge[lang]}</span>
+                        <b style="font-size:14px;color:#0f172a;margin-top:4px">${item.subtitle[lang]}</b>
+                      </div>
+                      
+                      <div style="width:100%;max-width:240px;margin:0 auto;border-radius:16px;overflow:hidden;box-shadow:0 10px 28px rgba(30,36,50,0.1);background:#fff;padding:6px;box-sizing:border-box;border:1px solid rgba(226,232,240,0.8)">
+                        <img src="${encodeURI(item.image)}" alt="${item.badge[lang]}" style="width:100%;height:auto;display:block;border-radius:10px;object-fit:contain"/>
+                      </div>
+
+                      ${item.highlights ? `
+                        <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:2px">
+                          ${item.highlights.map(hl => `<span style="font:800 10px/1 monospace;color:#334155;background:#fff;padding:4px 8px;border-radius:6px;border:1px solid rgba(203,213,225,0.7);box-shadow:0 1px 3px rgba(0,0,0,0.03)">${hl[lang]}</span>`).join('')}
+                        </div>
+                      ` : ''}
+
+                      <p style="font-size:14px;line-height:1.65;color:#475569;margin:0">${item.desc[lang]}</p>
+                    </div>
+                  `).join('')}
+                </div>
+
+                ${sol.summary ? `<p style="font-size:15px;line-height:1.75;color:#475569;margin:0 0 20px">${sol.summary[lang]}</p>` : ''}
+              ` : sol.type === 'dashboard' ? `
+                <!-- Solution 04 Dashboard Showcase Grid -->
+                <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:28px;align-items:start">
+                  
+                  <!-- Left: Supporting Explanation, Levels & Design Purpose -->
+                  <div style="display:flex;flex-direction:column;justify-content:space-between;height:100%">
+                    <div>
+                      <p style="font-size:15px;line-height:1.75;color:#475569;margin:0 0 16px">${sol.desc[lang]}</p>
+                      
+                      <!-- Progress Levels Badges -->
+                      <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(130px, 1fr));gap:10px;margin:16px 0 20px">
+                        ${sol.levels.map(lvl => `
+                          <div style="background:rgba(241,245,249,0.7);padding:10px 12px;border-radius:12px;border:1px solid rgba(226,232,240,0.8)">
+                            <b style="font:900 11px/1 monospace;color:var(--sky-blue);display:block;margin-bottom:4px">${lvl.label[lang]}</b>
+                            <span style="font-size:12px;color:#475569;line-height:1.4;display:block">${lvl.value[lang]}</span>
+                          </div>
+                        `).join('')}
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Right: Single Large Dashboard Screen Showcase -->
+                  <div>
+                    <div style="width:100%;max-width:320px;margin:0 auto;border-radius:20px;overflow:hidden;box-shadow:0 14px 36px rgba(30,36,50,0.14);background:#fff;padding:8px;box-sizing:border-box;border:1px solid rgba(226,232,240,0.8)">
+                      <img src="${encodeURI(sol.image)}" alt="${sol.title[lang]}" style="width:100%;height:auto;display:block;border-radius:14px;object-fit:contain"/>
+                    </div>
+                  </div>
+
+                </div>
+              ` : `
+                <!-- Solution 01 Standard Showcase Grid -->
+                <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:28px;align-items:start">
+                  
+                  <!-- Supporting Explanation & Design Purpose -->
+                  <div style="display:flex;flex-direction:column;justify-content:space-between;height:100%">
+                    <div>
+                      <p style="font-size:15px;line-height:1.75;color:#475569;margin:0 0 20px">${sol.desc ? sol.desc[lang] : ''}</p>
+                    </div>
+                  </div>
+
+                  <!-- Dual Screens Showcase -->
+                  <div>
+                    <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(140px, 1fr));gap:16px;align-items:start">
+                      ${sol.screens ? sol.screens.map(scr => `
+                        <div style="display:flex;flex-direction:column;gap:8px">
+                          <span style="font:800 11px/1 monospace;color:#64748b;text-align:center">${scr.label[lang]}</span>
+                          <div style="width:100%;border-radius:18px;overflow:hidden;box-shadow:0 12px 32px rgba(30,36,50,0.12);background:#fff;padding:6px;box-sizing:border-box;border:1px solid rgba(226,232,240,0.8)">
+                            <img src="${encodeURI(scr.image)}" alt="${scr.label[lang]}" style="width:100%;height:auto;display:block;border-radius:12px;object-fit:contain"/>
+                          </div>
+                        </div>
+                      `).join('') : ''}
+                    </div>
+                  </div>
+
+                </div>
+              `}
+
+              <!-- Design Purpose Callout -->
+              <div style="background:linear-gradient(135deg,rgba(85,104,175,0.08),rgba(206,234,238,0.3));border:1.5px solid rgba(85,104,175,0.2);padding:18px 20px;border-radius:18px;margin-top:20px">
+                <b style="color:var(--sky-blue);font:900 11px/1 monospace;display:block;margin-bottom:6px;letter-spacing:.05em">${sol.purposeLabel[lang]}</b>
+                ${sol.purposeIntro ? `<p style="font-size:13px;color:#64748b;margin:0 0 4px">${sol.purposeIntro[lang]}</p>` : ''}
+                <p style="font-size:16px;font-weight:900;color:var(--ink);margin:0;font-style:italic">“${sol.purposeQuote[lang]}”</p>
+              </div>
+
+            </div>
+          `).join('')}
+
+          ${ks.aiAssistance ? `
+            <!-- AI Assistance Concept Subsection -->
+            <div style="background:rgba(255,255,255,0.7);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.85);box-shadow:0 6px 20px rgba(30,36,50,0.04);padding:24px 28px;border-radius:22px;margin-top:12px">
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px;flex-wrap:wrap">
+                <h3 style="font-size:18px;font-weight:900;color:#0f172a;margin:0;display:flex;align-items:center;gap:10px">
+                  <i data-lucide="bot" style="width:22px;height:22px;color:var(--teal)"></i>
+                  ${ks.aiAssistance.title[lang]}
+                </h3>
+                <span style="font:900 10px/1 monospace;color:#64748b;background:rgba(241,245,249,0.8);border:1px solid rgba(203,213,225,0.8);padding:5px 12px;border-radius:20px;letter-spacing:.05em">
+                  ${ks.aiAssistance.statusBadge[lang]}
+                </span>
+              </div>
+
+              <p style="font-size:14px;line-height:1.75;color:#475569;margin:0 0 20px">${ks.aiAssistance.desc[lang]}</p>
+
+              <!-- 3-Pillar Structured Summary -->
+              <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));gap:16px">
+                ${ks.aiAssistance.pillars.map(pil => `
+                  <div style="background:rgba(241,245,249,0.5);border:1px solid rgba(226,232,240,0.8);padding:14px 16px;border-radius:14px">
+                    <b style="font:900 11px/1 monospace;color:var(--sky-blue);display:block;margin-bottom:4px;letter-spacing:.05em">${pil.label[lang]}</b>
+                    <p style="font-size:13px;line-height:1.6;color:#334155;margin:0">${pil.text[lang]}</p>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          ` : ''}
+
+        </div>
+      </section>
+    `;
+  }
+
+  let testingOutcomeHtml = '';
+  if (projI18n?.testingOutcome) {
+    const toData = projI18n.testingOutcome;
+    const test = toData.testing;
+    const out = toData.outcome;
+    const lim = toData.limitations;
+    const fsData = toData.finalStatus;
+    const kl = toData.keyLearning;
+
+    testingOutcomeHtml = `
+      <section class="case">
+        <div>
+          <h2><i data-lucide="check-circle-2" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${toData.heading[lang]}</h2>
+
+          <!-- 1. Prototype Testing -->
+          <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:24px;margin-top:18px;margin-bottom:28px">
+            <h3 style="font-size:18px;font-weight:900;color:#0f172a;margin:0 0 16px;display:flex;align-items:center;gap:10px">
+              <i data-lucide="clipboard-check" style="width:20px;height:20px;color:var(--sky-blue)"></i>
+              ${test.title[lang]}
+            </h3>
+
+            <!-- 2-Stat Callout Presentation -->
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));gap:16px;margin-bottom:20px">
+              <div style="background:linear-gradient(135deg,rgba(85,104,175,0.08),rgba(206,234,238,0.3));border:1.5px solid rgba(85,104,175,0.2);padding:18px;border-radius:18px;text-align:center">
+                <span style="font-size:42px;font-weight:950;line-height:1;color:var(--sky-blue);font-family:Syne,sans-serif;display:block">${test.stat1Num[lang]}</span>
+                <span style="font-size:13px;font-weight:900;color:var(--ink);margin-top:4px;display:block">${test.stat1Label[lang]}</span>
+              </div>
+              <div style="background:linear-gradient(135deg,rgba(16,185,129,0.08),rgba(206,234,238,0.3));border:1.5px solid rgba(16,185,129,0.2);padding:18px;border-radius:18px;text-align:center">
+                <span style="font-size:42px;font-weight:950;line-height:1;color:var(--teal);font-family:Syne,sans-serif;display:block">${test.stat2Num[lang]}</span>
+                <span style="font-size:13px;font-weight:900;color:var(--ink);margin-top:4px;display:block">${test.stat2Label[lang]}</span>
+              </div>
+            </div>
+
+            <p style="font-size:15px;line-height:1.75;color:#475569;margin:0 0 16px">${test.desc[lang]}</p>
+
+            <!-- Method Flow -->
+            <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:10px 16px;background:rgba(241,245,249,0.7);border-radius:12px;border:1px solid rgba(226,232,240,0.8)">
+              ${test.flow.map((step, idx) => `
+                <span style="font:900 11px/1 monospace;color:var(--ink);background:#fff;padding:5px 10px;border-radius:6px;box-shadow:0 2px 4px rgba(0,0,0,0.03)">${step[lang]}</span>
+                ${idx < test.flow.length - 1 ? `<i data-lucide="arrow-right" style="width:12px;height:12px;color:var(--sky-blue)"></i>` : ''}
+              `).join('')}
+            </div>
+          </div>
+
+          <!-- 2. Project Outcome -->
+          <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:24px;margin-bottom:28px">
+            <h3 style="font-size:18px;font-weight:900;color:#0f172a;margin:0 0 14px;display:flex;align-items:center;gap:10px">
+              <i data-lucide="trophy" style="width:20px;height:20px;color:var(--sunset)"></i>
+              ${out.title[lang]}
+            </h3>
+
+            <!-- Outcome Progression Flow -->
+            <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:16px;padding:12px 16px;background:linear-gradient(135deg,rgba(85,104,175,0.06),rgba(206,234,238,0.25));border-radius:14px;border:1px solid rgba(85,104,175,0.15)">
+              ${out.progression.map((step, idx) => `
+                <span style="font:900 11px/1 monospace;color:var(--ink);background:#fff;padding:6px 10px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.04)">${step[lang]}</span>
+                ${idx < out.progression.length - 1 ? `<i data-lucide="arrow-right" style="width:12px;height:12px;color:var(--sky-blue)"></i>` : ''}
+              `).join('')}
+            </div>
+
+            <p style="font-size:15px;line-height:1.75;color:#475569;margin:0">${out.desc[lang]}</p>
+          </div>
+
+          <!-- 3. Limitations -->
+          <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:24px;margin-bottom:28px">
+            <h3 style="font-size:18px;font-weight:900;color:#0f172a;margin:0 0 16px;display:flex;align-items:center;gap:10px">
+              <i data-lucide="alert-triangle" style="width:20px;height:20px;color:var(--sunset)"></i>
+              ${lim.title[lang]}
+            </h3>
+
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));gap:16px">
+              ${lim.items.map(item => `
+                <div style="background:rgba(241,245,249,0.6);border:1px solid rgba(226,232,240,0.8);padding:18px;border-radius:18px;display:flex;flex-direction:column;gap:8px">
+                  <span style="font:900 10px/1 monospace;color:var(--sunset);background:rgba(243,120,38,0.12);padding:4px 10px;border-radius:6px;align-self:flex-start">${item.badge[lang]}</span>
+                  <b style="font-size:15px;color:#0f172a">${item.title[lang]}</b>
+                  <p style="font-size:13px;line-height:1.65;color:#475569;margin:0">${item.desc[lang]}</p>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <!-- 4. Final Status Banner -->
+          <div style="background:linear-gradient(135deg,rgba(16,185,129,0.08),rgba(206,234,238,0.3));border:1.5px solid rgba(16,185,129,0.25);padding:18px 24px;border-radius:20px;margin-bottom:28px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+            <div>
+              <b style="color:var(--teal);font:900 11px/1 monospace;display:block;margin-bottom:4px;letter-spacing:.05em">${fsData.label[lang]}</b>
+              <h4 style="font-size:18px;font-weight:900;color:#0f172a;margin:0">${fsData.text[lang]}</h4>
+            </div>
+            <span style="font:900 12px/1 monospace;color:#fff;background:var(--teal);padding:8px 16px;border-radius:10px;box-shadow:0 4px 12px rgba(16,185,129,0.25)">COMPLETED</span>
+          </div>
+
+          <!-- 5. Key Learning -->
+          <div style="background:linear-gradient(135deg,rgba(85,104,175,0.08),rgba(206,234,238,0.35));border:1.5px solid rgba(85,104,175,0.22);padding:24px 28px;border-radius:22px;box-shadow:0 6px 20px rgba(85,104,175,0.08)">
+            <b style="color:var(--sky-blue);font:900 11px/1 monospace;display:block;margin-bottom:8px;letter-spacing:.05em">KEY REFLECTION</b>
+            <p style="font-size:15px;line-height:1.7;font-weight:800;color:var(--ink);margin:0;font-style:italic">
+              “${kl.quote[lang]}”
+            </p>
+          </div>
+
+        </div>
+      </section>
+    `;
+  }
+
+  let reflectionFutureHtml = '';
+  if (projI18n?.reflectionFuture) {
+    const rfData = projI18n.reflectionFuture;
+    const dirs = rfData.directions;
+
+    reflectionFutureHtml = `
+      <section class="case">
+        <div>
+          <h2><i data-lucide="compass" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${rfData.heading[lang]}</h2>
+
+          <!-- 1. Reflection Statement -->
+          <div style="background:linear-gradient(135deg,rgba(85,104,175,0.06),rgba(206,234,238,0.25));border:1.5px solid rgba(85,104,175,0.18);padding:22px 26px;border-radius:20px;margin-top:16px;margin-bottom:24px">
+            <p style="font-size:16px;line-height:1.7;font-weight:800;color:var(--ink);margin:0;font-style:italic">
+              “${rfData.reflection[lang]}”
+            </p>
+          </div>
+
+          <!-- 2. Future Direction Section -->
+          <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:24px">
+            <h3 style="font-size:16px;font-weight:900;color:#0f172a;margin:0 0 20px">${rfData.futureIntro[lang]}</h3>
+
+            <!-- 2 x 2 Desktop Grid -->
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));gap:16px">
+              ${dirs.map(item => `
+                <div style="background:rgba(241,245,249,0.5);border:1px solid rgba(226,232,240,0.8);padding:18px;border-radius:18px;display:flex;flex-direction:column;justify-content:space-between">
+                  <div>
+                    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
+                      <span style="font:900 11px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 8px;border-radius:6px">${item.num}</span>
+                      <i data-lucide="${item.icon}" style="width:18px;height:18px;color:var(--sunset)"></i>
+                    </div>
+                    <b style="font-size:15px;color:#0f172a;display:block;margin-bottom:6px">${item.title[lang]}</b>
+                  </div>
+                  <p style="font-size:13px;line-height:1.6;color:#475569;margin:0">${item.desc[lang]}</p>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+        </div>
+      </section>
+    `;
+  }
+
   shell.innerHTML=`
     ${tabsHtml}
     <section class="hero">
@@ -3393,11 +4532,17 @@ function renderCaseModal(pid){
         <img src="${data.coverImage}" alt="${modalTitle}" class="case-cover-img"/>
       </div>
     </section>
+    ${researchPivotHtml}
+    ${understandingUserHtml}
+    ${designOpportunitiesHtml}
+    ${keyUxSolutionsHtml}
+    ${testingOutcomeHtml}
+    ${reflectionFutureHtml}
     ${contextHtml}
     ${discoveryHtml}
     ${userGroupsHtml}
     ${designPrioritiesHtml}
-    ${pid !== 'mysuth-app' ? `
+    ${(pid !== 'mysuth-app' && pid !== 'goal-app') ? `
       <section class="case">
         <div>
           <h2><i data-lucide="alert-circle" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sunset)"></i>${modalProblemHeading}</h2>
@@ -3453,30 +4598,40 @@ function renderCaseModal(pid){
         </section>
       ` : ''}
     ` : ''}
-    <section class="case">
-      <div>
-        <h2><i data-lucide="layers" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${modalFeatureHeading}</h2>
-        ${pid === 'mysuth-app' ? (queueManagementHtml + eConsultHtml + attendanceHtml + emergencyCodeHtml + coreScreensHtml + otherFeaturesHtml) : featuresHtml}
-      </div>
-    </section>
+    ${pid !== 'goal-app' ? `
+      <section class="case">
+        <div>
+          <h2><i data-lucide="layers" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${modalFeatureHeading}</h2>
+          ${pid === 'mysuth-app' ? (queueManagementHtml + eConsultHtml + attendanceHtml + emergencyCodeHtml + coreScreensHtml + otherFeaturesHtml) : featuresHtml}
+        </div>
+      </section>
+    ` : ''}
     ${projectStatusHtml}
   `;
 
   shell.querySelectorAll('[data-switch-project]').forEach(btn=>{
     btn.addEventListener('click',()=>{
+      const tabsContainer = shell.querySelector('.modal-project-tabs');
+      const currentScroll = tabsContainer ? tabsContainer.scrollLeft : 0;
       const newPid=btn.dataset.switchProject;
-      renderCaseModal(newPid);
+      renderCaseModal(newPid, true, currentScroll);
       overlay.scrollTop=0;
     });
   });
 
   if(window.lucide) lucide.createIcons();
+  if (navScrollLeft) {
+    requestAnimationFrame(() => {
+      const tabsContainer = shell.querySelector('.modal-project-tabs');
+      if (tabsContainer) tabsContainer.scrollLeft = navScrollLeft;
+    });
+  }
 }
 document.querySelectorAll('[data-project]').forEach(p=>p.addEventListener('click',()=>{
   const pid=p.dataset.project;
-  renderCaseModal(pid);
+  renderCaseModal(pid, true);
 }));
-document.getElementById('back').addEventListener('click',()=>{overlay.classList.remove('show');document.body.style.overflow=''});
+document.getElementById('back').addEventListener('click',()=>{ closeModal(true); });
 
 document.getElementById('contactForm').addEventListener('submit', async (e) => {
   e.preventDefault();
@@ -3670,14 +4825,25 @@ function openLightbox(index, imgList) {
   };
 }
 
-let currentActiveMiniType = null;
+function renderMiniProjectModal(type, pushHistory = true, navScrollLeft = 0) {
+  if (!isModalOpen) {
+    saveScrollPosition();
+    isModalOpen = true;
+  }
 
-function renderMiniProjectModal(type) {
   currentActiveMiniType = type;
   currentActiveModalPid = null;
   const lang = currentLang || 'EN';
   overlay.classList.add('show');
   document.body.style.overflow = 'hidden';
+
+  if (pushHistory) {
+    const newHash = '#mini-' + type;
+    if (window.location.hash !== newHash) {
+      history.pushState({ modalType: 'mini', type: type }, '', newHash);
+    }
+  }
+
   const tabsHtml = getMiniProjectTabs(type);
   const backBtnText = i18n.projectNav?.backToPortfolio?.[lang] || 'BACK TO PORTFOLIO';
 
@@ -3808,21 +4974,58 @@ function renderMiniProjectModal(type) {
   // Bind mini project switcher tab clicks
   shell.querySelectorAll('[data-switch-mini]').forEach(btn => {
     btn.addEventListener('click', () => {
+      const tabsContainer = shell.querySelector('.modal-project-tabs');
+      const currentScroll = tabsContainer ? tabsContainer.scrollLeft : 0;
       const nextType = btn.dataset.switchMini;
-      renderMiniProjectModal(nextType);
+      renderMiniProjectModal(nextType, true, currentScroll);
       overlay.scrollTop = 0;
     });
   });
 
   if (window.lucide) lucide.createIcons();
+  if (navScrollLeft) {
+    requestAnimationFrame(() => {
+      const tabsContainer = shell.querySelector('.modal-project-tabs');
+      if (tabsContainer) tabsContainer.scrollLeft = navScrollLeft;
+    });
+  }
 }
 
 document.querySelectorAll('[data-mini-project]').forEach(card => {
   card.addEventListener('click', () => {
     const type = card.dataset.miniProject;
-    renderMiniProjectModal(type);
+    renderMiniProjectModal(type, true);
   });
 });
+
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && isModalOpen) {
+    closeModal(true);
+  }
+});
+
+function handleHashModalNavigation() {
+  const hash = window.location.hash;
+  if (hash.startsWith('#project-')) {
+    const pid = hash.replace('#project-', '');
+    if (caseData[pid]) {
+      renderCaseModal(pid, false);
+    }
+  } else if (hash.startsWith('#mini-')) {
+    const type = hash.replace('#mini-', '');
+    if (i18n.otherProjects && i18n.otherProjects[type]) {
+      renderMiniProjectModal(type, false);
+    }
+  } else {
+    if (isModalOpen) {
+      closeModal(false);
+    }
+  }
+}
+
+window.addEventListener('popstate', handleHashModalNavigation);
+window.addEventListener('DOMContentLoaded', handleHashModalNavigation);
+handleHashModalNavigation();
 
 /* Scroll Reveal Fade-In Observer (Excluding Section Titles & Leads) */
 const revealTargets = document.querySelectorAll(
