@@ -1047,16 +1047,655 @@ const i18n = {
   featuredProjects: {
     mySuth: {
       title: {
-        EN: "My SUTH App — Hospital Management System",
-        TH: "My SUTH App — ระบบจัดการงานภายในโรงพยาบาลมหาวิทยาลัยเทคโนโลยีสุรนารี"
+        EN: "My SUTH App",
+        TH: "My SUTH App"
       },
       subtitle: {
         EN: "“One App, Smarter Hospital Work.”",
         TH: "“แอปเดียว เพื่อการทำงานในโรงพยาบาลที่ฉลาดยิ่งขึ้น”"
       },
       overview: {
-        EN: "A mobile application designed for SUT Hospital staff to simplify daily workflows, including attendance, queue management, appointments, and notifications—all in one place.",
-        TH: "แอปพลิเคชันมือถือที่ออกแบบสำหรับบุคลากรโรงพยาบาลสุรนารี เพื่อปรับปรุงและลดความซับซ้อนของขั้นตอนการทำงานประจำวัน ทั้งการลงเวลาเข้า-ออกงาน, การจัดการคิวผู้ป่วย, การนัดหมาย และการแจ้งเตือน—รวมไว้ในที่เดียว"
+        EN: "My SUTH App is a mobile application designed to centralize essential hospital workflows for SUT Hospital personnel. I worked as a UX/UI Designer during my cooperative education placement, conducting requirement gathering, designing user flows and high-fidelity interfaces, and supporting the implementation of the Flutter prototype.",
+        TH: "My SUTH App คือแอปพลิเคชันบนมือถือที่ออกแบบมาเพื่อรวบรวมกระบวนการทำงานที่สำคัญของบุคลากรโรงพยาบาลมหาวิทยาลัยเทคโนโลยีสุรนารีไว้ในที่เดียว<br><br>ในระหว่างการปฏิบัติงานสหกิจศึกษา ฉันทำหน้าที่เป็น UX/UI Designer โดยมีส่วนร่วมตั้งแต่การเก็บรวบรวมความต้องการของผู้ใช้งาน การออกแบบ User Flow และหน้าจอ High-Fidelity ไปจนถึงการสนับสนุนการพัฒนา Prototype ด้วย Flutter"
+      },
+      meta: {
+        role: {
+          EN: "UX/UI Designer",
+          TH: "UX/UI Designer"
+        },
+        team: {
+          EN: "UX/UI Designer, Developer, Hospital Stakeholders",
+          TH: "UX/UI Designer, Developer, Hospital Stakeholders"
+        },
+        duration: {
+          EN: "June–September 2026",
+          TH: "มิถุนายน–กันยายน 2569"
+        },
+        responsibilities: {
+          EN: "Requirement Gathering, User Flow, UI Design, Prototyping, Usability Testing",
+          TH: "รวบรวมความต้องการของผู้ใช้, ออกแบบเส้นทางผู้ใช้, ออกแบบหน้าจออินเทอร์เฟซ, สร้างตัวต้นแบบ, สร้างหน้าจอ UI flutter, ทดสอบกับผู้ใช้จริง"
+        },
+        tools: {
+          EN: "Figma, Maze, Flutter",
+          TH: "Figma, Maze, Flutter"
+        },
+        status: {
+          EN: "Ongoing",
+          TH: "อยู่ระหว่างดำเนินการ"
+        },
+        phase: {
+          EN: "Flutter Development",
+          TH: "พัฒนาส่วน Flutter"
+        },
+        labels: {
+          role: { EN: "Role", TH: "บทบาท" },
+          team: { EN: "Team", TH: "ทีม" },
+          duration: { EN: "Duration", TH: "ระยะเวลา" },
+          responsibilities: { EN: "Responsibilities", TH: "ความรับผิดชอบ" },
+          tools: { EN: "Tools", TH: "เครื่องมือ" },
+          status: { EN: "Project Status", TH: "สถานะโปรเจกต์" },
+          phase: { EN: "Current Phase", TH: "ขั้นตอนปัจจุบัน" }
+        }
+      },
+      contextConstraints: {
+        heading: {
+          EN: "Context & Constraints",
+          TH: "บริบทและข้อจำกัดของโปรเจกต์ (Context & Constraints)"
+        },
+        items: {
+          EN: [
+            "• Each staff role has different responsibilities and access permissions.",
+            "• The system needs to support nurses, doctors, and other hospital staff.",
+            "• Users work in a fast-paced environment.",
+            "• Multiple services need to be integrated into a single app without making the navigation overly complex.",
+            "• The design must maintain the hospital’s brand colors and visual identity.",
+            "• Some systems are still under development, so testing can only be conducted using prototypes."
+          ],
+          TH: [
+            "• บุคลากรแต่ละตำแหน่งมีหน้าที่และสิทธิ์เข้าถึงต่างกัน",
+            "• ระบบต้องรองรับทั้ง พยาบาล และแพทย์ พนักงานอื่นๆ นอกเหนือจากนี้",
+            "• ผู้ใช้ทำงานในสภาพแวดล้อมที่เร่งรีบ",
+            "• ต้องเชื่อมหลายบริการไว้ในแอปเดียวโดยไม่ทำให้เมนูซับซ้อน",
+            "• ต้องรักษาสีและภาพลักษณ์ของโรงพยาบาล",
+            "• บางระบบยังอยู่ระหว่างการพัฒนา จึงทดสอบได้เฉพาะ Prototype"
+          ]
+        }
+      },
+      discovery: {
+        heading: {
+          EN: "Discovery & Requirement Gathering",
+          TH: "การสำรวจและรวบรวมความต้องการ (Discovery & Requirement Gathering)"
+        },
+        intro: {
+          EN: "Due to the limited availability of doctors and nurses, the initial discovery phase was conducted through discussions with the hospital’s IT staff and project lead. Their operational knowledge and internal requirements helped identify key workflow issues and define the project’s initial scope.<br><br>Since direct user research was limited, these findings were treated as preliminary requirements to be further validated through prototype feedback and usability testing.",
+          TH: "เนื่องจากแพทย์และพยาบาลมีเวลาจำกัด การสำรวจข้อมูลเบื้องต้นจึงดำเนินการผ่านการพูดคุยกับเจ้าหน้าที่ฝ่ายเทคโนโลยีสารสนเทศของโรงพยาบาลและผู้นำโครงการ โดยใช้ความรู้ด้านการปฏิบัติงานและความต้องการภายใน เพื่อระบุปัญหาสำคัญและกำหนดขอบเขตเริ่มต้นของโปรเจกต์<br><br>เนื่องจากยังมีข้อจำกัดในการเก็บข้อมูลโดยตรงจากผู้ใช้ ข้อมูลเหล่านี้จึงถือเป็นความต้องการเบื้องต้นที่ต้องตรวจสอบเพิ่มเติมผ่านข้อเสนอแนะและการทดสอบต้นแบบ"
+        },
+        orgContextHeading: {
+          EN: "Organizational Context",
+          TH: "บริบทขององค์กร (Organizational Context)"
+        },
+        orgContextText: {
+          EN: "The hospital relies on outsourced services for parts of its internal systems, limiting its control over backend data and future system development. This led to the initiative to create an internally managed staff application that centralizes essential workflows for doctors, nurses, and other personnel.",
+          TH: "ปัจจุบันโรงพยาบาลพึ่งพาบริการจากบริษัทภายนอกสำหรับระบบภายในบางส่วน ทำให้มีข้อจำกัดในการควบคุมข้อมูลเบื้องหลังและพัฒนาระบบในอนาคต จึงเกิดแนวคิดในการสร้างแอปพลิเคชันที่โรงพยาบาลสามารถบริหารจัดการเอง และรวบรวมกระบวนการทำงานสำคัญของแพทย์ พยาบาล และบุคลากรอื่นไว้ในระบบเดียว"
+        },
+        findingsHeading: {
+          EN: "Key Workflow Findings",
+          TH: "ปัญหาสำคัญจากกระบวนการทำงาน (Key Workflow Findings)"
+        },
+        findings: {
+          EN: [
+            {
+              num: "01",
+              title: "Attendance",
+              problem: "Staff currently record attendance using fingerprint scanners available at only two locations, often causing rushing and queues during shift changes.",
+              opportunityLabel: "Design opportunity:",
+              opportunity: "Enable mobile check-in and check-out within authorized hospital areas."
+            },
+            {
+              num: "02",
+              title: "E-Consult",
+              problem: "Consultation requests are shared across multiple LINE groups, making it difficult to confirm whether the assigned doctor has reviewed a request—especially in urgent cases.",
+              opportunityLabel: "Design opportunity:",
+              opportunity: "Centralize requests with clear urgency and read-status indicators."
+            },
+            {
+              num: "03",
+              title: "Queue Management",
+              problem: "Some departments lack dedicated queue-calling equipment, making it difficult for nurses to manage patient queues efficiently.",
+              opportunityLabel: "Design opportunity:",
+              opportunity: "Allow nurses to call and manage queues directly from their mobile devices."
+            }
+          ],
+          TH: [
+            {
+              num: "01",
+              title: "การลงเวลาเข้างาน",
+              problem: "ปัจจุบันบุคลากรต้องลงเวลาด้วยเครื่องสแกนลายนิ้วมือซึ่งมีเพียงสองจุด ทำให้ต้องเร่งเดินทางไปยังจุดสแกนและอาจต้องรอคิวในช่วงเปลี่ยนกะ",
+              opportunityLabel: "โอกาสในการออกแบบ:",
+              opportunity: "พัฒนาระบบลงเวลาเข้า–ออกงานผ่านโทรศัพท์มือถือภายในพื้นที่ที่โรงพยาบาลกำหนด"
+            },
+            {
+              num: "02",
+              title: "ระบบ E-Consult",
+              problem: "คำขอปรึกษาแพทย์ถูกส่งผ่านกลุ่ม LINE หลายกลุ่ม ทำให้ตรวจสอบได้ยากว่าแพทย์ผู้รับผิดชอบได้อ่านคำขอแล้วหรือไม่ โดยเฉพาะคำขอที่มีความเร่งด่วน",
+              opportunityLabel: "โอกาสในการออกแบบ:",
+              opportunity: "รวมคำขอปรึกษาไว้ในระบบเดียว พร้อมแสดงระดับความเร่งด่วนและสถานะการอ่านอย่างชัดเจน"
+            },
+            {
+              num: "03",
+              title: "ระบบจัดการคิว",
+              problem: "บางแผนกไม่มีอุปกรณ์สำหรับเรียกคิวโดยเฉพาะ เช่น ไมโครโฟน ลำโพง หรือจอแสดงหมายเลข ทำให้พยาบาลหน้าห้องตรวจจัดการและเรียกคิวผู้ป่วยได้ไม่สะดวก",
+              opportunityLabel: "โอกาสในการออกแบบ:",
+              opportunity: "ช่วยให้พยาบาลสามารถเรียกและจัดการคิวผ่านโทรศัพท์มือถือได้โดยตรง"
+            }
+          ]
+        }
+      },
+      userGroups: {
+        heading: {
+          EN: "User Groups / Role Analysis",
+          TH: "กลุ่มผู้ใช้และการวิเคราะห์บทบาทหน้าที่ (User Groups / Role Analysis)"
+        },
+        intro: {
+          EN: "My SUTH App supports hospital personnel with different responsibilities and access permissions. Based on the initial requirements provided by the project stakeholders, users were grouped by their primary tasks within the application.",
+          TH: "My SUTH App รองรับบุคลากรในโรงพยาบาลที่มีหน้าที่และสิทธิ์การเข้าถึงบริการแตกต่างกัน จาก Requirement เบื้องต้นของ Stakeholder ผู้ใช้จึงถูกแบ่งตามงานหลักที่ต้องดำเนินการภายในแอปพลิเคชัน"
+        },
+        table: {
+          headers: {
+            role: { EN: "User group", TH: "กลุ่มผู้ใช้" },
+            needs: { EN: "Primary needs", TH: "ความต้องการหลัก" },
+            services: { EN: "Key services", TH: "บริการสำคัญ" }
+          },
+          rows: [
+            {
+              role: { EN: "General Staff", TH: "บุคลากรทั่วไป" },
+              needs: {
+                EN: "Complete essential daily staff tasks and access internal information.",
+                TH: "ดำเนินงานประจำวันและเข้าถึงข้อมูลภายในที่จำเป็น"
+              },
+              services: {
+                EN: "Attendance check-in/out, attendance history, notifications, announcements, and profile settings.",
+                TH: "ลงเวลาเข้า–ออกงาน ประวัติการลงเวลา การแจ้งเตือน ข่าวประกาศ และการตั้งค่าโปรไฟล์"
+              }
+            },
+            {
+              role: { EN: "Nurses Assistant", TH: "ผู้ช่วยพยาบาล" },
+              needs: {
+                EN: "Manage patient queues efficiently from outside examination rooms.",
+                TH: "จัดการและเรียกคิวผู้ป่วยหน้าห้องตรวจได้อย่างสะดวก"
+              },
+              services: {
+                EN: "Queue calling and management, emergency notifications, attendance, and shared staff services.",
+                TH: "เรียกและจัดการคิว การแจ้งเตือนเหตุฉุกเฉิน การลงเวลา และบริการพื้นฐานสำหรับบุคลากร"
+              }
+            },
+            {
+              role: { EN: "Doctors", TH: "แพทย์" },
+              needs: {
+                EN: "Review E-Consult requests, recognize urgent cases, and access relevant staff services. In some departments, doctors may also call patient queues themselves.",
+                TH: "เปิดอ่านคำขอ E-Consult รับรู้กรณีเร่งด่วน และเข้าถึงบริการที่เกี่ยวข้อง โดยแพทย์บางแผนกอาจเป็นผู้เรียกคิวด้วยตนเอง"
+              },
+              services: {
+                EN: "E-Consult request viewing, important notifications, queue management where applicable, emergency notifications, attendance, and shared staff services.",
+                TH: "เปิดอ่านคำขอ E-Consult การแจ้งเตือนที่สำคัญ ระบบจัดการคิวในแผนกที่เกี่ยวข้อง การแจ้งเตือนเหตุฉุกเฉิน การลงเวลา และบริการพื้นฐานสำหรับบุคลากร"
+              }
+            }
+          ]
+        },
+        outro: {
+          EN: "All users share the same core navigation and can see the available service menus. Access is controlled according to each user’s role. If a user selects a service outside their permission level, the system displays a clear access-restriction message.<br><br>This behavior was defined as a project requirement to maintain a consistent application structure and simplify the development process across multiple user roles.",
+          TH: "ผู้ใช้ทุกกลุ่มใช้โครงสร้างเมนูหลักร่วมกันและสามารถมองเห็นเมนูบริการภายในแอปได้ แต่สิทธิ์การใช้งานแต่ละบริการจะถูกควบคุมตามบทบาท หากผู้ใช้เลือกบริการที่ไม่มีสิทธิ์เข้าถึง ระบบจะแสดงข้อความแจ้งข้อจำกัดอย่างชัดเจน<br><br>รูปแบบนี้เป็น Requirement ของหัวหน้าโครงการ เพื่อรักษาโครงสร้างแอปให้สอดคล้องกันระหว่างผู้ใช้หลายบทบาท และช่วยลดความซับซ้อนในการพัฒนาระบบ"
+        }
+      },
+      designPriorities: {
+        heading: {
+          EN: "Design Priorities & Decisions",
+          TH: "สิ่งที่ให้ความสำคัญและการตัดสินใจออกแบบ (Design Priorities & Decisions)"
+        },
+        table: {
+          headers: {
+            priority: { EN: "Design priority", TH: "สิ่งที่ให้ความสำคัญ" },
+            decision: { EN: "Design decision", TH: "การตัดสินใจออกแบบ" }
+          },
+          rows: [
+            {
+              priority: { EN: "Quick access to essential workflows", TH: "เข้าถึงงานสำคัญได้รวดเร็ว" },
+              decision: {
+                EN: "The Home screen was designed as a central portal, while the core navigation was limited to Home, Notifications, and Profile.",
+                TH: "ออกแบบหน้าหลักให้เป็น Portal รวมบริการ และจำกัดเมนูหลักไว้ที่หน้าหลัก การแจ้งเตือน และโปรไฟล์"
+              }
+            },
+            {
+              priority: { EN: "Clear status visibility", TH: "มองเห็นสถานะได้อย่างชัดเจน" },
+              decision: {
+                EN: "Queue status, E-Consult urgency and read status, and attendance results were presented with clear labels and visual hierarchy.",
+                TH: "แสดงสถานะคิว ระดับความเร่งด่วนและสถานะการอ่าน E-Consult รวมถึงผลการลงเวลาด้วยข้อความและลำดับการมองเห็นที่ชัดเจน"
+              }
+            },
+            {
+              priority: { EN: "Role-based access", TH: "รองรับสิทธิ์ตามบทบาท" },
+              decision: {
+                EN: "All service menus remain visible to maintain a consistent structure. Permissions are validated when a service is selected, and restricted users receive a clear access message.",
+                TH: "แสดงเมนูบริการภายใต้โครงสร้างเดียวกัน ตรวจสอบสิทธิ์เมื่อเลือกบริการ และแจ้งอย่างชัดเจนเมื่อผู้ใช้ไม่มีสิทธิ์เข้าถึง"
+              }
+            },
+            {
+              priority: { EN: "Mobile accessibility", TH: "รองรับการทำงานผ่านโทรศัพท์มือถือ" },
+              decision: {
+                EN: "Attendance and queue workflows were adapted for mobile use, reducing reliance on fingerprint scanners and dedicated queue-calling equipment.",
+                TH: "ปรับกระบวนการลงเวลาและจัดการคิวให้ทำผ่านมือถือได้ เพื่อลดการพึ่งพาเครื่องสแกนลายนิ้วมือและอุปกรณ์เรียกคิวที่ติดตั้งเฉพาะจุด"
+              }
+            },
+            {
+              priority: { EN: "Consistent system feedback", TH: "แสดงผลตอบกลับของระบบอย่างสม่ำเสมอ" },
+              decision: {
+                EN: "Confirmation, success, error, out-of-zone, and access-restriction states were designed to clearly communicate the result of each action.",
+                TH: "ออกแบบสถานะยืนยัน สำเร็จ ข้อผิดพลาด อยู่นอกพื้นที่ และไม่มีสิทธิ์เข้าถึง เพื่อให้ผู้ใช้เข้าใจผลของการดำเนินการ"
+              }
+            }
+          ]
+        }
+      },
+      queueManagement: {
+        title: {
+          EN: "Queue Management System",
+          TH: "ระบบจัดการคิวผู้ป่วย (Queue Management System)"
+        },
+        challengeLabel: {
+          EN: "Challenge",
+          TH: "ความท้าทาย (Challenge)"
+        },
+        challenge: {
+          EN: "Some departments lack dedicated queue-calling equipment, making it difficult for nurses to manage patient queues outside examination rooms.",
+          TH: "บางแผนกไม่มีอุปกรณ์สำหรับเรียกคิวโดยเฉพาะ ทำให้พยาบาลหน้าห้องตรวจจัดการและเรียกคิวผู้ป่วยได้ไม่สะดวก"
+        },
+        solutionLabel: {
+          EN: "Solution",
+          TH: "ทางออกการออกแบบ (Solution)"
+        },
+        solution: {
+          EN: "A mobile queue-management flow allows staff to identify their station, select an examination room, enter or scan a patient queue, and manage queue calls directly from their phones.",
+          TH: "ระบบจัดการคิวผ่านโทรศัพท์มือถือช่วยให้บุคลากรระบุจุดให้บริการ เลือกห้องตรวจ กรอกหรือสแกนคิวผู้ป่วย และควบคุมการเรียกคิวได้โดยตรงผ่านโทรศัพท์ของตนเอง"
+        },
+        groups: [
+          {
+            num: "01",
+            heading: {
+              EN: "Station & Room Setup",
+              TH: "การตั้งค่าจุดให้บริการและห้องตรวจ"
+            },
+            desc: {
+              EN: "Staff scan their station and select the relevant examination session and room based on the department’s configuration.",
+              TH: "บุคลากรสแกน Station เพื่อระบุจุดให้บริการ จากนั้นเลือกช่วงการตรวจและห้องตรวจที่เกี่ยวข้องตามการตั้งค่าของแต่ละแผนก"
+            },
+            images: [
+              "projects/My SUTH App/queue management/scan-station.png",
+              "projects/My SUTH App/queue management/select-peroid.png"
+            ]
+          },
+          {
+            num: "02",
+            heading: {
+              EN: "Queue Identification",
+              TH: "การระบุคิวผู้ป่วย"
+            },
+            desc: {
+              EN: "Staff can identify a patient by entering the queue number or scanning the visit slip, while the system validates the queue and room status before calling.<br><br>Before calling a queue, the system validates the patient and room status. When a conflict is detected, a clear message explains what happened and guides staff toward the next available action.",
+              TH: "บุคลากรสามารถระบุผู้ป่วยด้วยการกรอกหมายเลขคิวหรือสแกน Visit Slip โดยระบบจะตรวจสอบสถานะของผู้ป่วยและห้องตรวจก่อนดำเนินการเรียกคิว<br><br>ก่อนเรียกคิว ระบบจะตรวจสอบสถานะของผู้ป่วยและห้องตรวจ หากพบข้อมูลหรือสถานะที่ขัดแย้งกัน ระบบจะแจ้งสาเหตุอย่างชัดเจน พร้อมแนะนำการดำเนินการที่เหมาะสมเพื่อให้ผู้ใช้แก้ไขปัญหาและทำงานต่อได้"
+            },
+            mainImages: [
+              "projects/My SUTH App/queue management/call-queue.png",
+              "projects/My SUTH App/queue management/qr-scan.png"
+            ],
+            errorLabel: {
+              EN: "Status Validation & Conflict Handling (Supporting Error States)",
+              TH: "การตรวจสอบสถานะและแจ้งเตือนข้อผิดพลาด (สถานะรองเมื่อเกิดปัญหา)"
+            },
+            errorImages: [
+              "projects/My SUTH App/queue management/room-unavailable.png",
+              "projects/My SUTH App/queue management/qeueu-unavailable.png"
+            ]
+          },
+          {
+            num: "03",
+            heading: {
+              EN: "Queue Controls",
+              TH: "การควบคุมคิว"
+            },
+            desc: {
+              EN: "Patient and room information are displayed in one place, with controls to recall, skip, or proceed to the next queue.",
+              TH: "ข้อมูลผู้ป่วยและห้องตรวจจะแสดงรวมอยู่ในหน้าเดียว พร้อมคำสั่งสำหรับเรียกซ้ำ ข้ามคิว หรือดำเนินการไปยังคิวถัดไป"
+            },
+            images: [
+              "projects/My SUTH App/queue management/detail.png"
+            ]
+          }
+        ]
+      },
+      eConsult: {
+        title: {
+          EN: "E-Consult",
+          TH: "ระบบ E-Consult"
+        },
+        challengeLabel: {
+          EN: "CHALLENGE",
+          TH: "ปัญหาและความท้าทาย (CHALLENGE)"
+        },
+        challenge: {
+          EN: "E-Consult requests form were previously shared across multiple LINE groups, making important requests easy to overlook and difficult for doctors to access in one place.",
+          TH: "เดิมฟอร์มคำขอ E-Consult ถูกส่งผ่านกลุ่ม LINE หลายกลุ่ม ทำให้คำขอสำคัญอาจถูกมองข้าม และแพทย์ไม่สามารถเข้าถึงคำขอได้จากพื้นที่เดียว"
+        },
+        solutionLabel: {
+          EN: "UX SOLUTION",
+          TH: "แนวทางการแก้ปัญหา (UX SOLUTION)"
+        },
+        solution: {
+          EN: "The E-Consult feature centralizes consultation requests and notifies doctors when a new request is received. Notifications are automatically grouped under Important Notifications for quick access.",
+          TH: "ระบบ E-Consult รวบรวมคำขอปรึกษาไว้ในที่เดียว พร้อมแจ้งเตือนแพทย์เมื่อมีคำขอใหม่ โดยการแจ้งเตือนจะถูกจัดเก็บไว้ในหมวดการแจ้งเตือนที่สำคัญเพื่อให้เข้าถึงได้รวดเร็ว"
+        },
+        groups: [
+          {
+            num: "01",
+            heading: {
+              EN: "Request List & Details",
+              TH: "รายการและรายละเอียดคำขอ"
+            },
+            desc: {
+              EN: "Doctors can view E-Consult requests and open each request to review the submitted consultation form and relevant information.",
+              TH: "แพทย์สามารถดูรายการคำขอ E-Consult และเปิดแต่ละรายการเพื่อตรวจสอบฟอร์มคำขอปรึกษาและข้อมูลที่เกี่ยวข้อง"
+            },
+            images: [
+              "projects/My SUTH App/E-consult/e-consult list.png",
+              "projects/My SUTH App/E-consult/form.png"
+            ]
+          },
+          {
+            num: "02",
+            heading: {
+              EN: "Important Notifications",
+              TH: "การแจ้งเตือนที่สำคัญ"
+            },
+            desc: {
+              EN: "New E-Consult alerts are automatically stored under Important Notifications. Doctors can open a notification to access the related request directly without searching through multiple communication channels.",
+              TH: "เมื่อมีคำขอ E-Consult ใหม่ ระบบจะจัดเก็บการแจ้งเตือนไว้ในหมวดการแจ้งเตือนที่สำคัญ แพทย์สามารถกดการแจ้งเตือนเพื่อเปิดคำขอที่เกี่ยวข้องได้โดยตรง โดยไม่ต้องค้นหาจากหลายช่องทางการสื่อสาร"
+            },
+            images: [
+              "projects/My SUTH App/E-consult/notification สำคัญ.png"
+            ]
+          }
+        ]
+      },
+      attendance: {
+        title: {
+          EN: "Attendance Check-in & Check-out",
+          TH: "ระบบลงเวลาเข้า–ออกงาน"
+        },
+        challengeLabel: {
+          EN: "CHALLENGE",
+          TH: "ปัญหาและความท้าทาย (CHALLENGE)"
+        },
+        challenge: {
+          EN: "Hospital personnel currently rely on fingerprint scanners located at only two points, which may cause rushing and queues during shift changes.",
+          TH: "ปัจจุบันบุคลากรต้องลงเวลาด้วยเครื่องสแกนลายนิ้วมือซึ่งมีเพียงสองจุด ทำให้ต้องเร่งเดินทางไปยังจุดสแกนและอาจต้องรอคิวในช่วงเปลี่ยนกะ"
+        },
+        solutionLabel: {
+          EN: "UX SOLUTION",
+          TH: "แนวทางการแก้ปัญหา (UX SOLUTION)"
+        },
+        solution: {
+          EN: "The mobile attendance flow allows staff to check in and out within an authorized hospital area using location verification and secure identity confirmation.",
+          TH: "ระบบลงเวลาผ่านโทรศัพท์มือถือช่วยให้บุคลากรสามารถบันทึกเวลาเข้า–ออกงานภายในพื้นที่ที่โรงพยาบาลกำหนด โดยตรวจสอบตำแหน่งและยืนยันตัวตนก่อนบันทึกรายการ"
+        },
+        groups: [
+          {
+            num: "01",
+            heading: {
+              EN: "Context-Aware Attendance Action",
+              TH: "ปุ่มลงเวลาที่ปรับตามสถานะ"
+            },
+            desc: {
+              EN: "The primary action automatically changes between Check In and Check Out based on the user’s latest attendance record, helping staff identify the correct next action.",
+              TH: "ปุ่มดำเนินการหลักจะเปลี่ยนระหว่าง เข้างาน และ ออกงาน โดยอัตโนมัติตามรายการลงเวลาล่าสุด ช่วยให้บุคลากรทราบว่าควรดำเนินการใดเป็นลำดับถัดไป"
+            },
+            images: [
+              "projects/My SUTH App/check in-check out/clockin.png",
+              "projects/My SUTH App/check in-check out/clockout.png"
+            ]
+          },
+          {
+            num: "02",
+            heading: {
+              EN: "Location Verification",
+              TH: "การตรวจสอบตำแหน่ง"
+            },
+            desc: {
+              EN: "Before recording attendance, the system displays the current date, time, coordinates, and map location to verify that the user is within an authorized area.<br>If the user is outside the permitted zone, a clear message explains the restriction and guides them to enter the authorized area before trying again.",
+              TH: "ก่อนบันทึกเวลา ระบบจะแสดงวันที่ เวลา พิกัด และตำแหน่งบนแผนที่ เพื่อตรวจสอบว่าผู้ใช้อยู่ภายในพื้นที่ที่ได้รับอนุญาต<br>หากผู้ใช้อยู่นอกพื้นที่ ระบบจะแจ้งข้อจำกัดอย่างชัดเจน พร้อมแนะนำให้เข้ามาในพื้นที่ที่กำหนดก่อนทำรายการอีกครั้ง"
+            },
+            mainImages: [
+              "projects/My SUTH App/check in-check out/clockin-GPS.png"
+            ],
+            errorLabel: {
+              EN: "Outside Authorized Area (Restriction Alert)",
+              TH: "อยู่นอกพื้นที่ที่ได้รับอนุญาต (การแจ้งเตือนข้อจำกัด)"
+            },
+            errorImages: [
+              "projects/My SUTH App/check in-check out/warning.png"
+            ]
+          },
+          {
+            num: "03",
+            heading: {
+              EN: "Secure Identity Confirmation",
+              TH: "การยืนยันตัวตนอย่างปลอดภัย"
+            },
+            desc: {
+              EN: "Users confirm their identity using the authentication method enabled in the application, such as Face ID or fingerprint. If biometric authentication is unavailable, the PIN created during registration is used as a fallback.",
+              TH: "ผู้ใช้ยืนยันตัวตนด้วยวิธีที่เปิดใช้งานในแอป เช่น Face ID หรือการสแกนลายนิ้วมือ หากไม่ได้เปิดใช้หรือไม่สามารถใช้การยืนยันทั้ง 2 แบบได้ ระบบจะใช้ PIN ที่สร้างไว้ตั้งแต่ขั้นตอนลงทะเบียนเป็นวิธีสำรอง"
+            },
+            biometricsImages: [
+              "projects/My SUTH App/check in-check out/FaceID.png",
+              "projects/My SUTH App/check in-check out/Finger-print.png"
+            ],
+            fallbackLabel: {
+              EN: "PIN Fallback",
+              TH: "PIN สำรองเมื่อชีวมิติไม่พร้อมใช้งาน"
+            },
+            fallbackImage: "projects/My SUTH App/check in-check out/PIN.png"
+          },
+          {
+            num: "04",
+            heading: {
+              EN: "Confirmation & Attendance History",
+              TH: "การแสดงผลและประวัติการลงเวลา"
+            },
+            desc: {
+              EN: "After successful verification, the system confirms the recorded date and time before returning the user to the attendance page, where the primary action updates automatically.<br><br>The ten most recent records are displayed on the main page. Users can open the complete history and review their attendance as a list, calendar, or selected date range.",
+              TH: "เมื่อยืนยันตัวตนสำเร็จ ระบบจะแสดงวันที่และเวลาที่บันทึก พร้อมกลับไปยังหน้าแรกของเมนู ซึ่งปุ่มดำเนินการจะเปลี่ยนตามสถานะล่าสุดโดยอัตโนมัติ<br><br>หน้าแรกแสดงรายการลงเวลาล่าสุด 10 รายการ และผู้ใช้สามารถเปิดดูประวัติทั้งหมดในรูปแบบรายการ ปฏิทิน หรือเลือกดูตามช่วงวันที่ได้"
+            },
+            images: [
+              "projects/My SUTH App/check in-check out/success.png",
+              "projects/My SUTH App/check in-check out/histortlist.png",
+              "projects/My SUTH App/check in-check out/history-calenda.png"
+            ]
+          }
+        ]
+      },
+      emergencyCode: {
+        title: {
+          EN: "Hospital Emergency Code Alert",
+          TH: "การแจ้งเตือนโค้ดฉุกเฉินของโรงพยาบาล"
+        },
+        challengeLabel: {
+          EN: "CHALLENGE",
+          TH: "ปัญหาและความท้าทาย (CHALLENGE)"
+        },
+        challenge: {
+          EN: "Emergency announcements must communicate the emergency type, location, and time quickly while remaining consistent with the hospital’s existing letter-based code policy.",
+          TH: "การประกาศเหตุฉุกเฉินต้องสื่อสารประเภทของเหตุ สถานที่ และเวลาให้บุคลากรรับรู้ได้อย่างรวดเร็ว พร้อมรักษารูปแบบรหัสตัวอักษรตามนโยบายเดิมของโรงพยาบาล"
+        },
+        solutionLabel: {
+          EN: "UX SOLUTION",
+          TH: "แนวทางการแก้ปัญหา (UX SOLUTION)"
+        },
+        solution: {
+          EN: "A prominent Emergency Code pop-up displays the code, location, time, and essential details in one place, helping hospital staff quickly understand the situation and respond appropriately.",
+          TH: "Popup ประกาศ Emergency Code แสดงประเภทโค้ด สถานที่ เวลา และรายละเอียดสำคัญไว้ในพื้นที่เดียว ช่วยให้บุคลากรเข้าใจสถานการณ์และตอบสนองได้อย่างเหมาะสม"
+        },
+        image: "projects/My SUTH App/emergency code/CODE.png"
+      },
+      coreScreens: {
+        title: {
+          EN: "Core Application Screens",
+          TH: "หน้าจอหลักของแอปพลิเคชัน"
+        },
+        intro: {
+          EN: "The application’s core screens provide a consistent foundation across all staff roles. The Home screen acts as the central dashboard, while Work Systems, Notifications, and Profile support access to services, updates, and personal settings.",
+          TH: "หน้าจอหลักของแอปเป็นโครงสร้างพื้นฐานที่ผู้ใช้ทุกบทบาทใช้งานร่วมกัน โดยหน้าหลักทำหน้าที่เป็น Dashboard กลาง ขณะที่หน้าระบบงาน การแจ้งเตือน และโปรไฟล์ รองรับการเข้าถึงบริการ การติดตามข้อมูล และการตั้งค่าส่วนบุคคล"
+        },
+        home: {
+          num: "01",
+          heading: {
+            EN: "Home Dashboard",
+            TH: "หน้าหลัก"
+          },
+          desc: {
+            EN: "The Home screen brings essential information and frequently used services into one central dashboard. It displays the latest attendance record, pending E-Consult requests for eligible users, unread notifications, and recently used services.<br>By prioritizing recent services, the dashboard helps users return to tools relevant to their work and reduces confusion from repeatedly navigating through services outside their access permissions.",
+            TH: "หน้าหลักรวบรวมข้อมูลสำคัญและบริการที่ใช้บ่อยไว้ใน Dashboard เดียว โดยแสดงรายการลงเวลาเข้า–ออกงานล่าสุด คำขอ E-Consult ที่รอเปิดอ่านสำหรับผู้ใช้ที่มีสิทธิ์ การแจ้งเตือนที่ยังไม่ได้อ่าน และบริการที่ผู้ใช้เพิ่งใช้งาน<br>การจัดลำดับเมนูที่ใช้ล่าสุดช่วยให้ผู้ใช้กลับเข้าสู่เครื่องมือที่เกี่ยวข้องกับงานของตนได้รวดเร็วขึ้น และลดความสับสนจากการค้นหาบริการที่ไม่มีสิทธิ์เข้าถึงซ้ำ ๆ"
+          },
+          image: "projects/My SUTH App/core Screen/HOME.png",
+          annotations: [
+            {
+              num: "01",
+              label: {
+                EN: "Latest Attendance",
+                TH: "การลงเวลาล่าสุด"
+              },
+              desc: {
+                EN: "Displays the user’s most recent check-in or check-out record with access to the complete history.",
+                TH: "แสดงรายการเข้า–ออกงานล่าสุด พร้อมทางลัดไปยังประวัติทั้งหมด"
+              }
+            },
+            {
+              num: "02",
+              label: {
+                EN: "Pending Updates",
+                TH: "รายการที่รอเปิดอ่าน"
+              },
+              desc: {
+                EN: "Highlights unread notifications and pending E-Consult requests based on the user’s role.",
+                TH: "แสดงการแจ้งเตือนและคำขอ E-Consult ที่รอเปิดอ่านตามสิทธิ์ของผู้ใช้"
+              }
+            },
+            {
+              num: "03",
+              label: {
+                EN: "Recent Services",
+                TH: "เมนูที่ใช้ล่าสุด"
+              },
+              desc: {
+                EN: "Provides quick access to services the user has recently used.",
+                TH: "ช่วยให้กลับเข้าสู่บริการที่เพิ่งใช้งานได้อย่างรวดเร็ว"
+              }
+            }
+          ]
+        },
+        supportingSectionTitle: {
+          EN: "Supporting Core Screens",
+          TH: "หน้าจอสนับสนุน"
+        },
+        supportingScreens: [
+          {
+            num: "02",
+            heading: {
+              EN: "Work Systems",
+              TH: "ระบบงาน"
+            },
+            desc: {
+              EN: "Organizes hospital services in one place, allowing staff to access work-related tools while maintaining role-based permissions.",
+              TH: "รวบรวมบริการและเครื่องมือที่เกี่ยวข้องกับการทำงานไว้ในพื้นที่เดียว โดยควบคุมการเข้าถึงตามบทบาทและสิทธิ์ของบุคลากร"
+            },
+            image: "projects/My SUTH App/core Screen/work.png"
+          },
+          {
+            num: "03",
+            heading: {
+              EN: "Notifications",
+              TH: "การแจ้งเตือน"
+            },
+            desc: {
+              EN: "Centralizes important updates and unread items, helping users review information relevant to their work.",
+              TH: "รวบรวมข้อมูลอัปเดต รายการที่ยังไม่ได้อ่าน และการแจ้งเตือนสำคัญ เพื่อให้ผู้ใช้ติดตามข้อมูลที่เกี่ยวข้องกับการทำงานได้จากพื้นที่เดียว"
+            },
+            image: "projects/My SUTH App/core Screen/notification.png"
+          },
+          {
+            num: "04",
+            heading: {
+              EN: "Profile & Settings",
+              TH: "โปรไฟล์และการตั้งค่า"
+            },
+            desc: {
+              EN: "Allows users to manage personal information, security preferences, biometric authentication, and application settings.",
+              TH: "ช่วยให้ผู้ใช้จัดการข้อมูลส่วนบุคคล การตั้งค่าความปลอดภัย การยืนยันตัวตนแบบไบโอเมตริก และการตั้งค่าของแอปพลิเคชัน"
+            },
+            image: "projects/My SUTH App/core Screen/Profile.png"
+          }
+        ]
+      },
+      projectStatus: {
+        title: {
+          EN: "Project Status & Next Steps",
+          TH: "สถานะโครงการและขั้นตอนถัดไป"
+        },
+        badge: {
+          EN: "Ongoing — Prototype Development",
+          TH: "อยู่ระหว่างดำเนินการ — ขั้นพัฒนาต้นแบบ"
+        },
+        intro: {
+          EN: "My SUTH App is an ongoing cooperative education project currently in the prototype development stage. The main workflows have been designed, and selected screens are being implemented in Flutter. The next steps include refining the prototype, gathering additional feedback where possible, and preparing the design for further development and validation.",
+          TH: "My SUTH App เป็นโปรเจกต์สหกิจศึกษาที่ยังอยู่ระหว่างดำเนินการ ปัจจุบันได้ออกแบบกระบวนการหลักแล้ว และกำลังพัฒนาหน้าจอบางส่วนเป็น Flutter Prototype ขั้นตอนถัดไปคือปรับปรุงต้นแบบ เก็บ Feedback เพิ่มเติมเท่าที่สามารถทำได้ และเตรียมดีไซน์สำหรับการพัฒนาและตรวจสอบกับผู้ใช้ต่อไป"
+        },
+        completed: {
+          heading: {
+            EN: "Completed So Far",
+            TH: "สิ่งที่ดำเนินการแล้ว"
+          },
+          items: [
+            {
+              EN: "Main workflows and user flows designed",
+              TH: "ออกแบบกระบวนการหลักและ User Flow"
+            },
+            {
+              EN: "High-fidelity interface screens completed",
+              TH: "ออกแบบหน้าจอ High-fidelity"
+            },
+            {
+              EN: "Selected screens being implemented in Flutter",
+              TH: "เริ่มพัฒนาหน้าจอบางส่วนด้วย Flutter"
+            }
+          ]
+        },
+        nextSteps: {
+          heading: {
+            EN: "Next Steps",
+            TH: "ขั้นตอนถัดไป"
+          },
+          items: [
+            {
+              EN: "Refine the existing prototype",
+              TH: "ปรับปรุงต้นแบบที่มีอยู่"
+            },
+            {
+              EN: "Gather additional feedback where access allows",
+              TH: "เก็บ Feedback เพิ่มเติมตามโอกาสและข้อจำกัดในการเข้าถึงผู้ใช้"
+            },
+            {
+              EN: "Prepare the design for further development and user validation",
+              TH: "เตรียมดีไซน์สำหรับการพัฒนาและตรวจสอบกับผู้ใช้ในขั้นต่อไป"
+            }
+          ]
+        }
       },
       problem: {
         EN: "• Hospital staff need to use multiple systems and platforms to complete their daily tasks.<br>• Important workflows, such as attendance, queue management, appointments, and notifications, can involve too many steps.<br>• Switching between different systems can be time-consuming and inconvenient.<br>• Important information may be missed or delayed during busy working hours.<br>• Complex workflows can increase the chance of errors and reduce overall work efficiency.",
@@ -1108,7 +1747,7 @@ const i18n = {
         {
           title: {
             EN: "2. E-Consult Service",
-            TH: "2. บริการปรึกษาแพทย์ออนไลน์ (E-Consult Service)"
+            TH: "2. บริการอ่านฟอร์มปรึกษาแพทย์ออนไลน์ (E-Consult Service)"
           },
           desc: {
             EN: "An E-Consult system that notifies doctors when consultation requests are submitted from different departments. Each request includes an urgency tag and read status, allowing staff to see whether the assigned doctor has reviewed it. This replaces the previous workflow of sharing consultation forms across multiple group chats, reducing missed requests and unclear follow-up status.",
@@ -2110,6 +2749,624 @@ function renderCaseModal(pid){
     `;
   }).join('');
 
+  let metaHtml = '';
+  if (projI18n?.meta) {
+    const m = projI18n.meta;
+    const l = m.labels;
+    metaHtml = `
+      <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));gap:12px;padding:16px 18px;background:rgba(255,255,255,0.75);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.85);border-radius:18px;box-shadow:0 4px 16px rgba(30,36,50,0.05);margin-top:18px;font-size:13px">
+        <div><b style="color:var(--sky-blue);font:900 10px/1 monospace;display:block;margin-bottom:4px;letter-spacing:.05em">${l.role[lang]}</b><span>${m.role[lang]}</span></div>
+        <div><b style="color:var(--sky-blue);font:900 10px/1 monospace;display:block;margin-bottom:4px;letter-spacing:.05em">${l.team[lang]}</b><span>${m.team[lang]}</span></div>
+        <div><b style="color:var(--sky-blue);font:900 10px/1 monospace;display:block;margin-bottom:4px;letter-spacing:.05em">${l.duration[lang]}</b><span>${m.duration[lang]}</span></div>
+        <div><b style="color:var(--sky-blue);font:900 10px/1 monospace;display:block;margin-bottom:4px;letter-spacing:.05em">${l.tools[lang]}</b><span>${m.tools[lang]}</span></div>
+        <div style="grid-column:1 / -1"><b style="color:var(--sky-blue);font:900 10px/1 monospace;display:block;margin-bottom:4px;letter-spacing:.05em">${l.responsibilities[lang]}</b><span>${m.responsibilities[lang]}</span></div>
+        <div><b style="color:var(--electric-rose);font:900 10px/1 monospace;display:block;margin-bottom:4px;letter-spacing:.05em">${l.status[lang]}</b><span style="display:inline-block;padding:4px 10px;background:rgba(236,23,99,0.12);color:var(--electric-rose);font-weight:900;border-radius:8px;font-size:12px">${m.status[lang]}</span></div>
+        <div><b style="color:var(--sky-blue);font:900 10px/1 monospace;display:block;margin-bottom:4px;letter-spacing:.05em">${l.phase[lang]}</b><span style="display:inline-block;padding:4px 10px;background:rgba(85,104,175,0.12);color:var(--sky-blue);font-weight:900;border-radius:8px;font-size:12px">${m.phase[lang]}</span></div>
+      </div>
+    `;
+  }
+
+  let contextHtml = '';
+  if (projI18n?.contextConstraints) {
+    const cc = projI18n.contextConstraints;
+    const items = cc.items[lang];
+    contextHtml = `
+      <section class="case">
+        <div>
+          <h2><i data-lucide="layers" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${cc.heading[lang]}</h2>
+          <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:20px;margin-top:16px">
+            <ul style="margin:0;padding:0;list-style:none;display:grid;gap:12px">
+              ${items.map(it => `
+                <li style="font-size:15px;line-height:1.7;color:#334155;display:flex;align-items:flex-start;gap:10px">
+                  <span style="color:var(--sky-blue);font-weight:900;font-size:18px;line-height:1;margin-top:2px">•</span>
+                  <span>${it.replace(/^•\s*/, '')}</span>
+                </li>
+              `).join('')}
+            </ul>
+          </div>
+        </div>
+      </section>
+    `;
+  }
+
+  let discoveryHtml = '';
+  if (projI18n?.discovery) {
+    const disc = projI18n.discovery;
+    const findingsList = disc.findings[lang];
+    discoveryHtml = `
+      <section class="case">
+        <div>
+          <h2><i data-lucide="search" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${disc.heading[lang]}</h2>
+          <p style="font-size:15px;line-height:1.7;color:#334155;margin-bottom:24px">${disc.intro[lang]}</p>
+          
+          <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:20px;margin-bottom:28px">
+            <h3 style="font-size:17px;font-weight:900;color:var(--sky-blue);margin:0 0 8px;display:flex;align-items:center;gap:8px">
+              <i data-lucide="building-2" style="width:20px;height:20px"></i>
+              ${disc.orgContextHeading[lang]}
+            </h3>
+            <p style="font-size:14px;line-height:1.75;color:#475569;margin:0">${disc.orgContextText[lang]}</p>
+          </div>
+
+          <h3 style="font-size:18px;font-weight:900;margin:0 0 16px;color:#1e293b">${disc.findingsHeading[lang]}</h3>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:16px">
+            ${findingsList.map(f => `
+              <div style="background:rgba(255,255,255,0.85);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.95);box-shadow:0 6px 20px rgba(30,36,50,0.06);padding:20px;border-radius:18px;display:flex;flex-direction:column;justify-content:space-between">
+                <div>
+                  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
+                    <span style="font:900 13px/1 monospace;color:var(--sunset);background:rgba(255,107,107,0.12);padding:4px 10px;border-radius:8px">${f.num}</span>
+                    <h4 style="font-size:16px;font-weight:800;color:#0f172a;margin:0">${f.title}</h4>
+                  </div>
+                  <p style="font-size:14px;line-height:1.65;color:#475569;margin-bottom:14px">${f.problem}</p>
+                </div>
+                <div style="padding-top:12px;border-top:1px solid rgba(226,232,240,0.8)">
+                  <b style="font-size:12px;color:var(--sky-blue);display:block;margin-bottom:4px">${f.opportunityLabel}</b>
+                  <p style="font-size:13px;line-height:1.6;color:#1e293b;font-weight:600;margin:0">${f.opportunity}</p>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      </section>
+    `;
+  }
+
+  let userGroupsHtml = '';
+  if (projI18n?.userGroups) {
+    const ug = projI18n.userGroups;
+    const tbl = ug.table;
+    userGroupsHtml = `
+      <section class="case">
+        <div>
+          <h2><i data-lucide="users" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${ug.heading[lang]}</h2>
+          <p style="font-size:15px;line-height:1.7;color:#334155;margin-bottom:20px">${ug.intro[lang]}</p>
+          
+          <div style="width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:18px;border:1px solid rgba(226,232,240,0.9);box-shadow:0 6px 20px rgba(30,36,50,0.05);margin-bottom:24px;background:rgba(255,255,255,0.9)">
+            <table style="width:100%;border-collapse:collapse;text-align:left;font-size:14px;min-width:600px">
+              <thead>
+                <tr style="background:rgba(241,245,249,0.9);border-bottom:2px solid rgba(226,232,240,1)">
+                  <th style="padding:14px 18px;font-weight:900;color:var(--sky-blue);width:22%">${tbl.headers.role[lang]}</th>
+                  <th style="padding:14px 18px;font-weight:900;color:#1e293b;width:38%">${tbl.headers.needs[lang]}</th>
+                  <th style="padding:14px 18px;font-weight:900;color:#1e293b;width:40%">${tbl.headers.services[lang]}</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${tbl.rows.map((r, idx) => `
+                  <tr style="border-bottom:${idx === tbl.rows.length - 1 ? 'none' : '1px solid rgba(226,232,240,0.8)'};background:${idx % 2 === 0 ? 'rgba(255,255,255,0.6)' : 'rgba(248,250,252,0.6)'}">
+                    <td style="padding:14px 18px;font-weight:800;color:#0f172a;vertical-align:top">${r.role[lang]}</td>
+                    <td style="padding:14px 18px;line-height:1.65;color:#475569;vertical-align:top">${r.needs[lang]}</td>
+                    <td style="padding:14px 18px;line-height:1.65;color:#334155;vertical-align:top;font-weight:500">${r.services[lang]}</td>
+                  </tr>
+                `).join('')}
+              </tbody>
+            </table>
+          </div>
+
+          <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 6px 20px rgba(30,36,50,0.04);padding:20px 24px;border-radius:18px">
+            <p style="font-size:14px;line-height:1.7;color:#475569;margin:0">${ug.outro[lang]}</p>
+          </div>
+        </div>
+      </section>
+    `;
+  }
+
+  let designPrioritiesHtml = '';
+  if (projI18n?.designPriorities) {
+    const dp = projI18n.designPriorities;
+    const tbl = dp.table;
+    designPrioritiesHtml = `
+      <section class="case">
+        <div>
+          <h2><i data-lucide="compass" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${dp.heading[lang]}</h2>
+          
+          <div style="width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:18px;border:1px solid rgba(226,232,240,0.9);box-shadow:0 6px 20px rgba(30,36,50,0.05);background:rgba(255,255,255,0.9)">
+            <table style="width:100%;border-collapse:collapse;text-align:left;font-size:14px;min-width:600px">
+              <thead>
+                <tr style="background:rgba(241,245,249,0.9);border-bottom:2px solid rgba(226,232,240,1)">
+                  <th style="padding:14px 18px;font-weight:900;color:var(--sky-blue);width:32%">${tbl.headers.priority[lang]}</th>
+                  <th style="padding:14px 18px;font-weight:900;color:#1e293b;width:68%">${tbl.headers.decision[lang]}</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${tbl.rows.map((r, idx) => `
+                  <tr style="border-bottom:${idx === tbl.rows.length - 1 ? 'none' : '1px solid rgba(226,232,240,0.8)'};background:${idx % 2 === 0 ? 'rgba(255,255,255,0.6)' : 'rgba(248,250,252,0.6)'}">
+                    <td style="padding:14px 18px;font-weight:800;color:#0f172a;vertical-align:top;border-right:1px solid rgba(226,232,240,0.6)">${r.priority[lang]}</td>
+                    <td style="padding:14px 18px;line-height:1.65;color:#475569;vertical-align:top">${r.decision[lang]}</td>
+                  </tr>
+                `).join('')}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    `;
+  }
+
+  let queueManagementHtml = '';
+  if (projI18n?.queueManagement) {
+    const qm = projI18n.queueManagement;
+    const g = qm.groups;
+    queueManagementHtml = `
+      <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:24px;margin-bottom:32px">
+        <h3 style="font-size:22px;font-weight:900;color:#0f172a;margin:0 0 16px">${qm.title[lang]}</h3>
+        
+        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:16px;margin-bottom:28px">
+          <div style="background:rgba(241,245,249,0.7);padding:16px 20px;border-radius:16px;border-left:4px solid var(--sunset)">
+            <b style="font-size:12px;color:var(--sunset);display:block;margin-bottom:4px;text-transform:uppercase;letter-spacing:.05em">${qm.challengeLabel[lang]}</b>
+            <p style="font-size:14px;line-height:1.65;color:#334155;margin:0">${qm.challenge[lang]}</p>
+          </div>
+          <div style="background:rgba(241,245,249,0.7);padding:16px 20px;border-radius:16px;border-left:4px solid var(--teal)">
+            <b style="font-size:12px;color:var(--teal);display:block;margin-bottom:4px;text-transform:uppercase;letter-spacing:.05em">${qm.solutionLabel[lang]}</b>
+            <p style="font-size:14px;line-height:1.65;color:#334155;margin:0">${qm.solution[lang]}</p>
+          </div>
+        </div>
+
+        <!-- 01 — Station & Room Setup -->
+        <div style="margin-bottom:32px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+            <span style="font:900 13px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 10px;border-radius:8px">${g[0].num}</span>
+            <h4 style="font-size:18px;font-weight:800;color:#1e293b;margin:0">${g[0].heading[lang]}</h4>
+          </div>
+          <p style="font-size:14px;line-height:1.7;color:#475569;margin-bottom:16px">${g[0].desc[lang]}</p>
+          <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:18px">
+            ${g[0].images.map(img => `
+              <div style="width:100%;max-width:240px;border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(30,36,50,0.12);background:#fff;padding:8px;box-sizing:border-box">
+                <img src="${encodeURI(img)}" alt="${g[0].heading[lang]}" style="width:100%;height:auto;display:block;border-radius:12px;object-fit:contain"/>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+
+        <!-- 02 — Queue Identification -->
+        <div style="margin-bottom:32px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+            <span style="font:900 13px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 10px;border-radius:8px">${g[1].num}</span>
+            <h4 style="font-size:18px;font-weight:800;color:#1e293b;margin:0">${g[1].heading[lang]}</h4>
+          </div>
+          <p style="font-size:14px;line-height:1.7;color:#475569;margin-bottom:16px">${g[1].desc[lang]}</p>
+          
+          <div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:18px">
+            <!-- Main Flow Images -->
+            ${g[1].mainImages.map(img => `
+              <div style="width:100%;max-width:240px;border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(30,36,50,0.12);background:#fff;padding:8px;box-sizing:border-box">
+                <img src="${encodeURI(img)}" alt="${g[1].heading[lang]}" style="width:100%;height:auto;display:block;border-radius:12px;object-fit:contain"/>
+              </div>
+            `).join('')}
+
+            <!-- Supporting Error States (Same size side-by-side with light orange card background) -->
+            <div style="display:flex;flex-direction:column;align-items:center">
+              <b style="font-size:12px;color:var(--sunset);display:block;margin-bottom:6px;text-transform:uppercase;letter-spacing:.03em;text-align:center">${g[1].errorLabel[lang]}</b>
+              <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:18px">
+                ${g[1].errorImages.map(img => `
+                  <div style="width:100%;max-width:240px;border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(30,36,50,0.12);background:#fff7ed;border:1.5px solid rgba(243,120,38,0.35);padding:8px;box-sizing:border-box">
+                    <img src="${encodeURI(img)}" alt="Error State" style="width:100%;height:auto;display:block;border-radius:12px;object-fit:contain"/>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 03 — Queue Controls -->
+        <div>
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+            <span style="font:900 13px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 10px;border-radius:8px">${g[2].num}</span>
+            <h4 style="font-size:18px;font-weight:800;color:#1e293b;margin:0">${g[2].heading[lang]}</h4>
+          </div>
+          <p style="font-size:14px;line-height:1.7;color:#475569;margin-bottom:16px">${g[2].desc[lang]}</p>
+          <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:18px">
+            ${g[2].images.map(img => `
+              <div style="width:100%;max-width:240px;border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(30,36,50,0.12);background:#fff;padding:8px;box-sizing:border-box">
+                <img src="${encodeURI(img)}" alt="${g[2].heading[lang]}" style="width:100%;height:auto;display:block;border-radius:12px;object-fit:contain"/>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+
+      </div>
+    `;
+  }
+
+  let eConsultHtml = '';
+  if (projI18n?.eConsult) {
+    const ec = projI18n.eConsult;
+    const g = ec.groups;
+    eConsultHtml = `
+      <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:24px;margin-bottom:32px">
+        <h3 style="font-size:22px;font-weight:900;color:#0f172a;margin:0 0 16px">${ec.title[lang]}</h3>
+        
+        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:16px;margin-bottom:28px">
+          <div style="background:rgba(241,245,249,0.7);padding:16px 20px;border-radius:16px;border-left:4px solid var(--sunset)">
+            <b style="font-size:12px;color:var(--sunset);display:block;margin-bottom:4px;text-transform:uppercase;letter-spacing:.05em">${ec.challengeLabel[lang]}</b>
+            <p style="font-size:14px;line-height:1.65;color:#334155;margin:0">${ec.challenge[lang]}</p>
+          </div>
+          <div style="background:rgba(241,245,249,0.7);padding:16px 20px;border-radius:16px;border-left:4px solid var(--teal)">
+            <b style="font-size:12px;color:var(--teal);display:block;margin-bottom:4px;text-transform:uppercase;letter-spacing:.05em">${ec.solutionLabel[lang]}</b>
+            <p style="font-size:14px;line-height:1.65;color:#334155;margin:0">${ec.solution[lang]}</p>
+          </div>
+        </div>
+
+        <!-- 01 — Request List & Details -->
+        <div style="margin-bottom:32px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+            <span style="font:900 13px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 10px;border-radius:8px">${g[0].num}</span>
+            <h4 style="font-size:18px;font-weight:800;color:#1e293b;margin:0">${g[0].heading[lang]}</h4>
+          </div>
+          <p style="font-size:14px;line-height:1.7;color:#475569;margin-bottom:16px">${g[0].desc[lang]}</p>
+          <div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:18px">
+            <div style="width:100%;max-width:240px;border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(30,36,50,0.12);background:#fff;padding:8px;box-sizing:border-box">
+              <img src="${encodeURI(g[0].images[0])}" alt="${g[0].heading[lang]}" style="width:100%;height:auto;display:block;border-radius:12px;object-fit:contain"/>
+            </div>
+            
+            <div style="display:flex;align-items:center;justify-content:center;padding:6px;color:var(--sky-blue)">
+              <div style="width:36px;height:36px;border-radius:50%;background:rgba(85,104,175,0.12);display:flex;align-items:center;justify-content:center" title="Request List → Request Details">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </div>
+            </div>
+
+            <div style="width:100%;max-width:240px;border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(30,36,50,0.12);background:#fff;padding:8px;box-sizing:border-box">
+              <img src="${encodeURI(g[0].images[1])}" alt="${g[0].heading[lang]}" style="width:100%;height:auto;display:block;border-radius:12px;object-fit:contain"/>
+            </div>
+          </div>
+        </div>
+
+        <!-- 02 — Important Notifications -->
+        <div>
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+            <span style="font:900 13px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 10px;border-radius:8px">${g[1].num}</span>
+            <h4 style="font-size:18px;font-weight:800;color:#1e293b;margin:0">${g[1].heading[lang]}</h4>
+          </div>
+          <p style="font-size:14px;line-height:1.7;color:#475569;margin-bottom:16px">${g[1].desc[lang]}</p>
+          <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:18px">
+            <div style="width:100%;max-width:240px;border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(30,36,50,0.12);background:#fff;padding:8px;box-sizing:border-box">
+              <img src="${encodeURI(g[1].images[0])}" alt="${g[1].heading[lang]}" style="width:100%;height:auto;display:block;border-radius:12px;object-fit:contain"/>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    `;
+  }
+
+  let otherFeaturesHtml = '';
+  if (pid === 'mysuth-app' && data.features) {
+    otherFeaturesHtml = data.features.slice(5).map((f, idx) => {
+      const realIdx = idx + 5;
+      const isLeft = f.align === 'left' || (realIdx % 2 === 1);
+      const fI18n = projI18n?.features?.[realIdx];
+      const featureTitle = fI18n?.title?.[lang] || f.title;
+      const featureDesc = fI18n?.desc?.[lang] || f.desc;
+      const imgs = (f.images && f.images.length) ? `
+        <div class="feature-img-group">
+          ${f.images.map(img=>`<div class="feature-img-card"><img src="${encodeURI(img)}" alt="${featureTitle}"/></div>`).join('')}
+        </div>
+      ` : '';
+      return `
+        <div class="feature-row ${isLeft ? 'image-left' : 'image-right'}">
+          <div class="feature-text">
+            <h3>${featureTitle}</h3>
+            <p>${featureDesc}</p>
+          </div>
+          ${imgs}
+        </div>
+      `;
+    }).join('');
+  }
+
+  let emergencyCodeHtml = '';
+  if (projI18n?.emergencyCode) {
+    const ec = projI18n.emergencyCode;
+    emergencyCodeHtml = `
+      <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:24px;margin-bottom:32px">
+        <h3 style="font-size:22px;font-weight:900;color:#0f172a;margin:0 0 20px">${ec.title[lang]}</h3>
+        
+        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:24px;align-items:center">
+          <!-- Left Column: Challenge & Solution -->
+          <div style="display:flex;flex-direction:column;gap:16px">
+            <div style="background:rgba(241,245,249,0.7);padding:16px 20px;border-radius:16px;border-left:4px solid var(--sunset)">
+              <b style="font-size:12px;color:var(--sunset);display:block;margin-bottom:4px;text-transform:uppercase;letter-spacing:.05em">${ec.challengeLabel[lang]}</b>
+              <p style="font-size:14px;line-height:1.65;color:#334155;margin:0">${ec.challenge[lang]}</p>
+            </div>
+            <div style="background:rgba(241,245,249,0.7);padding:16px 20px;border-radius:16px;border-left:4px solid var(--teal)">
+              <b style="font-size:12px;color:var(--teal);display:block;margin-bottom:4px;text-transform:uppercase;letter-spacing:.05em">${ec.solutionLabel[lang]}</b>
+              <p style="font-size:14px;line-height:1.65;color:#334155;margin:0">${ec.solution[lang]}</p>
+            </div>
+          </div>
+
+          <!-- Right Column: Emergency Code Pop-up Screenshot -->
+          <div style="display:flex;justify-content:center;align-items:center">
+            <div style="width:100%;max-width:240px;border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(30,36,50,0.12);background:#fff;padding:8px;box-sizing:border-box">
+              <img src="${encodeURI(ec.image)}" alt="${ec.title[lang]}" style="width:100%;height:auto;display:block;border-radius:12px;object-fit:contain"/>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    `;
+  }
+
+  let coreScreensHtml = '';
+  if (projI18n?.coreScreens) {
+    const cs = projI18n.coreScreens;
+    const h = cs.home;
+    const ann = h.annotations;
+    const supp = cs.supportingScreens;
+
+    coreScreensHtml = `
+      <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:24px;margin-bottom:32px">
+        
+        <!-- Section Header -->
+        <h3 style="font-size:22px;font-weight:900;color:#0f172a;margin:0 0 10px">${cs.title[lang]}</h3>
+        <p style="font-size:15px;line-height:1.7;color:#475569;margin-bottom:28px">${cs.intro[lang]}</p>
+
+        <!-- 01 — Home Dashboard (Hero UI) -->
+        <div style="margin-bottom:40px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+            <span style="font:900 13px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 10px;border-radius:8px">${h.num}</span>
+            <h4 style="font-size:18px;font-weight:800;color:#1e293b;margin:0">${h.heading[lang]}</h4>
+          </div>
+          <p style="font-size:14px;line-height:1.7;color:#475569;margin-bottom:24px">${h.desc[lang]}</p>
+
+          <!-- Hero UI + Annotation Area -->
+          <div style="position:relative;background:rgba(248,250,252,0.8);border:1px solid rgba(226,232,240,0.9);border-radius:20px;padding:28px 20px;display:flex;flex-direction:column;align-items:center">
+            
+            <!-- Central Hero Phone Screenshot -->
+            <div style="position:relative;width:100%;max-width:320px;border-radius:20px;overflow:hidden;box-shadow:0 14px 36px rgba(30,36,50,0.16);background:#fff;padding:8px;box-sizing:border-box">
+              <img src="${encodeURI(h.image)}" alt="Home Dashboard" style="width:100%;height:auto;display:block;border-radius:14px;object-fit:contain"/>
+              
+              <!-- Numbered Target Markers Overlaid on Phone Screen -->
+              <div class="annotation-marker" style="position:absolute;top:36%;left:12px;transform:translateY(-50%);width:24px;height:24px;border-radius:50%;background:var(--sunset);color:#fff;font:900 11px/24px monospace;text-align:center;box-shadow:0 2px 8px rgba(255,107,107,0.5);border:2px solid #fff;z-index:3" title="01 — Latest Attendance">01</div>
+              <div class="annotation-marker" style="position:absolute;top:36%;right:12px;transform:translateY(-50%);width:24px;height:24px;border-radius:50%;background:var(--sky-blue);color:#fff;font:900 11px/24px monospace;text-align:center;box-shadow:0 2px 8px rgba(85,104,175,0.5);border:2px solid #fff;z-index:3" title="02 — Pending Updates">02</div>
+              <div class="annotation-marker" style="position:absolute;top:64%;left:12px;transform:translateY(-50%);width:24px;height:24px;border-radius:50%;background:var(--teal);color:#fff;font:900 11px/24px monospace;text-align:center;box-shadow:0 2px 8px rgba(30,190,165,0.5);border:2px solid #fff;z-index:3" title="03 — Recent Services">03</div>
+            </div>
+
+            <!-- Annotation Callout Cards List -->
+            <div style="width:100%;max-width:760px;display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));gap:16px;margin-top:24px">
+              ${ann.map(a => `
+                <div style="background:rgba(255,255,255,0.9);border:1px solid rgba(226,232,240,0.9);border-radius:16px;padding:16px;box-shadow:0 4px 14px rgba(30,36,50,0.04)">
+                  <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+                    <span style="font:900 11px/1 monospace;color:#fff;background:${a.num==='01'?'var(--sunset)':a.num==='02'?'var(--sky-blue)':'var(--teal)'};padding:4px 8px;border-radius:6px">${a.num}</span>
+                    <b style="font-size:14px;color:#0f172a">${a.label[lang]}</b>
+                  </div>
+                  <p style="font-size:13px;line-height:1.6;color:#475569;margin:0">${a.desc[lang]}</p>
+                </div>
+              `).join('')}
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Supporting Core Screens Section -->
+        <div style="border-top:1px solid rgba(226,232,240,0.8);padding-top:28px">
+          <h4 style="font-size:18px;font-weight:900;color:#0f172a;margin:0 0 20px">${cs.supportingSectionTitle[lang]}</h4>
+          
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));gap:20px;align-items:flex-start">
+            ${supp.map(s => `
+              <div style="display:flex;flex-direction:column;align-items:center;text-align:center">
+                <div style="width:100%;max-width:240px;border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(30,36,50,0.12);background:#fff;padding:8px;box-sizing:border-box;margin-bottom:14px">
+                  <img src="${encodeURI(s.image)}" alt="${s.heading[lang]}" style="width:100%;height:auto;display:block;border-radius:12px;object-fit:contain"/>
+                </div>
+                <h5 style="font-size:15px;font-weight:800;color:#1e293b;margin:0 0 6px">${s.heading[lang]}</h5>
+                <p style="font-size:13px;line-height:1.6;color:#475569;margin:0;max-width:260px">${s.desc[lang]}</p>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+
+      </div>
+    `;
+  }
+
+  let attendanceHtml = '';
+  if (projI18n?.attendance) {
+    const att = projI18n.attendance;
+    const g = att.groups;
+    attendanceHtml = `
+      <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:24px;margin-bottom:32px">
+        <h3 style="font-size:22px;font-weight:900;color:#0f172a;margin:0 0 16px">${att.title[lang]}</h3>
+        
+        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:16px;margin-bottom:28px">
+          <div style="background:rgba(241,245,249,0.7);padding:16px 20px;border-radius:16px;border-left:4px solid var(--sunset)">
+            <b style="font-size:12px;color:var(--sunset);display:block;margin-bottom:4px;text-transform:uppercase;letter-spacing:.05em">${att.challengeLabel[lang]}</b>
+            <p style="font-size:14px;line-height:1.65;color:#334155;margin:0">${att.challenge[lang]}</p>
+          </div>
+          <div style="background:rgba(241,245,249,0.7);padding:16px 20px;border-radius:16px;border-left:4px solid var(--teal)">
+            <b style="font-size:12px;color:var(--teal);display:block;margin-bottom:4px;text-transform:uppercase;letter-spacing:.05em">${att.solutionLabel[lang]}</b>
+            <p style="font-size:14px;line-height:1.65;color:#334155;margin:0">${att.solution[lang]}</p>
+          </div>
+        </div>
+
+        <!-- 01 — Context-Aware Attendance Action -->
+        <div style="margin-bottom:32px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+            <span style="font:900 13px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 10px;border-radius:8px">${g[0].num}</span>
+            <h4 style="font-size:18px;font-weight:800;color:#1e293b;margin:0">${g[0].heading[lang]}</h4>
+          </div>
+          <p style="font-size:14px;line-height:1.7;color:#475569;margin-bottom:16px">${g[0].desc[lang]}</p>
+          <div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:18px">
+            <div style="width:100%;max-width:240px;border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(30,36,50,0.12);background:#fff;padding:8px;box-sizing:border-box">
+              <img src="${encodeURI(g[0].images[0])}" alt="${g[0].heading[lang]}" style="width:100%;height:auto;display:block;border-radius:12px;object-fit:contain"/>
+            </div>
+            
+            <div style="display:flex;align-items:center;justify-content:center;padding:6px;color:var(--sky-blue)">
+              <div style="width:36px;height:36px;border-radius:50%;background:rgba(85,104,175,0.12);display:flex;align-items:center;justify-content:center" title="Check In ↔ Check Out">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+              </div>
+            </div>
+
+            <div style="width:100%;max-width:240px;border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(30,36,50,0.12);background:#fff;padding:8px;box-sizing:border-box">
+              <img src="${encodeURI(g[0].images[1])}" alt="${g[0].heading[lang]}" style="width:100%;height:auto;display:block;border-radius:12px;object-fit:contain"/>
+            </div>
+          </div>
+        </div>
+
+        <!-- 02 — Location Verification -->
+        <div style="margin-bottom:32px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+            <span style="font:900 13px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 10px;border-radius:8px">${g[1].num}</span>
+            <h4 style="font-size:18px;font-weight:800;color:#1e293b;margin:0">${g[1].heading[lang]}</h4>
+          </div>
+          <p style="font-size:14px;line-height:1.7;color:#475569;margin-bottom:16px">${g[1].desc[lang]}</p>
+          
+          <div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:18px">
+            <!-- Main Flow Image -->
+            <div style="width:100%;max-width:240px;border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(30,36,50,0.12);background:#fff;padding:8px;box-sizing:border-box">
+              <img src="${encodeURI(g[1].mainImages[0])}" alt="${g[1].heading[lang]}" style="width:100%;height:auto;display:block;border-radius:12px;object-fit:contain"/>
+            </div>
+
+            <!-- Error State Card (Same size side-by-side with light orange background) -->
+            <div style="display:flex;flex-direction:column;align-items:center">
+              <b style="font-size:12px;color:var(--sunset);display:block;margin-bottom:6px;text-transform:uppercase;letter-spacing:.03em;text-align:center">${g[1].errorLabel[lang]}</b>
+              <div style="width:100%;max-width:240px;border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(30,36,50,0.12);background:#fff7ed;border:1.5px solid rgba(243,120,38,0.35);padding:8px;box-sizing:border-box">
+                <img src="${encodeURI(g[1].errorImages[0])}" alt="Outside Authorized Area" style="width:100%;height:auto;display:block;border-radius:12px;object-fit:contain"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 03 — Secure Identity Confirmation -->
+        <div style="margin-bottom:32px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+            <span style="font:900 13px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 10px;border-radius:8px">${g[2].num}</span>
+            <h4 style="font-size:18px;font-weight:800;color:#1e293b;margin:0">${g[2].heading[lang]}</h4>
+          </div>
+          <p style="font-size:14px;line-height:1.7;color:#475569;margin-bottom:16px">${g[2].desc[lang]}</p>
+          
+          <div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:16px">
+            <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px">
+              <div style="width:100%;max-width:240px;border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(30,36,50,0.12);background:#fff;padding:8px;box-sizing:border-box">
+                <img src="${encodeURI(g[2].biometricsImages[0])}" alt="Face ID" style="width:100%;height:auto;display:block;border-radius:12px;object-fit:contain"/>
+              </div>
+              <div style="width:100%;max-width:240px;border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(30,36,50,0.12);background:#fff;padding:8px;box-sizing:border-box">
+                <img src="${encodeURI(g[2].biometricsImages[1])}" alt="Fingerprint" style="width:100%;height:auto;display:block;border-radius:12px;object-fit:contain"/>
+              </div>
+            </div>
+
+            <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:4px;color:var(--sky-blue)">
+              <span style="font:900 10px/1 monospace;color:var(--sky-blue);margin-bottom:4px;letter-spacing:.05em">${g[2].fallbackLabel[lang]}</span>
+              <div style="width:32px;height:32px;border-radius:50%;background:rgba(85,104,175,0.12);display:flex;align-items:center;justify-content:center">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </div>
+            </div>
+
+            <div style="width:100%;max-width:240px;border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(30,36,50,0.12);background:#fff;padding:8px;box-sizing:border-box">
+              <img src="${encodeURI(g[2].fallbackImage)}" alt="PIN Fallback" style="width:100%;height:auto;display:block;border-radius:12px;object-fit:contain"/>
+            </div>
+          </div>
+        </div>
+
+        <!-- 04 — Confirmation & Attendance History -->
+        <div>
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+            <span style="font:900 13px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 10px;border-radius:8px">${g[3].num}</span>
+            <h4 style="font-size:18px;font-weight:800;color:#1e293b;margin:0">${g[3].heading[lang]}</h4>
+          </div>
+          <p style="font-size:14px;line-height:1.7;color:#475569;margin-bottom:16px">${g[3].desc[lang]}</p>
+          
+          <div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:18px">
+            <!-- Confirmation -->
+            <div style="width:100%;max-width:240px;border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(30,36,50,0.12);background:#fff;padding:8px;box-sizing:border-box">
+              <img src="${encodeURI(g[3].images[0])}" alt="Confirmation" style="width:100%;height:auto;display:block;border-radius:12px;object-fit:contain"/>
+            </div>
+
+            <!-- Flow Arrow -->
+            <div style="display:flex;align-items:center;justify-content:center;padding:6px;color:var(--sky-blue)">
+              <div style="width:36px;height:36px;border-radius:50%;background:rgba(85,104,175,0.12);display:flex;align-items:center;justify-content:center">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </div>
+            </div>
+
+            <!-- History List -->
+            <div style="width:100%;max-width:240px;border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(30,36,50,0.12);background:#fff;padding:8px;box-sizing:border-box">
+              <img src="${encodeURI(g[3].images[1])}" alt="History List" style="width:100%;height:auto;display:block;border-radius:12px;object-fit:contain"/>
+            </div>
+
+            <!-- History Calendar -->
+            <div style="width:100%;max-width:240px;border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(30,36,50,0.12);background:#fff;padding:8px;box-sizing:border-box">
+              <img src="${encodeURI(g[3].images[2])}" alt="History Calendar" style="width:100%;height:auto;display:block;border-radius:12px;object-fit:contain"/>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    `;
+  }
+  let projectStatusHtml = '';
+  if (projI18n?.projectStatus) {
+    const ps = projI18n.projectStatus;
+    const comp = ps.completed;
+    const nxt = ps.nextSteps;
+
+    projectStatusHtml = `
+      <section class="case">
+        <div>
+          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:16px">
+            <h2 style="margin:0"><i data-lucide="clock" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${ps.title[lang]}</h2>
+            <span style="display:inline-block;padding:5px 14px;background:rgba(85,104,175,0.12);color:var(--sky-blue);font-weight:800;border-radius:10px;font-size:13px">${ps.badge[lang]}</span>
+          </div>
+
+          <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:24px">
+            <p style="font-size:15px;line-height:1.75;color:#334155;margin:0 0 24px">${ps.intro[lang]}</p>
+
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:20px">
+              <!-- Completed So Far -->
+              <div style="background:rgba(241,245,249,0.7);padding:20px;border-radius:18px;border-left:4px solid var(--teal)">
+                <h4 style="font-size:16px;font-weight:900;color:#0f172a;margin:0 0 14px;display:flex;align-items:center;gap:8px">
+                  <i data-lucide="check-circle-2" style="width:20px;height:20px;color:var(--teal)"></i>
+                  ${comp.heading[lang]}
+                </h4>
+                <ul style="margin:0;padding:0;list-style:none;display:grid;gap:10px">
+                  ${comp.items.map(it => `
+                    <li style="font-size:14px;line-height:1.6;color:#334155;display:flex;align-items:flex-start;gap:8px">
+                      <span style="color:var(--teal);font-weight:900;line-height:1">•</span>
+                      <span>${it[lang]}</span>
+                    </li>
+                  `).join('')}
+                </ul>
+              </div>
+
+              <!-- Next Steps -->
+              <div style="background:rgba(241,245,249,0.7);padding:20px;border-radius:18px;border-left:4px solid var(--sky-blue)">
+                <h4 style="font-size:16px;font-weight:900;color:#0f172a;margin:0 0 14px;display:flex;align-items:center;gap:8px">
+                  <i data-lucide="arrow-right-circle" style="width:20px;height:20px;color:var(--sky-blue)"></i>
+                  ${nxt.heading[lang]}
+                </h4>
+                <ul style="margin:0;padding:0;list-style:none;display:grid;gap:10px">
+                  ${nxt.items.map(it => `
+                    <li style="font-size:14px;line-height:1.6;color:#334155;display:flex;align-items:flex-start;gap:8px">
+                      <span style="color:var(--sky-blue);font-weight:900;line-height:1">•</span>
+                      <span>${it[lang]}</span>
+                    </li>
+                  `).join('')}
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    `;
+  }
+
   shell.innerHTML=`
     ${tabsHtml}
     <section class="hero">
@@ -2129,72 +3386,80 @@ function renderCaseModal(pid){
             </a>
           ` : ''}
         </div>
-        <p class="lead">${modalOverview}</p>
+        <p class="lead" style="font-size:15px;line-height:1.75;margin-bottom:0">${modalOverview}</p>
+        ${metaHtml}
       </div>
       <div class="case-cover-frame">
         <img src="${data.coverImage}" alt="${modalTitle}" class="case-cover-img"/>
       </div>
     </section>
-    <section class="case">
-      <div>
-        <h2><i data-lucide="alert-circle" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sunset)"></i>${modalProblemHeading}</h2>
-        <p style="font-size:16px;line-height:1.6">${modalProblem}</p>
-      </div>
-    </section>
-    <section class="case">
-      <div>
-        <h2><i data-lucide="users" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${modalPersonaHeading}</h2>
-        ${data.personaImage ? `
-          <div style="width:100%;border-radius:20px;overflow:hidden;box-shadow:0 12px 32px rgba(30,36,50,0.14);margin-bottom:20px;background:rgba(255,255,255,0.9);padding:10px;box-sizing:border-box">
-            <img src="${encodeURI(data.personaImage)}" alt="${modalPersonaName}" style="width:100%;height:auto;display:block;border-radius:14px;object-fit:contain"/>
-          </div>
-        ` : ''}
-        ${modalPersonaDesc ? `
-          <div class="persona-card">
-            <h4>${modalPersonaName}</h4>
-            <p style="font-size:15px;line-height:1.7;color:#475569;margin-top:6px">${modalPersonaDesc}</p>
-          </div>
-        ` : `
-          <div class="persona-card">
-            <h4>${modalPersonaName}</h4>
-            <p><b>${lang==='TH'?'เป้าหมาย (Goals):':'Goals:'}</b> ${modalPersonaGoals}</p>
-            <p><b>${lang==='TH'?'ข้อจำกัดและความไม่สะดวก (Frustrations):':'Frustrations:'}</b> ${modalPersonaFrustrations}</p>
-          </div>
-        `}
-      </div>
-    </section>
-    ${data.userJourney ? `
+    ${contextHtml}
+    ${discoveryHtml}
+    ${userGroupsHtml}
+    ${designPrioritiesHtml}
+    ${pid !== 'mysuth-app' ? `
       <section class="case">
         <div>
-          <h2><i data-lucide="map" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${modalUserJourneyHeading}</h2>
-          <div style="width:100%;border-radius:20px;overflow:hidden;box-shadow:0 12px 32px rgba(30,36,50,0.14);margin-top:14px;background:rgba(255,255,255,0.9);padding:10px;box-sizing:border-box">
-            <img src="${encodeURI(data.userJourney.image)}" alt="Goal Flame User Journey Map" style="width:100%;height:auto;display:block;border-radius:14px;object-fit:contain"/>
-          </div>
-          <p style="font-size:15px;line-height:1.75;color:#475569;margin-top:16px;background:rgba(255,255,255,0.75);backdrop-filter:blur(12px);padding:18px 22px;border-radius:16px;border:1px solid rgba(85,104,175,0.18);box-shadow:0 8px 24px rgba(0,0,0,0.04)">
-            <b>${lang==='TH'?'สรุปผลการเดินทาง (Journey Summary):':'Journey Summary:'}</b> ${modalUserJourneySummary}
-          </p>
+          <h2><i data-lucide="alert-circle" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sunset)"></i>${modalProblemHeading}</h2>
+          <p style="font-size:16px;line-height:1.6">${modalProblem}</p>
         </div>
       </section>
-    ` : ''}
-    ${data.results ? `
       <section class="case">
         <div>
-          <h2><i data-lucide="sparkles" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--teal)"></i>${modalResultsHeading}</h2>
-          <p style="font-size:16px;line-height:1.7;color:#475569;margin-bottom:14px">${modalResultsDesc}</p>
-          ${modalResultsHighlights ? `
-            <div style="font-size:15px;line-height:1.75;color:var(--ink);background:rgba(255,255,255,0.75);backdrop-filter:blur(12px);padding:20px;border-radius:18px;border:1px solid rgba(85,104,175,0.18);box-shadow:0 8px 24px rgba(0,0,0,0.04)">
-              ${modalResultsHighlights.join('<br><br>')}
+          <h2><i data-lucide="users" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${modalPersonaHeading}</h2>
+          ${data.personaImage ? `
+            <div style="width:100%;border-radius:20px;overflow:hidden;box-shadow:0 12px 32px rgba(30,36,50,0.14);margin-bottom:20px;background:rgba(255,255,255,0.9);padding:10px;box-sizing:border-box">
+              <img src="${encodeURI(data.personaImage)}" alt="${modalPersonaName}" style="width:100%;height:auto;display:block;border-radius:14px;object-fit:contain"/>
             </div>
           ` : ''}
+          ${modalPersonaDesc ? `
+            <div class="persona-card">
+              <h4>${modalPersonaName}</h4>
+              <p style="font-size:15px;line-height:1.7;color:#475569;margin-top:6px">${modalPersonaDesc}</p>
+            </div>
+          ` : `
+            <div class="persona-card">
+              <h4>${modalPersonaName}</h4>
+              <p><b>${lang==='TH'?'เป้าหมาย (Goals):':'Goals:'}</b> ${modalPersonaGoals}</p>
+              <p><b>${lang==='TH'?'ข้อจำกัดและความไม่สะดวก (Frustrations):':'Frustrations:'}</b> ${modalPersonaFrustrations}</p>
+            </div>
+          `}
         </div>
       </section>
+      ${data.userJourney ? `
+        <section class="case">
+          <div>
+            <h2><i data-lucide="map" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${modalUserJourneyHeading}</h2>
+            <div style="width:100%;border-radius:20px;overflow:hidden;box-shadow:0 12px 32px rgba(30,36,50,0.14);margin-top:14px;background:rgba(255,255,255,0.9);padding:10px;box-sizing:border-box">
+              <img src="${encodeURI(data.userJourney.image)}" alt="Goal Flame User Journey Map" style="width:100%;height:auto;display:block;border-radius:14px;object-fit:contain"/>
+            </div>
+            <p style="font-size:15px;line-height:1.75;color:#475569;margin-top:16px;background:rgba(255,255,255,0.75);backdrop-filter:blur(12px);padding:18px 22px;border-radius:16px;border:1px solid rgba(85,104,175,0.18);box-shadow:0 8px 24px rgba(0,0,0,0.04)">
+              <b>${lang==='TH'?'สรุปผลการเดินทาง (Journey Summary):':'Journey Summary:'}</b> ${modalUserJourneySummary}
+            </p>
+          </div>
+        </section>
+      ` : ''}
+      ${data.results ? `
+        <section class="case">
+          <div>
+            <h2><i data-lucide="sparkles" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--teal)"></i>${modalResultsHeading}</h2>
+            <p style="font-size:16px;line-height:1.7;color:#475569;margin-bottom:14px">${modalResultsDesc}</p>
+            ${modalResultsHighlights ? `
+              <div style="font-size:15px;line-height:1.75;color:var(--ink);background:rgba(255,255,255,0.75);backdrop-filter:blur(12px);padding:20px;border-radius:18px;border:1px solid rgba(85,104,175,0.18);box-shadow:0 8px 24px rgba(0,0,0,0.04)">
+                ${modalResultsHighlights.join('<br><br>')}
+              </div>
+            ` : ''}
+          </div>
+        </section>
+      ` : ''}
     ` : ''}
     <section class="case">
       <div>
         <h2><i data-lucide="layers" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${modalFeatureHeading}</h2>
-        ${featuresHtml}
+        ${pid === 'mysuth-app' ? (queueManagementHtml + eConsultHtml + attendanceHtml + emergencyCodeHtml + coreScreensHtml + otherFeaturesHtml) : featuresHtml}
       </div>
     </section>
+    ${projectStatusHtml}
   `;
 
   shell.querySelectorAll('[data-switch-project]').forEach(btn=>{
