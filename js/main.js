@@ -39,7 +39,7 @@ const i18n = {
     },
     lead: {
       EN: "A UX/UI Designer passionate about turning ideas and real-world challenges into thoughtful, user-centered digital experiences, with a focus on creating simple and intuitive interfaces.",
-      TH: "นักออกแบบ UX/UI ที่สนุกกับการเปลี่ยนไอเดียและโจทย์ในชีวิตจริงให้กลายเป็นประสบการณ์ดิจิทัลที่ใส่ใจผู้ใช้ โดยเน้นการออกแบบอินเทอร์เฟซที่เรียบง่ายและใช้งานง่าย"
+      TH: "UX/UI ที่สนุกกับการเปลี่ยนไอเดียและโจทย์ในชีวิตจริงให้กลายเป็นประสบการณ์ดิจิทัลที่ใส่ใจผู้ใช้ โดยเน้นการออกแบบอินเทอร์เฟซที่เรียบง่ายและใช้งานง่าย"
     }
   },
   about: {
@@ -53,7 +53,7 @@ const i18n = {
     },
     lead: {
       EN: "UX/UI Designer with hands-on experience from digital projects such as My SUTH App, SUT Dorm, and Goal Management. Skilled in UX/UI and Visual Design, including logo design, posters, infographics, and magazine layouts, with a strong interest in continuing to learn and grow through opportunities such as Hackathons and Startup Thailand League.",
-      TH: "นักออกแบบ UX/UI ที่มีประสบการณ์จากการทำโปรเจกต์ดิจิทัล เช่น My SUTH App, SUT Dorm และ Goal Management มีทักษะด้าน UX/UI และ Visual Design รวมถึงงานออกแบบโลโก้ โปสเตอร์ อินโฟกราฟิก และนิตยสาร พร้อมเปิดรับโอกาสในการเรียนรู้และพัฒนาทักษะผ่านกิจกรรม Hackathon และ Startup Thailand League"
+      TH: "UX/UI ที่มีประสบการณ์จากการทำโปรเจกต์ดิจิทัล เช่น My SUTH App, SUT Dorm และ Goal Management มีทักษะด้าน UX/UI และ Visual Design รวมถึงงานออกแบบโลโก้ โปสเตอร์ อินโฟกราฟิก และนิตยสาร พร้อมเปิดรับโอกาสในการเรียนรู้และพัฒนาทักษะผ่านกิจกรรม Hackathon และ Startup Thailand League"
     },
     eduTitle: {
       EN: "EDUCATION",
