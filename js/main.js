@@ -166,8 +166,8 @@ const i18n = {
           TH: "ปรับปรุง UX / ระบบจัดการหอพัก"
         },
         title: {
-          EN: "Smart Dormitory System",
-          TH: "ระบบจัดการหอพักอัจฉริยะ"
+          EN: "Dormitory System",
+          TH: "ระบบจัดการหอพัก"
         },
         desc: {
           EN: "“A smarter way to manage dormitory life.”",
@@ -176,8 +176,8 @@ const i18n = {
       },
       "kiosk-app": {
         tag: {
-          EN: "INTERACTION DESIGN / WAYFINDING / KIOSK",
-          TH: "อินเทอร์เฟซคีออส / การนำทาง / คีออสอัจฉริยะ"
+          EN: "INTERACTION DESIGN / WAYFINDING / REDESIGN",
+          TH: "ตู้คีออส / การนำทาง / ออกแบบใหม่"
         },
         title: {
           EN: "Kiosk Redesign",
@@ -396,8 +396,8 @@ const i18n = {
       TH: "กลุ่มผู้ใช้งานเป้าหมาย (Target User)"
     },
     featureHeading: {
-      EN: "Key UX Solutions &amp; UI Design",
-      TH: "ฟีเจอร์หลักและการออกแบบ UI/UX"
+      EN: "Key UX Solutions & UI Design",
+      TH: "แนวทางการแก้ปัญหา UX และการออกแบบ UI"
     },
     tabs: {
       mysuth: {
@@ -409,8 +409,8 @@ const i18n = {
         TH: "02 / แอปจัดการเป้าหมาย"
       },
       dormitory: {
-        EN: "03 / SMART DORMITORY",
-        TH: "03 / หอพักอัจฉริยะ"
+        EN: "03 / SUT DORMITORY",
+        TH: "03 / หอพักนักศึกษา"
       },
       kiosk: {
         EN: "04 / KIOSK REDESIGN",
@@ -629,7 +629,7 @@ const i18n = {
         table: {
           headers: {
             priority: { EN: "Design priority", TH: "สิ่งที่ให้ความสำคัญ" },
-            decision: { EN: "Design decision", TH: "การตัดสินใจออกแบบ" }
+            decision: { EN: "Design decision", TH: "สิ่งที่ต้องการออกแบบ" }
           },
           rows: [
             {
@@ -1104,8 +1104,8 @@ const i18n = {
         ]
       },
       featureHeading: {
-        EN: "Key UX Solutions &amp; UI Design",
-        TH: "ฟีเจอร์หลักและการออกแบบ UI/UX"
+        EN: "Key UX Solutions & UI Design",
+        TH: "แนวทางการแก้ปัญหา UX และการออกแบบ UI"
       },
       features: [
         {
@@ -1566,7 +1566,7 @@ const i18n = {
             ]
           },
           {
-            num: "04",
+            num: "4",
             type: "dashboard",
             title: {
               EN: "Seeing Progress Beyond Today",
@@ -1796,16 +1796,521 @@ const i18n = {
     },
     dormitoryApp: {
       title: {
-        EN: "Smart Dormitory Management System",
-        TH: "ระบบจัดการหอพักนักศึกษาอัจฉริยะ"
+        EN: "Dormitory Management System",
+        TH: "ระบบจัดการหอพักนักศึกษา"
       },
       subtitle: {
         EN: "“A smarter way to manage dormitory life.”",
         TH: "“ยกระดับการใช้ชีวิตในหอพักให้สะดวกยิ่งขึ้น”"
       },
       overview: {
-        EN: "Redesigning the university dormitory website into a comprehensive management application featuring payment reminders, document tracking, room booking filter, and utility notifications.",
-        TH: "การปรับปรุงเว็บไซต์หอพักนักศึกษามหาวิทยาลัยให้กลายเป็นแอปพลิเคชันจัดการหอพักที่ครอบคลุม พร้อมด้วยระบบแจ้งเตือนการชำระเงิน ติดตามเอกสาร ตัวกรองจองห้องพัก และการแจ้งเตือนค่าน้ำ-ค่าไฟ"
+        EN: "A UX/UI redesign that transforms the existing SUT dormitory website into a centralized mobile application. Informed by a survey of 67 students, the concept brings essential dormitory information, requests, expenses, announcements, and services into one more accessible experience.",
+        TH: "โปรเจกต์ UX/UI Redesign ที่ปรับปรุงเว็บไซต์หอพักเดิมของ มทส. ให้เป็น Mobile Application โดยพัฒนาจากข้อมูลแบบสอบถามนักศึกษา 67 คน เพื่อรวมข้อมูล คำร้อง ค่าใช้จ่าย ข่าวสาร และบริการสำคัญของหอพักไว้ในประสบการณ์ที่เข้าถึงได้สะดวกยิ่งขึ้น"
+      },
+      meta: {
+        role: {
+          EN: "UX/UI Designer",
+          TH: "UX/UI Designer"
+        },
+        team: {
+          EN: "5 UX/UI Designers",
+          TH: "UX/UI Designer 5 คน"
+        },
+        duration: {
+          EN: "3 months",
+          TH: "3 เดือน"
+        },
+        responsibilities: {
+          EN: "User Research, Requirement Analysis, User Flow, Information Architecture, Wireframing, High-fidelity UI Design, Prototyping, Presentation, and Design Iteration",
+          TH: "ทำแบบสอบถามและวิเคราะห์ข้อมูล ระบุความต้องการของผู้ใช้ ออกแบบ User Flow และ Information Architecture จัดทำ Wireframe ออกแบบหน้าจอ High-fidelity สร้าง Prototype นำเสนอผลงาน และปรับปรุงดีไซน์ตาม Feedback"
+        },
+        tools: {
+          EN: "Figma, Google Forms",
+          TH: "Figma, Google Forms"
+        },
+        labels: {
+          role: { EN: "Role", TH: "บทบาท" },
+          team: { EN: "Team", TH: "ทีม" },
+          duration: { EN: "Duration", TH: "ระยะเวลา" },
+          responsibilities: { EN: "Responsibilities", TH: "หน้าที่รับผิดชอบ" },
+          tools: { EN: "Tools", TH: "เครื่องมือ" }
+        }
+      },
+      contextConstraints: {
+        heading: {
+          EN: "Context & Existing Experience",
+          TH: "บริบทและประสบการณ์ใช้งานเดิม"
+        },
+        items: {
+          EN: [
+            "Important dormitory tasks are used occasionally but are often time-sensitive.",
+            "Students need to return to the website to check announcements and application results.",
+            "Request and form statuses are not always visible at a glance.",
+            "Information about expenses, activities, and dormitory points is not centralized.",
+            "The existing experience provides limited proactive notifications for important updates."
+          ],
+          TH: [
+            "บริการหอพักไม่ได้ถูกใช้งานบ่อย แต่หลายรายการมีกรอบเวลาที่สำคัญ",
+            "นักศึกษาต้องกลับเข้าสู่เว็บไซต์เพื่อตรวจสอบข่าวสารและผลการดำเนินการด้วยตนเอง",
+            "สถานะของแบบฟอร์มและคำร้องยังไม่สามารถมองเห็นได้อย่างรวดเร็ว",
+            "ข้อมูลค่าใช้จ่าย กิจกรรม และคะแนนหอพักยังไม่ได้รวบรวมไว้ในพื้นที่เดียว",
+            "ประสบการณ์เดิมยังมีข้อจำกัดด้านการแจ้งเตือนข้อมูลสำคัญให้ผู้ใช้ทราบล่วงหน้า"
+          ]
+        }
+      },
+      researchRequirement: {
+        heading: {
+          EN: "Research & Requirement Gathering",
+          TH: "การศึกษาผู้ใช้และรวบรวมความต้องการ"
+        },
+        summaryParagraphs: {
+          EN: [
+            "An online questionnaire was conducted with <span style=\"color:var(--sky-blue);font-weight:800\">67 SUT students</span> to understand their experience with the existing dormitory website, the tasks they commonly perform, and the information or services they would like to access more easily.",
+            "The participants included 47 women, 14 men, and 6 respondents who did not specify their gender. Most respondents were first-year students, followed by students in their second, third, and fourth years.",
+            "<span style=\"color:var(--sky-blue);font-weight:800\">91% of respondents</span> had previously used the dormitory website. Most accessed it approximately once a month, suggesting that the platform was not used frequently but remained important for specific dormitory-related tasks."
+          ],
+          TH: [
+            "โปรเจกต์นี้เก็บข้อมูลผ่านแบบสอบถามออนไลน์จาก<span style=\"color:var(--sky-blue);font-weight:800\">นักศึกษา มทส. จำนวน 67 คน</span> เพื่อทำความเข้าใจประสบการณ์การใช้เว็บไซต์หอพักเดิม รายการที่นักศึกษาใช้งานเป็นประจำ และข้อมูลหรือบริการที่ต้องการเข้าถึงได้สะดวกยิ่งขึ้น",
+            "ผู้ตอบแบบสอบถามประกอบด้วยเพศหญิง 47 คน เพศชาย 14 คน และไม่ระบุเพศ 6 คน โดยผู้ตอบส่วนใหญ่เป็นนักศึกษาชั้นปีที่ 1 รองลงมาคือชั้นปีที่ 2 ชั้นปีที่ 3 และชั้นปีที่ 4",
+            "<span style=\"color:var(--sky-blue);font-weight:800\">91% ของผู้ตอบ</span>เคยใช้งานเว็บไซต์หอพัก และส่วนใหญ่เข้าใช้งานประมาณเดือนละ 1 ครั้ง สะท้อนว่าระบบไม่ได้ถูกใช้งานบ่อย แต่ยังมีความสำคัญสำหรับการทำรายการเกี่ยวกับหอพักในบางช่วงเวลา"
+          ]
+        },
+        findings: {
+          items: {
+            EN: [
+              {
+                percentage: "76.1%",
+                desc: "Confirmed their eligibility to remain in the dormitory for the following semester."
+              },
+              {
+                percentage: "73.1%",
+                desc: "Used the website to apply for dormitory accommodation."
+              },
+              {
+                percentage: "50.7%",
+                desc: "Used it to check resident lists or accommodation information."
+              }
+            ],
+            TH: [
+              {
+                percentage: "76.1%",
+                desc: "ใช้ยืนยันสิทธิ์อยู่หอพักต่อในภาคการศึกษาถัดไป"
+              },
+              {
+                percentage: "73.1%",
+                desc: "ใช้สมัครหอพัก"
+              },
+              {
+                percentage: "50.7%",
+                desc: "ใช้ตรวจสอบรายชื่อผู้พักหรือข้อมูลการเข้าพัก"
+              }
+            ]
+          },
+          footnote: {
+            EN: "Respondents could select more than one task.",
+            TH: "ผู้ตอบสามารถเลือกวัตถุประสงค์การใช้งานได้มากกว่าหนึ่งข้อ"
+          }
+        },
+        requirements: {
+          subheading: {
+            EN: "Requirements Derived from the Research",
+            TH: "Requirement ที่ได้จาก Research"
+          },
+          intro: {
+            EN: "The research was translated into the following design requirements:",
+            TH: "ผลการสำรวจถูกนำมาสรุปเป็น Requirement สำหรับการออกแบบดังนี้:"
+          },
+          items: {
+            EN: [
+              "Make frequently used tasks, such as dormitory applications and eligibility confirmation, easy to access.",
+              "Provide clear room, resident, form, and request statuses.",
+              "Notify students about announcements, activities, deadlines, and approval results.",
+              "Allow students to review utility expenses and dormitory points.",
+              "Bring essential dormitory information and services into one centralized mobile experience."
+            ],
+            TH: [
+              "ทำให้รายการที่มีการใช้งานมาก เช่น การสมัครหอพักและยืนยันสิทธิ์ เข้าถึงได้ง่าย",
+              "แสดงสถานะห้องพัก รายชื่อผู้พัก แบบฟอร์ม และคำร้องอย่างชัดเจน",
+              "แจ้งเตือนข่าวประกาศ กิจกรรม กำหนดเวลา และผลการอนุมัติ",
+              "ให้นักศึกษาตรวจสอบค่าน้ำ–ค่าไฟและคะแนนหอพักได้",
+              "รวบรวมข้อมูลและบริการสำคัญของหอพักไว้ใน Mobile Application เดียว"
+            ]
+          }
+        },
+        takeawaySubheading: {
+          EN: "Key Takeaway",
+          TH: "ข้อสรุปสำคัญ"
+        },
+        takeaway: {
+          EN: "Although students access the dormitory platform only occasionally, they depend on it for important and time-sensitive tasks. The redesigned experience therefore needed to make essential actions easier to find while keeping students informed without requiring them to repeatedly check the platform.",
+          TH: "แม้นักศึกษาจะเข้าใช้งานระบบหอพักเป็นครั้งคราว แต่แต่ละรายการมักมีความสำคัญและเกี่ยวข้องกับกรอบเวลา ประสบการณ์ใหม่จึงต้องช่วยให้ผู้ใช้ค้นหาสิ่งที่ต้องทำได้ง่าย พร้อมรับข้อมูลสำคัญโดยไม่ต้องกลับเข้ามาตรวจสอบระบบซ้ำ ๆ ด้วยตนเอง"
+        }
+      },
+      surveyPersona: {
+        heading: {
+          EN: "Survey-Based Persona",
+          TH: "Persona ที่ได้จากแบบสอบถาม"
+        },
+        methodology: {
+          EN: "This persona was synthesized from patterns identified in a survey of 67 SUT students. It represents the primary user group and is not based on a single individual participant.",
+          TH: "Persona นี้เป็นตัวแทนจากข้อมูลที่พบในแบบสอบถามนักศึกษา มทส. จำนวน 67 คน เพื่อใช้เป็นตัวแทนของกลุ่มผู้ใช้งานหลัก โดยไม่ได้อ้างอิงจากผู้เข้าร่วมคนใดคนหนึ่งโดยตรง"
+        },
+        identity: {
+          name: {
+            EN: "Narin Kittipong",
+            TH: "นรินทร์ กิตติพงศ์"
+          },
+          profile: {
+            EN: "19 years old · First-year student · SUT dormitory resident",
+            TH: "อายุ 19 ปี · นักศึกษาชั้นปีที่ 1 · พักอาศัยในหอพัก มทส."
+          },
+          image: "projects/Dormitory/persona.jpg"
+        },
+        background: {
+          heading: { EN: "Background", TH: "ข้อมูลพื้นฐาน" },
+          text: {
+            EN: "Narin is a first-year student who is still becoming familiar with dormitory procedures, deadlines, and services. She accesses the dormitory platform occasionally, mainly when she needs to complete an important task or check an update.",
+            TH: "นรินทร์เป็นนักศึกษาชั้นปีที่ 1 ที่ยังอยู่ในช่วงทำความเข้าใจขั้นตอน กำหนดเวลา และบริการต่าง ๆ ของหอพัก เธอเข้าใช้งานระบบเป็นครั้งคราว โดยส่วนใหญ่จะเข้าใช้เมื่อต้องทำรายการสำคัญหรือตรวจสอบข้อมูลอัปเดต"
+          }
+        },
+        statement: {
+          heading: { EN: "Representative Statement", TH: "ข้อความตัวแทนมุมมองผู้ใช้" },
+          text: {
+            EN: "“I don’t use the dormitory system every day, but when I do, I need to find important information and complete my task quickly.”",
+            TH: "“ฉันไม่ได้ใช้ระบบหอพักทุกวัน แต่เมื่อเข้าใช้งาน ฉันต้องการค้นหาข้อมูลสำคัญและทำรายการให้เสร็จได้อย่างรวดเร็ว”"
+          },
+        },
+        sections: {
+          goals: {
+            heading: { EN: "Goals", TH: "เป้าหมาย" },
+            icon: "target",
+            items: {
+              EN: [
+                "Apply for accommodation and confirm eligibility on time.",
+                "Find room and resident information easily.",
+                "Track the results of forms and requests.",
+                "Stay informed about announcements, activities, and deadlines.",
+                "Review utility expenses and dormitory points."
+              ],
+              TH: [
+                "สมัครหอพักและยืนยันสิทธิ์ภายในระยะเวลาที่กำหนด",
+                "ค้นหาข้อมูลห้องพักและผู้พักอาศัยได้ง่าย",
+                "ติดตามผลของแบบฟอร์มและคำร้อง",
+                "รับข่าวประกาศ กิจกรรม และกำหนดเวลาสำคัญ",
+                "ตรวจสอบค่าน้ำ–ค่าไฟและคะแนนหอพัก"
+              ]
+            }
+          },
+          behaviors: {
+            heading: { EN: "Behaviors", TH: "พฤติกรรม" },
+            icon: "activity",
+            items: {
+              EN: [
+                "Uses the dormitory platform approximately once a month.",
+                "Accesses it more frequently during application and eligibility confirmation periods.",
+                "Returns to the platform to check results and important updates.",
+                "Prefers clear navigation because he does not use the system regularly."
+              ],
+              TH: [
+                "ใช้งานระบบหอพักประมาณเดือนละ 1 ครั้ง",
+                "เข้าใช้งานมากขึ้นในช่วงสมัครหอพักและยืนยันสิทธิ์",
+                "กลับเข้ามาตรวจสอบผลการดำเนินการและข้อมูลสำคัญ",
+                "ต้องการระบบนำทางที่ชัดเจน เพราะไม่ได้ใช้งานระบบเป็นประจำ"
+              ]
+            }
+          },
+          frustrations: {
+            heading: { EN: "Frustrations", TH: "ปัญหาที่พบ" },
+            icon: "alert-circle",
+            items: {
+              EN: [
+                "Important information is difficult to view from one place.",
+                "Form and request statuses are not immediately clear.",
+                "Announcements and deadlines may be easy to overlook.",
+                "Repeatedly checking the platform for updates takes unnecessary effort."
+              ],
+              TH: [
+                "ข้อมูลสำคัญยังไม่สามารถดูได้จากพื้นที่เดียว",
+                "สถานะของแบบฟอร์มและคำร้องยังไม่ชัดเจนในทันที",
+                "ข่าวประกาศและกำหนดเวลาอาจถูกมองข้าม",
+                "ต้องกลับเข้ามาตรวจสอบระบบซ้ำเพื่อดูข้อมูลอัปเดต"
+              ]
+            }
+          },
+          needs: {
+            heading: { EN: "Needs", TH: "ความต้องการ" },
+            icon: "check-square",
+            items: {
+              EN: [
+                "A clear overview of important information.",
+                "Easy access to frequently used dormitory services.",
+                "Visible request and approval statuses.",
+                "Notifications for announcements, deadlines, and results.",
+                "A mobile experience that is easy to understand even when used occasionally."
+              ],
+              TH: [
+                "ภาพรวมของข้อมูลสำคัญที่เข้าใจได้อย่างรวดเร็ว",
+                "ทางเข้าสู่บริการหอพักที่ใช้บ่อย",
+                "สถานะคำร้องและผลการอนุมัติที่มองเห็นได้ชัดเจน",
+                "การแจ้งเตือนข่าวสาร กำหนดเวลา และผลการดำเนินการ",
+                "ประสบการณ์บนมือถือที่เข้าใจง่าย แม้ไม่ได้ใช้งานเป็นประจำ"
+              ]
+            }
+          }
+        }
+      },
+      designPriorities: {
+        heading: {
+          EN: "Design Priorities & Decisions",
+          TH: "หลักการออกแบบ"
+        },
+        intro: {
+          EN: "Research findings were translated into four priorities that guided the application’s structure and features.",
+          TH: "ผลจาก Research ถูกนำมาสรุปเป็น 4 แนวทางหลักสำหรับกำหนดโครงสร้างและฟีเจอร์ของแอป"
+        },
+        items: {
+          EN: [
+            {
+              heading: "1 — Essential Tasks First",
+              desc: "Frequently used and time-sensitive tasks, such as dormitory applications and eligibility confirmation, were made easier to find and access."
+            },
+            {
+              heading: "2 — Centralized Services",
+              desc: "Announcements, activities, forms, utility expenses, dormitory points, and other services were brought together in one mobile application."
+            },
+            {
+              heading: "3 — Visible Status",
+              desc: "Clear statuses were added to rooms, applications, forms, and maintenance requests so students can understand their progress without repeatedly checking."
+            },
+            {
+              heading: "4 — Proactive Notifications",
+              desc: "Notifications communicate important announcements, deadlines, activities, and request results to support students who access the system only occasionally."
+            }
+          ],
+          TH: [
+            {
+              heading: "1 — เข้าถึงรายการสำคัญได้ง่าย",
+              desc: "จัดลำดับรายการที่มีการใช้งานมากและมีกรอบเวลา เช่น การสมัครหอพักและยืนยันสิทธิ์ ให้อยู่ในตำแหน่งที่ค้นหาและเข้าถึงได้ง่าย"
+            },
+            {
+              heading: "2 — รวมบริการไว้ในพื้นที่เดียว",
+              desc: "รวบรวมข่าวประกาศ กิจกรรม แบบฟอร์ม ค่าน้ำ–ค่าไฟ คะแนนหอพัก และบริการอื่น ๆ ไว้ใน Mobile Application เดียว"
+            },
+            {
+              heading: "3 — แสดงสถานะอย่างชัดเจน",
+              desc: "เพิ่มสถานะของห้องพัก การสมัคร แบบฟอร์ม และการแจ้งซ่อม เพื่อให้ผู้ใช้เข้าใจความคืบหน้าโดยไม่ต้องกลับมาตรวจสอบซ้ำ"
+            },
+            {
+              heading: "4 — แจ้งเตือนข้อมูลสำคัญ",
+              desc: "แจ้งข่าวสาร กำหนดเวลา กิจกรรม และผลของคำร้อง เพื่อรองรับนักศึกษาที่เข้าใช้งานระบบเป็นครั้งคราว"
+            }
+          ]
+        }
+      },
+      dormitoryKeyUx: {
+        intro: {
+          heading: {
+            EN: "Key UX Solutions & UI Design",
+            TH: "แนวทางการแก้ปัญหา UX และการออกแบบ UI"
+          },
+          desc: {
+            EN: "The application translates research findings into a centralized mobile experience that helps students access important dormitory tasks, information, requests, and updates more easily.",
+            TH: "แอปพลิเคชันนำผลจาก Research มาพัฒนาเป็นประสบการณ์บนมือถือที่ช่วยให้นักศึกษาเข้าถึงรายการสำคัญ ข้อมูล คำร้อง และข่าวสารของหอพักได้สะดวกยิ่งขึ้น"
+          }
+        },
+        subsections: [
+          {
+            heading: {
+              EN: "1 — Centralized Home & Updates",
+              TH: "1 — หน้าหลักและข้อมูลอัปเดต"
+            },
+            desc: {
+              EN: "The Home screen brings important dormitory information and frequently used services into one place. Students can quickly access announcements, activities, applications, forms, utility expenses, and other essential services without searching through separate pages.<br><br>Dedicated announcement and activity screens help students review important updates, deadlines, and opportunities related to dormitory life.",
+              TH: "หน้าหลักรวบรวมข้อมูลสำคัญและบริการที่ใช้บ่อยของหอพักไว้ในพื้นที่เดียว นักศึกษาสามารถเข้าถึงข่าวประกาศ กิจกรรม การสมัคร แบบฟอร์ม ค่าใช้จ่าย และบริการสำคัญอื่น ๆ ได้โดยไม่ต้องค้นหาจากหลายหน้า<br><br>หน้าข่าวประชาสัมพันธ์และกิจกรรมช่วยให้นักศึกษาตรวจสอบข้อมูลอัปเดต กำหนดเวลา และโอกาสในการเข้าร่วมกิจกรรมของหอพักได้สะดวกขึ้น"
+            },
+            heroImage: "projects/Dormitory/หน้าหลัก.png",
+            supportingImages: [
+              "projects/Dormitory/ประชาสัมพันธ์ทั้งหมด.png",
+              "projects/Dormitory/กิจกรรม.png"
+            ]
+          },
+          {
+            heading: {
+              EN: "2 — Dormitory Application & Resident Information",
+              TH: "2 — การสมัครหอพักและข้อมูลผู้พัก"
+            },
+            desc: {
+              EN: "Students can complete dormitory applications through a structured mobile form and review relevant accommodation information within the same application.<br><br>Clear room and resident information helps students understand available options and check important updates related to dormitory placement or transfers.",
+              TH: "นักศึกษาสามารถสมัครหอพักผ่านแบบฟอร์มบนมือถือที่จัดลำดับข้อมูลอย่างเป็นขั้นตอน พร้อมตรวจสอบข้อมูลที่เกี่ยวข้องกับการเข้าพักได้จากแอปเดียวกัน<br><br>การแสดงข้อมูลห้องพักและรายชื่อผู้พักอย่างชัดเจนช่วยให้นักศึกษาเข้าใจตัวเลือกและตรวจสอบข้อมูลสำคัญเกี่ยวกับการจัดสรรหรือย้ายหอพักได้สะดวกขึ้น"
+            },
+            images: [
+              "projects/Dormitory/สมัครหอพักระหว่างภาค.png",
+              "projects/Dormitory/รายชื่อผู้ย้ายหอพัก.png"
+            ],
+            hasArrow: false
+          },
+          {
+            heading: {
+              EN: "3 — Digital Forms & Status Tracking",
+              TH: "3 — แบบฟอร์มดิจิทัลและการติดตามผล"
+            },
+            desc: {
+              EN: "Students can submit dormitory requests, such as fee deferment forms, directly through the application. Required information is organized into a clear form to support accurate completion.<br><br>After submission, students can review their submitted requests and current results, reducing the need to repeatedly search for updates through other channels.",
+              TH: "นักศึกษาสามารถยื่นคำร้องเกี่ยวกับหอพัก เช่น แบบฟอร์มผ่อนผันค่าหอพัก ผ่านแอปพลิเคชันได้โดยตรง โดยจัดลำดับข้อมูลที่จำเป็นให้กรอกได้อย่างชัดเจน<br><br>หลังจากส่งแบบฟอร์ม นักศึกษาสามารถตรวจสอบรายการที่ส่งและผลการดำเนินการได้ ช่วยลดการค้นหาข้อมูลอัปเดตจากช่องทางอื่น"
+            },
+            images: [
+              "projects/Dormitory/ฟอร์มผ่อนผัน.png",
+              "projects/Dormitory/การส่งฟอร์ม.png"
+            ],
+            hasArrow: true
+          },
+          {
+            heading: {
+              EN: "4 — Utility & Maintenance Services",
+              TH: "4 — บริการค่าใช้จ่ายและแจ้งซ่อม"
+            },
+            desc: {
+              EN: "Students can review recent electricity expenses and access previous records, providing clearer visibility into dormitory-related costs.<br><br>The maintenance service allows students to report issues through a structured form and provide the information needed for the dormitory staff to review the request.",
+              TH: "นักศึกษาสามารถตรวจสอบค่าไฟล่าสุดและดูข้อมูลย้อนหลังได้ ช่วยให้มองเห็นค่าใช้จ่ายที่เกี่ยวข้องกับการพักอาศัยได้ชัดเจนขึ้น<br><br>บริการแจ้งซ่อมช่วยให้นักศึกษารายงานปัญหาผ่านแบบฟอร์มที่มีโครงสร้าง พร้อมระบุข้อมูลที่จำเป็นสำหรับให้เจ้าหน้าที่ตรวจสอบคำร้อง"
+            },
+            images: [
+              "projects/Dormitory/ค่าไฟ (ทั้งหมด).png",
+              "projects/Dormitory/แจ้งซ่อม.png"
+            ],
+            hasArrow: false
+          },
+          {
+            heading: {
+              EN: "5 — Dormitory Committee Election",
+              TH: "5 — การเลือกตั้งคณะกรรมการหอพัก"
+            },
+            desc: {
+              EN: "The election feature presents candidates in a clear and comparable list. Students can open each candidate’s profile to review their information and policies before making a voting decision.",
+              TH: "ระบบเลือกตั้งแสดงรายชื่อผู้สมัครในรูปแบบที่ตรวจสอบและเปรียบเทียบได้ง่าย นักศึกษาสามารถเปิดดูรายละเอียดและนโยบายของผู้สมัครแต่ละคนก่อนตัดสินใจลงคะแนน"
+            },
+            images: [
+              "projects/Dormitory/เลือกตั้ง 13.png",
+              "projects/Dormitory/รายละเอียดผู้สมัคร.png"
+            ],
+            hasArrow: true
+          }
+        ],
+        supportingProfile: {
+          heading: {
+            EN: "Supporting Screen — Student Profile",
+            TH: "หน้าจอสนับสนุน — โปรไฟล์นักศึกษา"
+          },
+          desc: {
+            EN: "The Profile screen provides access to student and dormitory information, along with related account options and services.",
+            TH: "หน้าโปรไฟล์รวบรวมข้อมูลนักศึกษา ข้อมูลการเข้าพัก และทางเข้าสู่การตั้งค่าหรือบริการที่เกี่ยวข้องกับบัญชีผู้ใช้"
+          },
+          image: "projects/Dormitory/โปรไฟล์.png"
+        }
+      },
+      dormitoryOutcomeLimitations: {
+        heading: {
+          EN: "Project Outcome & Limitations",
+          TH: "ผลลัพธ์และข้อจำกัดของโปรเจกต์"
+        },
+        outcome: {
+          subheading: { EN: "Outcome", TH: "ผลลัพธ์" },
+          statusLabel: { EN: "High-fidelity Design Prototype", TH: "ต้นแบบดีไซน์ระดับ High-fidelity" },
+          paragraphs: {
+            EN: [
+              "The project resulted in a high-fidelity mobile application prototype informed by survey responses from 67 students. The prototype brings essential dormitory services—including applications, forms, announcements, activities, utility expenses, maintenance requests, and dormitory elections—into one centralized experience.",
+              "The design was presented and iteratively refined based on feedback from the course instructor throughout the project."
+            ],
+            TH: [
+              "โปรเจกต์นี้ได้ผลลัพธ์เป็นต้นแบบ Mobile Application ระดับ High-fidelity ที่พัฒนาจากข้อมูลแบบสอบถามนักศึกษา 67 คน โดยรวบรวมบริการสำคัญของหอพัก เช่น การสมัคร แบบฟอร์ม ข่าวประกาศ กิจกรรม ค่าน้ำ–ค่าไฟ การแจ้งซ่อม และการเลือกตั้งคณะกรรมการหอพักไว้ในประสบการณ์เดียว",
+              "ระหว่างดำเนินโครงการ มีการนำเสนอผลงานและปรับปรุงดีไซน์ตามข้อเสนอแนะของอาจารย์ผู้สอนอย่างต่อเนื่อง"
+            ]
+          }
+        },
+        limitations: {
+          subheading: { EN: "Limitations", TH: "ข้อจำกัด" },
+          items: {
+            EN: [
+              "Usability testing with students was not conducted after the prototype was completed.",
+              "The design decisions were informed mainly by questionnaire data and instructor feedback, with limited qualitative insight from user interviews.",
+              "The project remained a design prototype and was not implemented as a functional application.",
+              "The effectiveness of the redesigned flows, notifications, and status communication has not yet been validated with users."
+            ],
+            TH: [
+              "ยังไม่ได้ทำ Usability Testing กับนักศึกษาหลังจากพัฒนาต้นแบบเสร็จ",
+              "การตัดสินใจออกแบบอ้างอิงจากข้อมูลแบบสอบถามและข้อเสนอแนะของอาจารย์เป็นหลัก จึงมีข้อมูลเชิงคุณภาพจากการสัมภาษณ์ผู้ใช้ค่อนข้างจำกัด",
+              "โปรเจกต์ยังเป็น Design Prototype และไม่ได้พัฒนาเป็นแอปพลิเคชันที่ใช้งานได้จริง",
+              "ประสิทธิภาพของ Flow การแจ้งเตือน และการแสดงสถานะต่าง ๆ ยังไม่ได้รับการตรวจสอบกับผู้ใช้"
+            ]
+          }
+        }
+      },
+      dormitoryReflectionFuture: {
+        heading: {
+          EN: "Reflection & Future Improvements",
+          TH: "การสะท้อนผลและแนวทางการพัฒนาต่อ"
+        },
+        reflection: {
+          paragraphs: {
+            EN: [
+              "This project showed that a dormitory platform should support not only digital services, but also clear information and communication within the dormitory community.",
+              "If revisited, I would refine the existing UI, test key flows with students, and explore a dormitory-only communication feature for roommates, announcements, and adviser contact. Further research would be required to define user needs, privacy, safety, and moderation before implementation."
+            ],
+            TH: [
+              "โปรเจกต์นี้ทำให้เห็นว่าระบบหอพักไม่ควรรองรับเพียงบริการดิจิทัล แต่ควรช่วยให้การเข้าถึงข้อมูลและการสื่อสารภายในหอพักมีความชัดเจนยิ่งขึ้น",
+              "หากได้พัฒนาต่อ จะปรับปรุง UI เดิม ทดสอบ Flow สำคัญกับนักศึกษา และศึกษาแนวคิดระบบสื่อสารเฉพาะภายในหอพักสำหรับรูมเมท ข่าวประชาสัมพันธ์ และการติดต่อที่ปรึกษาหอพัก โดยต้องศึกษาเพิ่มเติมด้านความต้องการ ความเป็นส่วนตัว ความปลอดภัย และการดูแลเนื้อหาก่อนนำไปใช้งานจริง"
+            ]
+          }
+        },
+        improvements: [
+          {
+            num: "1",
+            heading: { EN: "UI Refinement", TH: "ปรับปรุง UI เดิม" },
+            desc: {
+              EN: "Improve visual hierarchy, navigation, consistency, and accessibility across the existing screens.",
+              TH: "พัฒนาลำดับข้อมูล การนำทาง ความสม่ำเสมอ และ Accessibility ของแต่ละหน้าจอ"
+            }
+          },
+          {
+            num: "2",
+            heading: { EN: "Usability Testing", TH: "ทดสอบกับผู้ใช้" },
+            desc: {
+              EN: "Test key flows with students and refine the design based on observed usability issues.",
+              TH: "ทดสอบ Flow สำคัญกับนักศึกษาและปรับปรุงตามปัญหาที่พบ"
+            }
+          },
+          {
+            num: "3",
+            heading: { EN: "Roommate Communication", TH: "แชทสำหรับรูมเมท" },
+            desc: {
+              EN: "Explore a private space for roommates to coordinate dormitory-related matters.",
+              TH: "ศึกษาพื้นที่ส่วนตัวสำหรับให้รูมเมทประสานงานเรื่องภายในห้องพัก"
+            }
+          },
+          {
+            num: "4",
+            heading: { EN: "Dormitory Community Channels", TH: "ช่องทางสื่อสารภายในหอพัก" },
+            desc: {
+              EN: "Provide focused channels for announcements, activities, and communication within each dormitory.",
+              TH: "แยกพื้นที่สำหรับข่าวประกาศ กิจกรรม และการพูดคุยของแต่ละหอพัก"
+            }
+          },
+          {
+            num: "5",
+            heading: { EN: "Adviser Contact", TH: "ติดต่อที่ปรึกษาหอพัก" },
+            desc: {
+              EN: "Allow students to contact dormitory advisers through an official in-app channel.",
+              TH: "เพิ่มช่องทางอย่างเป็นทางการสำหรับติดต่ออาจารย์หรือที่ปรึกษาหอพัก"
+            }
+          },
+          {
+            num: "6",
+            heading: { EN: "Privacy & Safety", TH: "ความเป็นส่วนตัวและความปลอดภัย" },
+            desc: {
+              EN: "Define permissions, reporting, moderation, and notification controls before implementing communication features.",
+              TH: "กำหนดสิทธิ์การเข้าถึง การรายงาน การดูแลเนื้อหา และการควบคุมการแจ้งเตือนก่อนนำระบบแชทไปพัฒนาจริง"
+            }
+          }
+        ]
       },
       problem: {
         EN: "• The existing university dormitory website is outdated and lacks regular updates.<br>• Difficult to complete room booking, room transfers, and maintenance requests.<br>• No clear notifications for updates, payments, or announcements.<br>• Limited visibility of room availability and request status.",
@@ -1858,16 +2363,647 @@ const i18n = {
     },
     kioskApp: {
       title: {
-        EN: "Kiosk Redesign – Ratchasima Khunakon Building",
-        TH: "ปรับปรุงดีไซน์ตู้คีออสอาคารราชสีมาคุณากร"
+        EN: "Kiosk Redesign – Ratthasima Khunakon Building",
+        TH: "ปรับปรุงดีไซน์ตู้คีออสอาคารรัฐสีมาคุณากร"
       },
       subtitle: {
         EN: "“Find Your Way, Faster.”",
         TH: "“ค้นพบห้องที่ต้องการได้สะดวกรวดเร็วยิ่งขึ้น”"
       },
       overview: {
-        EN: "A redesign of the interactive directory kiosk for Ratchasima Khunakon Building at Suranaree University of Technology, a five-floor building with multiple rooms and two main entrances. The redesign focuses on making room discovery and navigation easier by providing clear floor-based navigation, room categorization, visual room highlighting, and directions to selected destinations.",
-        TH: "ออกแบบปรับปรุงตู้คีออสแนะนำเส้นทางและผังห้องพักสำหรับอาคารรัฐสีมาคุณากร มหาวิทยาลัยเทคโนโลยีสุรนารี อาคารสูง 5 ชั้น มีห้องจำนวนมากและทางเข้าหลัก 2 ทาง การออกแบบใหม่เน้นการค้นหาห้องและนำทางอย่างสะดวก ด้วยระบบเลือกชั้น, กรองหมวดหมู่ห้อง, การแสดงตำแหน่งห้องบนผังแบบเน้นสี และบอกเส้นทางไปยังจุดหมาย"
+        EN: "Kiosk Redesign is a UX/UI project that transforms the existing floor-plan directory at Ratthasima Khunakon Building into a more interactive room-finding and wayfinding experience.<br><br>The redesigned concept helps students, staff, and visitors find destinations through floor selection, room categories, destination highlighting, and visual route guidance. It also explores the use of symbols alongside color and a QR-based mobile handoff as accessibility considerations.",
+        TH: "Kiosk Redesign เป็นโปรเจกต์ UX/UI ที่ปรับปรุงระบบแผนผังอาคารเดิมของอาคารรัฐสีมาคุณากร ให้เป็นประสบการณ์ค้นหาห้องและนำทางที่มีปฏิสัมพันธ์มากขึ้น<br><br>แนวคิดที่ออกแบบใหม่ช่วยให้นักศึกษา บุคลากร และผู้มาติดต่อค้นหาจุดหมายผ่านการเลือกชั้น การจัดหมวดหมู่ห้อง การเน้นตำแหน่ง และการแสดงเส้นทาง พร้อมศึกษาแนวทางใช้สัญลักษณ์ร่วมกับสีและการส่งต่อข้อมูลผ่าน QR Code เพื่อพิจารณาด้านการเข้าถึง"
+      },
+      meta: {
+        labels: {
+          role: { EN: "Role", TH: "บทบาท" },
+          team: { EN: "Team", TH: "ทีม" },
+          duration: { EN: "Duration", TH: "ระยะเวลา" },
+          tools: { EN: "Tools", TH: "เครื่องมือ" },
+          responsibilities: { EN: "Responsibilities", TH: "หน้าที่รับผิดชอบ" }
+        },
+        role: { EN: "UX/UI Designer", TH: "UX/UI Designer" },
+        team: { EN: "5 UX/UI Designers", TH: "UX/UI Designer 5 คน" },
+        duration: { EN: "3 months", TH: "3 เดือน" },
+        tools: { EN: "Figma", TH: "Figma" },
+        responsibilities: {
+          EN: "Existing Interface Analysis, Assumption-Based Personas, Journey Mapping, Design Opportunities, Moodboard, Information Architecture, User Flow, High-fidelity UI Design, Prototyping, Presentation, and Design Iteration",
+          TH: "วิเคราะห์ Interface เดิม สร้าง Persona จากสมมติฐาน จัดทำ Journey Map สรุปโอกาสในการออกแบบ สร้าง Moodboard ออกแบบ Information Architecture และ User Flow ออกแบบหน้าจอ High-fidelity สร้าง Prototype นำเสนอผลงาน และปรับปรุงดีไซน์"
+        }
+      },
+      contextExistingInterface: {
+        heading: {
+          EN: "Context & Existing Interface",
+          TH: "บริบทและ Interface เดิม"
+        },
+        context: {
+          EN: "Ratthasima Khunakon Building is a five-floor university building with numerous classrooms, laboratories, meeting rooms, offices, and two main entrances. Students, staff, lecturers, and visitors may enter from different locations and often need to find unfamiliar rooms within a limited time.",
+          TH: "อาคารรัฐสีมาคุณากรเป็นอาคารมหาวิทยาลัยสูง 5 ชั้น ภายในประกอบด้วยห้องเรียน ห้องปฏิบัติการ ห้องประชุม สำนักงาน และพื้นที่ประเภทต่าง ๆ จำนวนมาก พร้อมทางเข้าหลัก 2 จุด นักศึกษา บุคลากร อาจารย์ และผู้มาติดต่ออาจเข้ามาจากคนละทาง และต้องค้นหาห้องที่ไม่คุ้นเคยภายในเวลาจำกัด"
+        },
+        existingInterface: {
+          EN: "The existing directory displayed a complete floor plan for each level. Users could switch between floors 1–5 and change between Thai and English, but the experience primarily depended on manually scanning the floor plans to locate a destination.",
+          TH: "ระบบเดิมแสดงแผนผังอาคารแบบเต็มของแต่ละชั้น ผู้ใช้สามารถสลับดูชั้น 1–5 และเปลี่ยนภาษาไทย–อังกฤษได้ แต่การค้นหาจุดหมายยังต้องอาศัยการกวาดสายตาจากข้อมูลจำนวนมากบนแผนผังด้วยตนเอง"
+        },
+        link: {
+          url: "https://personal.sut.ac.th/nuttapon/phone.html",
+          label: {
+            EN: "View Original Interface",
+            TH: "ดู Interface เดิม"
+          }
+        },
+        limitationsHeading: {
+          EN: "Observed Limitations",
+          TH: "ข้อจำกัดที่สังเกตพบ"
+        },
+        limitations: {
+          EN: [
+            "Room information was densely presented within each floor plan.",
+            "Users needed to know or determine which floor contained the destination.",
+            "The interface did not provide direct room search or category filtering.",
+            "Selecting a room did not highlight its location on the floor plan.",
+            "The system did not provide route guidance from the kiosk or selected entrance to the destination."
+          ],
+          TH: [
+            "ข้อมูลห้องจำนวนมากถูกแสดงรวมอยู่บนแผนผังของแต่ละชั้น",
+            "ผู้ใช้ต้องทราบหรือค้นหาด้วยตนเองว่าจุดหมายอยู่ชั้นใด",
+            "ไม่มีช่องค้นหาห้องหรือการกรองตามประเภทห้อง",
+            "เมื่อเลือกห้อง ระบบเดิมไม่สามารถเน้นตำแหน่งบนแผนผังได้",
+            "ไม่มีคำแนะนำเส้นทางจากตู้คีออสก์หรือทางเข้าที่เลือกไปยังจุดหมาย"
+          ]
+        }
+      },
+      assumptionPersonas: {
+        heading: {
+          EN: "Assumption-Based Personas & Journey Mapping",
+          TH: "Persona จากสมมติฐานและการวิเคราะห์ Journey"
+        },
+        methodologyTag: {
+          EN: "Assumption-Based — No Direct User Research",
+          TH: "สร้างจากสมมติฐาน — ไม่มี Direct User Research"
+        },
+        methodologyText: {
+          EN: "Because direct user research was not conducted, the team created three assumption-based personas to explore likely kiosk usage scenarios. They represent a first-time building visitor, a first-year student, and a university lecturer with different levels of familiarity, time constraints, and navigation needs.<br><br>These personas were used as design tools and do not represent actual research participants.",
+          TH: "เนื่องจากโปรเจกต์นี้ไม่ได้ทำ Research กับผู้ใช้โดยตรง ทีมจึงสร้าง Persona จากสมมติฐานจำนวน 3 กลุ่ม เพื่อสำรวจสถานการณ์ที่อาจเกิดขึ้นในการใช้ตู้คีออสก์ ได้แก่ ผู้มาติดต่ออาคารเป็นครั้งแรก นักศึกษาชั้นปีที่ 1 และอาจารย์มหาวิทยาลัย ซึ่งมีระดับความคุ้นเคย ข้อจำกัดด้านเวลา และความต้องการในการนำทางแตกต่างกัน<br><br>Persona เหล่านี้ใช้เป็นเครื่องมือประกอบการออกแบบ และไม่ได้เป็นตัวแทนของผู้เข้าร่วมการวิจัยจริง"
+        },
+        personaImageTag: {
+          EN: "Representative Image",
+          TH: "ภาพตัวแทนบุคคล"
+        },
+        personas: [
+          {
+            id: "somchai",
+            title: {
+              EN: "Somchai: First-time Building Visitor",
+              TH: "สมชาย: ผู้ที่มาใช้งานอาคารเป็นครั้งแรก"
+            },
+            roleName: {
+              EN: "First-time Visitor",
+              TH: "ผู้มาติดต่อครั้งแรก"
+            },
+            name: {
+              EN: "Somchai",
+              TH: "สมชาย"
+            },
+            portrait: "projects/Keyosk redesign/รูปชาย.jpg",
+            context: {
+              EN: "Somchai is visiting the building for a meeting and is unfamiliar with its floor layout and room codes.",
+              TH: "สมชายเดินทางมายังอาคารเพื่อเข้าร่วมประชุม และยังไม่คุ้นเคยกับโครงสร้างแต่ละชั้นและรหัสห้องภายในอาคาร"
+            },
+            goal: {
+              EN: "Find the meeting room quickly, understand the route, and arrive on time without relying on staff assistance.",
+              TH: "ค้นหาห้องประชุม เข้าใจเส้นทาง และเดินทางไปถึงตรงเวลาโดยไม่ต้องพึ่งพาการสอบถามเจ้าหน้าที่"
+            },
+            barriers: {
+              EN: [
+                "Does not know which floor contains the destination.",
+                "Similar room names or codes may cause confusion.",
+                "May have difficulty remembering the route after leaving the kiosk."
+              ],
+              TH: [
+                "ไม่ทราบว่าจุดหมายอยู่ชั้นใด",
+                "ชื่อหรือรหัสห้องที่คล้ายกันอาจทำให้สับสน",
+                "อาจจดจำเส้นทางได้ยากหลังเดินออกจากตู้คีออสก์"
+              ]
+            },
+            needs: {
+              EN: [
+                "Search by room name, code, or category.",
+                "Clear route guidance from the current entrance.",
+                "An option to continue viewing the route on a personal device."
+              ],
+              TH: [
+                "ค้นหาด้วยชื่อ รหัส หรือประเภทห้อง",
+                "แสดงเส้นทางจากทางเข้าที่ผู้ใช้อยู่",
+                "เปิดข้อมูลเส้นทางต่อบนอุปกรณ์ส่วนตัวได้"
+              ]
+            },
+            journeyImage: "projects/Keyosk redesign/journeyชาย.png"
+          },
+          {
+            id: "oom",
+            title: {
+              EN: "Oom: First-year Student",
+              TH: "อุ้ม: นักศึกษาชั้นปีที่ 1"
+            },
+            roleName: {
+              EN: "First-year Student",
+              TH: "นักศึกษาชั้นปีที่ 1"
+            },
+            name: {
+              EN: "Oom",
+              TH: "อุ้ม"
+            },
+            portrait: "projects/Keyosk redesign/รูปสาวิตรี.jpg",
+            context: {
+              EN: "Oom is a first-year student who is still becoming familiar with university buildings and may need to move between classes within a limited time.",
+              TH: "อุ้มเป็นนักศึกษาชั้นปีที่ 1 ที่ยังไม่คุ้นเคยกับอาคารต่าง ๆ ภายในมหาวิทยาลัย และอาจต้องเดินทางระหว่างห้องเรียนภายในเวลาจำกัด"
+            },
+            goal: {
+              EN: "Find the correct classroom and reach it before class begins.",
+              TH: "ค้นหาห้องเรียนที่ถูกต้องและเดินทางไปถึงก่อนเริ่มเรียน"
+            },
+            barriers: {
+              EN: [
+                "Is unfamiliar with the building layout.",
+                "May not know which floor contains the classroom.",
+                "Dense floor-plan information may be difficult to scan quickly.",
+                "Prefers finding the destination independently rather than asking for help."
+              ],
+              TH: [
+                "ยังไม่คุ้นเคยกับผังอาคาร",
+                "อาจไม่ทราบว่าห้องเรียนอยู่ชั้นใด",
+                "ข้อมูลจำนวนมากบนแผนผังอาจกวาดสายตาได้ยาก",
+                "ต้องการค้นหาจุดหมายด้วยตนเองมากกว่าการสอบถามผู้อื่น"
+              ]
+            },
+            needs: {
+              EN: [
+                "Quick access to room search.",
+                "Clear floor and room identification.",
+                "Visual confirmation of the selected destination.",
+                "Simple route guidance from the kiosk to the classroom."
+              ],
+              TH: [
+                "เข้าถึงการค้นหาห้องได้อย่างรวดเร็ว",
+                "แสดงชั้นและรหัสห้องอย่างชัดเจน",
+                "ยืนยันตำแหน่งของห้องที่เลือกบนแผนผัง",
+                "แสดงเส้นทางจากตู้คีออสก์ไปยังห้องเรียน"
+              ]
+            },
+            journeyImage: "projects/Keyosk redesign/journeyอุ้ม.png"
+          },
+          {
+            id: "mek",
+            title: {
+              EN: "Ajarn Mek: University Lecturer",
+              TH: "อ.เมฆ: อาจารย์มหาวิทยาลัย"
+            },
+            roleName: {
+              EN: "University Lecturer",
+              TH: "อาจารย์มหาวิทยาลัย"
+            },
+            name: {
+              EN: "Ajarn Mek",
+              TH: "อ.เมฆ"
+            },
+            portrait: "projects/Keyosk redesign/รูปอ.ธีรเดช.jpeg",
+            context: {
+              EN: "Ajarn Mek uses the building for teaching and meetings. Although familiar with university environments, he may not know the location of every room and often works within a tight schedule.",
+              TH: "อ.เมฆใช้อาคารสำหรับการสอนและการประชุม แม้จะคุ้นเคยกับสภาพแวดล้อมของมหาวิทยาลัย แต่ไม่ได้ทราบตำแหน่งของทุกห้องและมักมีเวลาค่อนข้างจำกัด"
+            },
+            goal: {
+              EN: "Confirm the room location and find the shortest clear route before teaching or attending a meeting.",
+              TH: "ตรวจสอบตำแหน่งห้องและค้นหาเส้นทางที่ชัดเจนก่อนเริ่มสอนหรือเข้าร่วมประชุม"
+            },
+            barriers: {
+              EN: [
+                "Limited time to scan a detailed floor plan.",
+                "Similar room codes may be difficult to distinguish.",
+                "May need to check several floors before finding the correct room."
+              ],
+              TH: [
+                "มีเวลาจำกัดในการค้นหาข้อมูลจากแผนผัง",
+                "รหัสห้องที่คล้ายกันอาจแยกได้ยาก",
+                "อาจต้องเลื่อนดูหลายชั้นก่อนพบห้องที่ต้องการ"
+              ]
+            },
+            needs: {
+              EN: [
+                "Fast room search by name or code.",
+                "Clear floor-based navigation.",
+                "Immediate destination highlighting.",
+                "Concise route information without unnecessary steps."
+              ],
+              TH: [
+                "ค้นหาห้องด้วยชื่อหรือรหัสได้อย่างรวดเร็ว",
+                "เลือกดูข้อมูลตามชั้นได้อย่างชัดเจน",
+                "เน้นตำแหน่งของจุดหมายทันทีหลังเลือก",
+                "แสดงข้อมูลเส้นทางอย่างกระชับและไม่มีขั้นตอนที่ไม่จำเป็น"
+              ]
+            },
+            journeyImage: "projects/Keyosk redesign/journeyเมฆ.png"
+          }
+        ],
+        journeyMappingHeading: {
+          EN: "Journey Mapping",
+          TH: "วิเคราะห์ Journey"
+        },
+        journeyMappingText: {
+          EN: "A potential journey was mapped for each persona, covering the experience from identifying a destination and arriving at the building to using the kiosk, finding the room, understanding the route, and reaching the destination.<br><br>The maps explored assumed activities, potential pain points, emotional changes, and design opportunities. They were used to guide the design direction rather than represent observed user behavior.",
+          TH: "ทีมจำลอง Journey ของ Persona แต่ละคนตั้งแต่การกำหนดจุดหมาย เดินทางมาถึงอาคาร เริ่มใช้งานตู้คีออสก์ ค้นหาห้อง ทำความเข้าใจเส้นทาง และเดินทางไปถึงปลายทาง<br><br>Journey Map แสดงกิจกรรม อุปสรรคที่อาจพบ การเปลี่ยนแปลงทางอารมณ์ และโอกาสในการออกแบบ โดยใช้เพื่อกำหนดทิศทางของดีไซน์ ไม่ใช่พฤติกรรมที่สังเกตจากผู้ใช้จริง"
+        },
+        viewJourneyBtn: {
+          EN: "View Full Journey Map",
+          TH: "ดู Journey Map ฉบับเต็ม"
+        },
+        sharedPatternHeading: {
+          EN: "Shared Journey Pattern",
+          TH: "รูปแบบ Journey ร่วม"
+        },
+        sharedPatternSteps: {
+          EN: [
+            "Need a Room",
+            "Arrive at the Building",
+            "Use the Kiosk",
+            "Find the Destination",
+            "Understand the Route",
+            "Reach the Room"
+          ],
+          TH: [
+            "ต้องการค้นหาห้อง",
+            "มาถึงอาคาร",
+            "ใช้ตู้คีออสก์",
+            "เลือกจุดหมาย",
+            "ทำความเข้าใจเส้นทาง",
+            "เดินทางถึงห้อง"
+          ]
+        },
+        opportunitiesHeading: {
+          EN: "Design Opportunities",
+          TH: "โอกาสในการออกแบบ"
+        },
+        opportunities: [
+          {
+            num: "1",
+            heading: {
+              EN: "Multiple Search Methods",
+              TH: "รองรับการค้นหาหลายรูปแบบ"
+            },
+            desc: {
+              EN: "Allow users to search by floor, room name, room code, or category.",
+              TH: "ค้นหาด้วยชั้น ชื่อห้อง รหัสห้อง หรือประเภทห้อง"
+            }
+          },
+          {
+            num: "2",
+            heading: {
+              EN: "Clear Destination Feedback",
+              TH: "แสดงจุดหมายอย่างชัดเจน"
+            },
+            desc: {
+              EN: "Highlight the selected room and its floor on the building plan.",
+              TH: "เน้นห้องที่เลือกและชั้นที่เกี่ยวข้องบนแผนผัง"
+            }
+          },
+          {
+            num: "3",
+            heading: {
+              EN: "Route Guidance",
+              TH: "แนะนำเส้นทาง"
+            },
+            desc: {
+              EN: "Connect the user’s starting point with the selected destination.",
+              TH: "เชื่อมจุดเริ่มต้นของผู้ใช้กับห้องปลายทาง"
+            }
+          },
+          {
+            num: "4",
+            heading: {
+              EN: "Mobile Handoff Concept",
+              TH: "แนวคิดการส่งต่อข้อมูลไปยังมือถือ"
+            },
+            desc: {
+              EN: "Explore using a QR code to continue viewing route information on a personal device.",
+              TH: "ศึกษาการใช้ QR Code เพื่อเปิดข้อมูลเส้นทางต่อบนอุปกรณ์ส่วนตัว"
+            }
+          },
+          {
+            num: "5",
+            heading: {
+              EN: "Color and Symbol Pairing",
+              TH: "ใช้สีร่วมกับสัญลักษณ์"
+            },
+            desc: {
+              EN: "Use labels and symbols alongside color so room categories do not rely on color alone.",
+              TH: "ใช้ข้อความและสัญลักษณ์ควบคู่กับสี เพื่อไม่ให้การแยกประเภทห้องขึ้นอยู่กับสีเพียงอย่างเดียว"
+            }
+          }
+        ]
+      },
+      visualDirection: {
+        heading: {
+          EN: "Visual Direction",
+          TH: "การกำหนดทิศทางหน้าจอด้วย Moodboard"
+        },
+        intro: {
+          EN: "A moodboard was created before developing the high-fidelity prototype to establish a clear and consistent visual language for the kiosk. The direction focused on clarity, quick scanning, and touchscreen usability in a public environment.",
+          TH: "ทีมจัดทำ Moodboard ก่อนพัฒนา High-fidelity Prototype เพื่อกำหนดภาษาภาพของตู้คีออสก์ให้ชัดเจนและสม่ำเสมอ โดยเน้นการกวาดสายตา การทำความเข้าใจข้อมูลอย่างรวดเร็ว และการใช้งานผ่านหน้าจอสัมผัสในพื้นที่สาธารณะ"
+        },
+        moodboardImage: "projects/Keyosk redesign/moodboard.png",
+        subsections: [
+          {
+            title: {
+              EN: "Color System",
+              TH: "ระบบสี"
+            },
+            desc: {
+              EN: "Blue and soft green were selected as the primary interface colors to create a clear and approachable foundation. Additional colors distinguish room categories, while labels and symbols are used alongside color so information does not rely on color alone.",
+              TH: "เลือกสีน้ำเงินและสีเขียวอ่อนเป็นสีหลักของ Interface เพื่อสร้างโครงสร้างที่ชัดเจนและเป็นมิตร พร้อมใช้สีเพิ่มเติมเพื่อแยกประเภทห้อง โดยใช้ชื่อหมวดหมู่และสัญลักษณ์ร่วมกับสี เพื่อไม่ให้การสื่อความหมายขึ้นอยู่กับสีเพียงอย่างเดียว"
+            }
+          },
+          {
+            title: {
+              EN: "Typography",
+              TH: "ตัวอักษร"
+            },
+            desc: {
+              EN: "Noto Sans Thai Looped was selected to support both Thai and English content. Clear differences between headings, room names, supporting information, and instructions help users scan the interface from a standing distance.",
+              TH: "เลือกใช้ Noto Sans Thai Looped เพื่อรองรับเนื้อหาทั้งภาษาไทยและภาษาอังกฤษ การกำหนดลำดับขนาดระหว่างหัวข้อ ชื่อห้อง ข้อมูลประกอบ และคำแนะนำ ช่วยให้ผู้ใช้กวาดสายตาจากระยะยืนได้ง่ายขึ้น"
+            }
+          },
+          {
+            title: {
+              EN: "Icons & Room Categories",
+              TH: "ไอคอนและประเภทห้อง"
+            },
+            desc: {
+              EN: "Consistent symbols represent different room types and building facilities. Pairing icons with category names and colors helps users recognize room groups without interpreting the floor plan in detail.",
+              TH: "ใช้สัญลักษณ์ที่มีรูปแบบสม่ำเสมอเพื่อแทนประเภทห้องและสิ่งอำนวยความสะดวกภายในอาคาร การแสดงไอคอนร่วมกับชื่อหมวดหมู่และสีช่วยให้ผู้ใช้แยกกลุ่มห้องได้โดยไม่ต้องอ่านรายละเอียดทั้งหมดบนแผนผัง"
+            }
+          },
+          {
+            title: {
+              EN: "Menu Structure",
+              TH: "โครงสร้างเมนู"
+            },
+            desc: {
+              EN: "The menu direction prioritizes large touch targets, clear labels, and visible selected states. Primary actions and room categories are separated from supporting information to reduce visual density.",
+              TH: "ออกแบบเมนูโดยให้ความสำคัญกับพื้นที่กดขนาดใหญ่ ชื่อรายการที่ชัดเจน และสถานะที่กำลังเลือก โดยแยกคำสั่งหลักและประเภทห้องออกจากข้อมูลประกอบ เพื่อลดความหนาแน่นของหน้าจอ"
+            }
+          },
+          {
+            title: {
+              EN: "Overall Direction",
+              TH: "โดยรวม"
+            },
+            desc: {
+              EN: "The visual system combines color, text, symbols, and spatial hierarchy to make floor selection, room discovery, and route information easier to understand. Further contrast and accessibility testing would be required before implementation.",
+              TH: "ระบบภาพใช้สี ข้อความ สัญลักษณ์ และลำดับพื้นที่ร่วมกัน เพื่อช่วยให้การเลือกชั้น ค้นหาห้อง และทำความเข้าใจเส้นทางมีความชัดเจนขึ้น อย่างไรก็ตาม ยังต้องตรวจสอบ Contrast และทดสอบด้าน Accessibility เพิ่มเติมก่อนนำไปใช้งานจริง"
+            }
+          }
+        ]
+      },
+      designPrioritiesAccessibility: {
+        heading: {
+          EN: "Design Priorities & Accessibility Considerations",
+          TH: "แนวทางการออกแบบและข้อพิจารณาด้านการเข้าถึง"
+        },
+        intro: {
+          EN: "The assumed user journeys were translated into five design priorities that guided the kiosk’s interaction, information hierarchy, and accessibility considerations.",
+          TH: "Journey ที่สร้างจากสมมติฐานถูกนำมาสรุปเป็นแนวทางการออกแบบ 5 ข้อ เพื่อกำหนดรูปแบบการใช้งาน ลำดับความสำคัญของข้อมูล และข้อพิจารณาด้านการเข้าถึงของตู้คีออสก์"
+        },
+        priorities: [
+          {
+            num: "1",
+            title: {
+              EN: "Fast Room Discovery",
+              TH: "ค้นหาห้องได้รวดเร็ว"
+            },
+            desc: {
+              EN: "Support multiple ways to find a destination, including floor selection, room categories, room names, and room codes, so users do not need to scan the entire floor plan manually.",
+              TH: "รองรับการค้นหาจุดหมายหลายรูปแบบ ทั้งการเลือกชั้น ประเภทห้อง ชื่อห้อง และรหัสห้อง เพื่อให้ผู้ใช้ไม่ต้องกวาดสายตาค้นหาจากแผนผังทั้งหมดด้วยตนเอง"
+            }
+          },
+          {
+            num: "2",
+            title: {
+              EN: "Clear Destination Feedback",
+              TH: "แสดงจุดหมายอย่างชัดเจน"
+            },
+            desc: {
+              EN: "After a room is selected, clearly display its floor and highlight its location on the building plan. Use text and symbols alongside color to keep the destination understandable without relying on color alone.",
+              TH: "หลังจากเลือกห้อง ระบบจะแสดงชั้นและเน้นตำแหน่งของห้องบนแผนผัง โดยใช้ข้อความและสัญลักษณ์ร่วมกับสี เพื่อไม่ให้การทำความเข้าใจจุดหมายขึ้นอยู่กับสีเพียงอย่างเดียว"
+            }
+          },
+          {
+            num: "3",
+            title: {
+              EN: "Visual Route Guidance",
+              TH: "แสดงเส้นทางด้วยภาพ"
+            },
+            desc: {
+              EN: "Connect the kiosk or selected entrance to the destination with a visible route. Keep the route concise and distinguish the starting point, direction, and destination clearly.",
+              TH: "เชื่อมตำแหน่งของตู้คีออสก์หรือทางเข้าที่เลือกกับห้องปลายทางด้วยเส้นทางที่มองเห็นได้ โดยแยกจุดเริ่มต้น ทิศทาง และจุดหมายให้ชัดเจน"
+            }
+          },
+          {
+            num: "4",
+            title: {
+              EN: "Touchscreen Clarity",
+              TH: "ใช้งานหน้าจอสัมผัสได้ชัดเจน"
+            },
+            desc: {
+              EN: "Use large touch targets, readable labels, consistent selected states, and a simplified information hierarchy to support quick interaction from a standing position in a public environment.",
+              TH: "ใช้พื้นที่กดขนาดใหญ่ ชื่อรายการที่อ่านง่าย สถานะที่กำลังเลือกอย่างสม่ำเสมอ และลำดับข้อมูลที่ไม่ซับซ้อน เพื่อรองรับการใช้งานอย่างรวดเร็วจากระยะยืนในพื้นที่สาธารณะ"
+            }
+          },
+          {
+            num: "5",
+            title: {
+              EN: "Alternative Access Concept",
+              TH: "แนวคิดช่องทางเข้าถึงทางเลือก"
+            },
+            desc: {
+              EN: "Explore a QR code placed within a more reachable area so users, including wheelchair users, can continue viewing route information on a personal device. The mobile experience remained conceptual and would require further design and testing.",
+              TH: "ศึกษาแนวทางวาง QR Code ในตำแหน่งที่เข้าถึงได้ง่ายขึ้น เพื่อให้ผู้ใช้ รวมถึงผู้ใช้วีลแชร์ สามารถเปิดข้อมูลเส้นทางต่อบนอุปกรณ์ส่วนตัวได้ โดยประสบการณ์บนโทรศัพท์ยังเป็นเพียงแนวคิดและต้องออกแบบและทดสอบเพิ่มเติม"
+            }
+          }
+        ],
+        accessibilityNote: {
+          heading: {
+            EN: "Accessibility Considerations",
+            TH: "ด้าน Accessibility"
+          },
+          desc: {
+            EN: "The design pairs color with labels and symbols, considers touchscreen reach and readability, and explores an alternative mobile handoff. However, color contrast, physical reach, QR-code placement, assistive use, and usability with people with disabilities were not tested and would require validation before implementation.",
+            TH: "การออกแบบใช้สีร่วมกับข้อความและสัญลักษณ์ คำนึงถึงระยะเอื้อมและการอ่านบนหน้าจอสัมผัส และศึกษาแนวคิดการส่งต่อข้อมูลไปยังมือถือ อย่างไรก็ตาม ยังไม่ได้ทดสอบ Contrast ตำแหน่งและระยะเอื้อมของ QR Code การใช้งานร่วมกับเทคโนโลยีช่วยเหลือ หรือการใช้งานกับผู้พิการ จึงต้องตรวจสอบเพิ่มเติมก่อนนำไปใช้จริง"
+          }
+        }
+      },
+      kioskKeyUx: {
+        heading: {
+          EN: "Key UX Solutions & UI Flow",
+          TH: "แนวทางการแก้ปัญหาและกระบวนการใช้งาน"
+        },
+        intro: {
+          EN: "The redesigned kiosk connects floor browsing, room categories, destination selection, and route guidance into one continuous room-finding experience.",
+          TH: "ตู้คีออสก์ที่ออกแบบใหม่เชื่อมการเลือกชั้น การเลือกประเภทห้อง การระบุจุดหมาย และการแสดงเส้นทางเข้าไว้ในประสบการณ์ค้นหาห้องที่ต่อเนื่องกัน"
+        },
+        groups: [
+          {
+            num: "1",
+            title: {
+              EN: "Floor & Room Discovery",
+              TH: "การค้นหาชั้นและห้อง"
+            },
+            desc: {
+              EN: "Users can switch between floors 1–5 to view the rooms and facilities available on each level. The selected floor is clearly highlighted, while room categories use color, labels, and symbols to help users distinguish different spaces.<br><br>For a more focused search, users can open the room-selection panel, choose a room category, and select a room name or code without manually scanning the entire floor plan.",
+              TH: "ผู้ใช้สามารถสลับดูชั้น 1–5 เพื่อตรวจสอบห้องและสิ่งอำนวยความสะดวกของแต่ละชั้น โดยชั้นที่กำลังเลือกจะแสดงสถานะอย่างชัดเจน ขณะที่ประเภทห้องใช้ทั้งสี ชื่อ และสัญลักษณ์เพื่อช่วยแยกพื้นที่แต่ละประเภท<br><br>เมื่อต้องการค้นหาแบบเจาะจง ผู้ใช้สามารถเปิดแถบเลือกห้อง เลือกประเภทห้อง และเลือกชื่อหรือรหัสห้องได้ โดยไม่ต้องกวาดสายตาค้นหาจากแผนผังทั้งหมดด้วยตนเอง"
+            },
+            flow: {
+              EN: "Select Floor → Select Room Category → Select Room",
+              TH: "เลือกชั้น → เลือกประเภทห้อง → เลือกห้อง"
+            },
+            floors: [
+              { label: { EN: "Floor 1", TH: "ชั้น 1" }, img: "projects/Keyosk redesign/floor 1.png" },
+              { label: { EN: "Floor 2", TH: "ชั้น 2" }, img: "projects/Keyosk redesign/floor 2.png" },
+              { label: { EN: "Floor 3", TH: "ชั้น 3" }, img: "projects/Keyosk redesign/floor 3.png" },
+              { label: { EN: "Floor 4", TH: "ชั้น 4" }, img: "projects/Keyosk redesign/floor 4.png" },
+              { label: { EN: "Floor 5", TH: "ชั้น 5" }, img: "projects/Keyosk redesign/floor 5.png" }
+            ],
+            roomDiscoveryScreens: [
+              { label: { EN: "Meeting Room Category", TH: "หมวดห้องประชุม" }, img: "projects/Keyosk redesign/ห้องประชุม.png" },
+              { label: { EN: "Lab Category", TH: "หมวดห้องปฏิบัติการ" }, img: "projects/Keyosk redesign/ปฏิบัติการ.png" },
+              { label: { EN: "Room Selection", TH: "การเลือกห้อง B6101-A" }, img: "projects/Keyosk redesign/เลือกห้องB6101-A.png" }
+            ]
+          },
+          {
+            num: "2",
+            title: {
+              EN: "Destination Highlighting",
+              TH: "การเน้นตำแหน่งจุดหมาย"
+            },
+            desc: {
+              EN: "After a room is selected, the interface returns to the relevant floor plan and highlights the destination. The selected room, its floor, and its position within the building are displayed together to provide clear visual confirmation.<br><br>Color is paired with room codes, labels, and destination markers so the selected location is not communicated through color alone.",
+              TH: "หลังจากเลือกห้อง ระบบจะแสดงแผนผังของชั้นที่เกี่ยวข้องและเน้นตำแหน่งจุดหมาย โดยแสดงห้องที่เลือก ชั้น และตำแหน่งภายในอาคารไว้ด้วยกัน เพื่อช่วยยืนยันว่าผู้ใช้เลือกจุดหมายถูกต้อง<br><br>การแสดงจุดหมายใช้รหัสห้อง ชื่อห้อง สัญลักษณ์ และเครื่องหมายระบุตำแหน่งร่วมกับสี เพื่อไม่ให้การสื่อความหมายขึ้นอยู่กับสีเพียงอย่างเดียว"
+            },
+            flow: {
+              EN: "Select Room → Open Relevant Floor → Highlight Destination",
+              TH: "เลือกห้อง → แสดงชั้นที่เกี่ยวข้อง → เน้นตำแหน่งจุดหมาย"
+            },
+            beforeAfterConnector: {
+              EN: "Select room B6101-A → Highlight its location on the floor plan",
+              TH: "เลือกห้อง B6101-A → แสดงตำแหน่งห้องบนแผนผัง"
+            },
+            screen1: "projects/Keyosk redesign/เลือกห้องB6101-A.png",
+            screen2: "projects/Keyosk redesign/map.png"
+          },
+          {
+            num: "3",
+            title: {
+              EN: "Visual Route Guidance",
+              TH: "การแสดงเส้นทางด้วยภาพ"
+            },
+            desc: {
+              EN: "The kiosk displays a visual route from the selected starting point to the destination. Directional arrows, a starting marker, and a destination pin help users understand where to begin and which path to follow.<br><br>The route remains connected to the floor plan so users can understand the destination in relation to corridors, entrances, elevators, stairs, and other building landmarks.",
+              TH: "ตู้คีออสก์แสดงเส้นทางจากจุดเริ่มต้นที่เลือกไปยังห้องปลายทาง โดยใช้ลูกศร เครื่องหมายจุดเริ่มต้น และหมุดจุดหมาย เพื่อช่วยให้ผู้ใช้เข้าใจว่าควรเริ่มจากตำแหน่งใดและเดินไปในทิศทางใด<br><br>เส้นทางถูกแสดงบนแผนผังโดยตรง เพื่อให้ผู้ใช้เข้าใจตำแหน่งของจุดหมายเมื่อเทียบกับทางเดิน ทางเข้า ลิฟต์ บันได และจุดสังเกตอื่นภายในอาคาร"
+            },
+            flow: {
+              EN: "Starting Point → Visual Route → Destination Room",
+              TH: "ตำแหน่งเริ่มต้น → เส้นทาง → ห้องปลายทาง"
+            },
+            heroImage: "projects/Keyosk redesign/map.png"
+          },
+          {
+            num: "4",
+            title: {
+              EN: "Mobile Route Handoff Concept",
+              TH: "แนวคิดการส่งต่อเส้นทางไปยังมือถือ"
+            },
+            desc: {
+              EN: "A QR code is provided at the lower area of the kiosk as a concept for allowing users to continue viewing route information on a personal device. This direction was considered for users who may have difficulty reaching or continuously viewing the kiosk screen, including wheelchair users.<br><br>The mobile version was not designed or developed within this project. Further research and accessibility testing would be required to validate the QR-code size, position, reach, scanning angle, and mobile experience.",
+              TH: "วาง QR Code ไว้บริเวณด้านล่างของตู้คีออสก์ เพื่อศึกษาแนวทางให้ผู้ใช้เปิดข้อมูลเส้นทางต่อบนอุปกรณ์ส่วนตัว แนวคิดนี้พิจารณาถึงผู้ที่อาจเข้าถึงหรือมองหน้าจอคีออสก์ได้ไม่สะดวกอย่างต่อเนื่อง รวมถึงผู้ใช้วีลแชร์<br><br>โปรเจกต์นี้ยังไม่ได้ออกแบบหรือพัฒนา Mobile Version จึงต้องศึกษาและทดสอบเพิ่มเติมทั้งขนาด ตำแหน่ง ระยะเอื้อม มุมสแกน QR Code และประสบการณ์ใช้งานบนโทรศัพท์"
+            },
+            flow: {
+              EN: "Scan QR Code → Open Route on Mobile Device",
+              TH: "สแกน QR Code → เปิดข้อมูลเส้นทางบนโทรศัพท์"
+            }
+          }
+        ]
+      },
+      kioskReflectionFuture: {
+        heading: {
+          EN: "Reflection & Future Improvements",
+          TH: "การสะท้อนผลและแนวทางการพัฒนาต่อ"
+        },
+        paragraphs: [
+          {
+            EN: "The project resulted in a high-fidelity interactive kiosk prototype that connects room discovery, destination highlighting, and visual route guidance within one experience. The design was presented and iteratively refined based on feedback from the course instructor.",
+            TH: "โปรเจกต์นี้ได้ผลลัพธ์เป็นต้นแบบตู้คีออสก์แบบ Interactive ระดับ High-fidelity ที่เชื่อมการค้นหาห้อง การเน้นตำแหน่งจุดหมาย และการแสดงเส้นทางไว้ในประสบการณ์เดียว โดยมีการนำเสนอและปรับปรุงดีไซน์ตามข้อเสนอแนะของอาจารย์อย่างต่อเนื่อง"
+          },
+          {
+            EN: "This project showed that displaying a floor plan alone may not be enough to support wayfinding. Users also need clear methods for finding a room, confirming its location, and understanding how to reach it. It also highlighted the importance of pairing color with labels and symbols rather than relying on color alone.",
+            TH: "โปรเจกต์นี้ทำให้เห็นว่าการแสดงแผนผังเพียงอย่างเดียวอาจยังไม่เพียงพอต่อการนำทาง ผู้ใช้ต้องสามารถค้นหาห้อง ยืนยันตำแหน่ง และเข้าใจวิธีเดินทางไปยังจุดหมายได้อย่างชัดเจน รวมถึงไม่ควรใช้สีเป็นวิธีเดียวในการสื่อความหมาย แต่ควรใช้ชื่อและสัญลักษณ์ร่วมด้วย"
+          },
+          {
+            EN: "The personas and journey maps were assumption-based, and the prototype was not tested with actual users. The mobile route handoff remained conceptual, while accessibility considerations such as physical reach, color contrast, QR-code placement, and wheelchair use still require validation.",
+            TH: "Persona และ Journey Map ของโปรเจกต์นี้สร้างจากสมมติฐาน และยังไม่ได้ทดสอบ Prototype กับผู้ใช้จริง ส่วนการส่งต่อเส้นทางไปยังโทรศัพท์ยังเป็นเพียงแนวคิด ขณะที่ระยะเอื้อม Contrast ตำแหน่ง QR Code และการใช้งานสำหรับผู้ใช้วีลแชร์ยังต้องได้รับการตรวจสอบเพิ่มเติม"
+          }
+        ],
+        futureHeading: {
+          EN: "Future Improvements",
+          TH: "แนวทางการพัฒนาต่อ"
+        },
+        improvements: [
+          {
+            num: "1",
+            icon: "users",
+            title: {
+              EN: "User Research & Usability Testing",
+              TH: "Research และ Usability Testing"
+            },
+            desc: {
+              EN: "Test the kiosk with students, lecturers, first-time visitors, and users with disabilities.",
+              TH: "ทดสอบกับนักศึกษา อาจารย์ ผู้มาติดต่อครั้งแรก และผู้ใช้ที่มีข้อจำกัดด้านการเข้าถึง"
+            }
+          },
+          {
+            num: "2",
+            icon: "smartphone",
+            title: {
+              EN: "Mobile Route Experience",
+              TH: "ประสบการณ์เส้นทางบนมือถือ"
+            },
+            desc: {
+              EN: "Design the mobile flow that opens after scanning the QR code.",
+              TH: "ออกแบบ Flow บนโทรศัพท์หลังจากผู้ใช้สแกน QR Code"
+            }
+          },
+          {
+            num: "3",
+            icon: "accessibility",
+            title: {
+              EN: "Accessibility Validation",
+              TH: "ตรวจสอบ Accessibility"
+            },
+            desc: {
+              EN: "Evaluate color contrast, symbol recognition, readability, touch-target size, reach, and wheelchair access.",
+              TH: "ประเมิน Contrast การจดจำสัญลักษณ์ การอ่าน ขนาดพื้นที่กด ระยะเอื้อม และการใช้งานสำหรับผู้ใช้วีลแชร์"
+            }
+          },
+          {
+            num: "4",
+            icon: "monitor",
+            title: {
+              EN: "Physical Kiosk Testing",
+              TH: "ทดสอบกับตู้คีออสก์จริง"
+            },
+            desc: {
+              EN: "Test the interface at the actual screen size, height, viewing distance, and installation location.",
+              TH: "ตรวจสอบการใช้งานกับขนาดหน้าจอ ความสูง ระยะมอง และตำแหน่งติดตั้งจริง"
+            }
+          }
+        ]
       },
       problem: {
         EN: "• Users may have difficulty finding the correct room in a large multi-floor building.<br>• Existing floor and room information can be overwhelming and difficult to scan quickly.<br>• Users may not clearly understand which floor or area a selected room is located in.<br>• Static directory information does not provide clear navigation from the user’s current location.<br>• Finding a destination can take extra time, especially for first-time visitors.",
@@ -1910,8 +3046,8 @@ const i18n = {
         ]
       },
       featureHeading: {
-        EN: "UI Design",
-        TH: "หน้าจอคีออส (UI Design)"
+        EN: "Key UX Solutions & UI Design",
+        TH: "แนวทางการแก้ปัญหา UX และการออกแบบ UI"
       }
     }
   },
@@ -2375,7 +3511,7 @@ function render(now){
 
   const idx=activeSection();
   nav.forEach((b,i)=>b.classList.toggle('active',i===idx));
-  if(meterText) meterText.textContent=String(idx+1).padStart(2,'0')+' / 08';
+  if(meterText) meterText.textContent=String(idx+1)+' / 8';
   
   const contentStart=panels[1]?.offsetTop||0;
   const contentEnd=Math.max(contentStart+1,document.documentElement.scrollHeight-innerHeight);
@@ -2521,7 +3657,7 @@ const caseData={
     subtitle:'“A smarter way to manage dormitory life.”',
     coverImage:'projects/dormitory.png',
     figmaLink:'https://www.figma.com/proto/TAjMwM1BiWItaR1YdXvO6M/%E0%B8%AB%E0%B8%AD%E0%B8%9E%E0%B8%B1%E0%B8%81%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2?node-id=789-2589&viewport=-4461%2C4816%2C0.05&t=GIgWv6SCpz5hb0iD-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=216%3A196&show-proto-sidebar=1&page-id=0%3A1',
-    overview:'Redesigning the university dormitory website into a comprehensive management application featuring payment reminders, document tracking, room booking filter, and utility notifications.',
+    overview:'A UX/UI redesign that transforms the existing SUT dormitory website into a centralized mobile application. Informed by a survey of 67 students, the concept brings essential dormitory information, requests, expenses, announcements, and services into one more accessible experience.',
     problem:'• The existing university dormitory website is outdated and lacks regular updates.<br>• Difficult to complete room booking, room transfers, and maintenance requests.<br>• No clear notifications for updates, payments, or announcements.<br>• Limited visibility of room availability and request status.',
     personaName:'Narin Kittipong (Age 19, 1st-year Resident)',
     personaGoals:'Easily book/transfer rooms, quickly report maintenance, stay updated on deadlines, track request status.',
@@ -2565,11 +3701,11 @@ const caseData={
   'kiosk-app':{
     title:'Kiosk Redesign – Ratchasima Khunakon Building',
     subtitle:'“Find Your Way, Faster.”',
-    featureHeading:'UI Design',
+    featureHeading:'Key UX Solutions & UI Design',
     coverImage:'projects/Keyosk redesign/cover.png',
     figmaLink:'https://www.figma.com/proto/3MFlpDP3zwlC5eS5WRydyp/keyosk?node-id=1-2&viewport=323%2C-17%2C0.05&t=ZeVbfy5mQo0YL5sW-1&scaling=contain&content-scaling=fixed&starting-point-node-id=324%3A23&page-id=0%3A1',
     originalLink:'https://personal.sut.ac.th/nuttapon/phone.html',
-    overview:'A redesign of the interactive directory kiosk for Ratchasima Khunakon Building at Suranaree University of Technology, a five-floor building with multiple rooms and two main entrances. The redesign focuses on making room discovery and navigation easier by providing clear floor-based navigation, room categorization, visual room highlighting, and directions to selected destinations.',
+    overview:'Kiosk Redesign is a UX/UI project that transforms the existing floor-plan directory at Ratchasima Khunakon Building into a more interactive room-finding and wayfinding experience.<br><br>The redesigned concept helps students, staff, and visitors find destinations through floor selection, room categories, destination highlighting, and visual route guidance. It also explores the use of symbols alongside color and a QR-based mobile handoff as accessibility considerations.',
     problem:'• Users may have difficulty finding the correct room in a large multi-floor building.<br>• Existing floor and room information can be overwhelming and difficult to scan quickly.<br>• Users may not clearly understand which floor or area a selected room is located in.<br>• Static directory information does not provide clear navigation from the user’s current location.<br>• Finding a destination can take extra time, especially for first-time visitors.',
     personaName:'Students, Staff, and Building Visitors',
     personaDesc:'• <b>Target Audience:</b> Students, staff, and visitors who need to find rooms or facilities inside the building.<br>• <b>First-time Visitors:</b> Guests who are unfamiliar with the 5-floor building layout and room arrangements.<br>• <b>Independent Navigation:</b> Users who need quick, self-serve directions without asking staff for assistance.',
@@ -2736,6 +3872,16 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
     const fI18n = projI18n?.features?.[idx];
     const featureTitle = fI18n?.title?.[lang] || f.title;
     const featureDesc = fI18n?.desc?.[lang] || f.desc;
+    
+    let numStr = String(idx + 1);
+    let cleanTitle = featureTitle;
+    const match = featureTitle.match(/^(?:0?(\d+)|([A-Za-z0-9]+))\s*[\.\—\-]?\s*(.*)/);
+    if (match && match[3]) {
+      const n = match[1] || match[2];
+      numStr = !isNaN(n) ? String(parseInt(n, 10)) : n;
+      cleanTitle = match[3];
+    }
+
     const imgs = (f.images && f.images.length) ? `
       <div class="feature-img-group">
         ${f.images.map(img=>`<div class="feature-img-card"><img src="${encodeURI(img)}" alt="${featureTitle}"/></div>`).join('')}
@@ -2744,7 +3890,11 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
     return `
       <div class="feature-row ${isLeft ? 'image-left' : 'image-right'}">
         <div class="feature-text">
-          <h3>${featureTitle}</h3>
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+            <span style="font-size:32px;font-weight:950;color:var(--sky-blue);line-height:1;font-family:Syne,sans-serif">${numStr}</span>
+            <div style="height:24px;width:2px;background:rgba(85,104,175,0.25)"></div>
+            <h3 style="font-size:clamp(18px,2.5vw,22px);font-weight:900;color:#0f172a;margin:0">${cleanTitle}</h3>
+          </div>
           <p>${featureDesc}</p>
         </div>
         ${imgs}
@@ -2770,7 +3920,45 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
   }
 
   let contextHtml = '';
-  if (projI18n?.contextConstraints) {
+  if (projI18n?.contextExistingInterface) {
+    const cei = projI18n.contextExistingInterface;
+    contextHtml = `
+      <section class="case">
+        <div>
+          <h2><i data-lucide="layers" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${cei.heading[lang]}</h2>
+          
+          <!-- Context & Existing Interface Description Card -->
+          <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:26px 28px;border-radius:24px;margin-bottom:24px">
+            <div style="display:flex;flex-direction:column;gap:20px;max-width:860px">
+              <div>
+                <b style="color:var(--sky-blue);font:900 11px/1 monospace;display:block;margin-bottom:6px;letter-spacing:.05em">BUILDING CONTEXT</b>
+                <p style="font-size:15px;line-height:1.75;color:#334155;margin:0">${cei.context[lang]}</p>
+              </div>
+
+              <div style="border-top:1px solid rgba(226,232,240,0.8);padding-top:18px">
+                <b style="color:var(--sky-blue);font:900 11px/1 monospace;display:block;margin-bottom:6px;letter-spacing:.05em">EXISTING INTERFACE</b>
+                <p style="font-size:15px;line-height:1.75;color:#334155;margin:0">${cei.existingInterface[lang]}</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Observed Limitations Card -->
+          <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:26px 28px;border-radius:24px">
+            <h3 style="font-size:17px;font-weight:900;color:#0f172a;margin:0 0 16px">${cei.limitationsHeading[lang]}</h3>
+            <ul style="margin:0;padding:0;list-style:none;display:grid;gap:14px">
+              ${cei.limitations[lang].map((itemText, idx) => `
+                <li style="font-size:15px;line-height:1.7;color:#334155;display:flex;align-items:flex-start;gap:12px">
+                  <span style="font:900 11px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 8px;border-radius:6px;margin-top:2px;flex-shrink:0">${idx + 1}</span>
+                  <span>${itemText}</span>
+                </li>
+              `).join('')}
+            </ul>
+          </div>
+
+        </div>
+      </section>
+    `;
+  } else if (projI18n?.contextConstraints) {
     const cc = projI18n.contextConstraints;
     const items = cc.items[lang];
     contextHtml = `
@@ -2787,6 +3975,601 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
               `).join('')}
             </ul>
           </div>
+        </div>
+      </section>
+    `;
+  }
+
+  let assumptionPersonasHtml = '';
+  if (projI18n?.assumptionPersonas) {
+    const ap = projI18n.assumptionPersonas;
+    assumptionPersonasHtml = `
+      <section class="case">
+        <div>
+          <h2><i data-lucide="users" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${ap.heading[lang]}</h2>
+          
+          <!-- Methodology Note Banner -->
+          <div style="background:linear-gradient(135deg,rgba(85,104,175,0.06),rgba(206,234,238,0.25));border:1.5px solid rgba(85,104,175,0.18);padding:22px 26px;border-radius:22px;margin-top:16px;margin-bottom:28px">
+            <b style="color:var(--sky-blue);font:900 11px/1 monospace;display:block;margin-bottom:6px;letter-spacing:.05em">${ap.methodologyTag[lang].toUpperCase()}</b>
+            <p style="font-size:14.5px;line-height:1.7;color:#334155;margin:0">${ap.methodologyText[lang]}</p>
+          </div>
+
+          <!-- Persona Selectors / Tabs (Somchai, Oom, Ajarn Mek) -->
+          <div role="tablist" style="display:grid;grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));gap:16px;margin-bottom:24px">
+            ${ap.personas.map((p, idx) => `
+              <button role="tab" aria-selected="${idx === 0 ? 'true' : 'false'}" class="kiosk-persona-tab-btn" onclick="window.selectKioskPersona(${idx})" style="background:${idx === 0 ? 'rgba(85,104,175,0.14)' : 'rgba(255,255,255,0.75)'};border:1.5px solid ${idx === 0 ? 'var(--sky-blue)' : 'rgba(226,232,240,0.9)'};padding:14px 18px;border-radius:18px;display:flex;align-items:center;gap:14px;cursor:pointer;text-align:left;transition:all 0.2s ease;backdrop-filter:blur(10px)">
+                <img src="${encodeURI(p.portrait)}" alt="${p.name[lang]}" style="width:48px;height:48px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid rgba(85,104,175,0.2)"/>
+                <div>
+                  <b style="font-size:15px;color:#0f172a;display:block">${p.name[lang]}</b>
+                  <span style="font-size:12px;color:#64748b;font-weight:600">${p.roleName[lang]}</span>
+                </div>
+              </button>
+            `).join('')}
+          </div>
+
+          <!-- Detailed Persona & Journey Cards (One active at a time) -->
+          ${ap.personas.map((p, idx) => `
+            <div class="kiosk-persona-detail-card" style="display:${idx === 0 ? 'block' : 'none'};margin-bottom:28px">
+              
+              <!-- Persona Main Card -->
+              <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:26px 28px;border-radius:24px;margin-bottom:24px">
+                
+                <div style="display:flex;align-items:center;gap:20px;margin-bottom:20px;flex-wrap:wrap;border-bottom:1px solid rgba(226,232,240,0.8);padding-bottom:18px">
+                  <div style="position:relative">
+                    <img src="${encodeURI(p.portrait)}" alt="${p.name[lang]}" style="width:72px;height:72px;border-radius:50%;object-fit:cover;border:3px solid var(--sky-blue);box-shadow:0 6px 16px rgba(85,104,175,0.18)"/>
+                    <span style="position:absolute;bottom:-6px;left:50%;transform:translateX(-50%);font:900 9px/1 monospace;background:var(--sky-blue);color:#fff;padding:3px 6px;border-radius:4px;white-space:nowrap">${ap.personaImageTag[lang]}</span>
+                  </div>
+                  <div>
+                    <h3 style="font-size:20px;font-weight:900;color:#0f172a;margin:0 0 4px">${p.title[lang]}</h3>
+                    <span style="font-size:13px;color:#64748b;font-weight:700">${p.roleName[lang]}</span>
+                  </div>
+                </div>
+
+                <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));gap:20px">
+                  <div>
+                    <b style="color:var(--sky-blue);font:900 11px/1 monospace;display:block;margin-bottom:6px;letter-spacing:.05em">CONTEXT</b>
+                    <p style="font-size:14.5px;line-height:1.7;color:#334155;margin:0">${p.context[lang]}</p>
+                  </div>
+                  <div>
+                    <b style="color:var(--sky-blue);font:900 11px/1 monospace;display:block;margin-bottom:6px;letter-spacing:.05em">GOAL</b>
+                    <p style="font-size:14.5px;line-height:1.7;color:#334155;margin:0">${p.goal[lang]}</p>
+                  </div>
+                  <div>
+                    <b style="color:var(--sunset);font:900 11px/1 monospace;display:block;margin-bottom:6px;letter-spacing:.05em">POTENTIAL BARRIERS</b>
+                    <ul style="margin:0;padding:0;list-style:none;display:grid;gap:6px">
+                      ${p.barriers[lang].map(b => `
+                        <li style="font-size:14px;line-height:1.65;color:#334155;display:flex;gap:8px">
+                          <span style="color:var(--sunset);font-weight:900">•</span>
+                          <span>${b}</span>
+                        </li>
+                      `).join('')}
+                    </ul>
+                  </div>
+                  <div>
+                    <b style="color:var(--teal);font:900 11px/1 monospace;display:block;margin-bottom:6px;letter-spacing:.05em">DESIGN NEEDS</b>
+                    <ul style="margin:0;padding:0;list-style:none;display:grid;gap:6px">
+                      ${p.needs[lang].map(n => `
+                        <li style="font-size:14px;line-height:1.65;color:#334155;display:flex;gap:8px">
+                          <span style="color:var(--teal);font-weight:900">•</span>
+                          <span>${n}</span>
+                        </li>
+                      `).join('')}
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Persona Journey Map Card -->
+              <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:26px 28px;border-radius:24px">
+                <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:16px">
+                  <h4 style="font-size:17px;font-weight:900;color:#0f172a;margin:0">${ap.journeyMappingHeading[lang]} — ${p.name[lang]}</h4>
+                  <button onclick="window.openJourneyLightbox('${encodeURI(p.journeyImage)}', '${p.name[lang]} Journey Map')" style="background:rgba(85,104,175,0.12);border:1px solid rgba(85,104,175,0.3);color:var(--sky-blue);padding:8px 16px;border-radius:10px;font:900 12px/1 monospace;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s ease">
+                    <i data-lucide="maximize-2" style="width:14px;height:14px"></i>
+                    ${ap.viewJourneyBtn[lang]}
+                  </button>
+                </div>
+                
+                <div style="width:100%;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(30,36,50,0.08);border:1px solid rgba(226,232,240,0.9);background:rgba(255,255,255,0.9);padding:6px;box-sizing:border-box;margin-bottom:16px">
+                  <img src="${encodeURI(p.journeyImage)}" alt="${p.name[lang]} Journey Map" style="width:100%;height:auto;display:block;border-radius:10px;object-fit:contain"/>
+                </div>
+
+                <p style="font-size:14.5px;line-height:1.7;color:#475569;margin:0">${ap.journeyMappingText[lang]}</p>
+              </div>
+
+            </div>
+          `).join('')}
+
+          <!-- Shared Journey Pattern -->
+          <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:24px;margin-bottom:28px">
+            <h3 style="font-size:17px;font-weight:900;color:#0f172a;margin:0 0 16px">${ap.sharedPatternHeading[lang]}</h3>
+            <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:14px 18px;background:linear-gradient(135deg,rgba(85,104,175,0.06),rgba(206,234,238,0.25));border-radius:16px;border:1px solid rgba(85,104,175,0.15)">
+              ${ap.sharedPatternSteps[lang].map((step, idx) => `
+                <span style="font:900 12px/1 monospace;color:var(--ink);background:#fff;padding:8px 12px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.04);display:inline-flex;align-items:center;gap:6px">
+                  <span style="color:var(--sky-blue);font-weight:900">${idx + 1}.</span> ${step}
+                </span>
+                ${idx < ap.sharedPatternSteps[lang].length - 1 ? `<i data-lucide="arrow-right" style="width:14px;height:14px;color:var(--sky-blue);flex-shrink:0"></i>` : ''}
+              `).join('')}
+            </div>
+          </div>
+
+          <!-- Design Opportunities -->
+          <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:26px 28px;border-radius:24px">
+            <h3 style="font-size:17px;font-weight:900;color:#0f172a;margin:0 0 18px">${ap.opportunitiesHeading[lang]}</h3>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));gap:16px">
+              ${ap.opportunities.map(op => `
+                <div style="background:rgba(241,245,249,0.55);border:1px solid rgba(226,232,240,0.85);padding:18px;border-radius:18px;display:flex;flex-direction:column;gap:8px">
+                  <span style="font:900 11px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 8px;border-radius:6px;align-self:flex-start">${op.num}</span>
+                  <b style="font-size:15px;color:#0f172a">${op.heading[lang]}</b>
+                  <p style="font-size:13.5px;line-height:1.6;color:#475569;margin:0">${op.desc[lang]}</p>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+        </div>
+      </section>
+    `;
+  }
+
+  let designPrioritiesAccessibilityHtml = '';
+  if (projI18n?.designPrioritiesAccessibility) {
+    const dpa = projI18n.designPrioritiesAccessibility;
+    const prios = dpa.priorities;
+    const acc = dpa.accessibilityNote;
+
+    designPrioritiesAccessibilityHtml = `
+      <section class="case">
+        <div>
+          <h2><i data-lucide="sliders" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${dpa.heading[lang]}</h2>
+          
+          <p style="font-size:15px;line-height:1.75;color:#334155;margin-bottom:24px">${dpa.intro[lang]}</p>
+
+          <!-- 5 Design Priorities Grid (2-Column Grid on Desktop, 5th Item Balanced, Stacked on Mobile) -->
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:20px;margin-bottom:28px">
+            ${prios.map((p, idx) => `
+              <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 6px 20px rgba(30,36,50,0.04);padding:22px 24px;border-radius:20px;display:flex;flex-direction:column;gap:10px;${idx === 4 ? 'grid-column:1/-1' : ''}">
+                <div style="display:flex;align-items:center;gap:10px">
+                  <span style="font:900 12px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 9px;border-radius:8px;flex-shrink:0">${p.num}</span>
+                  <h3 style="font-size:16.5px;font-weight:900;color:#0f172a;margin:0">${p.title[lang]}</h3>
+                </div>
+                <p style="font-size:14.5px;line-height:1.7;color:#475569;margin:0">${p.desc[lang]}</p>
+              </div>
+            `).join('')}
+          </div>
+
+          <!-- Accessibility Considerations Concluding Note -->
+          <div style="background:linear-gradient(135deg,rgba(85,104,175,0.05),rgba(206,234,238,0.22));border:1.5px solid rgba(85,104,175,0.18);padding:22px 26px;border-radius:22px">
+            <h3 style="font-size:16px;font-weight:900;color:var(--ink);margin:0 0 10px;display:flex;align-items:center;gap:8px">
+              <i data-lucide="accessibility" style="width:20px;height:20px;color:var(--sky-blue)"></i>
+              ${acc.heading[lang]}
+            </h3>
+            <p style="font-size:14.5px;line-height:1.7;color:#334155;margin:0">${acc.desc[lang]}</p>
+          </div>
+
+        </div>
+      </section>
+    `;
+  }
+
+  let visualDirectionHtml = '';
+  if (projI18n?.visualDirection) {
+    const vd = projI18n.visualDirection;
+    const subs = vd.subsections;
+
+    visualDirectionHtml = `
+      <section class="case">
+        <div>
+          <h2><i data-lucide="palette" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${vd.heading[lang]}</h2>
+          
+          <p style="font-size:15px;line-height:1.75;color:#334155;margin-bottom:24px">${vd.intro[lang]}</p>
+
+          <!-- Balanced 2-Column Showcase (Left: Moodboard Image, Right: Explanatory Subsections) -->
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));gap:28px;align-items:start">
+            
+            <!-- Left Column: Clickable Moodboard Image (Sticky) -->
+            <div style="position:-webkit-sticky;position:sticky;top:32px;background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:14px;border-radius:24px;box-sizing:border-box">
+              <div style="position:relative;border-radius:16px;overflow:hidden;border:1px solid rgba(226,232,240,0.9);cursor:pointer" onclick="window.openJourneyLightbox('${encodeURI(vd.moodboardImage)}', '${vd.heading[lang]} Moodboard')">
+                <img src="${encodeURI(vd.moodboardImage)}" alt="${vd.heading[lang]} Moodboard" style="width:100%;height:auto;display:block;object-fit:contain;border-radius:16px"/>
+                <div style="position:absolute;bottom:10px;right:10px;background:rgba(15,23,42,0.75);backdrop-filter:blur(6px);color:#fff;font:900 11px/1 monospace;padding:6px 12px;border-radius:8px;display:flex;align-items:center;gap:6px">
+                  <i data-lucide="maximize-2" style="width:12px;height:12px"></i>
+                  ${lang === 'TH' ? 'คลิกเพื่อขยาย' : 'Click to enlarge'}
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Explanatory Content Subsections -->
+            <div style="display:flex;flex-direction:column;gap:16px">
+              ${subs.map((sub, idx) => `
+                <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 6px 18px rgba(30,36,50,0.04);padding:20px 22px;border-radius:20px">
+                  <h3 style="font-size:16px;font-weight:900;color:#0f172a;margin:0 0 8px;display:flex;align-items:center;gap:8px">
+                    <span style="font:900 11px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:3px 8px;border-radius:6px">${idx + 1}</span>
+                    ${sub.title[lang]}
+                  </h3>
+                  <p style="font-size:14px;line-height:1.68;color:#475569;margin:0">${sub.desc[lang]}</p>
+                </div>
+              `).join('')}
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+    `;
+  }
+
+  let kioskKeyUxHtml = '';
+  if (projI18n?.kioskKeyUx) {
+    const kku = projI18n.kioskKeyUx;
+    const groups = kku.groups;
+
+    kioskKeyUxHtml = `
+      <section class="case">
+        <div>
+          <h2><i data-lucide="sparkles" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${kku.heading[lang]}</h2>
+          <p style="font-size:15px;line-height:1.75;color:#334155;margin-bottom:32px">${kku.intro[lang]}</p>
+
+          <!-- Group 01: Floor & Room Discovery -->
+          <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:28px;border-radius:24px;margin-bottom:36px">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px">
+              <span style="font-size:32px;font-weight:950;color:var(--sky-blue);line-height:1;font-family:Syne,sans-serif">${groups[0].num}</span>
+              <div style="height:24px;width:2px;background:rgba(85,104,175,0.25)"></div>
+              <h3 style="font-size:clamp(18px,2.5vw,22px);font-weight:900;color:#0f172a;margin:0">${groups[0].title[lang]}</h3>
+            </div>
+
+            <p style="font-size:14.5px;line-height:1.75;color:#334155;margin:0 0 16px">${groups[0].desc[lang]}</p>
+            
+            <div style="display:inline-flex;align-items:center;gap:8px;padding:8px 14px;background:rgba(85,104,175,0.08);border-radius:10px;border:1px solid rgba(85,104,175,0.18);margin-bottom:24px">
+              <b style="font:900 11px/1 monospace;color:var(--sky-blue);letter-spacing:.05em">FLOW:</b>
+              <span style="font-size:13px;font-weight:700;color:#0f172a">${groups[0].flow[lang]}</span>
+            </div>
+
+            <!-- Main Floor Screenshot Container with Left/Right Arrows Inside the White Frame -->
+            <div style="position:relative;width:100%;max-width:860px;margin:0 auto 28px;background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 10px 30px rgba(30,36,50,0.1);border:1px solid rgba(226,232,240,0.9);padding:14px;box-sizing:border-box">
+
+              <!-- Top Bar inside White Frame: Current Floor Indicator Badge & Lightbox Action -->
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;padding:0 4px">
+                <span id="kioskFloorLabelText" style="font:900 13px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:6px 14px;border-radius:10px;display:inline-flex;align-items:center;gap:6px">
+                  ${groups[0].floors[0].label[lang]} (1/5)
+                </span>
+                <button onclick="window.openJourneyLightbox(document.getElementById('kioskMainFloorImg').src, 'Floor Screenshot')" style="background:rgba(85,104,175,0.08);border:1px solid rgba(85,104,175,0.2);color:var(--sky-blue);padding:6px 12px;border-radius:8px;font:900 11px/1 monospace;cursor:pointer;display:inline-flex;align-items:center;gap:6px">
+                  <i data-lucide="maximize-2" style="width:12px;height:12px"></i>
+                  ${lang === 'TH' ? 'คลิกเพื่อขยาย' : 'Click to enlarge'}
+                </button>
+              </div>
+
+              <!-- Image Area with Left & Right Arrow Buttons Overlay -->
+              <div style="position:relative;border-radius:14px;overflow:hidden;background:rgba(241,245,249,0.4)">
+                <img id="kioskMainFloorImg" src="${encodeURI(groups[0].floors[0].img)}" alt="${groups[0].floors[0].label[lang]}" style="width:100%;max-height:460px;object-fit:contain;display:block;border-radius:14px;cursor:pointer" onclick="window.openJourneyLightbox(this.src, 'Floor Screenshot')"/>
+
+                <!-- Left Arrow Button inside Frame -->
+                <button onclick="window.changeKioskFloor(-1)" aria-label="Previous Floor" style="position:absolute;left:14px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.92);backdrop-filter:blur(8px);border:1.5px solid rgba(85,104,175,0.25);color:var(--ink);width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 6px 18px rgba(30,36,50,0.15);z-index:10;transition:all 0.2s ease" onmouseover="this.style.background='var(--sky-blue)';this.style.color='#fff'" onmouseout="this.style.background='rgba(255,255,255,0.92)';this.style.color='var(--ink)'">
+                  <i data-lucide="chevron-left" style="width:22px;height:22px"></i>
+                </button>
+
+                <!-- Right Arrow Button inside Frame -->
+                <button onclick="window.changeKioskFloor(1)" aria-label="Next Floor" style="position:absolute;right:14px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.92);backdrop-filter:blur(8px);border:1.5px solid rgba(85,104,175,0.25);color:var(--ink);width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 6px 18px rgba(30,36,50,0.15);z-index:10;transition:all 0.2s ease" onmouseover="this.style.background='var(--sky-blue)';this.style.color='#fff'" onmouseout="this.style.background='rgba(255,255,255,0.92)';this.style.color='var(--ink)'">
+                  <i data-lucide="chevron-right" style="width:22px;height:22px"></i>
+                </button>
+              </div>
+
+            </div>
+
+            <!-- Supporting Room Discovery Screens (Gallery Row) -->
+            <b style="font:900 11px/1 monospace;color:#64748b;display:block;margin-bottom:12px;letter-spacing:.05em">${lang === 'TH' ? 'หน้าจอการค้นหาและเลือกห้องหมวดหมู่ต่าง ๆ' : 'ROOM DISCOVERY & SELECTION PANELS'}</b>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));gap:16px">
+              ${groups[0].roomDiscoveryScreens.map(scr => `
+                <div style="background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 6px 18px rgba(30,36,50,0.06);border:1px solid rgba(226,232,240,0.9);padding:6px;cursor:pointer" onclick="window.openJourneyLightbox('${encodeURI(scr.img)}', '${scr.label[lang]}')">
+                  <img src="${encodeURI(scr.img)}" alt="${scr.label[lang]}" style="width:100%;max-height:220px;object-fit:contain;display:block;border-radius:10px"/>
+                  <span style="font-size:12px;font-weight:700;color:#475569;display:block;text-align:center;padding:8px 4px 4px">${scr.label[lang]}</span>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <!-- Group 02: Destination Highlighting -->
+          <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:28px;border-radius:24px;margin-bottom:36px">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px">
+              <span style="font-size:32px;font-weight:950;color:var(--sky-blue);line-height:1;font-family:Syne,sans-serif">${groups[1].num}</span>
+              <div style="height:24px;width:2px;background:rgba(85,104,175,0.25)"></div>
+              <h3 style="font-size:clamp(18px,2.5vw,22px);font-weight:900;color:#0f172a;margin:0">${groups[1].title[lang]}</h3>
+            </div>
+
+            <p style="font-size:14.5px;line-height:1.75;color:#334155;margin:0 0 16px">${groups[1].desc[lang]}</p>
+            
+            <div style="display:inline-flex;align-items:center;gap:8px;padding:8px 14px;background:rgba(85,104,175,0.08);border-radius:10px;border:1px solid rgba(85,104,175,0.18);margin-bottom:24px">
+              <b style="font:900 11px/1 monospace;color:var(--sky-blue);letter-spacing:.05em">FLOW:</b>
+              <span style="font-size:13px;font-weight:700;color:#0f172a">${groups[1].flow[lang]}</span>
+            </div>
+
+            <!-- Before & After Comparison Grid -->
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:20px;align-items:center;margin-bottom:14px">
+              <div style="background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(30,36,50,0.08);border:1px solid rgba(226,232,240,0.9);padding:8px;cursor:pointer" onclick="window.openJourneyLightbox('${encodeURI(groups[1].screen1)}', 'Selection')">
+                <img src="${encodeURI(groups[1].screen1)}" alt="Selection" style="width:100%;max-height:360px;object-fit:contain;display:block;border-radius:12px"/>
+              </div>
+
+              <div style="background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(30,36,50,0.08);border:1px solid rgba(226,232,240,0.9);padding:8px;cursor:pointer" onclick="window.openJourneyLightbox('${encodeURI(groups[1].screen2)}', 'Highlighted Destination')">
+                <img src="${encodeURI(groups[1].screen2)}" alt="Highlighted Destination" style="width:100%;max-height:360px;object-fit:contain;display:block;border-radius:12px"/>
+              </div>
+            </div>
+
+            <div style="text-align:center;padding:10px 16px;background:rgba(241,245,249,0.7);border-radius:12px;border:1px solid rgba(226,232,240,0.8)">
+              <span style="font-size:13.5px;font-weight:800;color:var(--ink)">${groups[1].beforeAfterConnector[lang]}</span>
+            </div>
+          </div>
+
+          <!-- Group 03: Visual Route Guidance -->
+          <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:28px;border-radius:24px;margin-bottom:36px">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px">
+              <span style="font-size:32px;font-weight:950;color:var(--sky-blue);line-height:1;font-family:Syne,sans-serif">${groups[2].num}</span>
+              <div style="height:24px;width:2px;background:rgba(85,104,175,0.25)"></div>
+              <h3 style="font-size:clamp(18px,2.5vw,22px);font-weight:900;color:#0f172a;margin:0">${groups[2].title[lang]}</h3>
+            </div>
+
+            <p style="font-size:14.5px;line-height:1.75;color:#334155;margin:0 0 16px">${groups[2].desc[lang]}</p>
+            
+            <div style="display:inline-flex;align-items:center;gap:8px;padding:8px 14px;background:rgba(85,104,175,0.08);border-radius:10px;border:1px solid rgba(85,104,175,0.18);margin-bottom:24px">
+              <b style="font:900 11px/1 monospace;color:var(--sky-blue);letter-spacing:.05em">FLOW:</b>
+              <span style="font-size:13px;font-weight:700;color:#0f172a">${groups[2].flow[lang]}</span>
+            </div>
+
+            <!-- Controlled Width Hero Image Container (Centered) -->
+            <div style="width:100%;max-width:800px;margin:0 auto;background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 10px 30px rgba(30,36,50,0.1);border:1px solid rgba(226,232,240,0.9);padding:10px;box-sizing:border-box;cursor:pointer" onclick="window.openJourneyLightbox('${encodeURI(groups[2].heroImage)}', '${groups[2].title[lang]}')">
+              <img src="${encodeURI(groups[2].heroImage)}" alt="${groups[2].title[lang]}" style="width:100%;max-height:460px;object-fit:contain;display:block;border-radius:12px"/>
+            </div>
+          </div>
+
+          <!-- Group 04: Mobile Route Handoff Concept -->
+          <div style="background:linear-gradient(135deg,rgba(85,104,175,0.05),rgba(206,234,238,0.22));border:1.5px solid rgba(85,104,175,0.18);padding:24px 28px;border-radius:24px">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px">
+              <span style="font-size:32px;font-weight:950;color:var(--sky-blue);line-height:1;font-family:Syne,sans-serif">${groups[3].num}</span>
+              <div style="height:24px;width:2px;background:rgba(85,104,175,0.25)"></div>
+              <h3 style="font-size:clamp(18px,2.5vw,22px);font-weight:900;color:#0f172a;margin:0;display:flex;align-items:center;gap:8px">
+                <i data-lucide="qr-code" style="width:22px;height:22px;color:var(--sky-blue)"></i>
+                ${groups[3].title[lang]}
+              </h3>
+            </div>
+
+            <p style="font-size:14.5px;line-height:1.75;color:#334155;margin:0 0 14px">${groups[3].desc[lang]}</p>
+            
+            <div style="display:inline-flex;align-items:center;gap:8px;padding:8px 14px;background:#fff;border-radius:10px;border:1px solid rgba(85,104,175,0.18)">
+              <b style="font:900 11px/1 monospace;color:var(--sky-blue);letter-spacing:.05em">CONCEPTUAL FLOW:</b>
+              <span style="font-size:13px;font-weight:700;color:#0f172a">${groups[3].flow[lang]}</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    `;
+  }
+
+  let kioskReflectionFutureHtml = '';
+  if (projI18n?.kioskReflectionFuture) {
+    const krf = projI18n.kioskReflectionFuture;
+    const paras = krf.paragraphs;
+    const imps = krf.improvements;
+
+    kioskReflectionFutureHtml = `
+      <section class="case">
+        <div>
+          <h2><i data-lucide="compass" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${krf.heading[lang]}</h2>
+          
+          <!-- 3 Introductory Reflection Paragraphs -->
+          <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:26px 28px;border-radius:24px;margin-bottom:28px;display:flex;flex-direction:column;gap:14px">
+            ${paras.map(p => `
+              <p style="font-size:15px;line-height:1.75;color:#334155;margin:0">${p[lang]}</p>
+            `).join('')}
+          </div>
+
+          <!-- Future Improvements Section -->
+          <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:26px 28px;border-radius:24px">
+            <h3 style="font-size:18px;font-weight:900;color:#0f172a;margin:0 0 20px">${krf.futureHeading[lang]}</h3>
+
+            <!-- 2-Column Desktop / 1-Column Mobile Grid of 4 Improvements -->
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:16px">
+              ${imps.map(item => `
+                <div style="background:rgba(241,245,249,0.55);border:1px solid rgba(226,232,240,0.85);padding:18px;border-radius:18px;display:flex;flex-direction:column;justify-content:space-between;gap:8px">
+                  <div>
+                    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
+                      <span style="font:900 11px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 8px;border-radius:6px">${item.num}</span>
+                      <i data-lucide="${item.icon}" style="width:18px;height:18px;color:var(--sunset)"></i>
+                    </div>
+                    <b style="font-size:15px;color:#0f172a;display:block;margin-bottom:6px">${item.title[lang]}</b>
+                  </div>
+                  <p style="font-size:13.5px;line-height:1.65;color:#475569;margin:0">${item.desc[lang]}</p>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+        </div>
+      </section>
+    `;
+  }
+
+  let researchRequirementHtml = '';
+  if (projI18n?.researchRequirement) {
+    const rr = projI18n.researchRequirement;
+    const summaryParas = rr.summaryParagraphs[lang];
+    const findings = rr.findings.items[lang];
+    const footnote = rr.findings.footnote[lang];
+    const reqs = rr.requirements.items[lang];
+    const takeaway = rr.takeaway[lang];
+
+    researchRequirementHtml = `
+      <section class="case">
+        <div>
+          <h2><i data-lucide="search" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${rr.heading[lang]}</h2>
+          
+          <div style="margin-bottom:28px">
+            ${summaryParas.map(p => `<p style="font-size:15px;line-height:1.75;color:#334155;margin-bottom:14px">${p}</p>`).join('')}
+          </div>
+
+          <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:22px;margin-bottom:28px">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));gap:20px">
+              ${findings.map(item => `
+                <div style="background:rgba(241,245,249,0.55);border:1px solid rgba(226,232,240,0.85);padding:20px;border-radius:18px;display:flex;flex-direction:column;gap:8px">
+                  <div style="font-size:clamp(30px,3.5vw,38px);font-weight:900;color:var(--sky-blue);line-height:1">${item.percentage}</div>
+                  <p style="font-size:14px;line-height:1.65;color:#1e293b;margin:0;font-weight:600">${item.desc}</p>
+                </div>
+              `).join('')}
+            </div>
+            <p style="font-size:13px;line-height:1.5;color:#64748b;font-style:italic;margin:16px 0 0">* ${footnote}</p>
+          </div>
+
+          <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:22px;margin-bottom:28px">
+            <h3 style="font-size:17px;font-weight:900;color:var(--sky-blue);margin:0 0 8px">${rr.requirements.subheading[lang]}</h3>
+            <p style="font-size:14px;line-height:1.7;color:#475569;margin-bottom:16px">${rr.requirements.intro[lang]}</p>
+            <ul style="margin:0;padding:0;list-style:none;display:grid;gap:12px">
+              ${reqs.map((reqText, idx) => `
+                <li style="font-size:15px;line-height:1.7;color:#334155;display:flex;align-items:flex-start;gap:12px">
+                  <span style="font:900 11px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 8px;border-radius:6px;margin-top:2px;flex-shrink:0">${idx+1}</span>
+                  <span>${reqText}</span>
+                </li>
+              `).join('')}
+            </ul>
+          </div>
+
+          <div style="background:linear-gradient(135deg,rgba(85,104,175,0.08),rgba(206,234,238,0.35));border:1.5px solid rgba(85,104,175,0.22);padding:22px 26px;border-radius:20px">
+            <b style="color:var(--sky-blue);font:900 11px/1 monospace;display:block;margin-bottom:8px;letter-spacing:.05em">${rr.takeawaySubheading[lang].toUpperCase()}</b>
+            <p style="font-size:15px;line-height:1.75;font-weight:700;color:var(--ink);margin:0">${takeaway}</p>
+          </div>
+
+        </div>
+      </section>
+    `;
+  }
+
+  let surveyPersonaHtml = '';
+  if (projI18n?.surveyPersona) {
+    const sp = projI18n.surveyPersona;
+    const name = sp.identity.name[lang];
+    const profile = sp.identity.profile[lang];
+    const bgHeading = sp.background.heading[lang];
+    const bgText = sp.background.text[lang];
+    const stmtHeading = sp.statement.heading[lang];
+    const stmtText = sp.statement.text[lang];
+    const stmtLabel = sp.statement?.label ? sp.statement.label[lang] : '';
+    const sec = sp.sections;
+
+    const personaImage = sp.identity?.image || data?.personaImage;
+    const avatarHtml = personaImage ? `
+      <img src="${encodeURI(personaImage)}" alt="${name}" style="width:68px;height:68px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.9);box-shadow:0 4px 14px rgba(30,36,50,0.12);flex-shrink:0"/>
+    ` : `
+      <div style="width:68px;height:68px;border-radius:50%;background:linear-gradient(135deg,rgba(85,104,175,0.15),rgba(206,234,238,0.45));border:2px solid rgba(255,255,255,0.9);box-shadow:0 4px 14px rgba(30,36,50,0.08);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+        <i data-lucide="user" style="width:34px;height:34px;color:var(--sky-blue)"></i>
+      </div>
+    `;
+
+    surveyPersonaHtml = `
+      <section class="case">
+        <div>
+          <h2><i data-lucide="user-check" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${sp.heading[lang]}</h2>
+          
+          <!-- Methodology Note -->
+          <div style="background:rgba(85,104,175,0.07);border:1px solid rgba(85,104,175,0.18);padding:14px 20px;border-radius:14px;margin-bottom:24px;display:flex;align-items:flex-start;gap:10px">
+            <i data-lucide="info" style="width:18px;height:18px;color:var(--sky-blue);margin-top:2px;flex-shrink:0"></i>
+            <p style="font-size:13.5px;line-height:1.6;color:#334155;margin:0">${sp.methodology[lang]}</p>
+          </div>
+
+          <!-- Main Persona Container -->
+          <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:26px 28px;border-radius:22px">
+            
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:28px;align-items:start">
+              
+              <!-- Left Column: Identity, Background & Statement -->
+              <div style="display:flex;flex-direction:column;gap:20px">
+                
+                <div style="display:flex;align-items:center;gap:16px;padding-bottom:16px;border-bottom:1px solid rgba(226,232,240,0.8)">
+                  ${avatarHtml}
+                  <div>
+                    <h3 style="font-size:20px;font-weight:900;color:#0f172a;margin:0 0 4px">${name}</h3>
+                    <span style="font-size:13px;line-height:1.5;color:#64748b;font-weight:600;display:block">${profile}</span>
+                  </div>
+                </div>
+
+                <div style="background:rgba(241,245,249,0.5);border:1px solid rgba(226,232,240,0.8);padding:18px;border-radius:16px">
+                  <b style="font:900 11px/1 monospace;color:var(--sky-blue);display:block;margin-bottom:6px;letter-spacing:.05em">${bgHeading.toUpperCase()}</b>
+                  <p style="font-size:14px;line-height:1.65;color:#334155;margin:0">${bgText}</p>
+                </div>
+
+                <div style="background:linear-gradient(135deg,rgba(85,104,175,0.08),rgba(206,234,238,0.3));border:1.5px solid rgba(85,104,175,0.2);padding:18px;border-radius:16px">
+                  <b style="font:900 11px/1 monospace;color:var(--sky-blue);display:block;margin-bottom:6px;letter-spacing:.05em">${stmtHeading.toUpperCase()}</b>
+                  <p style="font-size:14.5px;line-height:1.65;font-weight:700;color:#0f172a;margin:0;font-style:italic">${stmtText}</p>
+                  ${stmtLabel ? `<span style="font-size:12px;color:#64748b;font-style:italic;display:block;margin-top:8px">* ${stmtLabel}</span>` : ''}
+                </div>
+
+              </div>
+
+              <!-- Right Column: 2x2 Grid of Goals, Behaviors, Frustrations, Needs -->
+              <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));gap:16px">
+                
+                <div style="background:rgba(241,245,249,0.5);border:1px solid rgba(226,232,240,0.8);padding:18px;border-radius:16px;display:flex;flex-direction:column;gap:8px">
+                  <b style="font:900 11px/1 monospace;color:var(--sky-blue);display:flex;align-items:center;gap:6px;margin-bottom:2px;letter-spacing:.05em">
+                    <i data-lucide="target" style="width:14px;height:14px"></i>
+                    ${sec.goals.heading[lang].toUpperCase()}
+                  </b>
+                  <ul style="margin:0;padding:0;list-style:none;display:grid;gap:8px">
+                    ${sec.goals.items[lang].map(it => `
+                      <li style="font-size:13.5px;line-height:1.6;color:#334155;display:flex;align-items:flex-start;gap:8px">
+                        <span style="color:var(--sky-blue);font-weight:900;margin-top:1px">•</span>
+                        <span>${it}</span>
+                      </li>
+                    `).join('')}
+                  </ul>
+                </div>
+
+                <div style="background:rgba(241,245,249,0.5);border:1px solid rgba(226,232,240,0.8);padding:18px;border-radius:16px;display:flex;flex-direction:column;gap:8px">
+                  <b style="font:900 11px/1 monospace;color:var(--sky-blue);display:flex;align-items:center;gap:6px;margin-bottom:2px;letter-spacing:.05em">
+                    <i data-lucide="activity" style="width:14px;height:14px"></i>
+                    ${sec.behaviors.heading[lang].toUpperCase()}
+                  </b>
+                  <ul style="margin:0;padding:0;list-style:none;display:grid;gap:8px">
+                    ${sec.behaviors.items[lang].map(it => `
+                      <li style="font-size:13.5px;line-height:1.6;color:#334155;display:flex;align-items:flex-start;gap:8px">
+                        <span style="color:var(--sky-blue);font-weight:900;margin-top:1px">•</span>
+                        <span>${it}</span>
+                      </li>
+                    `).join('')}
+                  </ul>
+                </div>
+
+                <div style="background:rgba(241,245,249,0.5);border:1px solid rgba(226,232,240,0.8);padding:18px;border-radius:16px;display:flex;flex-direction:column;gap:8px">
+                  <b style="font:900 11px/1 monospace;color:var(--sunset);display:flex;align-items:center;gap:6px;margin-bottom:2px;letter-spacing:.05em">
+                    <i data-lucide="alert-circle" style="width:14px;height:14px"></i>
+                    ${sec.frustrations.heading[lang].toUpperCase()}
+                  </b>
+                  <ul style="margin:0;padding:0;list-style:none;display:grid;gap:8px">
+                    ${sec.frustrations.items[lang].map(it => `
+                      <li style="font-size:13.5px;line-height:1.6;color:#334155;display:flex;align-items:flex-start;gap:8px">
+                        <span style="color:var(--sunset);font-weight:900;margin-top:1px">•</span>
+                        <span>${it}</span>
+                      </li>
+                    `).join('')}
+                  </ul>
+                </div>
+
+                <div style="background:rgba(241,245,249,0.5);border:1px solid rgba(226,232,240,0.8);padding:18px;border-radius:16px;display:flex;flex-direction:column;gap:8px">
+                  <b style="font:900 11px/1 monospace;color:var(--teal);display:flex;align-items:center;gap:6px;margin-bottom:2px;letter-spacing:.05em">
+                    <i data-lucide="check-square" style="width:14px;height:14px"></i>
+                    ${sec.needs.heading[lang].toUpperCase()}
+                  </b>
+                  <ul style="margin:0;padding:0;list-style:none;display:grid;gap:8px">
+                    ${sec.needs.items[lang].map(it => `
+                      <li style="font-size:13.5px;line-height:1.6;color:#334155;display:flex;align-items:flex-start;gap:8px">
+                        <span style="color:var(--teal);font-weight:900;margin-top:1px">•</span>
+                        <span>${it}</span>
+                      </li>
+                    `).join('')}
+                  </ul>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
       </section>
     `;
@@ -2875,30 +4658,227 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
   let designPrioritiesHtml = '';
   if (projI18n?.designPriorities) {
     const dp = projI18n.designPriorities;
-    const tbl = dp.table;
-    designPrioritiesHtml = `
+    if (dp.items) {
+      const itemsList = dp.items[lang];
+      designPrioritiesHtml = `
+        <section class="case">
+          <div>
+            <h2><i data-lucide="compass" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${dp.heading[lang]}</h2>
+            ${dp.intro ? `<p style="font-size:15px;line-height:1.75;color:#334155;margin-bottom:24px">${dp.intro[lang]}</p>` : ''}
+            
+            <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:26px 28px;border-radius:22px">
+              <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:20px">
+                ${itemsList.map(item => `
+                  <div style="background:rgba(241,245,249,0.55);border:1px solid rgba(226,232,240,0.85);padding:20px;border-radius:18px;display:flex;flex-direction:column;gap:8px">
+                    <b style="font-size:16px;font-weight:900;color:var(--sky-blue)">${item.heading}</b>
+                    <p style="font-size:14px;line-height:1.65;color:#334155;margin:0">${item.desc}</p>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          </div>
+        </section>
+      `;
+    } else if (dp.table) {
+      const tbl = dp.table;
+      designPrioritiesHtml = `
+        <section class="case">
+          <div>
+            <h2><i data-lucide="compass" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${dp.heading[lang]}</h2>
+            
+            <div style="width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:18px;border:1px solid rgba(226,232,240,0.9);box-shadow:0 6px 20px rgba(30,36,50,0.05);background:rgba(255,255,255,0.9)">
+              <table style="width:100%;border-collapse:collapse;text-align:left;font-size:14px;min-width:600px">
+                <thead>
+                  <tr style="background:rgba(241,245,249,0.9);border-bottom:2px solid rgba(226,232,240,1)">
+                    <th style="padding:14px 18px;font-weight:900;color:var(--sky-blue);width:32%">${tbl.headers.priority[lang]}</th>
+                    <th style="padding:14px 18px;font-weight:900;color:#1e293b;width:68%">${tbl.headers.decision[lang]}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${tbl.rows.map((r, idx) => `
+                    <tr style="border-bottom:${idx === tbl.rows.length - 1 ? 'none' : '1px solid rgba(226,232,240,0.8)'};background:${idx % 2 === 0 ? 'rgba(255,255,255,0.6)' : 'rgba(248,250,252,0.6)'}">
+                      <td style="padding:14px 18px;font-weight:800;color:#0f172a;vertical-align:top;border-right:1px solid rgba(226,232,240,0.6)">${r.priority[lang]}</td>
+                      <td style="padding:14px 18px;line-height:1.65;color:#475569;vertical-align:top">${r.decision[lang]}</td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      `;
+    }
+  }
+
+  let dormitoryKeyUxHtml = '';
+  if (projI18n?.dormitoryKeyUx) {
+    const dk = projI18n.dormitoryKeyUx;
+    const subs = dk.subsections;
+    const prof = dk.supportingProfile;
+
+    dormitoryKeyUxHtml = `
       <section class="case">
         <div>
-          <h2><i data-lucide="compass" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${dp.heading[lang]}</h2>
-          
-          <div style="width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:18px;border:1px solid rgba(226,232,240,0.9);box-shadow:0 6px 20px rgba(30,36,50,0.05);background:rgba(255,255,255,0.9)">
-            <table style="width:100%;border-collapse:collapse;text-align:left;font-size:14px;min-width:600px">
-              <thead>
-                <tr style="background:rgba(241,245,249,0.9);border-bottom:2px solid rgba(226,232,240,1)">
-                  <th style="padding:14px 18px;font-weight:900;color:var(--sky-blue);width:32%">${tbl.headers.priority[lang]}</th>
-                  <th style="padding:14px 18px;font-weight:900;color:#1e293b;width:68%">${tbl.headers.decision[lang]}</th>
-                </tr>
-              </thead>
-              <tbody>
-                ${tbl.rows.map((r, idx) => `
-                  <tr style="border-bottom:${idx === tbl.rows.length - 1 ? 'none' : '1px solid rgba(226,232,240,0.8)'};background:${idx % 2 === 0 ? 'rgba(255,255,255,0.6)' : 'rgba(248,250,252,0.6)'}">
-                    <td style="padding:14px 18px;font-weight:800;color:#0f172a;vertical-align:top;border-right:1px solid rgba(226,232,240,0.6)">${r.priority[lang]}</td>
-                    <td style="padding:14px 18px;line-height:1.65;color:#475569;vertical-align:top">${r.decision[lang]}</td>
-                  </tr>
-                `).join('')}
-              </tbody>
-            </table>
+          <h2><i data-lucide="layers" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${dk.intro.heading[lang]}</h2>
+          <p style="font-size:15px;line-height:1.75;color:#334155;margin-bottom:28px">${dk.intro.desc[lang]}</p>
+
+          <div style="display:flex;flex-direction:column;gap:32px">
+            
+            <!-- Subsection 1: Centralized Home & Updates -->
+            <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:26px 28px;border-radius:24px">
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+                <span style="font-size:32px;font-weight:950;color:var(--sky-blue);line-height:1;font-family:Syne,sans-serif">1</span>
+                <div style="height:24px;width:2px;background:rgba(85,104,175,0.25)"></div>
+                <h3 style="font-size:clamp(18px,2.5vw,22px);font-weight:900;color:#0f172a;margin:0">${subs[0].heading[lang].replace(/^\d+\s*[—\-]\s*/, '')}</h3>
+              </div>
+              <p style="font-size:14.5px;line-height:1.7;color:#475569;margin:0 0 24px">${subs[0].desc[lang]}</p>
+
+              <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:24px">
+                <!-- Hero UI -->
+                <div style="max-width:340px;width:100%;border-radius:18px;overflow:hidden;box-shadow:0 12px 32px rgba(30,36,50,0.14);border:1px solid rgba(226,232,240,0.9);background:rgba(255,255,255,0.9);padding:8px;box-sizing:border-box">
+                  <img src="${encodeURI(subs[0].heroImage)}" alt="Home Screen" style="width:100%;height:auto;display:block;border-radius:12px;object-fit:contain"/>
+                </div>
+                <!-- Supporting screens -->
+                <div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center;max-width:540px">
+                  ${subs[0].supportingImages.map(img => `
+                    <div style="max-width:240px;width:100%;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(30,36,50,0.08);border:1px solid rgba(226,232,240,0.9);background:rgba(255,255,255,0.9);padding:6px;box-sizing:border-box">
+                      <img src="${encodeURI(img)}" alt="Supporting Screen" style="width:100%;height:auto;display:block;border-radius:10px;object-fit:contain"/>
+                    </div>
+                  `).join('')}
+                </div>
+              </div>
+            </div>
+
+            <!-- Subsections 2 to 5 -->
+            ${subs.slice(1).map((sub, idx) => `
+              <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:26px 28px;border-radius:24px">
+                <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+                  <span style="font-size:32px;font-weight:950;color:var(--sky-blue);line-height:1;font-family:Syne,sans-serif">${idx + 2}</span>
+                  <div style="height:24px;width:2px;background:rgba(85,104,175,0.25)"></div>
+                  <h3 style="font-size:clamp(18px,2.5vw,22px);font-weight:900;color:#0f172a;margin:0">${sub.heading[lang].replace(/^\d+\s*[—\-]\s*/, '')}</h3>
+                </div>
+                <p style="font-size:14.5px;line-height:1.7;color:#475569;margin:0 0 24px">${sub.desc[lang]}</p>
+
+                <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:20px">
+                  <div style="max-width:250px;width:100%;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(30,36,50,0.08);border:1px solid rgba(226,232,240,0.9);background:rgba(255,255,255,0.9);padding:6px;box-sizing:border-box">
+                    <img src="${encodeURI(sub.images[0])}" alt="Screen 1" style="width:100%;height:auto;display:block;border-radius:10px;object-fit:contain"/>
+                  </div>
+
+                  ${sub.hasArrow ? `
+                    <div style="display:flex;align-items:center;justify-content:center;color:var(--sky-blue);padding:8px">
+                      <i data-lucide="arrow-right" style="width:24px;height:24px"></i>
+                    </div>
+                  ` : ''}
+
+                  <div style="max-width:250px;width:100%;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(30,36,50,0.08);border:1px solid rgba(226,232,240,0.9);background:rgba(255,255,255,0.9);padding:6px;box-sizing:border-box">
+                    <img src="${encodeURI(sub.images[1])}" alt="Screen 2" style="width:100%;height:auto;display:block;border-radius:10px;object-fit:contain"/>
+                  </div>
+                </div>
+              </div>
+            `).join('')}
+
+            <!-- Supporting Screen: Student Profile -->
+            <div style="background:rgba(241,245,249,0.6);border:1px solid rgba(226,232,240,0.9);padding:22px 26px;border-radius:20px">
+              <div style="display:flex;flex-wrap:wrap;align-items:center;gap:24px;justify-content:space-between">
+                <div style="flex:1;min-width:260px">
+                  <span style="font:900 11px/1 monospace;color:var(--sky-blue);display:block;margin-bottom:6px;letter-spacing:.05em">SUPPORTING SCREEN</span>
+                  <h4 style="font-size:17px;font-weight:900;color:#0f172a;margin:0 0 8px">${prof.heading[lang]}</h4>
+                  <p style="font-size:14px;line-height:1.65;color:#475569;margin:0">${prof.desc[lang]}</p>
+                </div>
+                <div style="max-width:220px;width:100%;border-radius:14px;overflow:hidden;box-shadow:0 6px 20px rgba(30,36,50,0.08);border:1px solid rgba(226,232,240,0.9);background:rgba(255,255,255,0.9);padding:5px;box-sizing:border-box;flex-shrink:0">
+                  <img src="${encodeURI(prof.image)}" alt="Student Profile Screen" style="width:100%;height:auto;display:block;border-radius:9px;object-fit:contain"/>
+                </div>
+              </div>
+            </div>
+
           </div>
+        </div>
+      </section>
+    `;
+  }
+
+  let dormitoryOutcomeLimitationsHtml = '';
+  if (projI18n?.dormitoryOutcomeLimitations) {
+    const ol = projI18n.dormitoryOutcomeLimitations;
+    const out = ol.outcome;
+    const lim = ol.limitations;
+
+    dormitoryOutcomeLimitationsHtml = `
+      <section class="case">
+        <div>
+          <h2><i data-lucide="check-circle-2" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${ol.heading[lang]}</h2>
+          
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:24px;align-items:stretch">
+            
+            <!-- Outcome Column (Left) -->
+            <div style="background:rgba(16,185,129,0.04);border:1.5px solid rgba(16,185,129,0.2);padding:24px 26px;border-radius:22px;display:flex;flex-direction:column;gap:14px">
+              <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">
+                <b style="font-size:16px;font-weight:900;color:var(--teal);display:flex;align-items:center;gap:8px">
+                  <i data-lucide="trophy" style="width:18px;height:18px"></i>
+                  ${out.subheading[lang]}
+                </b>
+                <span style="font:900 11px/1 monospace;color:var(--teal);background:rgba(16,185,129,0.12);border:1px solid rgba(16,185,129,0.25);padding:5px 12px;border-radius:8px">${out.statusLabel[lang]}</span>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:12px">
+                ${out.paragraphs[lang].map(p => `<p style="font-size:14.5px;line-height:1.7;color:#334155;margin:0">${p}</p>`).join('')}
+              </div>
+            </div>
+
+            <!-- Limitations Column (Right) -->
+            <div style="background:rgba(241,245,249,0.55);border:1.5px solid rgba(226,232,240,0.85);padding:24px 26px;border-radius:22px;display:flex;flex-direction:column;gap:14px">
+              <b style="font-size:16px;font-weight:900;color:#334155;display:flex;align-items:center;gap:8px">
+                <i data-lucide="alert-circle" style="width:18px;height:18px;color:#64748b"></i>
+                ${lim.subheading[lang]}
+              </b>
+              <ul style="margin:0;padding:0;list-style:none;display:grid;gap:10px">
+                ${lim.items[lang].map(item => `
+                  <li style="font-size:14px;line-height:1.65;color:#475569;display:flex;align-items:flex-start;gap:8px">
+                    <span style="color:#64748b;font-weight:900;margin-top:1px">•</span>
+                    <span>${item}</span>
+                  </li>
+                `).join('')}
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    `;
+  }
+
+  let dormitoryReflectionFutureHtml = '';
+  if (projI18n?.dormitoryReflectionFuture) {
+    const drf = projI18n.dormitoryReflectionFuture;
+    const ref = drf.reflection;
+    const imps = drf.improvements;
+
+    dormitoryReflectionFutureHtml = `
+      <section class="case">
+        <div>
+          <h2><i data-lucide="compass" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${drf.heading[lang]}</h2>
+
+          <!-- Reflection Statement Card (Prominent) -->
+          <div style="background:linear-gradient(135deg,rgba(85,104,175,0.06),rgba(206,234,238,0.25));border:1.5px solid rgba(85,104,175,0.18);padding:24px 28px;border-radius:22px;margin-top:16px;margin-bottom:28px">
+            <div style="display:flex;flex-direction:column;gap:14px;max-width:860px">
+              ${ref.paragraphs[lang].map(p => `<p style="font-size:15px;line-height:1.75;color:#334155;margin:0">${p}</p>`).join('')}
+            </div>
+          </div>
+
+          <!-- 3 x 2 Grid of Future Improvements -->
+          <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:26px 28px;border-radius:24px">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:20px">
+              ${imps.map(item => `
+                <div style="background:rgba(241,245,249,0.55);border:1px solid rgba(226,232,240,0.85);padding:20px;border-radius:18px;display:flex;flex-direction:column;gap:8px">
+                  <div style="display:flex;align-items:center;gap:10px">
+                    <span style="font:900 11px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 8px;border-radius:6px">${item.num}</span>
+                    <b style="font-size:15px;font-weight:900;color:#0f172a">${item.heading[lang]}</b>
+                  </div>
+                  <p style="font-size:13.5px;line-height:1.65;color:#475569;margin:0">${item.desc[lang]}</p>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
         </div>
       </section>
     `;
@@ -2925,9 +4905,10 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
 
         <!-- 01 — Station & Room Setup -->
         <div style="margin-bottom:32px">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
-            <span style="font:900 13px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 10px;border-radius:8px">${g[0].num}</span>
-            <h4 style="font-size:18px;font-weight:800;color:#1e293b;margin:0">${g[0].heading[lang]}</h4>
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+            <span style="font-size:32px;font-weight:950;color:var(--sky-blue);line-height:1;font-family:Syne,sans-serif">${g[0].num}</span>
+            <div style="height:24px;width:2px;background:rgba(85,104,175,0.25)"></div>
+            <h4 style="font-size:clamp(18px,2.5vw,22px);font-weight:900;color:#0f172a;margin:0">${g[0].heading[lang]}</h4>
           </div>
           <p style="font-size:14px;line-height:1.7;color:#475569;margin-bottom:16px">${g[0].desc[lang]}</p>
           <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:18px">
@@ -2941,9 +4922,10 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
 
         <!-- 02 — Queue Identification -->
         <div style="margin-bottom:32px">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
-            <span style="font:900 13px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 10px;border-radius:8px">${g[1].num}</span>
-            <h4 style="font-size:18px;font-weight:800;color:#1e293b;margin:0">${g[1].heading[lang]}</h4>
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+            <span style="font-size:32px;font-weight:950;color:var(--sky-blue);line-height:1;font-family:Syne,sans-serif">${g[1].num}</span>
+            <div style="height:24px;width:2px;background:rgba(85,104,175,0.25)"></div>
+            <h4 style="font-size:clamp(18px,2.5vw,22px);font-weight:900;color:#0f172a;margin:0">${g[1].heading[lang]}</h4>
           </div>
           <p style="font-size:14px;line-height:1.7;color:#475569;margin-bottom:16px">${g[1].desc[lang]}</p>
           
@@ -2971,9 +4953,10 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
 
         <!-- 03 — Queue Controls -->
         <div>
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
-            <span style="font:900 13px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 10px;border-radius:8px">${g[2].num}</span>
-            <h4 style="font-size:18px;font-weight:800;color:#1e293b;margin:0">${g[2].heading[lang]}</h4>
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+            <span style="font-size:32px;font-weight:950;color:var(--sky-blue);line-height:1;font-family:Syne,sans-serif">${g[2].num}</span>
+            <div style="height:24px;width:2px;background:rgba(85,104,175,0.25)"></div>
+            <h4 style="font-size:clamp(18px,2.5vw,22px);font-weight:900;color:#0f172a;margin:0">${g[2].heading[lang]}</h4>
           </div>
           <p style="font-size:14px;line-height:1.7;color:#475569;margin-bottom:16px">${g[2].desc[lang]}</p>
           <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:18px">
@@ -3010,9 +4993,10 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
 
         <!-- 01 — Request List & Details -->
         <div style="margin-bottom:32px">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
-            <span style="font:900 13px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 10px;border-radius:8px">${g[0].num}</span>
-            <h4 style="font-size:18px;font-weight:800;color:#1e293b;margin:0">${g[0].heading[lang]}</h4>
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+            <span style="font-size:32px;font-weight:950;color:var(--sky-blue);line-height:1;font-family:Syne,sans-serif">${g[0].num}</span>
+            <div style="height:24px;width:2px;background:rgba(85,104,175,0.25)"></div>
+            <h4 style="font-size:clamp(18px,2.5vw,22px);font-weight:900;color:#0f172a;margin:0">${g[0].heading[lang]}</h4>
           </div>
           <p style="font-size:14px;line-height:1.7;color:#475569;margin-bottom:16px">${g[0].desc[lang]}</p>
           <div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:18px">
@@ -3034,9 +5018,10 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
 
         <!-- 02 — Important Notifications -->
         <div>
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
-            <span style="font:900 13px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 10px;border-radius:8px">${g[1].num}</span>
-            <h4 style="font-size:18px;font-weight:800;color:#1e293b;margin:0">${g[1].heading[lang]}</h4>
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+            <span style="font-size:32px;font-weight:950;color:var(--sky-blue);line-height:1;font-family:Syne,sans-serif">${g[1].num}</span>
+            <div style="height:24px;width:2px;background:rgba(85,104,175,0.25)"></div>
+            <h4 style="font-size:clamp(18px,2.5vw,22px);font-weight:900;color:#0f172a;margin:0">${g[1].heading[lang]}</h4>
           </div>
           <p style="font-size:14px;line-height:1.7;color:#475569;margin-bottom:16px">${g[1].desc[lang]}</p>
           <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:18px">
@@ -3123,9 +5108,10 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
 
         <!-- 01 — Home Dashboard (Hero UI) -->
         <div style="margin-bottom:40px">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
-            <span style="font:900 13px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 10px;border-radius:8px">${h.num}</span>
-            <h4 style="font-size:18px;font-weight:800;color:#1e293b;margin:0">${h.heading[lang]}</h4>
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+            <span style="font-size:32px;font-weight:950;color:var(--sky-blue);line-height:1;font-family:Syne,sans-serif">${h.num}</span>
+            <div style="height:24px;width:2px;background:rgba(85,104,175,0.25)"></div>
+            <h4 style="font-size:clamp(18px,2.5vw,22px);font-weight:900;color:#0f172a;margin:0">${h.heading[lang]}</h4>
           </div>
           <p style="font-size:14px;line-height:1.7;color:#475569;margin-bottom:24px">${h.desc[lang]}</p>
 
@@ -3137,9 +5123,9 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
               <img src="${encodeURI(h.image)}" alt="Home Dashboard" style="width:100%;height:auto;display:block;border-radius:14px;object-fit:contain"/>
               
               <!-- Numbered Target Markers Overlaid on Phone Screen -->
-              <div class="annotation-marker" style="position:absolute;top:36%;left:12px;transform:translateY(-50%);width:24px;height:24px;border-radius:50%;background:var(--sunset);color:#fff;font:900 11px/24px monospace;text-align:center;box-shadow:0 2px 8px rgba(255,107,107,0.5);border:2px solid #fff;z-index:3" title="01 — Latest Attendance">01</div>
-              <div class="annotation-marker" style="position:absolute;top:36%;right:12px;transform:translateY(-50%);width:24px;height:24px;border-radius:50%;background:var(--sky-blue);color:#fff;font:900 11px/24px monospace;text-align:center;box-shadow:0 2px 8px rgba(85,104,175,0.5);border:2px solid #fff;z-index:3" title="02 — Pending Updates">02</div>
-              <div class="annotation-marker" style="position:absolute;top:64%;left:12px;transform:translateY(-50%);width:24px;height:24px;border-radius:50%;background:var(--teal);color:#fff;font:900 11px/24px monospace;text-align:center;box-shadow:0 2px 8px rgba(30,190,165,0.5);border:2px solid #fff;z-index:3" title="03 — Recent Services">03</div>
+              <div class="annotation-marker" style="position:absolute;top:36%;left:12px;transform:translateY(-50%);width:24px;height:24px;border-radius:50%;background:var(--sunset);color:#fff;font:900 11px/24px monospace;text-align:center;box-shadow:0 2px 8px rgba(255,107,107,0.5);border:2px solid #fff;z-index:3" title="1 — Latest Attendance">1</div>
+              <div class="annotation-marker" style="position:absolute;top:36%;right:12px;transform:translateY(-50%);width:24px;height:24px;border-radius:50%;background:var(--sky-blue);color:#fff;font:900 11px/24px monospace;text-align:center;box-shadow:0 2px 8px rgba(85,104,175,0.5);border:2px solid #fff;z-index:3" title="2 — Pending Updates">2</div>
+              <div class="annotation-marker" style="position:absolute;top:64%;left:12px;transform:translateY(-50%);width:24px;height:24px;border-radius:50%;background:var(--teal);color:#fff;font:900 11px/24px monospace;text-align:center;box-shadow:0 2px 8px rgba(30,190,165,0.5);border:2px solid #fff;z-index:3" title="3 — Recent Services">3</div>
             </div>
 
             <!-- Annotation Callout Cards List -->
@@ -3916,17 +5902,27 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
         <img src="${data.coverImage}" alt="${modalTitle}" class="case-cover-img"/>
       </div>
     </section>
+    ${contextHtml}
+    ${assumptionPersonasHtml}
+    ${designPrioritiesAccessibilityHtml}
+    ${visualDirectionHtml}
+    ${kioskKeyUxHtml}
+    ${kioskReflectionFutureHtml}
+    ${researchRequirementHtml}
+    ${surveyPersonaHtml}
     ${researchPivotHtml}
     ${understandingUserHtml}
     ${designOpportunitiesHtml}
     ${keyUxSolutionsHtml}
     ${testingOutcomeHtml}
     ${reflectionFutureHtml}
-    ${contextHtml}
     ${discoveryHtml}
     ${userGroupsHtml}
     ${designPrioritiesHtml}
-    ${(pid !== 'mysuth-app' && pid !== 'goal-app') ? `
+    ${dormitoryKeyUxHtml}
+    ${dormitoryOutcomeLimitationsHtml}
+    ${dormitoryReflectionFutureHtml}
+    ${(pid !== 'mysuth-app' && pid !== 'goal-app' && pid !== 'dormitory-app' && pid !== 'kiosk-app') ? `
       <section class="case">
         <div>
           <h2><i data-lucide="alert-circle" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sunset)"></i>${modalProblemHeading}</h2>
@@ -3982,10 +5978,10 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
         </section>
       ` : ''}
     ` : ''}
-    ${pid !== 'goal-app' ? `
+    ${(pid !== 'goal-app' && pid !== 'dormitory-app' && pid !== 'kiosk-app') ? `
       <section class="case">
         <div>
-          <h2><i data-lucide="layers" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${modalFeatureHeading}</h2>
+          <h2><i data-lucide="sparkles" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${modalFeatureHeading}</h2>
           ${pid === 'mysuth-app' ? (queueManagementHtml + eConsultHtml + attendanceHtml + emergencyCodeHtml + coreScreensHtml + otherFeaturesHtml) : featuresHtml}
         </div>
       </section>
@@ -4460,3 +6456,109 @@ const revealObserver = new IntersectionObserver((entries) => {
 revealTargets.forEach(el => revealObserver.observe(el));
 
 if(window.lucide) lucide.createIcons();
+
+window.selectKioskPersona = function(index) {
+  const cards = document.querySelectorAll('.kiosk-persona-detail-card');
+  const tabs = document.querySelectorAll('.kiosk-persona-tab-btn');
+  cards.forEach((card, idx) => {
+    card.style.display = (idx === index) ? 'block' : 'none';
+  });
+  tabs.forEach((tab, idx) => {
+    if (idx === index) {
+      tab.style.background = 'rgba(85,104,175,0.14)';
+      tab.style.borderColor = 'var(--sky-blue)';
+      tab.setAttribute('aria-selected', 'true');
+    } else {
+      tab.style.background = 'rgba(255,255,255,0.75)';
+      tab.style.borderColor = 'rgba(226,232,240,0.9)';
+      tab.setAttribute('aria-selected', 'false');
+    }
+  });
+};
+
+window.openJourneyLightbox = function(imgSrc, altText) {
+  let modal = document.getElementById('journeyLightboxModal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'journeyLightboxModal';
+    modal.style.cssText = `
+      position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+      background: rgba(15, 23, 42, 0.88); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      z-index: 999999; display: flex; flex-direction: column; align-items: center; justify-content: center;
+      padding: 20px; box-sizing: border-box; opacity: 0; transition: opacity 0.25s ease; pointer-events: none;
+    `;
+    modal.innerHTML = `
+      <div style="position:absolute;top:20px;right:20px;display:flex;gap:12px;z-index:1000000">
+        <button id="closeJourneyLightbox" style="background:rgba(255,255,255,0.2);border:1px solid rgba(255,255,255,0.4);color:#fff;padding:8px 16px;border-radius:10px;cursor:pointer;font-weight:700;font-size:14px;backdrop-filter:blur(8px)">✕ Close</button>
+      </div>
+      <div style="max-width:94vw;max-height:86vh;overflow:auto;border-radius:16px;box-shadow:0 20px 50px rgba(0,0,0,0.5);background:#fff;padding:8px">
+        <img id="journeyLightboxImg" src="" alt="" style="width:100%;height:auto;max-height:82vh;object-fit:contain;display:block;border-radius:10px"/>
+      </div>
+    `;
+    document.body.appendChild(modal);
+
+    const closeBtn = document.getElementById('closeJourneyLightbox');
+    closeBtn.onclick = () => {
+      modal.style.opacity = '0';
+      modal.style.pointerEvents = 'none';
+    };
+    modal.onclick = (e) => {
+      if (e.target === modal) {
+        modal.style.opacity = '0';
+        modal.style.pointerEvents = 'none';
+      }
+    };
+  }
+
+  const img = document.getElementById('journeyLightboxImg');
+  if (img) {
+    img.src = imgSrc;
+    img.alt = altText || 'Journey Map';
+  }
+
+  modal.style.pointerEvents = 'auto';
+  requestAnimationFrame(() => {
+    modal.style.opacity = '1';
+  });
+
+  const handleEsc = (e) => {
+    if (e.key === 'Escape') {
+      modal.style.opacity = '0';
+      modal.style.pointerEvents = 'none';
+      document.removeEventListener('keydown', handleEsc);
+    }
+  };
+  document.addEventListener('keydown', handleEsc);
+};
+
+window.changeKioskFloor = function(delta) {
+  const floorImages = [
+    'projects/Keyosk redesign/floor 1.png',
+    'projects/Keyosk redesign/floor 2.png',
+    'projects/Keyosk redesign/floor 3.png',
+    'projects/Keyosk redesign/floor 4.png',
+    'projects/Keyosk redesign/floor 5.png'
+  ];
+  const floorLabelsEN = ['Floor 1', 'Floor 2', 'Floor 3', 'Floor 4', 'Floor 5'];
+  const floorLabelsTH = ['ชั้น 1', 'ชั้น 2', 'ชั้น 3', 'ชั้น 4', 'ชั้น 5'];
+
+  if (typeof window.kioskCurrentFloorIndex !== 'number') {
+    window.kioskCurrentFloorIndex = 0;
+  }
+  window.kioskCurrentFloorIndex = (window.kioskCurrentFloorIndex + delta + 5) % 5;
+
+  const mainImg = document.getElementById('kioskMainFloorImg');
+  const labelEl = document.getElementById('kioskFloorLabelText');
+  const isTH = document.documentElement.lang === 'th' || (document.getElementById('langBtn') && document.getElementById('langBtn').innerText.includes('TH'));
+
+  if (mainImg) {
+    mainImg.src = encodeURI(floorImages[window.kioskCurrentFloorIndex]);
+  }
+  if (labelEl) {
+    const labels = isTH ? floorLabelsTH : floorLabelsEN;
+    labelEl.innerText = `${labels[window.kioskCurrentFloorIndex]} (${window.kioskCurrentFloorIndex + 1}/5)`;
+  }
+  if (window.lucide) {
+    lucide.createIcons();
+  }
+};
