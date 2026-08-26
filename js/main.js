@@ -316,12 +316,12 @@ const i18n = {
       TH: 'เอกสาร<br/><span class="outline">CV</span>'
     },
     downloadBtn: {
-      EN: 'DOWNLOAD CV (PDF) <i data-lucide="download" class="icon-inline"></i>',
-      TH: 'ดาวน์โหลด CV (PDF) <i data-lucide="download" class="icon-inline"></i>'
+      EN: 'DOWNLOAD CV (PDF) <i class="ph-duotone ph-download-simple icon-inline"></i>',
+      TH: 'ดาวน์โหลด CV (PDF) <i class="ph-duotone ph-download-simple icon-inline"></i>'
     },
     dockBtn: {
-      EN: '<i data-lucide="file-text" class="icon-inline"></i> DOWNLOAD RESUME (PDF)',
-      TH: '<i data-lucide="file-text" class="icon-inline"></i> ดาวน์โหลด RESUME (PDF)'
+      EN: '<i class="ph-duotone ph-file-text icon-inline"></i> DOWNLOAD RESUME (PDF)',
+      TH: '<i class="ph-duotone ph-file-text icon-inline"></i> ดาวน์โหลด RESUME (PDF)'
     }
   },
   contact: {
@@ -358,12 +358,12 @@ const i18n = {
       },
       message: {
         EN: "Tell me about your opportunity...",
-        TH: "พิมพ์ข้อความ หรือข้อเสนอโอกาสทำงานของคุณ..."
+        TH: "พิมพ์ข้อความ หรือข้อเสนอโอกาสทำงาน..."
       }
     },
     sendBtn: {
-      EN: 'SEND MESSAGE <i data-lucide="send" class="icon-inline"></i>',
-      TH: 'ส่งข้อความ <i data-lucide="send" class="icon-inline"></i>'
+      EN: 'SEND MESSAGE <i class="ph-duotone ph-paper-plane-right icon-inline"></i>',
+      TH: 'ส่งข้อความ <i class="ph-duotone ph-paper-plane-right icon-inline"></i>'
     },
     note: {
       EN: "Connected to Formspree endpoint — salsasira@gmail.com",
@@ -389,7 +389,7 @@ const i18n = {
     },
     problemHeading: {
       EN: "Problem Statement",
-      TH: "โจทย์ปัญหา"
+      TH: "ปัญหา"
     },
     personaHeading: {
       EN: "Target User",
@@ -450,8 +450,8 @@ const i18n = {
           TH: "รวบรวมความต้องการของผู้ใช้, ออกแบบเส้นทางผู้ใช้, ออกแบบหน้าจออินเทอร์เฟซ, สร้างตัวต้นแบบ, สร้างหน้าจอ UI flutter, ทดสอบกับผู้ใช้จริง"
         },
         tools: {
-          EN: "Figma, Maze, Flutter",
-          TH: "Figma, Maze, Flutter"
+          EN: "Figma, Maze, Flutter, GiHub",
+          TH: "Figma, Maze, Flutter, GiHub"
         },
         status: {
           EN: "Ongoing",
@@ -465,8 +465,8 @@ const i18n = {
           role: { EN: "Role", TH: "บทบาท" },
           team: { EN: "Team", TH: "ทีม" },
           duration: { EN: "Duration", TH: "ระยะเวลา" },
-          responsibilities: { EN: "Responsibilities", TH: "ความรับผิดชอบ" },
-          tools: { EN: "Tools", TH: "เครื่องมือ" },
+          responsibilities: { EN: "Responsibilities", TH: "ส่วนที่รับผิดชอบ" },
+          tools: { EN: "Tools", TH: "เครื่องมือที่ใช้" },
           status: { EN: "Project Status", TH: "สถานะโปรเจกต์" },
           phase: { EN: "Current Phase", TH: "ขั้นตอนปัจจุบัน" }
         }
@@ -474,7 +474,7 @@ const i18n = {
       contextConstraints: {
         heading: {
           EN: "Context & Constraints",
-          TH: "บริบทและข้อจำกัดของโปรเจกต์ (Context & Constraints)"
+          TH: "บริบทและข้อจำกัดของโปรเจกต์"
         },
         items: {
           EN: [
@@ -490,7 +490,7 @@ const i18n = {
             "• ระบบต้องรองรับทั้ง พยาบาล และแพทย์ พนักงานอื่นๆ นอกเหนือจากนี้",
             "• ผู้ใช้ทำงานในสภาพแวดล้อมที่เร่งรีบ",
             "• ต้องเชื่อมหลายบริการไว้ในแอปเดียวโดยไม่ทำให้เมนูซับซ้อน",
-            "• ต้องรักษาสีและภาพลักษณ์ของโรงพยาบาล",
+            "• ต้องรักษาเอกลักษณ์ของโรงพยาบาล",
             "• บางระบบยังอยู่ระหว่างการพัฒนา จึงทดสอบได้เฉพาะ Prototype"
           ]
         }
@@ -545,21 +545,21 @@ const i18n = {
               num: "1",
               title: "การลงเวลาเข้างาน",
               problem: "ปัจจุบันบุคลากรต้องลงเวลาด้วยเครื่องสแกนลายนิ้วมือซึ่งมีเพียงสองจุด ทำให้ต้องเร่งเดินทางไปยังจุดสแกนและอาจต้องรอคิวในช่วงเปลี่ยนกะ",
-              opportunityLabel: "โอกาสในการออกแบบ:",
+              opportunityLabel: "จุดที่สามารถพัฒนาได้:",
               opportunity: "พัฒนาระบบลงเวลาเข้า–ออกงานผ่านโทรศัพท์มือถือภายในพื้นที่ที่โรงพยาบาลกำหนด"
             },
             {
               num: "2",
               title: "ระบบ E-Consult",
               problem: "คำขอปรึกษาแพทย์ถูกส่งผ่านกลุ่ม LINE หลายกลุ่ม ทำให้ตรวจสอบได้ยากว่าแพทย์ผู้รับผิดชอบได้อ่านคำขอแล้วหรือไม่ โดยเฉพาะคำขอที่มีความเร่งด่วน",
-              opportunityLabel: "โอกาสในการออกแบบ:",
+              opportunityLabel: "จุดที่สามารถพัฒนาได้:",
               opportunity: "รวมคำขอปรึกษาไว้ในระบบเดียว พร้อมแสดงระดับความเร่งด่วนและสถานะการอ่านอย่างชัดเจน"
             },
             {
               num: "3",
               title: "ระบบจัดการคิว",
               problem: "บางแผนกไม่มีอุปกรณ์สำหรับเรียกคิวโดยเฉพาะ เช่น ไมโครโฟน ลำโพง หรือจอแสดงหมายเลข ทำให้พยาบาลหน้าห้องตรวจจัดการและเรียกคิวผู้ป่วยได้ไม่สะดวก",
-              opportunityLabel: "โอกาสในการออกแบบ:",
+              opportunityLabel: "จุดที่สามารถพัฒนาได้:",
               opportunity: "ช่วยให้พยาบาลสามารถเรียกและจัดการคิวผ่านโทรศัพท์มือถือได้โดยตรง"
             }
           ]
@@ -568,17 +568,17 @@ const i18n = {
       userGroups: {
         heading: {
           EN: "User Groups / Role Analysis",
-          TH: "กลุ่มผู้ใช้และการวิเคราะห์บทบาทหน้าที่"
+          TH: "กลุ่มผู้ใช้งานและการวิเคราะห์บทบาทหน้าที่"
         },
         intro: {
           EN: "My SUTH App supports hospital personnel with different responsibilities and access permissions. Based on the initial requirements provided by the project stakeholders, users were grouped by their primary tasks within the application.",
-          TH: "My SUTH App รองรับบุคลากรในโรงพยาบาลที่มีหน้าที่และสิทธิ์การเข้าถึงบริการแตกต่างกัน จาก Requirement เบื้องต้นของ Stakeholder ผู้ใช้จึงถูกแบ่งตามงานหลักที่ต้องดำเนินการภายในแอปพลิเคชัน"
+          TH: "My SUTH App รองรับบุคลากรในโรงพยาบาลที่มีหน้าที่และสิทธิ์การเข้าถึงฟีเจอร์ที่แตกต่างกัน จาก Requirement เบื้องต้นของ Stakeholder ผู้ใช้จึงถูกแบ่งตามงานหลักที่ต้องดำเนินการภายในแอปพลิเคชัน"
         },
         table: {
           headers: {
-            role: { EN: "User group", TH: "กลุ่มผู้ใช้" },
-            needs: { EN: "Primary needs", TH: "ความต้องการหลัก" },
-            services: { EN: "Key services", TH: "บริการสำคัญ" }
+            role: { EN: "User group", TH: "กลุ่มผู้ใช้งาน" },
+            needs: { EN: "Primary needs", TH: "ความต้องการหลักๆ" },
+            services: { EN: "Key services", TH: "ฟีเจอร์หลัก" }
           },
           rows: [
             {
@@ -607,24 +607,24 @@ const i18n = {
               role: { EN: "Doctors", TH: "แพทย์" },
               needs: {
                 EN: "Review E-Consult requests, recognize urgent cases, and access relevant staff services. In some departments, doctors may also call patient queues themselves.",
-                TH: "เปิดอ่านคำขอ E-Consult รับรู้กรณีเร่งด่วน และเข้าถึงบริการที่เกี่ยวข้อง โดยแพทย์บางแผนกอาจเป็นผู้เรียกคิวด้วยตนเอง"
+                TH: "เปิดอ่านคำขอ E-Consult รู้ได้ว่ากรณีไหนเป็นกรณีเร่งด่วน และเข้าถึงฟีเจอร์ที่เกี่ยวข้อง โดยแพทย์บางแผนกอาจเป็นผู้เรียกคิวด้วยตนเอง"
               },
               services: {
                 EN: "E-Consult request viewing, important notifications, queue management where applicable, emergency notifications, attendance, and shared staff services.",
-                TH: "เปิดอ่านคำขอ E-Consult การแจ้งเตือนที่สำคัญ ระบบจัดการคิวในแผนกที่เกี่ยวข้อง การแจ้งเตือนเหตุฉุกเฉิน การลงเวลา และบริการพื้นฐานสำหรับบุคลากร"
+                TH: "เปิดอ่านคำขอ E-Consult การแจ้งเตือนที่สำคัญ ระบบจัดการคิวในแผนกที่เกี่ยวข้อง การแจ้งเตือนเหตุฉุกเฉิน การลงเวลา และฟีเจอร์พื้นฐานสำหรับบุคลากร"
               }
             }
           ]
         },
         outro: {
           EN: "All users share the same core navigation and can see the available service menus. Access is controlled according to each user’s role. If a user selects a service outside their permission level, the system displays a clear access-restriction message.<br><br>This behavior was defined as a project requirement to maintain a consistent application structure and simplify the development process across multiple user roles.",
-          TH: "ผู้ใช้ทุกกลุ่มใช้โครงสร้างเมนูหลักร่วมกันและสามารถมองเห็นเมนูบริการภายในแอปได้ แต่สิทธิ์การใช้งานแต่ละบริการจะถูกควบคุมตามบทบาท หากผู้ใช้เลือกบริการที่ไม่มีสิทธิ์เข้าถึง ระบบจะแสดงข้อความแจ้งข้อจำกัดอย่างชัดเจน<br><br>รูปแบบนี้เป็น Requirement ของหัวหน้าโครงการ เพื่อรักษาโครงสร้างแอปให้สอดคล้องกันระหว่างผู้ใช้หลายบทบาท และช่วยลดความซับซ้อนในการพัฒนาระบบ"
+          TH: "ผู้ใช้ทุกกลุ่มใช้โครงสร้างเมนูหลักร่วมกันและสามารถมองเห็นเมนูบริการภายในแอปได้ แต่สิทธิ์การใช้งานแต่ละเมนูจะถูกควบคุมตามบทบาท หากผู้ใช้เลือกเมนูที่ไม่มีสิทธิ์เข้าถึง ระบบจะแสดงข้อความแจ้งข้อจำกัดอย่างชัดเจน<br><br>รูปแบบนี้เป็น Requirement ของหัวหน้าโครงการ เพื่อรักษาโครงสร้างแอปให้สอดคล้องกันระหว่างผู้ใช้หลายบทบาท และช่วยลดความซับซ้อนในการพัฒนาระบบ"
         }
       },
       designPriorities: {
         heading: {
           EN: "Design Priorities & Decisions",
-          TH: "สิ่งที่ให้ความสำคัญและการตัดสินใจออกแบบ"
+          TH: "สิ่งที่ให้ความสำคัญในการออกแบบ"
         },
         table: {
           headers: {
@@ -636,21 +636,21 @@ const i18n = {
               priority: { EN: "Quick access to essential workflows", TH: "เข้าถึงงานสำคัญได้รวดเร็ว" },
               decision: {
                 EN: "The Home screen was designed as a central portal, while the core navigation was limited to Home, Notifications, and Profile.",
-                TH: "ออกแบบหน้าหลักให้เป็น Portal รวมบริการ และจำกัดเมนูหลักไว้ที่หน้าหลัก การแจ้งเตือน และโปรไฟล์"
+                TH: "ออกแบบหน้าหลักให้เป็น Portal รวมทุกเมนูที่มี และจำกัดเมนูหลักไว้ที่หน้าหลัก การแจ้งเตือน และโปรไฟล์"
               }
             },
             {
               priority: { EN: "Clear status visibility", TH: "มองเห็นสถานะได้อย่างชัดเจน" },
               decision: {
                 EN: "Queue status, E-Consult urgency and read status, and attendance results were presented with clear labels and visual hierarchy.",
-                TH: "แสดงสถานะคิว ระดับความเร่งด่วนและสถานะการอ่าน E-Consult รวมถึงผลการลงเวลาด้วยข้อความและลำดับการมองเห็นที่ชัดเจน"
+                TH: "แสดงสถานะคิว ระดับความเร่งด่วนและสถานะการอ่าน E-Consult รวมถึงผลการลงเวลาด้วยข้อความและลำดับการมองเห็นได้ทันทีอย่างชัดเจน"
               }
             },
             {
               priority: { EN: "Role-based access", TH: "รองรับสิทธิ์ตามบทบาท" },
               decision: {
                 EN: "All service menus remain visible to maintain a consistent structure. Permissions are validated when a service is selected, and restricted users receive a clear access message.",
-                TH: "แสดงเมนูบริการภายใต้โครงสร้างเดียวกัน ตรวจสอบสิทธิ์เมื่อเลือกบริการ และแจ้งอย่างชัดเจนเมื่อผู้ใช้ไม่มีสิทธิ์เข้าถึง"
+                TH: "แสดงเมนูภายใต้โครงสร้างเดียวกัน ตรวจสอบสิทธิ์เมื่อเลือกเมนู และแจ้งอย่างชัดเจนเมื่อผู้ใช้ไม่มีสิทธิ์เข้าถึง"
               }
             },
             {
@@ -757,7 +757,7 @@ const i18n = {
         },
         challenge: {
           EN: "E-Consult requests form were previously shared across multiple LINE groups, making important requests easy to overlook and difficult for doctors to access in one place.",
-          TH: "เดิมฟอร์มคำขอ E-Consult ถูกส่งผ่านกลุ่ม LINE หลายกลุ่ม ทำให้คำขอสำคัญอาจถูกมองข้าม และแพทย์ไม่สามารถเข้าถึงคำขอได้จากพื้นที่เดียว"
+          TH: "เดิมฟอร์มคำขอ E-Consult ถูกส่งผ่านกลุ่ม LINE หลายกลุ่ม ทำให้คำขอที่สำคัญหรือเร่งด่วนอาจถูกมองข้าม และแพทย์ไม่สามารถเข้าถึงคำขอได้จากพื้นที่เดียว"
         },
         solutionLabel: {
           EN: "UX Solution",
@@ -873,7 +873,7 @@ const i18n = {
             ],
             fallbackLabel: {
               EN: "PIN Fallback",
-              TH: "PIN สำรองเมื่อชีวมิติไม่พร้อมใช้งาน"
+              TH: "PIN สำรองเมื่อ FaceID และ <br> แสกนลายนิ้วมือไม่พร้อมใช้งาน"
             },
             fallbackImage: "projects/My SUTH App/check in-check out/PIN.png"
           },
@@ -976,7 +976,7 @@ const i18n = {
         },
         supportingSectionTitle: {
           EN: "Supporting Core Screens",
-          TH: "หน้าจอสนับสนุน"
+          TH: "หน้าจอหลักอื่นๆ"
         },
         supportingScreens: [
           {
@@ -1404,7 +1404,7 @@ const i18n = {
           },
           {
             num: "4",
-            icon: "heart-handshake",
+            icon: "hand-heart",
             title: {
               EN: "Encourage, Not Punish",
               TH: "ส่งเสริมให้ทำต่อ แทนการทำให้รู้สึกล้มเหลว"
@@ -1719,13 +1719,13 @@ const i18n = {
           },
           {
             num: "2",
-            icon: "smile",
+            icon: "smiley",
             title: { EN: "Mascot Companion", TH: "Mascot Companion" },
             desc: { EN: "A friendly character that celebrates progress and encourages users along the way.", TH: "เพื่อนร่วมทางที่คอยฉลองความสำเร็จและให้กำลังใจ" }
           },
           {
             num: "3",
-            icon: "sparkles",
+            icon: "sparkle",
             title: { EN: "Micro-interactions", TH: "Micro-interactions" },
             desc: { EN: "Meaningful animations for check-ins, streaks, and milestones.", TH: "เพิ่ม Animation สำหรับ Check-in, Streak และ Milestone" }
           },
@@ -2198,7 +2198,7 @@ const i18n = {
         supportingProfile: {
           heading: {
             EN: "Supporting Screen — Student Profile",
-            TH: "หน้าจอสนับสนุน — โปรไฟล์นักศึกษา"
+            TH: "หน้าจอหลักอื่นๆ — โปรไฟล์นักศึกษา"
           },
           desc: {
             EN: "The Profile screen provides access to student and dormitory information, along with related account options and services.",
@@ -2766,7 +2766,7 @@ const i18n = {
       designPrioritiesAccessibility: {
         heading: {
           EN: "Design Priorities & Accessibility Considerations",
-          TH: "แนวทางการออกแบบและข้อพิจารณาด้านการเข้าถึง"
+          TH: "แนวทางการออกแบบและ Accessibility"
         },
         intro: {
           EN: "The assumed user journeys were translated into five design priorities that guided the kiosk’s interaction, information hierarchy, and accessibility considerations.",
@@ -2788,7 +2788,7 @@ const i18n = {
             num: "2",
             title: {
               EN: "Clear Destination Feedback",
-              TH: "แสดงจุดหมายอย่างชัดเจน"
+              TH: "สื่อสารตำแหน่งจุดหมายอย่างชัดเจน"
             },
             desc: {
               EN: "After a room is selected, clearly display its floor and highlight its location on the building plan. Use text and symbols alongside color to keep the destination understandable without relying on color alone.",
@@ -2981,7 +2981,7 @@ const i18n = {
           },
           {
             num: "3",
-            icon: "accessibility",
+            icon: "wheelchair",
             title: {
               EN: "Accessibility Validation",
               TH: "ตรวจสอบ Accessibility"
@@ -3080,8 +3080,8 @@ const i18n = {
         TH: "Simple Soul Magazine — นิตยสารสหกิจศึกษา"
       },
       pdfBtn: {
-        EN: 'OPEN FULL MAGAZINE PDF (22 PAGES) <i data-lucide="file-text" class="icon-inline"></i>',
-        TH: 'เปิดอ่านนิตยสารฉบับเต็ม PDF (22 หน้า) <i data-lucide="file-text" class="icon-inline"></i>'
+        EN: 'OPEN FULL MAGAZINE PDF (22 PAGES) <i class="ph-duotone ph-file-text icon-inline"></i>',
+        TH: 'เปิดอ่านนิตยสารฉบับเต็ม PDF (22 หน้า) <i class="ph-duotone ph-file-text icon-inline"></i>'
       }
     },
     logo: {
@@ -3122,7 +3122,7 @@ let overlay, shell;
 
 function setLanguage(lang) {
   currentLang = lang;
-  
+
   if (lang === 'TH') {
     document.body.classList.add('lang-th');
     document.body.classList.remove('lang-en');
@@ -3375,7 +3375,7 @@ function setLanguage(lang) {
 
   // Update language toggle buttons text
   document.querySelectorAll('#langToggleBtn, #mobileLangToggleBtn, #modalLangToggleBtn').forEach(btn => {
-    btn.innerHTML = `<i data-lucide="globe" style="width:14px;height:14px;color:var(--sky-blue)"></i> ${lang === 'EN' ? 'TH' : 'EN'}`;
+    btn.innerHTML = `<i class="ph-duotone ph-globe" style="font-size:14px;color:var(--sky-blue)"></i> ${lang === 'EN' ? 'TH' : 'EN'}`;
   });
 
   // Update open modal view if currently visible
@@ -3407,89 +3407,89 @@ if (document.readyState === 'loading') {
   initLanguageToggle();
 }
 
-const story=document.getElementById('story');
-const world=document.getElementById('world');
-const panels=[...document.querySelectorAll('.panel')];
-const nav=[...document.querySelectorAll('[data-jump]')];
-const meterBar=document.getElementById('meterBar');
-const meterText=document.getElementById('meterText');
-const ring=document.getElementById('ring');
-const ghost=document.getElementById('ghostword');
-const mainNav=document.getElementById('mainNav');
-const introCopy=document.getElementById('introCopy');
-const introPortrait=document.getElementById('introPortrait');
-const introAbout=document.getElementById('introAbout');
-const reduced=()=>matchMedia('(prefers-reduced-motion: reduce)').matches;
-const mobile=()=>matchMedia('(max-width:820px)').matches;
-const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
-const lerp=(a,b,t)=>a+(b-a)*t;
-const ease=t=>t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2;
-let target=scrollY,current=scrollY,last=performance.now();
+const story = document.getElementById('story');
+const world = document.getElementById('world');
+const panels = [...document.querySelectorAll('.panel')];
+const nav = [...document.querySelectorAll('[data-jump]')];
+const meterBar = document.getElementById('meterBar');
+const meterText = document.getElementById('meterText');
+const ring = document.getElementById('ring');
+const ghost = document.getElementById('ghostword');
+const mainNav = document.getElementById('mainNav');
+const introCopy = document.getElementById('introCopy');
+const introPortrait = document.getElementById('introPortrait');
+const introAbout = document.getElementById('introAbout');
+const reduced = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
+const mobile = () => matchMedia('(max-width:820px)').matches;
+const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+const lerp = (a, b, t) => a + (b - a) * t;
+const ease = t => t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+let target = scrollY, current = scrollY, last = performance.now();
 
-function introLength(){
-  const p=panels[0];
-  return Math.max(innerHeight*1.8,(p?.offsetHeight||innerHeight*3)-innerHeight);
+function introLength() {
+  const p = panels[0];
+  return Math.max(innerHeight * 1.8, (p?.offsetHeight || innerHeight * 3) - innerHeight);
 }
-function setIntroAnimation(scrollPx){
-  const p=clamp(scrollPx/introLength(),0,1);
-  const p1=clamp(p/.48,0,1);
-  const p2=clamp((p-.48)/.52,0,1);
-  const e1=ease(p1),e2=ease(p2);
+function setIntroAnimation(scrollPx) {
+  const p = clamp(scrollPx / introLength(), 0, 1);
+  const p1 = clamp(p / .48, 0, 1);
+  const p2 = clamp((p - .48) / .52, 0, 1);
+  const e1 = ease(p1), e2 = ease(p2);
 
-  const titleX=lerp(0,-7,e1)+lerp(0,-15,e2);
-  const titleY=lerp(0,-7,e1)+lerp(0,-3,e2);
-  const titleScale=lerp(1,.84,e1)*lerp(1,1.12,e2);
-  introCopy.style.transform=`translate3d(${titleX}vw,${titleY}vh,0) scale(${titleScale})`;
-  introCopy.style.opacity=1-clamp((p-.28)/.32,0,1);
+  const titleX = lerp(0, -7, e1) + lerp(0, -15, e2);
+  const titleY = lerp(0, -7, e1) + lerp(0, -3, e2);
+  const titleScale = lerp(1, .84, e1) * lerp(1, 1.12, e2);
+  introCopy.style.transform = `translate3d(${titleX}vw,${titleY}vh,0) scale(${titleScale})`;
+  introCopy.style.opacity = 1 - clamp((p - .28) / .32, 0, 1);
 
-  const portraitX=lerp(0,8,e1)+lerp(0,-3,e2);
-  const portraitY=lerp(0,5,e1)+lerp(0,-1,e2);
-  const portraitScale=lerp(1,.72,e1)*lerp(1,1.14,e2);
-  introPortrait.style.transform=`translate3d(${portraitX}vw,${portraitY}vh,0) scale(${portraitScale}) rotate(${lerp(3,1,e1)}deg)`;
-  introPortrait.style.opacity=1-clamp((p-.88)/.12,0,1);
+  const portraitX = lerp(0, 8, e1) + lerp(0, -3, e2);
+  const portraitY = lerp(0, 5, e1) + lerp(0, -1, e2);
+  const portraitScale = lerp(1, .72, e1) * lerp(1, 1.14, e2);
+  introPortrait.style.transform = `translate3d(${portraitX}vw,${portraitY}vh,0) scale(${portraitScale}) rotate(${lerp(3, 1, e1)}deg)`;
+  introPortrait.style.opacity = 1 - clamp((p - .88) / .12, 0, 1);
 
-  const aboutIn=clamp((p-.17)/.25,0,1);
-  const aboutOut=clamp((p-.82)/.18,0,1);
-  introAbout.style.opacity=ease(aboutIn)*(1-ease(aboutOut));
-  introAbout.style.transform=`translate3d(${lerp(4,0,ease(aboutIn))+lerp(0,-16,ease(aboutOut))}vw,0,0) scale(${lerp(.95,1,ease(aboutIn))*lerp(1,1.16,ease(aboutOut))})`;
+  const aboutIn = clamp((p - .17) / .25, 0, 1);
+  const aboutOut = clamp((p - .82) / .18, 0, 1);
+  introAbout.style.opacity = ease(aboutIn) * (1 - ease(aboutOut));
+  introAbout.style.transform = `translate3d(${lerp(4, 0, ease(aboutIn)) + lerp(0, -16, ease(aboutOut))}vw,0,0) scale(${lerp(.95, 1, ease(aboutIn)) * lerp(1, 1.16, ease(aboutOut))})`;
 }
 
-function verticalParallax(){
-  const center=current+innerHeight/2;
-  panels.slice(1).forEach(panel=>{
-    const panelCenter=panel.offsetTop+panel.offsetHeight/2;
-    const norm=clamp((center-panelCenter)/(innerHeight*1.15),-1.25,1.25);
-    panel.querySelectorAll('[data-speed]').forEach(el=>{
-      const speed=parseFloat(el.dataset.speed||1);
-      const isTitle=/(about-copy|skills-title|projects-title|mini-title|cert-title|activity-title|cv-title|contact-title)/.test(el.className);
-      const isHero=/(edu|projects-rail|devices|folder|film|resume|contact-panel|contact-links)/.test(el.className);
-      let y=norm*(1-speed)*(isTitle?120:isHero?90:65);
-      if(isTitle) y += norm*-28;
-      if(isHero) y += norm*18;
-      y=clamp(y,-58,58);
-      const x=mobile()?0:clamp(norm*(isTitle?-18:isHero?12:5),-22,22);
-      el.style.translate=`${x}px ${y}px`;
+function verticalParallax() {
+  const center = current + innerHeight / 2;
+  panels.slice(1).forEach(panel => {
+    const panelCenter = panel.offsetTop + panel.offsetHeight / 2;
+    const norm = clamp((center - panelCenter) / (innerHeight * 1.15), -1.25, 1.25);
+    panel.querySelectorAll('[data-speed]').forEach(el => {
+      const speed = parseFloat(el.dataset.speed || 1);
+      const isTitle = /(about-copy|skills-title|projects-title|mini-title|cert-title|activity-title|cv-title|contact-title)/.test(el.className);
+      const isHero = /(edu|projects-rail|devices|folder|film|resume|contact-panel|contact-links)/.test(el.className);
+      let y = norm * (1 - speed) * (isTitle ? 120 : isHero ? 90 : 65);
+      if (isTitle) y += norm * -28;
+      if (isHero) y += norm * 18;
+      y = clamp(y, -58, 58);
+      const x = mobile() ? 0 : clamp(norm * (isTitle ? -18 : isHero ? 12 : 5), -22, 22);
+      el.style.translate = `${x}px ${y}px`;
     });
   });
 }
 
-function activeSection(){
-  const probe=current+innerHeight*.42;
-  let idx=0;
-  panels.forEach((p,i)=>{if(probe>=p.offsetTop) idx=i;});
+function activeSection() {
+  const probe = current + innerHeight * .42;
+  let idx = 0;
+  panels.forEach((p, i) => { if (probe >= p.offsetTop) idx = i; });
   return idx;
 }
 
-function render(now){
-  const dt=Math.min(32,now-last);last=now;
-  const follow=reduced()?1:1-Math.pow(.002,dt/1000);
-  current += (target-current)*follow;
-  if(Math.abs(target-current)<.05) current=target;
+function render(now) {
+  const dt = Math.min(32, now - last); last = now;
+  const follow = reduced() ? 1 : 1 - Math.pow(.002, dt / 1000);
+  current += (target - current) * follow;
+  if (Math.abs(target - current) < .05) current = target;
 
-  if(mobile()){
-    if(introCopy){ introCopy.style.opacity='1'; introCopy.style.transform='none'; }
-    if(introPortrait){ introPortrait.style.opacity='1'; introPortrait.style.transform='none'; }
-    if(introAbout){ introAbout.style.opacity='1'; introAbout.style.transform='none'; }
+  if (mobile()) {
+    if (introCopy) { introCopy.style.opacity = '1'; introCopy.style.transform = 'none'; }
+    if (introPortrait) { introPortrait.style.opacity = '1'; introPortrait.style.transform = 'none'; }
+    if (introAbout) { introAbout.style.opacity = '1'; introAbout.style.transform = 'none'; }
   } else {
     setIntroAnimation(current);
   }
@@ -3497,84 +3497,84 @@ function render(now){
   // Vertical Parallax for all devices
   verticalParallax();
 
-  if(mobile()){
+  if (mobile()) {
     mainNav.classList.add('visible');
-    mainNav.style.opacity='1';
-    mainNav.style.transform='translateY(0)';
+    mainNav.style.opacity = '1';
+    mainNav.style.transform = 'translateY(0)';
   } else {
-    const skillsStart=panels[1] ? panels[1].offsetTop : 300;
-    const reveal=clamp((current-(skillsStart-innerHeight*.38))/(innerHeight*.22),0,1);
-    mainNav.classList.toggle('visible',reveal>.02);
-    mainNav.style.opacity=reveal;
-    mainNav.style.transform=`translateY(${lerp(-22,0,ease(reveal))}px)`;
+    const skillsStart = panels[1] ? panels[1].offsetTop : 300;
+    const reveal = clamp((current - (skillsStart - innerHeight * .38)) / (innerHeight * .22), 0, 1);
+    mainNav.classList.toggle('visible', reveal > .02);
+    mainNav.style.opacity = reveal;
+    mainNav.style.transform = `translateY(${lerp(-22, 0, ease(reveal))}px)`;
   }
 
-  const idx=activeSection();
-  nav.forEach((b,i)=>b.classList.toggle('active',i===idx));
-  if(meterText) meterText.textContent=String(idx+1)+' / 8';
-  
-  const contentStart=panels[1]?.offsetTop||0;
-  const contentEnd=Math.max(contentStart+1,document.documentElement.scrollHeight-innerHeight);
-  if(meterBar) meterBar.style.width=(clamp((current-contentStart)/(contentEnd-contentStart),0,1)*100)+'%';
+  const idx = activeSection();
+  nav.forEach((b, i) => b.classList.toggle('active', i === idx));
+  if (meterText) meterText.textContent = String(idx + 1) + ' / 8';
 
-  const gp=clamp(current/Math.max(1,document.documentElement.scrollHeight-innerHeight),0,1);
-  if(ring) ring.style.transform=`translate3d(${Math.cos(gp*Math.PI*2)*6}vw,${Math.sin(gp*Math.PI*2)*10}vh,0) rotate(${-gp*65}deg)`;
-  if(ghost) ghost.style.transform=`translate3d(${Math.sin(gp*Math.PI*3)*8}vw,${Math.cos(gp*Math.PI*2)*12}vh,0)`;
+  const contentStart = panels[1]?.offsetTop || 0;
+  const contentEnd = Math.max(contentStart + 1, document.documentElement.scrollHeight - innerHeight);
+  if (meterBar) meterBar.style.width = (clamp((current - contentStart) / (contentEnd - contentStart), 0, 1) * 100) + '%';
+
+  const gp = clamp(current / Math.max(1, document.documentElement.scrollHeight - innerHeight), 0, 1);
+  if (ring) ring.style.transform = `translate3d(${Math.cos(gp * Math.PI * 2) * 6}vw,${Math.sin(gp * Math.PI * 2) * 10}vh,0) rotate(${-gp * 65}deg)`;
+  if (ghost) ghost.style.transform = `translate3d(${Math.sin(gp * Math.PI * 3) * 8}vw,${Math.cos(gp * Math.PI * 2) * 12}vh,0)`;
 
   requestAnimationFrame(render);
 }
-addEventListener('scroll',()=>target=scrollY,{passive:true});
-addEventListener('resize',()=>{target=scrollY},{passive:true});
+addEventListener('scroll', () => target = scrollY, { passive: true });
+addEventListener('resize', () => { target = scrollY }, { passive: true });
 requestAnimationFrame(render);
 
-nav.forEach((b,i)=>b.addEventListener('click',()=>{
-  panels[i].scrollIntoView({behavior:reduced()?'auto':'smooth',block:'start'});
+nav.forEach((b, i) => b.addEventListener('click', () => {
+  panels[i].scrollIntoView({ behavior: reduced() ? 'auto' : 'smooth', block: 'start' });
 }));
 
 /* CASE STUDY DATA & OVERLAY */
-const caseData={
-  'mysuth-app':{
-    title:'My SUTH App — Hospital Management System',
-    subtitle:'“One App, Smarter Hospital Work.”',
-    coverImage:'projects/mySUTH.png',
-    figmaLink:'https://www.figma.com/proto/Y5IY4MV4A7sUO2xvvwBj3o/My-SUTH-App-Design?page-id=0%3A1&node-id=6524-24888&viewport=412%2C-1965%2C0.04&t=fa03tj96ASzrtK07-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=5848%3A45468',
-    overview:'A mobile application designed for SUT Hospital staff to simplify daily workflows, including attendance, queue management, appointments, and notifications—all in one place.',
-    problem:'• Hospital staff need to use multiple systems and platforms to complete their daily tasks.<br>• Important workflows, such as attendance, queue management, appointments, and notifications, can involve too many steps.<br>• Switching between different systems can be time-consuming and inconvenient.<br>• Important information may be missed or delayed during busy working hours.<br>• Complex workflows can increase the chance of errors and reduce overall work efficiency.',
-    personaName:'SUT Hospital Staff & Healthcare Personnel',
-    personaDesc:'The primary users are SUT Hospital staff, including general staff, nurses, doctors, and other healthcare personnel. The application is designed to support different roles and responsibilities while providing quick and convenient access to essential hospital services in one place.',
-    results:{
-      heading:'Results & Key Outcomes',
-      desc:'The implementation of My SUTH App successfully streamlined daily hospital operations, significantly improving workflow efficiency for healthcare personnel while ensuring faster service delivery across hospital departments.',
-      highlights:[
+const caseData = {
+  'mysuth-app': {
+    title: 'My SUTH App — Hospital Management System',
+    subtitle: '“One App, Smarter Hospital Work.”',
+    coverImage: 'projects/mySUTH.png',
+    figmaLink: 'https://www.figma.com/proto/Y5IY4MV4A7sUO2xvvwBj3o/My-SUTH-App-Design?page-id=0%3A1&node-id=6524-24888&viewport=412%2C-1965%2C0.04&t=fa03tj96ASzrtK07-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=5848%3A45468',
+    overview: 'A mobile application designed for SUT Hospital staff to simplify daily workflows, including attendance, queue management, appointments, and notifications—all in one place.',
+    problem: '• Hospital staff need to use multiple systems and platforms to complete their daily tasks.<br>• Important workflows, such as attendance, queue management, appointments, and notifications, can involve too many steps.<br>• Switching between different systems can be time-consuming and inconvenient.<br>• Important information may be missed or delayed during busy working hours.<br>• Complex workflows can increase the chance of errors and reduce overall work efficiency.',
+    personaName: 'SUT Hospital Staff & Healthcare Personnel',
+    personaDesc: 'The primary users are SUT Hospital staff, including general staff, nurses, doctors, and other healthcare personnel. The application is designed to support different roles and responsibilities while providing quick and convenient access to essential hospital services in one place.',
+    results: {
+      heading: 'Results & Key Outcomes',
+      desc: 'The implementation of My SUTH App successfully streamlined daily hospital operations, significantly improving workflow efficiency for healthcare personnel while ensuring faster service delivery across hospital departments.',
+      highlights: [
         '• <b>Unified Staff Dashboard:</b> Integrated multiple hospital services (attendance, queue, appointments, announcements) into one accessible mobile portal.',
         '• <b>Improved Operational Efficiency:</b> Reduced time spent navigating separate systems, minimizing manual steps and potential human errors during busy shifts.',
         '• <b>Faster Service & Response Time:</b> Enabled real-time notifications and instant queue updates for staff, ensuring smoother coordination between medical departments.'
       ]
     },
-    features:[
+    features: [
       {
-        title:'1. Queue Management System',
-        desc:'A queue management system that allows staff to select an examination room and call patients by entering a queue number or scanning a QR code. Each room includes queue details with controls to recall, call the next queue, or skip a queue. When a queue is called, the patient automatically receives a notification on their mobile device.',
-        images:[
+        title: '1. Queue Management System',
+        desc: 'A queue management system that allows staff to select an examination room and call patients by entering a queue number or scanning a QR code. Each room includes queue details with controls to recall, call the next queue, or skip a queue. When a queue is called, the patient automatically receives a notification on their mobile device.',
+        images: [
           'projects/My SUTH App/queue management/detail.png',
           'projects/My SUTH App/queue management/select-room.png',
           'projects/My SUTH App/queue management/call-queue.png'
         ],
-        align:'right'
+        align: 'right'
       },
       {
-        title:'2. E-Consult Service',
-        desc:'An E-Consult system that notifies doctors when consultation requests are submitted from different departments. Each request includes an urgency tag and read status, allowing staff to see whether the assigned doctor has reviewed it. This replaces the previous workflow of sharing consultation forms across multiple group chats, reducing missed requests and unclear follow-up status.',
-        images:[
+        title: '2. E-Consult Service',
+        desc: 'An E-Consult system that notifies doctors when consultation requests are submitted from different departments. Each request includes an urgency tag and read status, allowing staff to see whether the assigned doctor has reviewed it. This replaces the previous workflow of sharing consultation forms across multiple group chats, reducing missed requests and unclear follow-up status.',
+        images: [
           'projects/My SUTH App/E-consult/e-consult list.png',
           'projects/My SUTH App/E-consult/form.png'
         ],
-        align:'left'
+        align: 'left'
       },
       {
-        title:'3. Check-In / Check-Out Tracking',
-        desc:'A staff attendance system that allows users to check in and check out through the mobile application with location verification. The system records each attendance activity with the date, time, and status, helping staff complete attendance tasks quickly and accurately.<br><br> Users can also view their check-in and check-out history, including previous attendance records, timestamps, and work status. Historical records are organized clearly, making it easier to review past attendance and track working patterns over time.',
-        images:[
+        title: '3. Check-In / Check-Out Tracking',
+        desc: 'A staff attendance system that allows users to check in and check out through the mobile application with location verification. The system records each attendance activity with the date, time, and status, helping staff complete attendance tasks quickly and accurately.<br><br> Users can also view their check-in and check-out history, including previous attendance records, timestamps, and work status. Historical records are organized clearly, making it easier to review past attendance and track working patterns over time.',
+        images: [
           'projects/My SUTH App/check in-check out/clockin.png',
           'projects/My SUTH App/check in-check out/clockin-GPS.png',
           'projects/My SUTH App/check in-check out/clockout.png',
@@ -3582,137 +3582,137 @@ const caseData={
           'projects/My SUTH App/check in-check out/histortlist.png',
           'projects/My SUTH App/check in-check out/history-calenda.png'
         ],
-        align:'right'
+        align: 'right'
       },
       {
-        title:'4. Emergency Code Alerts',
-        desc:'A real-time emergency alert system that instantly notifies relevant hospital staff when an Emergency Code is activated. Each alert clearly displays the emergency type, location, time, and key details, helping staff quickly understand the situation and respond appropriately.',
-        images:[
+        title: '4. Emergency Code Alerts',
+        desc: 'A real-time emergency alert system that instantly notifies relevant hospital staff when an Emergency Code is activated. Each alert clearly displays the emergency type, location, time, and key details, helping staff quickly understand the situation and respond appropriately.',
+        images: [
           'projects/My SUTH App/emergency code/CODE.png'
         ],
-        align:'left'
+        align: 'left'
       },
       {
-        title:'5. Core Application Screens',
-        desc:'Includes the Home, Notifications, Profile, and Work Systems screens that connect the app’s main services. The Home screen provides quick access to essential features, Notifications centralize important updates, Profile manages personal information and settings, while Work Systems organizes role-based tools and services for hospital staff.',
-        images:[
+        title: '5. Core Application Screens',
+        desc: 'Includes the Home, Notifications, Profile, and Work Systems screens that connect the app’s main services. The Home screen provides quick access to essential features, Notifications centralize important updates, Profile manages personal information and settings, while Work Systems organizes role-based tools and services for hospital staff.',
+        images: [
           'projects/My SUTH App/Screen/HOME.png',
           'projects/My SUTH App/Screen/Profile.png',
           'projects/My SUTH App/Screen/notification.png',
           'projects/My SUTH App/Screen/work.png'
         ],
-        align:'right'
+        align: 'right'
       }
     ]
   },
-  'goal-app':{
-    title:'Goal Management Application with AI Assistant',
-    subtitle:'“Small steps, big achievements”',
-    coverImage:'projects/goalflame.png',
-    figmaLink:'https://www.figma.com/proto/K9K6o8hmdLaupuxksRrlH4/goal-project?node-id=679-10555&viewport=50%2C357%2C0.1&t=8MNyz0Hq1UjV8MlV-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=679%3A10869&page-id=679%3A3305',
-    overview:'A mobile goal-tracking application designed to help users stay consistent with their personal goals through lightweight check-ins, streak-based motivation, progress tracking, and AI-assisted guidance.',
-    problem:'• Students set goals but struggle to achieve them consistently.<br>• Existing tools focus on task management rather than motivation.<br>• Large goals feel overwhelming without clear steps.<br>• Many goals are abandoned before completion.',
-    personaName:'Suthida Laothong (Age 20, 2nd-year Communication Arts)',
-    personaImage:'projects/Goal Flame/persona_page-0001.jpg',
-    personaGoals:'Short-term: Stay consistent with homework & projects. Long-term: Graduate with proud grades.',
-    personaFrustrations:'Enjoys extracurricular activities, making academic management hard; feels overwhelmed when plans fail.',
-    userJourney:{
-      heading:'User Journey Map',
-      image:'projects/Goal Flame/User journey.jpg',
-      summary:'The journey revealed that the main challenge was not planning tasks, but maintaining motivation and consistency throughout the day. This created an opportunity to design a goal-management experience that combines task planning, reminders, progress tracking, and motivational features in one place.'
+  'goal-app': {
+    title: 'Goal Management Application with AI Assistant',
+    subtitle: '“Small steps, big achievements”',
+    coverImage: 'projects/goalflame.png',
+    figmaLink: 'https://www.figma.com/proto/K9K6o8hmdLaupuxksRrlH4/goal-project?node-id=679-10555&viewport=50%2C357%2C0.1&t=8MNyz0Hq1UjV8MlV-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=679%3A10869&page-id=679%3A3305',
+    overview: 'A mobile goal-tracking application designed to help users stay consistent with their personal goals through lightweight check-ins, streak-based motivation, progress tracking, and AI-assisted guidance.',
+    problem: '• Students set goals but struggle to achieve them consistently.<br>• Existing tools focus on task management rather than motivation.<br>• Large goals feel overwhelming without clear steps.<br>• Many goals are abandoned before completion.',
+    personaName: 'Suthida Laothong (Age 20, 2nd-year Communication Arts)',
+    personaImage: 'projects/Goal Flame/persona_page-0001.jpg',
+    personaGoals: 'Short-term: Stay consistent with homework & projects. Long-term: Graduate with proud grades.',
+    personaFrustrations: 'Enjoys extracurricular activities, making academic management hard; feels overwhelmed when plans fail.',
+    userJourney: {
+      heading: 'User Journey Map',
+      image: 'projects/Goal Flame/User journey.jpg',
+      summary: 'The journey revealed that the main challenge was not planning tasks, but maintaining motivation and consistency throughout the day. This created an opportunity to design a goal-management experience that combines task planning, reminders, progress tracking, and motivational features in one place.'
     },
-    features:[
+    features: [
       {
-        title:'1. Dashboard & Progress Tracking',
-        desc:'Motivational daily streak flames coupled with an overview progress dashboard to keep users consistently engaged and on track toward their goals.',
-        images:[
+        title: '1. Dashboard & Progress Tracking',
+        desc: 'Motivational daily streak flames coupled with an overview progress dashboard to keep users consistently engaged and on track toward their goals.',
+        images: [
           'projects/Goal Flame/หน้าแรก.png',
           'projects/Goal Flame/หน้าสรุปผล.png'
         ],
-        align:'right'
+        align: 'right'
       },
       {
-        title:'2. Goal Creation & Sub-tasks',
-        desc:'Comprehensive short-term and long-term goal setting, breaking down large ambitions into manageable, actionable sub-tasks.',
-        images:[
+        title: '2. Goal Creation & Sub-tasks',
+        desc: 'Comprehensive short-term and long-term goal setting, breaking down large ambitions into manageable, actionable sub-tasks.',
+        images: [
           'projects/Goal Flame/หน้าเป้าหมาย.png',
           'projects/Goal Flame/หน้าเพิ่มเป้าหมาย.png',
           'projects/Goal Flame/หน้าเพิ่มเป้าหมาย มีภารกิจ.png'
         ],
-        align:'left'
+        align: 'left'
       },
       {
-        title:'3. Task Details & AI Assistant',
-        desc:'Step-by-step task breakdown guided by an AI-powered assistant providing personalized actionable advice and goal achievement feedback.',
-        images:[
+        title: '3. Task Details & AI Assistant',
+        desc: 'Step-by-step task breakdown guided by an AI-powered assistant providing personalized actionable advice and goal achievement feedback.',
+        images: [
           'projects/Goal Flame/รายละเอียด.png',
           'projects/Goal Flame/รายละเอียด มีภารกิจ.png'
         ],
-        align:'right'
+        align: 'right'
       }
     ]
   },
-  'dormitory-app':{
-    title:'Smart Dormitory Management System',
-    subtitle:'“A smarter way to manage dormitory life.”',
-    coverImage:'projects/dormitory.png',
-    figmaLink:'https://www.figma.com/proto/TAjMwM1BiWItaR1YdXvO6M/%E0%B8%AB%E0%B8%AD%E0%B8%9E%E0%B8%B1%E0%B8%81%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2?node-id=789-2589&viewport=-4461%2C4816%2C0.05&t=GIgWv6SCpz5hb0iD-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=216%3A196&show-proto-sidebar=1&page-id=0%3A1',
-    overview:'A UX/UI redesign that transforms the existing SUT dormitory website into a centralized mobile application. Informed by a survey of 67 students, the concept brings essential dormitory information, requests, expenses, announcements, and services into one more accessible experience.',
-    problem:'• The existing university dormitory website is outdated and lacks regular updates.<br>• Difficult to complete room booking, room transfers, and maintenance requests.<br>• No clear notifications for updates, payments, or announcements.<br>• Limited visibility of room availability and request status.',
-    personaName:'Narin Kittipong (Age 19, 1st-year Resident)',
-    personaGoals:'Easily book/transfer rooms, quickly report maintenance, stay updated on deadlines, track request status.',
-    personaFrustrations:'Current website is outdated, announcements are easy to miss, room availability is unclear.',
-    features:[
+  'dormitory-app': {
+    title: 'Smart Dormitory Management System',
+    subtitle: '“A smarter way to manage dormitory life.”',
+    coverImage: 'projects/dormitory.png',
+    figmaLink: 'https://www.figma.com/proto/TAjMwM1BiWItaR1YdXvO6M/%E0%B8%AB%E0%B8%AD%E0%B8%9E%E0%B8%B1%E0%B8%81%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2?node-id=789-2589&viewport=-4461%2C4816%2C0.05&t=GIgWv6SCpz5hb0iD-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=216%3A196&show-proto-sidebar=1&page-id=0%3A1',
+    overview: 'A UX/UI redesign that transforms the existing SUT dormitory website into a centralized mobile application. Informed by a survey of 67 students, the concept brings essential dormitory information, requests, expenses, announcements, and services into one more accessible experience.',
+    problem: '• The existing university dormitory website is outdated and lacks regular updates.<br>• Difficult to complete room booking, room transfers, and maintenance requests.<br>• No clear notifications for updates, payments, or announcements.<br>• Limited visibility of room availability and request status.',
+    personaName: 'Narin Kittipong (Age 19, 1st-year Resident)',
+    personaGoals: 'Easily book/transfer rooms, quickly report maintenance, stay updated on deadlines, track request status.',
+    personaFrustrations: 'Current website is outdated, announcements are easy to miss, room availability is unclear.',
+    features: [
       {
-        title:'1. Overview & Dormitory Services',
-        desc:'Dormitory portal for resident profiles, campus announcements, and activity updates that help students earn dormitory points. It also displays roommate information and provides a dormitory application system with clear room categories and availability statuses, including All, Available, Reserved, and Closed.',
-        images:[
+        title: '1. Overview & Dormitory Services',
+        desc: 'Dormitory portal for resident profiles, campus announcements, and activity updates that help students earn dormitory points. It also displays roommate information and provides a dormitory application system with clear room categories and availability statuses, including All, Available, Reserved, and Closed.',
+        images: [
           'projects/Dormitory/หน้าหลัก.png',
           'projects/Dormitory/โปรไฟล์.png',
-          'projects/Dormitory/กิจกรรม.png',          
+          'projects/Dormitory/กิจกรรม.png',
           'projects/Dormitory/ประชาสัมพันธ์ทั้งหมด.png',
           'projects/Dormitory/รายชื่อผู้ย้ายหอพัก.png',
           'projects/Dormitory/สมัครหอพักระหว่างภาค.png',
         ],
-        align:'right'
+        align: 'right'
       },
       {
-        title:'2. Forms, Applications & Dormitory Election',
-        desc:'Digital portal for submitting fee deferment requests, managing applicant credentials, tracking application status in real time, and participating in dormitory committee elections with clear candidate profiles, policies, and voting details.',
-        images:[
+        title: '2. Forms, Applications & Dormitory Election',
+        desc: 'Digital portal for submitting fee deferment requests, managing applicant credentials, tracking application status in real time, and participating in dormitory committee elections with clear candidate profiles, policies, and voting details.',
+        images: [
           'projects/Dormitory/รายละเอียดผู้สมัคร.png',
           'projects/Dormitory/เลือกตั้ง 13.png',
           'projects/Dormitory/ฟอร์มผ่อนผัน.png',
           'projects/Dormitory/การส่งฟอร์ม.png'
         ],
-        align:'left'
+        align: 'left'
       },
       {
-        title:'3. Utility & Maintenance Services',
-        desc:'Dormitory services for reporting and tracking maintenance issues, along with electricity expense monitoring. Students can view their electricity costs for the latest three months and access historical bills from previous semesters, helping them estimate upcoming expenses and prepare their budget before payment.',
-        images:[
+        title: '3. Utility & Maintenance Services',
+        desc: 'Dormitory services for reporting and tracking maintenance issues, along with electricity expense monitoring. Students can view their electricity costs for the latest three months and access historical bills from previous semesters, helping them estimate upcoming expenses and prepare their budget before payment.',
+        images: [
           'projects/Dormitory/แจ้งซ่อม.png',
           'projects/Dormitory/ค่าไฟ (ทั้งหมด).png',
         ],
-        align:'right'
+        align: 'right'
       }
     ]
   },
-  'kiosk-app':{
-    title:'Kiosk Redesign – Ratchasima Khunakon Building',
-    subtitle:'“Find Your Way, Faster.”',
-    featureHeading:'Key UX Solutions & UI Design',
-    coverImage:'projects/Keyosk redesign/cover.png',
-    figmaLink:'https://www.figma.com/proto/3MFlpDP3zwlC5eS5WRydyp/keyosk?node-id=1-2&viewport=323%2C-17%2C0.05&t=ZeVbfy5mQo0YL5sW-1&scaling=contain&content-scaling=fixed&starting-point-node-id=324%3A23&page-id=0%3A1',
-    originalLink:'https://personal.sut.ac.th/nuttapon/phone.html',
-    overview:'Kiosk Redesign is a UX/UI project that transforms the existing floor-plan directory at Ratchasima Khunakon Building into a more interactive room-finding and wayfinding experience.<br><br>The redesigned concept helps students, staff, and visitors find destinations through floor selection, room categories, destination highlighting, and visual route guidance. It also explores the use of symbols alongside color and a QR-based mobile handoff as accessibility considerations.',
-    problem:'• Users may have difficulty finding the correct room in a large multi-floor building.<br>• Existing floor and room information can be overwhelming and difficult to scan quickly.<br>• Users may not clearly understand which floor or area a selected room is located in.<br>• Static directory information does not provide clear navigation from the user’s current location.<br>• Finding a destination can take extra time, especially for first-time visitors.',
-    personaName:'Students, Staff, and Building Visitors',
-    personaDesc:'• <b>Target Audience:</b> Students, staff, and visitors who need to find rooms or facilities inside the building.<br>• <b>First-time Visitors:</b> Guests who are unfamiliar with the 5-floor building layout and room arrangements.<br>• <b>Independent Navigation:</b> Users who need quick, self-serve directions without asking staff for assistance.',
-    results:{
-      heading:'How It Improved the Existing Kiosk',
-      desc:'The original interface displayed multiple floors and room information at once, making it difficult for users to quickly understand where a room was located. The redesigned system transforms the kiosk from a static building directory into a clearer and more interactive wayfinding experience through:',
-      highlights:[
+  'kiosk-app': {
+    title: 'Kiosk Redesign – Ratchasima Khunakon Building',
+    subtitle: '“Find Your Way, Faster.”',
+    featureHeading: 'Key UX Solutions & UI Design',
+    coverImage: 'projects/Keyosk redesign/cover.png',
+    figmaLink: 'https://www.figma.com/proto/3MFlpDP3zwlC5eS5WRydyp/keyosk?node-id=1-2&viewport=323%2C-17%2C0.05&t=ZeVbfy5mQo0YL5sW-1&scaling=contain&content-scaling=fixed&starting-point-node-id=324%3A23&page-id=0%3A1',
+    originalLink: 'https://personal.sut.ac.th/nuttapon/phone.html',
+    overview: 'Kiosk Redesign is a UX/UI project that transforms the existing floor-plan directory at Ratchasima Khunakon Building into a more interactive room-finding and wayfinding experience.<br><br>The redesigned concept helps students, staff, and visitors find destinations through floor selection, room categories, destination highlighting, and visual route guidance. It also explores the use of symbols alongside color and a QR-based mobile handoff as accessibility considerations.',
+    problem: '• Users may have difficulty finding the correct room in a large multi-floor building.<br>• Existing floor and room information can be overwhelming and difficult to scan quickly.<br>• Users may not clearly understand which floor or area a selected room is located in.<br>• Static directory information does not provide clear navigation from the user’s current location.<br>• Finding a destination can take extra time, especially for first-time visitors.',
+    personaName: 'Students, Staff, and Building Visitors',
+    personaDesc: '• <b>Target Audience:</b> Students, staff, and visitors who need to find rooms or facilities inside the building.<br>• <b>First-time Visitors:</b> Guests who are unfamiliar with the 5-floor building layout and room arrangements.<br>• <b>Independent Navigation:</b> Users who need quick, self-serve directions without asking staff for assistance.',
+    results: {
+      heading: 'How It Improved the Existing Kiosk',
+      desc: 'The original interface displayed multiple floors and room information at once, making it difficult for users to quickly understand where a room was located. The redesigned system transforms the kiosk from a static building directory into a clearer and more interactive wayfinding experience through:',
+      highlights: [
         '• <b>Clear Navigation:</b> Seamless floor-by-floor navigation between individual floors.',
         '• <b>Distinct Room Categories:</b> Color-coded visual room identification for fast scanning.',
         '• <b>Easier Room Search:</b> Intuitive search bar and instant category selection.',
@@ -3722,12 +3722,12 @@ const caseData={
         '• <b>Reduced Complexity:</b> Streamlined visual hierarchy for faster access to essential building info.'
       ]
     },
-    features:[
+    features: [
       {
-        title:'',
-        desc:'',
-        noHeader:true,
-        images:[
+        title: '',
+        desc: '',
+        noHeader: true,
+        images: [
           'projects/Keyosk redesign/floor 1.png',
           'projects/Keyosk redesign/floor 2.png',
           'projects/Keyosk redesign/floor 3.png',
@@ -3737,7 +3737,7 @@ const caseData={
           'projects/Keyosk redesign/ปฏิบัติการ.png',
           'projects/Keyosk redesign/map.png'
         ],
-        align:'right'
+        align: 'right'
       }
     ]
   }
@@ -3784,9 +3784,9 @@ function closeModal(updateHistory = true) {
   }
 }
 
-function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
-  const data=caseData[pid];
-  if(!data) return;
+function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0) {
+  const data = caseData[pid];
+  if (!data) return;
 
   if (!isModalOpen) {
     saveScrollPosition();
@@ -3797,7 +3797,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
   currentActiveMiniType = null;
   const lang = currentLang || 'EN';
   overlay.classList.add('show');
-  document.body.style.overflow='hidden';
+  document.body.style.overflow = 'hidden';
   document.body.classList.add('modal-active');
 
   const quickDockEl = document.getElementById('quickDock');
@@ -3818,9 +3818,9 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
   else if (pid === 'goal-app') projI18n = i18n.featuredProjects?.goalApp;
   else if (pid === 'dormitory-app') projI18n = i18n.featuredProjects?.dormitoryApp;
   else if (pid === 'kiosk-app') projI18n = i18n.featuredProjects?.kioskApp;
-  
+
   const originalKioskBtnText = i18n.projectNav?.originalKioskBtn?.[lang] || 'VIEW ORIGINAL KIOSK DESIGN ↗';
-  
+
   const modalTitle = projI18n?.title?.[lang] || data.title;
   const modalSubtitle = projI18n?.subtitle?.[lang] || data.subtitle;
   const modalOverview = projI18n?.overview?.[lang] || data.overview;
@@ -3844,23 +3844,23 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
   // Update overlay back button text
   const overlayBackBtn = document.getElementById('back');
   if (overlayBackBtn) {
-    overlayBackBtn.innerHTML = `<i data-lucide="arrow-left" class="icon-inline"></i> ${backBtnText}`;
+    overlayBackBtn.innerHTML = `<i class="ph-duotone ph-arrow-left icon-inline"></i> ${backBtnText}`;
   }
 
-  const tabsHtml=`
+  const tabsHtml = `
     <div class="modal-project-tabs">
-      <button class="project-tab ${pid==='mysuth-app'?'active':''}" data-switch-project="mysuth-app">${i18n.projectNav?.tabs?.mysuth?.[lang] || '01 / MY SUTH APP'}</button>
-      <button class="project-tab ${pid==='goal-app'?'active':''}" data-switch-project="goal-app">${i18n.projectNav?.tabs?.goal?.[lang] || '02 / GOAL MANAGEMENT'}</button>
-      <button class="project-tab ${pid==='dormitory-app'?'active':''}" data-switch-project="dormitory-app">${i18n.projectNav?.tabs?.dormitory?.[lang] || '03 / SMART DORMITORY'}</button>
-      <button class="project-tab ${pid==='kiosk-app'?'active':''}" data-switch-project="kiosk-app">${i18n.projectNav?.tabs?.kiosk?.[lang] || '04 / KIOSK REDESIGN'}</button>
+      <button class="project-tab ${pid === 'mysuth-app' ? 'active' : ''}" data-switch-project="mysuth-app">${i18n.projectNav?.tabs?.mysuth?.[lang] || '01 / MY SUTH APP'}</button>
+      <button class="project-tab ${pid === 'goal-app' ? 'active' : ''}" data-switch-project="goal-app">${i18n.projectNav?.tabs?.goal?.[lang] || '02 / GOAL MANAGEMENT'}</button>
+      <button class="project-tab ${pid === 'dormitory-app' ? 'active' : ''}" data-switch-project="dormitory-app">${i18n.projectNav?.tabs?.dormitory?.[lang] || '03 / SMART DORMITORY'}</button>
+      <button class="project-tab ${pid === 'kiosk-app' ? 'active' : ''}" data-switch-project="kiosk-app">${i18n.projectNav?.tabs?.kiosk?.[lang] || '04 / KIOSK REDESIGN'}</button>
     </div>
   `;
 
-  let featuresHtml=data.features.map((f,idx)=>{
+  let featuresHtml = data.features.map((f, idx) => {
     if (f.noHeader) {
       return `
         <div class="kiosk-ui-grid" style="display:grid;grid-template-columns:repeat(3, 1fr);gap:24px;width:100%;margin-top:16px">
-          ${f.images.map(img=>`
+          ${f.images.map(img => `
             <div style="background:transparent!important;border:0!important;box-shadow:none!important;border-radius:20px;overflow:hidden;filter:drop-shadow(0 14px 32px rgba(30,36,50,0.16));transition:transform .3s ease">
               <img src="${encodeURI(img)}" alt="Kiosk Redesign UI" style="width:100%;height:auto;display:block;border-radius:18px;object-fit:contain"/>
             </div>
@@ -3872,7 +3872,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
     const fI18n = projI18n?.features?.[idx];
     const featureTitle = fI18n?.title?.[lang] || f.title;
     const featureDesc = fI18n?.desc?.[lang] || f.desc;
-    
+
     let numStr = String(idx + 1);
     let cleanTitle = featureTitle;
     const match = featureTitle.match(/^(?:0?(\d+)|([A-Za-z0-9]+))\s*[\.\—\-]?\s*(.*)/);
@@ -3884,7 +3884,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
 
     const imgs = (f.images && f.images.length) ? `
       <div class="feature-img-group">
-        ${f.images.map(img=>`<div class="feature-img-card"><img src="${encodeURI(img)}" alt="${featureTitle}"/></div>`).join('')}
+        ${f.images.map(img => `<div class="feature-img-card"><img src="${encodeURI(img)}" alt="${featureTitle}"/></div>`).join('')}
       </div>
     ` : '';
     return `
@@ -3925,7 +3925,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
     contextHtml = `
       <section class="case">
         <div>
-          <h2><i data-lucide="layers" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${cei.heading[lang]}</h2>
+          <h2><i class="ph-duotone ph-layers" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--sky-blue)"></i>${cei.heading[lang]}</h2>
           
           <!-- Context & Existing Interface Description Card -->
           <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:26px 28px;border-radius:24px;margin-bottom:24px">
@@ -3964,7 +3964,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
     contextHtml = `
       <section class="case">
         <div>
-          <h2><i data-lucide="layers" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${cc.heading[lang]}</h2>
+          <h2><i class="ph-duotone ph-layers" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--sky-blue)"></i>${cc.heading[lang]}</h2>
           <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:20px;margin-top:16px">
             <ul style="margin:0;padding:0;list-style:none;display:grid;gap:12px">
               ${items.map(it => `
@@ -3986,7 +3986,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
     assumptionPersonasHtml = `
       <section class="case">
         <div>
-          <h2><i data-lucide="users" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${ap.heading[lang]}</h2>
+          <h2><i class="ph-duotone ph-users" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--sky-blue)"></i>${ap.heading[lang]}</h2>
           
           <!-- Methodology Note Banner -->
           <div style="background:linear-gradient(135deg,rgba(85,104,175,0.06),rgba(206,234,238,0.25));border:1.5px solid rgba(85,104,175,0.18);padding:22px 26px;border-radius:22px;margin-top:16px;margin-bottom:28px">
@@ -4065,7 +4065,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
                 <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:16px">
                   <h4 style="font-size:17px;font-weight:900;color:#0f172a;margin:0">${ap.journeyMappingHeading[lang]} — ${p.name[lang]}</h4>
                   <button onclick="window.openJourneyLightbox('${encodeURI(p.journeyImage)}', '${p.name[lang]} Journey Map')" style="background:rgba(85,104,175,0.12);border:1px solid rgba(85,104,175,0.3);color:var(--sky-blue);padding:8px 16px;border-radius:10px;font:900 12px/1 monospace;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s ease">
-                    <i data-lucide="maximize-2" style="width:14px;height:14px"></i>
+                    <i class="ph-duotone ph-arrows-out" style="font-size:14px"></i>
                     ${ap.viewJourneyBtn[lang]}
                   </button>
                 </div>
@@ -4088,7 +4088,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
                 <span style="font:900 12px/1 monospace;color:var(--ink);background:#fff;padding:8px 12px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.04);display:inline-flex;align-items:center;gap:6px">
                   <span style="color:var(--sky-blue);font-weight:900">${idx + 1}.</span> ${step}
                 </span>
-                ${idx < ap.sharedPatternSteps[lang].length - 1 ? `<i data-lucide="arrow-right" style="width:14px;height:14px;color:var(--sky-blue);flex-shrink:0"></i>` : ''}
+                ${idx < ap.sharedPatternSteps[lang].length - 1 ? `<i class="ph-duotone ph-arrow-right" style="font-size:14px;color:var(--sky-blue);flex-shrink:0"></i>` : ''}
               `).join('')}
             </div>
           </div>
@@ -4121,7 +4121,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
     designPrioritiesAccessibilityHtml = `
       <section class="case">
         <div>
-          <h2><i data-lucide="sliders" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${dpa.heading[lang]}</h2>
+          <h2><i class="ph-duotone ph-sliders-horizontal" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--sky-blue)"></i>${dpa.heading[lang]}</h2>
           
           <p style="font-size:15px;line-height:1.75;color:#334155;margin-bottom:24px">${dpa.intro[lang]}</p>
 
@@ -4141,7 +4141,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
           <!-- Accessibility Considerations Concluding Note -->
           <div style="background:linear-gradient(135deg,rgba(85,104,175,0.05),rgba(206,234,238,0.22));border:1.5px solid rgba(85,104,175,0.18);padding:22px 26px;border-radius:22px">
             <h3 style="font-size:16px;font-weight:900;color:var(--ink);margin:0 0 10px;display:flex;align-items:center;gap:8px">
-              <i data-lucide="accessibility" style="width:20px;height:20px;color:var(--sky-blue)"></i>
+              <i class="ph-duotone ph-wheelchair" style="font-size:1em;color:var(--sky-blue)"></i>
               ${acc.heading[lang]}
             </h3>
             <p style="font-size:14.5px;line-height:1.7;color:#334155;margin:0">${acc.desc[lang]}</p>
@@ -4160,7 +4160,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
     visualDirectionHtml = `
       <section class="case">
         <div>
-          <h2><i data-lucide="palette" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${vd.heading[lang]}</h2>
+          <h2><i class="ph-duotone ph-palette" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--sky-blue)"></i>${vd.heading[lang]}</h2>
           
           <p style="font-size:15px;line-height:1.75;color:#334155;margin-bottom:24px">${vd.intro[lang]}</p>
 
@@ -4172,7 +4172,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
               <div style="position:relative;border-radius:16px;overflow:hidden;border:1px solid rgba(226,232,240,0.9);cursor:pointer" onclick="window.openJourneyLightbox('${encodeURI(vd.moodboardImage)}', '${vd.heading[lang]} Moodboard')">
                 <img src="${encodeURI(vd.moodboardImage)}" alt="${vd.heading[lang]} Moodboard" style="width:100%;height:auto;display:block;object-fit:contain;border-radius:16px"/>
                 <div style="position:absolute;bottom:10px;right:10px;background:rgba(15,23,42,0.75);backdrop-filter:blur(6px);color:#fff;font:900 11px/1 monospace;padding:6px 12px;border-radius:8px;display:flex;align-items:center;gap:6px">
-                  <i data-lucide="maximize-2" style="width:12px;height:12px"></i>
+                  <i class="ph-duotone ph-arrows-out" style="font-size:12px"></i>
                   ${lang === 'TH' ? 'คลิกเพื่อขยาย' : 'Click to enlarge'}
                 </div>
               </div>
@@ -4206,7 +4206,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
     kioskKeyUxHtml = `
       <section class="case">
         <div>
-          <h2><i data-lucide="sparkles" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${kku.heading[lang]}</h2>
+          <h2><i class="ph-duotone ph-sparkle" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--sky-blue)"></i>${kku.heading[lang]}</h2>
           <p style="font-size:15px;line-height:1.75;color:#334155;margin-bottom:32px">${kku.intro[lang]}</p>
 
           <!-- Group 01: Floor & Room Discovery -->
@@ -4233,7 +4233,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
                   ${groups[0].floors[0].label[lang]} (1/5)
                 </span>
                 <button onclick="window.openJourneyLightbox(document.getElementById('kioskMainFloorImg').src, 'Floor Screenshot')" style="background:rgba(85,104,175,0.08);border:1px solid rgba(85,104,175,0.2);color:var(--sky-blue);padding:6px 12px;border-radius:8px;font:900 11px/1 monospace;cursor:pointer;display:inline-flex;align-items:center;gap:6px">
-                  <i data-lucide="maximize-2" style="width:12px;height:12px"></i>
+                  <i class="ph-duotone ph-arrows-out" style="font-size:12px"></i>
                   ${lang === 'TH' ? 'คลิกเพื่อขยาย' : 'Click to enlarge'}
                 </button>
               </div>
@@ -4244,12 +4244,12 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
 
                 <!-- Left Arrow Button inside Frame -->
                 <button onclick="window.changeKioskFloor(-1)" aria-label="Previous Floor" style="position:absolute;left:14px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.92);backdrop-filter:blur(8px);border:1.5px solid rgba(85,104,175,0.25);color:var(--ink);width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 6px 18px rgba(30,36,50,0.15);z-index:10;transition:all 0.2s ease" onmouseover="this.style.background='var(--sky-blue)';this.style.color='#fff'" onmouseout="this.style.background='rgba(255,255,255,0.92)';this.style.color='var(--ink)'">
-                  <i data-lucide="chevron-left" style="width:22px;height:22px"></i>
+                  <i class="ph-duotone ph-caret-left" style="font-size:22px"></i>
                 </button>
 
                 <!-- Right Arrow Button inside Frame -->
                 <button onclick="window.changeKioskFloor(1)" aria-label="Next Floor" style="position:absolute;right:14px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.92);backdrop-filter:blur(8px);border:1.5px solid rgba(85,104,175,0.25);color:var(--ink);width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 6px 18px rgba(30,36,50,0.15);z-index:10;transition:all 0.2s ease" onmouseover="this.style.background='var(--sky-blue)';this.style.color='#fff'" onmouseout="this.style.background='rgba(255,255,255,0.92)';this.style.color='var(--ink)'">
-                  <i data-lucide="chevron-right" style="width:22px;height:22px"></i>
+                  <i class="ph-duotone ph-caret-right" style="font-size:22px"></i>
                 </button>
               </div>
 
@@ -4325,7 +4325,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
               <span style="font-size:32px;font-weight:950;color:var(--sky-blue);line-height:1;font-family:Syne,sans-serif">${groups[3].num}</span>
               <div style="height:24px;width:2px;background:rgba(85,104,175,0.25)"></div>
               <h3 style="font-size:clamp(18px,2.5vw,22px);font-weight:900;color:#0f172a;margin:0;display:flex;align-items:center;gap:8px">
-                <i data-lucide="qr-code" style="width:22px;height:22px;color:var(--sky-blue)"></i>
+                <i class="ph-duotone ph-qr-code" style="font-size:22px;color:var(--sky-blue)"></i>
                 ${groups[3].title[lang]}
               </h3>
             </div>
@@ -4352,7 +4352,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
     kioskReflectionFutureHtml = `
       <section class="case">
         <div>
-          <h2><i data-lucide="compass" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${krf.heading[lang]}</h2>
+          <h2><i class="ph-duotone ph-compass" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--sky-blue)"></i>${krf.heading[lang]}</h2>
           
           <!-- 3 Introductory Reflection Paragraphs -->
           <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:26px 28px;border-radius:24px;margin-bottom:28px;display:flex;flex-direction:column;gap:14px">
@@ -4372,7 +4372,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
                   <div>
                     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
                       <span style="font:900 11px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 8px;border-radius:6px">${item.num}</span>
-                      <i data-lucide="${item.icon}" style="width:18px;height:18px;color:var(--sunset)"></i>
+                      <i class="ph-duotone ph-${item.icon === 'smartphone' ? 'device-mobile' : item.icon === 'monitor' ? 'desktop' : item.icon === 'smile' ? 'smiley' : item.icon === 'sparkles' ? 'sparkle' : item.icon === 'accessibility' ? 'wheelchair' : item.icon}" style="font-size:1em;color:var(--sunset)"></i>
                     </div>
                     <b style="font-size:15px;color:#0f172a;display:block;margin-bottom:6px">${item.title[lang]}</b>
                   </div>
@@ -4399,7 +4399,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
     researchRequirementHtml = `
       <section class="case">
         <div>
-          <h2><i data-lucide="search" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${rr.heading[lang]}</h2>
+          <h2><i class="ph-duotone ph-magnifying-glass" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--sky-blue)"></i>${rr.heading[lang]}</h2>
           
           <div style="margin-bottom:28px">
             ${summaryParas.map(p => `<p style="font-size:15px;line-height:1.75;color:#334155;margin-bottom:14px">${p}</p>`).join('')}
@@ -4423,7 +4423,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
             <ul style="margin:0;padding:0;list-style:none;display:grid;gap:12px">
               ${reqs.map((reqText, idx) => `
                 <li style="font-size:15px;line-height:1.7;color:#334155;display:flex;align-items:flex-start;gap:12px">
-                  <span style="font:900 11px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 8px;border-radius:6px;margin-top:2px;flex-shrink:0">${idx+1}</span>
+                  <span style="font:900 11px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 8px;border-radius:6px;margin-top:2px;flex-shrink:0">${idx + 1}</span>
                   <span>${reqText}</span>
                 </li>
               `).join('')}
@@ -4457,18 +4457,18 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
       <img src="${encodeURI(personaImage)}" alt="${name}" style="width:68px;height:68px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.9);box-shadow:0 4px 14px rgba(30,36,50,0.12);flex-shrink:0"/>
     ` : `
       <div style="width:68px;height:68px;border-radius:50%;background:linear-gradient(135deg,rgba(85,104,175,0.15),rgba(206,234,238,0.45));border:2px solid rgba(255,255,255,0.9);box-shadow:0 4px 14px rgba(30,36,50,0.08);display:flex;align-items:center;justify-content:center;flex-shrink:0">
-        <i data-lucide="user" style="width:34px;height:34px;color:var(--sky-blue)"></i>
+        <i class="ph-duotone ph-user" style="font-size:34px;color:var(--sky-blue)"></i>
       </div>
     `;
 
     surveyPersonaHtml = `
       <section class="case">
         <div>
-          <h2><i data-lucide="user-check" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${sp.heading[lang]}</h2>
+          <h2><i class="ph-duotone ph-user-check" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--sky-blue)"></i>${sp.heading[lang]}</h2>
           
           <!-- Methodology Note -->
           <div style="background:rgba(85,104,175,0.07);border:1px solid rgba(85,104,175,0.18);padding:14px 20px;border-radius:14px;margin-bottom:24px;display:flex;align-items:flex-start;gap:10px">
-            <i data-lucide="info" style="width:18px;height:18px;color:var(--sky-blue);margin-top:2px;flex-shrink:0"></i>
+            <i class="ph-duotone ph-info" style="font-size:1em;color:var(--sky-blue);margin-top:2px;flex-shrink:0"></i>
             <p style="font-size:13.5px;line-height:1.6;color:#334155;margin:0">${sp.methodology[lang]}</p>
           </div>
 
@@ -4506,7 +4506,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
                 
                 <div style="background:rgba(241,245,249,0.5);border:1px solid rgba(226,232,240,0.8);padding:18px;border-radius:16px;display:flex;flex-direction:column;gap:8px">
                   <b style="font:900 11px/1 monospace;color:var(--sky-blue);display:flex;align-items:center;gap:6px;margin-bottom:2px;letter-spacing:.05em">
-                    <i data-lucide="target" style="width:14px;height:14px"></i>
+                    <i class="ph-duotone ph-target" style="font-size:1em"></i>
                     ${sec.goals.heading[lang].toUpperCase()}
                   </b>
                   <ul style="margin:0;padding:0;list-style:none;display:grid;gap:8px">
@@ -4521,7 +4521,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
 
                 <div style="background:rgba(241,245,249,0.5);border:1px solid rgba(226,232,240,0.8);padding:18px;border-radius:16px;display:flex;flex-direction:column;gap:8px">
                   <b style="font:900 11px/1 monospace;color:var(--sky-blue);display:flex;align-items:center;gap:6px;margin-bottom:2px;letter-spacing:.05em">
-                    <i data-lucide="activity" style="width:14px;height:14px"></i>
+                    <i class="ph-duotone ph-activity" style="font-size:1em"></i>
                     ${sec.behaviors.heading[lang].toUpperCase()}
                   </b>
                   <ul style="margin:0;padding:0;list-style:none;display:grid;gap:8px">
@@ -4536,7 +4536,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
 
                 <div style="background:rgba(241,245,249,0.5);border:1px solid rgba(226,232,240,0.8);padding:18px;border-radius:16px;display:flex;flex-direction:column;gap:8px">
                   <b style="font:900 11px/1 monospace;color:var(--sunset);display:flex;align-items:center;gap:6px;margin-bottom:2px;letter-spacing:.05em">
-                    <i data-lucide="alert-circle" style="width:14px;height:14px"></i>
+                    <i class="ph-duotone ph-warning-circle" style="font-size:1em"></i>
                     ${sec.frustrations.heading[lang].toUpperCase()}
                   </b>
                   <ul style="margin:0;padding:0;list-style:none;display:grid;gap:8px">
@@ -4551,7 +4551,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
 
                 <div style="background:rgba(241,245,249,0.5);border:1px solid rgba(226,232,240,0.8);padding:18px;border-radius:16px;display:flex;flex-direction:column;gap:8px">
                   <b style="font:900 11px/1 monospace;color:var(--teal);display:flex;align-items:center;gap:6px;margin-bottom:2px;letter-spacing:.05em">
-                    <i data-lucide="check-square" style="width:14px;height:14px"></i>
+                    <i class="ph-duotone ph-check-square" style="font-size:1em"></i>
                     ${sec.needs.heading[lang].toUpperCase()}
                   </b>
                   <ul style="margin:0;padding:0;list-style:none;display:grid;gap:8px">
@@ -4582,12 +4582,12 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
     discoveryHtml = `
       <section class="case">
         <div>
-          <h2><i data-lucide="search" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${disc.heading[lang]}</h2>
+          <h2><i class="ph-duotone ph-magnifying-glass" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--sky-blue)"></i>${disc.heading[lang]}</h2>
           <p style="font-size:15px;line-height:1.7;color:#334155;margin-bottom:24px">${disc.intro[lang]}</p>
           
           <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:20px;margin-bottom:28px">
             <h3 style="font-size:17px;font-weight:900;color:var(--sky-blue);margin:0 0 8px;display:flex;align-items:center;gap:8px">
-              <i data-lucide="building-2" style="width:20px;height:20px"></i>
+              <i class="ph-duotone ph-buildings" style="font-size:1em"></i>
               ${disc.orgContextHeading[lang]}
             </h3>
             <p style="font-size:14px;line-height:1.75;color:#475569;margin:0">${disc.orgContextText[lang]}</p>
@@ -4623,7 +4623,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
     userGroupsHtml = `
       <section class="case">
         <div>
-          <h2><i data-lucide="users" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${ug.heading[lang]}</h2>
+          <h2><i class="ph-duotone ph-users" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--sky-blue)"></i>${ug.heading[lang]}</h2>
           <p style="font-size:15px;line-height:1.7;color:#334155;margin-bottom:20px">${ug.intro[lang]}</p>
           
           <div style="width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:18px;border:1px solid rgba(226,232,240,0.9);box-shadow:0 6px 20px rgba(30,36,50,0.05);margin-bottom:24px;background:rgba(255,255,255,0.9)">
@@ -4663,7 +4663,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
       designPrioritiesHtml = `
         <section class="case">
           <div>
-            <h2><i data-lucide="compass" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${dp.heading[lang]}</h2>
+            <h2><i class="ph-duotone ph-compass" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--sky-blue)"></i>${dp.heading[lang]}</h2>
             ${dp.intro ? `<p style="font-size:15px;line-height:1.75;color:#334155;margin-bottom:24px">${dp.intro[lang]}</p>` : ''}
             
             <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:26px 28px;border-radius:22px">
@@ -4684,7 +4684,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
       designPrioritiesHtml = `
         <section class="case">
           <div>
-            <h2><i data-lucide="compass" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${dp.heading[lang]}</h2>
+            <h2><i class="ph-duotone ph-compass" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--sky-blue)"></i>${dp.heading[lang]}</h2>
             
             <div style="width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:18px;border:1px solid rgba(226,232,240,0.9);box-shadow:0 6px 20px rgba(30,36,50,0.05);background:rgba(255,255,255,0.9)">
               <table style="width:100%;border-collapse:collapse;text-align:left;font-size:14px;min-width:600px">
@@ -4719,7 +4719,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
     dormitoryKeyUxHtml = `
       <section class="case">
         <div>
-          <h2><i data-lucide="layers" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${dk.intro.heading[lang]}</h2>
+          <h2><i class="ph-duotone ph-sparkle" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--sky-blue)"></i>${dk.intro.heading[lang]}</h2>
           <p style="font-size:15px;line-height:1.75;color:#334155;margin-bottom:28px">${dk.intro.desc[lang]}</p>
 
           <div style="display:flex;flex-direction:column;gap:32px">
@@ -4766,7 +4766,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
 
                   ${sub.hasArrow ? `
                     <div style="display:flex;align-items:center;justify-content:center;color:var(--sky-blue);padding:8px">
-                      <i data-lucide="arrow-right" style="width:24px;height:24px"></i>
+                      <i class="ph-duotone ph-arrow-right" style="font-size:1.2em"></i>
                     </div>
                   ` : ''}
 
@@ -4806,7 +4806,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
     dormitoryOutcomeLimitationsHtml = `
       <section class="case">
         <div>
-          <h2><i data-lucide="check-circle-2" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${ol.heading[lang]}</h2>
+          <h2><i class="ph-duotone ph-check-circle" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--sky-blue)"></i>${ol.heading[lang]}</h2>
           
           <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:24px;align-items:stretch">
             
@@ -4814,7 +4814,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
             <div style="background:rgba(16,185,129,0.04);border:1.5px solid rgba(16,185,129,0.2);padding:24px 26px;border-radius:22px;display:flex;flex-direction:column;gap:14px">
               <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">
                 <b style="font-size:16px;font-weight:900;color:var(--teal);display:flex;align-items:center;gap:8px">
-                  <i data-lucide="trophy" style="width:18px;height:18px"></i>
+                  <i class="ph-duotone ph-trophy" style="font-size:1em"></i>
                   ${out.subheading[lang]}
                 </b>
                 <span style="font:900 11px/1 monospace;color:var(--teal);background:rgba(16,185,129,0.12);border:1px solid rgba(16,185,129,0.25);padding:5px 12px;border-radius:8px">${out.statusLabel[lang]}</span>
@@ -4827,7 +4827,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
             <!-- Limitations Column (Right) -->
             <div style="background:rgba(241,245,249,0.55);border:1.5px solid rgba(226,232,240,0.85);padding:24px 26px;border-radius:22px;display:flex;flex-direction:column;gap:14px">
               <b style="font-size:16px;font-weight:900;color:#334155;display:flex;align-items:center;gap:8px">
-                <i data-lucide="alert-circle" style="width:18px;height:18px;color:#64748b"></i>
+                <i class="ph-duotone ph-warning-circle" style="font-size:1em;color:#64748b"></i>
                 ${lim.subheading[lang]}
               </b>
               <ul style="margin:0;padding:0;list-style:none;display:grid;gap:10px">
@@ -4855,7 +4855,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
     dormitoryReflectionFutureHtml = `
       <section class="case">
         <div>
-          <h2><i data-lucide="compass" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${drf.heading[lang]}</h2>
+          <h2><i class="ph-duotone ph-compass" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--sky-blue)"></i>${drf.heading[lang]}</h2>
 
           <!-- Reflection Statement Card (Prominent) -->
           <div style="background:linear-gradient(135deg,rgba(85,104,175,0.06),rgba(206,234,238,0.25));border:1.5px solid rgba(85,104,175,0.18);padding:24px 28px;border-radius:22px;margin-top:16px;margin-bottom:28px">
@@ -5045,7 +5045,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
       const featureDesc = fI18n?.desc?.[lang] || f.desc;
       const imgs = (f.images && f.images.length) ? `
         <div class="feature-img-group">
-          ${f.images.map(img=>`<div class="feature-img-card"><img src="${encodeURI(img)}" alt="${featureTitle}"/></div>`).join('')}
+          ${f.images.map(img => `<div class="feature-img-card"><img src="${encodeURI(img)}" alt="${featureTitle}"/></div>`).join('')}
         </div>
       ` : '';
       return `
@@ -5133,7 +5133,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
               ${ann.map(a => `
                 <div style="background:rgba(255,255,255,0.9);border:1px solid rgba(226,232,240,0.9);border-radius:16px;padding:16px;box-shadow:0 4px 14px rgba(30,36,50,0.04)">
                   <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-                    <span style="font:900 11px/1 monospace;color:#fff;background:${a.num==='01'?'var(--sunset)':a.num==='02'?'var(--sky-blue)':'var(--teal)'};padding:4px 8px;border-radius:6px">${a.num}</span>
+                    <span style="font:900 11px/1 monospace;color:#fff;background:${a.num === '01' ? 'var(--sunset)' : a.num === '02' ? 'var(--sky-blue)' : 'var(--teal)'};padding:4px 8px;border-radius:6px">${a.num}</span>
                     <b style="font-size:14px;color:#0f172a">${a.label[lang]}</b>
                   </div>
                   <p style="font-size:13px;line-height:1.6;color:#475569;margin:0">${a.desc[lang]}</p>
@@ -5250,8 +5250,8 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
               </div>
             </div>
 
-            <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:4px;color:var(--sky-blue)">
-              <span style="font:900 10px/1 monospace;color:var(--sky-blue);margin-bottom:4px;letter-spacing:.05em">${g[2].fallbackLabel[lang]}</span>
+            <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:4px;color:var(--sky-blue);text-align:center">
+              <span style="font:900 10px/1.2 monospace;color:var(--sky-blue);margin-bottom:6px;letter-spacing:.05em;text-align:center;display:block">${g[2].fallbackLabel[lang]}</span>
               <div style="width:32px;height:32px;border-radius:50%;background:rgba(85,104,175,0.12);display:flex;align-items:center;justify-content:center">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </div>
@@ -5309,7 +5309,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
       <section class="case">
         <div>
           <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:16px">
-            <h2 style="margin:0"><i data-lucide="clock" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${ps.title[lang]}</h2>
+            <h2 style="margin:0"><i class="ph-duotone ph-clock" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--sky-blue)"></i>${ps.title[lang]}</h2>
             <span style="display:inline-block;padding:5px 14px;background:rgba(85,104,175,0.12);color:var(--sky-blue);font-weight:800;border-radius:10px;font-size:13px">${ps.badge[lang]}</span>
           </div>
 
@@ -5320,7 +5320,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
               <!-- Completed So Far -->
               <div style="background:rgba(241,245,249,0.7);padding:20px;border-radius:18px;border-left:4px solid var(--teal)">
                 <h4 style="font-size:16px;font-weight:900;color:#0f172a;margin:0 0 14px;display:flex;align-items:center;gap:8px">
-                  <i data-lucide="check-circle-2" style="width:20px;height:20px;color:var(--teal)"></i>
+                  <i class="ph-duotone ph-check-circle" style="font-size:1em;color:var(--teal)"></i>
                   ${comp.heading[lang]}
                 </h4>
                 <ul style="margin:0;padding:0;list-style:none;display:grid;gap:10px">
@@ -5336,7 +5336,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
               <!-- Next Steps -->
               <div style="background:rgba(241,245,249,0.7);padding:20px;border-radius:18px;border-left:4px solid var(--sky-blue)">
                 <h4 style="font-size:16px;font-weight:900;color:#0f172a;margin:0 0 14px;display:flex;align-items:center;gap:8px">
-                  <i data-lucide="arrow-right-circle" style="width:20px;height:20px;color:var(--sky-blue)"></i>
+                  <i class="ph-duotone ph-arrow-circle-right" style="font-size:1em;color:var(--sky-blue)"></i>
                   ${nxt.heading[lang]}
                 </h4>
                 <ul style="margin:0;padding:0;list-style:none;display:grid;gap:10px">
@@ -5366,12 +5366,12 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
     researchPivotHtml = `
       <section class="case">
         <div>
-          <h2><i data-lucide="compass" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${rp.heading[lang]}</h2>
+          <h2><i class="ph-duotone ph-compass" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--sky-blue)"></i>${rp.heading[lang]}</h2>
 
           <!-- 1. Initial Idea -->
           <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:20px;margin-top:18px;margin-bottom:24px">
             <h3 style="font-size:18px;font-weight:900;color:#0f172a;margin:0 0 10px;display:flex;align-items:center;gap:10px">
-              <i data-lucide="lightbulb" style="width:20px;height:20px;color:var(--sunset)"></i>
+              <i class="ph-duotone ph-lightbulb" style="font-size:1em;color:var(--sunset)"></i>
               ${rp.initialIdea.title[lang]}
             </h3>
             <p style="font-size:15px;line-height:1.75;color:#475569;margin:0">${rp.initialIdea.desc[lang]}</p>
@@ -5379,7 +5379,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
             <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:16px;padding:12px 18px;background:rgba(241,245,249,0.7);border-radius:14px;border:1px solid rgba(226,232,240,0.8)">
               ${initialFlow.map((step, idx) => `
                 <span style="font:900 12px/1 monospace;color:var(--ink);background:#fff;padding:6px 12px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.04)">${step[lang]}</span>
-                ${idx < initialFlow.length - 1 ? `<i data-lucide="arrow-right" style="width:14px;height:14px;color:var(--sky-blue)"></i>` : ''}
+                ${idx < initialFlow.length - 1 ? `<i class="ph-duotone ph-arrow-right" style="font-size:1em;color:var(--sky-blue)"></i>` : ''}
               `).join('')}
             </div>
           </div>
@@ -5393,7 +5393,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
             </div>
             <div>
               <h3 style="font-size:18px;font-weight:900;color:#0f172a;margin:0 0 10px;display:flex;align-items:center;gap:10px">
-                <i data-lucide="users" style="width:20px;height:20px;color:var(--sky-blue)"></i>
+                <i class="ph-duotone ph-users" style="font-size:1em;color:var(--sky-blue)"></i>
                 ${rp.userResearch.title[lang]}
               </h3>
               <p style="font-size:15px;line-height:1.75;color:#475569;margin:0">${rp.userResearch.desc[lang]}</p>
@@ -5403,7 +5403,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
           <!-- 3. Key Findings -->
           <div style="margin-bottom:24px">
             <h3 style="font-size:18px;font-weight:900;color:#0f172a;margin:0 0 16px;display:flex;align-items:center;gap:10px">
-              <i data-lucide="key" style="width:20px;height:20px;color:var(--sky-blue)"></i>
+              <i class="ph-duotone ph-key" style="font-size:1em;color:var(--sky-blue)"></i>
               ${rp.keyFindings.title[lang]}
             </h3>
             <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:16px">
@@ -5423,7 +5423,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
           <!-- 4. Product Pivot -->
           <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:20px">
             <h3 style="font-size:18px;font-weight:900;color:#0f172a;margin:0 0 10px;display:flex;align-items:center;gap:10px">
-              <i data-lucide="git-commit" style="width:20px;height:20px;color:var(--teal)"></i>
+              <i class="ph-duotone ph-git-commit" style="font-size:1em;color:var(--teal)"></i>
               ${rp.productPivot.title[lang]}
             </h3>
             <p style="font-size:15px;line-height:1.75;color:#475569;margin:0 0 18px">${rp.productPivot.desc[lang]}</p>
@@ -5431,7 +5431,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
             <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:14px 20px;background:linear-gradient(135deg,rgba(85,104,175,0.06),rgba(206,234,238,0.25));border-radius:16px;border:1px solid rgba(85,104,175,0.18)">
               ${progressionFlow.map((step, idx) => `
                 <span style="font:900 12px/1 monospace;color:var(--ink);background:#fff;padding:8px 14px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.05)">${step[lang]}</span>
-                ${idx < progressionFlow.length - 1 ? `<i data-lucide="arrow-right" style="width:16px;height:16px;color:var(--sky-blue)"></i>` : ''}
+                ${idx < progressionFlow.length - 1 ? `<i class="ph-duotone ph-arrow-right" style="font-size:1em;color:var(--sky-blue)"></i>` : ''}
               `).join('')}
             </div>
           </div>
@@ -5450,7 +5450,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
     understandingUserHtml = `
       <section class="case">
         <div>
-          <h2><i data-lucide="users" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${uu.heading[lang]}</h2>
+          <h2><i class="ph-duotone ph-users" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--sky-blue)"></i>${uu.heading[lang]}</h2>
           <p style="font-size:15px;line-height:1.75;color:#475569;margin:0 0 28px;max-width:900px">${uu.intro[lang]}</p>
 
           <!-- 2. Primary Persona — Suthida (2-Column Grid) -->
@@ -5512,7 +5512,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
               <!-- LEFT: Journey Content -->
               <div>
                 <h3 style="font-size:20px;font-weight:900;color:#0f172a;margin:0 0 10px;display:flex;align-items:center;gap:10px">
-                  <i data-lucide="map" style="width:20px;height:20px;color:var(--sky-blue)"></i>
+                  <i class="ph-duotone ph-map-trifold" style="font-size:1em;color:var(--sky-blue)"></i>
                   ${uj.title[lang]}
                 </h3>
                 <p style="font-size:14px;line-height:1.7;color:#475569;margin:0 0 16px">${uj.intro[lang]}</p>
@@ -5521,7 +5521,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
                 <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:16px;padding:12px 16px;background:rgba(241,245,249,0.7);border-radius:14px;border:1px solid rgba(226,232,240,0.8)">
                   ${uj.flow.map((step, idx) => `
                     <span style="font:900 11px/1 monospace;color:var(--ink);background:#fff;padding:6px 10px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.04)">${step[lang]}</span>
-                    ${idx < uj.flow.length - 1 ? `<i data-lucide="arrow-right" style="width:12px;height:12px;color:var(--sky-blue)"></i>` : ''}
+                    ${idx < uj.flow.length - 1 ? `<i class="ph-duotone ph-arrow-right" style="font-size:1em;color:var(--sky-blue)"></i>` : ''}
                   `).join('')}
                 </div>
 
@@ -5559,7 +5559,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
     designOpportunitiesHtml = `
       <section class="case">
         <div>
-          <h2><i data-lucide="sparkles" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${doData.heading[lang]}</h2>
+          <h2><i class="ph-duotone ph-sparkle" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--sky-blue)"></i>${doData.heading[lang]}</h2>
           <p style="font-size:15px;line-height:1.75;color:#475569;margin:0 0 24px;max-width:900px">${doData.intro[lang]}</p>
 
           <!-- 2 x 2 Opportunity Cards Grid -->
@@ -5569,7 +5569,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
                 <div>
                   <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
                     <span style="font:900 11px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 10px;border-radius:8px">OPPORTUNITY ${card.num}</span>
-                    <i data-lucide="${card.icon}" style="width:20px;height:20px;color:var(--sunset)"></i>
+                    <i class="ph-duotone ph-${card.icon}" style="font-size:1.1em;color:var(--sunset)"></i>
                   </div>
                   <h3 style="font-size:18px;font-weight:900;color:#0f172a;margin:0 0 8px">${card.title[lang]}</h3>
                 </div>
@@ -5591,7 +5591,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
     keyUxSolutionsHtml = `
       <section class="case">
         <div>
-          <h2><i data-lucide="layout" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${ks.heading[lang]}</h2>
+          <h2><i class="ph-duotone ph-sparkle" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--sky-blue)"></i>${ks.heading[lang]}</h2>
           <p style="font-size:15px;line-height:1.75;color:#475569;margin:0 0 28px;max-width:900px">${ks.intro[lang]}</p>
 
           ${solList.map(sol => `
@@ -5704,7 +5704,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
             <div style="background:rgba(255,255,255,0.7);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.85);box-shadow:0 6px 20px rgba(30,36,50,0.04);padding:24px 28px;border-radius:22px;margin-top:12px">
               <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px;flex-wrap:wrap">
                 <h3 style="font-size:18px;font-weight:900;color:#0f172a;margin:0;display:flex;align-items:center;gap:10px">
-                  <i data-lucide="bot" style="width:22px;height:22px;color:var(--teal)"></i>
+                  <i class="ph-duotone ph-robot" style="font-size:1em;color:var(--teal)"></i>
                   ${ks.aiAssistance.title[lang]}
                 </h3>
                 <span style="font:900 10px/1 monospace;color:#64748b;background:rgba(241,245,249,0.8);border:1px solid rgba(203,213,225,0.8);padding:5px 12px;border-radius:20px;letter-spacing:.05em">
@@ -5743,12 +5743,12 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
     testingOutcomeHtml = `
       <section class="case">
         <div>
-          <h2><i data-lucide="check-circle-2" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${toData.heading[lang]}</h2>
+          <h2><i class="ph-duotone ph-check-circle" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--sky-blue)"></i>${toData.heading[lang]}</h2>
 
           <!-- 1. Prototype Testing -->
           <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:24px;margin-top:18px;margin-bottom:28px">
             <h3 style="font-size:18px;font-weight:900;color:#0f172a;margin:0 0 16px;display:flex;align-items:center;gap:10px">
-              <i data-lucide="clipboard-check" style="width:20px;height:20px;color:var(--sky-blue)"></i>
+              <i class="ph-duotone ph-clipboard-text" style="font-size:1em;color:var(--sky-blue)"></i>
               ${test.title[lang]}
             </h3>
 
@@ -5770,7 +5770,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
             <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:10px 16px;background:rgba(241,245,249,0.7);border-radius:12px;border:1px solid rgba(226,232,240,0.8)">
               ${test.flow.map((step, idx) => `
                 <span style="font:900 11px/1 monospace;color:var(--ink);background:#fff;padding:5px 10px;border-radius:6px;box-shadow:0 2px 4px rgba(0,0,0,0.03)">${step[lang]}</span>
-                ${idx < test.flow.length - 1 ? `<i data-lucide="arrow-right" style="width:12px;height:12px;color:var(--sky-blue)"></i>` : ''}
+                ${idx < test.flow.length - 1 ? `<i class="ph-duotone ph-arrow-right" style="font-size:1em;color:var(--sky-blue)"></i>` : ''}
               `).join('')}
             </div>
           </div>
@@ -5778,7 +5778,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
           <!-- 2. Project Outcome -->
           <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:24px;margin-bottom:28px">
             <h3 style="font-size:18px;font-weight:900;color:#0f172a;margin:0 0 14px;display:flex;align-items:center;gap:10px">
-              <i data-lucide="trophy" style="width:20px;height:20px;color:var(--sunset)"></i>
+              <i class="ph-duotone ph-trophy" style="font-size:1em;color:var(--sunset)"></i>
               ${out.title[lang]}
             </h3>
 
@@ -5786,7 +5786,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
             <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:16px;padding:12px 16px;background:linear-gradient(135deg,rgba(85,104,175,0.06),rgba(206,234,238,0.25));border-radius:14px;border:1px solid rgba(85,104,175,0.15)">
               ${out.progression.map((step, idx) => `
                 <span style="font:900 11px/1 monospace;color:var(--ink);background:#fff;padding:6px 10px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.04)">${step[lang]}</span>
-                ${idx < out.progression.length - 1 ? `<i data-lucide="arrow-right" style="width:12px;height:12px;color:var(--sky-blue)"></i>` : ''}
+                ${idx < out.progression.length - 1 ? `<i class="ph-duotone ph-arrow-right" style="font-size:1em;color:var(--sky-blue)"></i>` : ''}
               `).join('')}
             </div>
 
@@ -5796,7 +5796,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
           <!-- 3. Limitations -->
           <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:24px;margin-bottom:28px">
             <h3 style="font-size:18px;font-weight:900;color:#0f172a;margin:0 0 16px;display:flex;align-items:center;gap:10px">
-              <i data-lucide="alert-triangle" style="width:20px;height:20px;color:var(--sunset)"></i>
+              <i class="ph-duotone ph-warning" style="font-size:1em;color:var(--sunset)"></i>
               ${lim.title[lang]}
             </h3>
 
@@ -5841,7 +5841,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
     reflectionFutureHtml = `
       <section class="case">
         <div>
-          <h2><i data-lucide="compass" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${rfData.heading[lang]}</h2>
+          <h2><i class="ph-duotone ph-compass" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--sky-blue)"></i>${rfData.heading[lang]}</h2>
 
           <!-- 1. Reflection Statement -->
           <div style="background:linear-gradient(135deg,rgba(85,104,175,0.06),rgba(206,234,238,0.25));border:1.5px solid rgba(85,104,175,0.18);padding:22px 26px;border-radius:20px;margin-top:16px;margin-bottom:24px">
@@ -5861,7 +5861,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
                   <div>
                     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
                       <span style="font:900 11px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 8px;border-radius:6px">${item.num}</span>
-                      <i data-lucide="${item.icon}" style="width:18px;height:18px;color:var(--sunset)"></i>
+                      <i class="ph-duotone ph-${item.icon === 'smartphone' ? 'device-mobile' : item.icon === 'monitor' ? 'desktop' : item.icon === 'smile' ? 'smiley' : item.icon === 'sparkles' ? 'sparkle' : item.icon}" style="font-size:1em;color:var(--sunset)"></i>
                     </div>
                     <b style="font-size:15px;color:#0f172a;display:block;margin-bottom:6px">${item.title[lang]}</b>
                   </div>
@@ -5876,7 +5876,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
     `;
   }
 
-  shell.innerHTML=`
+  shell.innerHTML = `
     ${tabsHtml}
     <section class="hero">
       <div>
@@ -5884,7 +5884,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
         <h1 style="font-size:clamp(28px,4vw,42px)">${modalTitle}</h1>
         <p class="lead" style="color:var(--sunset);font-weight:800">${modalSubtitle}</p>
         <div style="margin:12px 0 18px;display:flex;gap:12px;flex-wrap:wrap">
-          <a href="${data.figmaLink||'#'}" target="_blank" class="figma-proto-btn">
+          <a href="${data.figmaLink || '#'}" target="_blank" class="figma-proto-btn">
             <svg width="16" height="16" viewBox="0 0 38 57" fill="none"><path d="M19 28.5C19 23.2533 23.2533 19 28.5 19C33.7467 19 38 23.2533 38 28.5C38 33.7467 33.7467 38 28.5 38H19V28.5Z" fill="#1ABCFE"/><path d="M0 47.5C0 42.2533 4.25329 38 9.5 38H19V47.5C19 52.7467 14.7467 57 9.5 57C4.25329 57 0 52.7467 0 47.5Z" fill="#0ACF83"/><path d="M19 0V19H28.5C33.7467 19 38 14.7467 38 9.5C38 4.25329 33.7467 0 28.5 0H19Z" fill="#FF7262"/><path d="M0 9.5C0 14.7467 4.25329 19 9.5 19H19V0H9.5C4.25329 0 0 4.25329 0 9.5Z" fill="#F24E1E"/><path d="M0 28.5C0 33.7467 4.25329 38 9.5 38H19V19H9.5C4.25329 19 0 23.2533 0 28.5Z" fill="#A259FF"/></svg>
             ${figmaBtnText}
           </a>
@@ -5925,13 +5925,13 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
     ${(pid !== 'mysuth-app' && pid !== 'goal-app' && pid !== 'dormitory-app' && pid !== 'kiosk-app') ? `
       <section class="case">
         <div>
-          <h2><i data-lucide="alert-circle" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sunset)"></i>${modalProblemHeading}</h2>
+          <h2><i class="ph-duotone ph-warning-circle" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--sunset)"></i>${modalProblemHeading}</h2>
           <p style="font-size:16px;line-height:1.6">${modalProblem}</p>
         </div>
       </section>
       <section class="case">
         <div>
-          <h2><i data-lucide="users" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${modalPersonaHeading}</h2>
+          <h2><i class="ph-duotone ph-users" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--sky-blue)"></i>${modalPersonaHeading}</h2>
           ${data.personaImage ? `
             <div style="width:100%;border-radius:20px;overflow:hidden;box-shadow:0 12px 32px rgba(30,36,50,0.14);margin-bottom:20px;background:rgba(255,255,255,0.9);padding:10px;box-sizing:border-box">
               <img src="${encodeURI(data.personaImage)}" alt="${modalPersonaName}" style="width:100%;height:auto;display:block;border-radius:14px;object-fit:contain"/>
@@ -5945,8 +5945,8 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
           ` : `
             <div class="persona-card">
               <h4>${modalPersonaName}</h4>
-              <p><b>${lang==='TH'?'เป้าหมาย (Goals):':'Goals:'}</b> ${modalPersonaGoals}</p>
-              <p><b>${lang==='TH'?'ข้อจำกัดและความไม่สะดวก (Frustrations):':'Frustrations:'}</b> ${modalPersonaFrustrations}</p>
+              <p><b>${lang === 'TH' ? 'เป้าหมาย (Goals):' : 'Goals:'}</b> ${modalPersonaGoals}</p>
+              <p><b>${lang === 'TH' ? 'ข้อจำกัดและความไม่สะดวก (Frustrations):' : 'Frustrations:'}</b> ${modalPersonaFrustrations}</p>
             </div>
           `}
         </div>
@@ -5954,12 +5954,12 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
       ${data.userJourney ? `
         <section class="case">
           <div>
-            <h2><i data-lucide="map" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${modalUserJourneyHeading}</h2>
+            <h2><i class="ph-duotone ph-map-trifold" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--sky-blue)"></i>${modalUserJourneyHeading}</h2>
             <div style="width:100%;border-radius:20px;overflow:hidden;box-shadow:0 12px 32px rgba(30,36,50,0.14);margin-top:14px;background:rgba(255,255,255,0.9);padding:10px;box-sizing:border-box">
               <img src="${encodeURI(data.userJourney.image)}" alt="Goal Flame User Journey Map" style="width:100%;height:auto;display:block;border-radius:14px;object-fit:contain"/>
             </div>
             <p style="font-size:15px;line-height:1.75;color:#475569;margin-top:16px;background:rgba(255,255,255,0.75);backdrop-filter:blur(12px);padding:18px 22px;border-radius:16px;border:1px solid rgba(85,104,175,0.18);box-shadow:0 8px 24px rgba(0,0,0,0.04)">
-              <b>${lang==='TH'?'สรุปผลการเดินทาง (Journey Summary):':'Journey Summary:'}</b> ${modalUserJourneySummary}
+              <b>${lang === 'TH' ? 'สรุปผลการเดินทาง (Journey Summary):' : 'Journey Summary:'}</b> ${modalUserJourneySummary}
             </p>
           </div>
         </section>
@@ -5967,7 +5967,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
       ${data.results ? `
         <section class="case">
           <div>
-            <h2><i data-lucide="sparkles" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--teal)"></i>${modalResultsHeading}</h2>
+            <h2><i class="ph-duotone ph-sparkle" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--teal)"></i>${modalResultsHeading}</h2>
             <p style="font-size:16px;line-height:1.7;color:#475569;margin-bottom:14px">${modalResultsDesc}</p>
             ${modalResultsHighlights ? `
               <div style="font-size:15px;line-height:1.75;color:var(--ink);background:rgba(255,255,255,0.75);backdrop-filter:blur(12px);padding:20px;border-radius:18px;border:1px solid rgba(85,104,175,0.18);box-shadow:0 8px 24px rgba(0,0,0,0.04)">
@@ -5981,7 +5981,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
     ${(pid !== 'goal-app' && pid !== 'dormitory-app' && pid !== 'kiosk-app') ? `
       <section class="case">
         <div>
-          <h2><i data-lucide="sparkles" style="width:34px;height:34px;margin-right:12px;vertical-align:-5px;color:var(--sky-blue)"></i>${modalFeatureHeading}</h2>
+          <h2><i class="ph-duotone ph-sparkle" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--sky-blue)"></i>${modalFeatureHeading}</h2>
           ${pid === 'mysuth-app' ? (queueManagementHtml + eConsultHtml + attendanceHtml + emergencyCodeHtml + coreScreensHtml + otherFeaturesHtml) : featuresHtml}
         </div>
       </section>
@@ -5989,17 +5989,17 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
     ${projectStatusHtml}
   `;
 
-  shell.querySelectorAll('[data-switch-project]').forEach(btn=>{
-    btn.addEventListener('click',()=>{
+  shell.querySelectorAll('[data-switch-project]').forEach(btn => {
+    btn.addEventListener('click', () => {
       const tabsContainer = shell.querySelector('.modal-project-tabs');
       const currentScroll = tabsContainer ? tabsContainer.scrollLeft : 0;
-      const newPid=btn.dataset.switchProject;
+      const newPid = btn.dataset.switchProject;
       renderCaseModal(newPid, true, currentScroll);
-      overlay.scrollTop=0;
+      overlay.scrollTop = 0;
     });
   });
 
-  if(window.lucide) lucide.createIcons();
+  if (window.lucide) lucide.createIcons();
   if (navScrollLeft) {
     requestAnimationFrame(() => {
       const tabsContainer = shell.querySelector('.modal-project-tabs');
@@ -6007,18 +6007,18 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0){
     });
   }
 }
-document.querySelectorAll('[data-project]').forEach(p=>p.addEventListener('click',()=>{
-  const pid=p.dataset.project;
+document.querySelectorAll('[data-project]').forEach(p => p.addEventListener('click', () => {
+  const pid = p.dataset.project;
   renderCaseModal(pid, true);
 }));
-document.getElementById('back').addEventListener('click',()=>{ closeModal(true); });
+document.getElementById('back').addEventListener('click', () => { closeModal(true); });
 
 document.getElementById('contactForm').addEventListener('submit', async (e) => {
   e.preventDefault();
   const form = e.target;
   const formNote = document.getElementById('formNote');
   const submitBtn = form.querySelector('button[type="submit"]');
-  
+
   formNote.innerHTML = '<span style="color:var(--sky-blue)">Sending message via Formspree / Web3Forms...</span>';
   submitBtn.disabled = true;
 
@@ -6048,52 +6048,53 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
 });
 
 /* Quick Action Floating Dock Logic */
-const dockTrigger=document.getElementById('dockTrigger');
-const dockPopover=document.getElementById('dockPopover');
-const dockClose=document.getElementById('dockClose');
-const dockTriggerIcon=document.getElementById('dockTriggerIcon');
-const dockCopyEmail=document.getElementById('dockCopyEmail');
-const dockToast=document.getElementById('dockToast');
-const dockMessageBtn=document.getElementById('dockMessageBtn');
+const dockTrigger = document.getElementById('dockTrigger');
+const dockPopover = document.getElementById('dockPopover');
+const dockClose = document.getElementById('dockClose');
+const dockTriggerIcon = document.getElementById('dockTriggerIcon');
+const dockCopyEmail = document.getElementById('dockCopyEmail');
+const dockToast = document.getElementById('dockToast');
+const dockMessageBtn = document.getElementById('dockMessageBtn');
 
-let dockOpen=false;
-function toggleDock(show){
-  dockOpen=typeof show==='boolean'?show:!dockOpen;
-  dockPopover.classList.toggle('open',dockOpen);
-  dockPopover.setAttribute('aria-hidden',!dockOpen);
-  dockTriggerIcon.setAttribute('data-lucide',dockOpen?'x':'sparkles');
-  if(window.lucide) lucide.createIcons();
+let dockOpen = false;
+function toggleDock(show) {
+  dockOpen = typeof show === 'boolean' ? show : !dockOpen;
+  dockPopover.classList.toggle('open', dockOpen);
+  dockPopover.setAttribute('aria-hidden', !dockOpen);
+  if (dockTriggerIcon) {
+    dockTriggerIcon.className = dockOpen ? 'ph-duotone ph-x' : 'ph-duotone ph-sparkle';
+  }
 }
-if(dockTrigger){
-  dockTrigger.addEventListener('click',(e)=>{
+if (dockTrigger) {
+  dockTrigger.addEventListener('click', (e) => {
     e.stopPropagation();
     toggleDock();
   });
-  dockClose.addEventListener('click',(e)=>{
+  dockClose.addEventListener('click', (e) => {
     e.stopPropagation();
     toggleDock(false);
   });
-  document.addEventListener('click',(e)=>{
-    if(dockOpen && !document.getElementById('quickDock').contains(e.target)){
+  document.addEventListener('click', (e) => {
+    if (dockOpen && !document.getElementById('quickDock').contains(e.target)) {
       toggleDock(false);
     }
   });
 }
-if(dockCopyEmail){
-  dockCopyEmail.addEventListener('click',()=>{
-    const email='salsasira@gmail.com';
-    navigator.clipboard.writeText(email).then(()=>{
-      dockToast.textContent='✓ Email copied: salsasira@gmail.com';
-      setTimeout(()=>dockToast.textContent='',3000);
-    }).catch(()=>{
-      dockToast.textContent='salsasira@gmail.com';
+if (dockCopyEmail) {
+  dockCopyEmail.addEventListener('click', () => {
+    const email = 'salsasira@gmail.com';
+    navigator.clipboard.writeText(email).then(() => {
+      dockToast.textContent = '✓ Email copied: salsasira@gmail.com';
+      setTimeout(() => dockToast.textContent = '', 3000);
+    }).catch(() => {
+      dockToast.textContent = 'salsasira@gmail.com';
     });
   });
 }
-if(dockMessageBtn){
-  dockMessageBtn.addEventListener('click',()=>{
+if (dockMessageBtn) {
+  dockMessageBtn.addEventListener('click', () => {
     toggleDock(false);
-    panels[7].scrollIntoView({behavior:'smooth'});
+    panels[7].scrollIntoView({ behavior: 'smooth' });
   });
 }
 
@@ -6154,7 +6155,7 @@ const catCards = document.querySelectorAll('.cat-card');
 catCards.forEach(card => {
   card.addEventListener('mouseenter', () => {
     catCards.forEach(c => {
-      if(c !== card) c.classList.add('pushed');
+      if (c !== card) c.classList.add('pushed');
     });
   });
   card.addEventListener('mouseleave', () => {
@@ -6168,10 +6169,10 @@ function getMiniProjectTabs(activeType) {
   const navData = i18n.otherProjects?.nav;
   return `
     <div class="modal-project-tabs">
-      <button class="project-tab ${activeType==='magazine'?'active':''}" data-switch-mini="magazine">${navData?.magazine?.[lang] || '01 / MAGAZINE'}</button>
-      <button class="project-tab ${activeType==='logo'?'active':''}" data-switch-mini="logo">${navData?.logo?.[lang] || '02 / LOGOFOLIO'}</button>
-      <button class="project-tab ${activeType==='poster'?'active':''}" data-switch-mini="poster">${navData?.poster?.[lang] || '03 / POSTERS'}</button>
-      <button class="project-tab ${activeType==='infographic'?'active':''}" data-switch-mini="infographic">${navData?.infographic?.[lang] || '04 / INFOGRAPHIC'}</button>
+      <button class="project-tab ${activeType === 'magazine' ? 'active' : ''}" data-switch-mini="magazine">${navData?.magazine?.[lang] || '01 / MAGAZINE'}</button>
+      <button class="project-tab ${activeType === 'logo' ? 'active' : ''}" data-switch-mini="logo">${navData?.logo?.[lang] || '02 / LOGOFOLIO'}</button>
+      <button class="project-tab ${activeType === 'poster' ? 'active' : ''}" data-switch-mini="poster">${navData?.poster?.[lang] || '03 / POSTERS'}</button>
+      <button class="project-tab ${activeType === 'infographic' ? 'active' : ''}" data-switch-mini="infographic">${navData?.infographic?.[lang] || '04 / INFOGRAPHIC'}</button>
     </div>
   `;
 }
@@ -6257,7 +6258,7 @@ function renderMiniProjectModal(type, pushHistory = true, navScrollLeft = 0) {
 
   const overlayBackBtn = document.getElementById('back');
   if (overlayBackBtn) {
-    overlayBackBtn.innerHTML = `<i data-lucide="arrow-left" class="icon-inline"></i> ${backBtnText}`;
+    overlayBackBtn.innerHTML = `<i class="ph-duotone ph-arrow-left icon-inline"></i> ${backBtnText}`;
   }
 
   const projData = i18n.otherProjects?.[type];
@@ -6265,7 +6266,7 @@ function renderMiniProjectModal(type, pushHistory = true, navScrollLeft = 0) {
   if (type === 'magazine') {
     const kicker = projData?.kicker?.[lang] || 'OTHER PROJECT / MAGAZINE';
     const title = projData?.title?.[lang] || 'Simple Soul Magazine';
-    const pdfBtn = projData?.pdfBtn?.[lang] || 'OPEN FULL MAGAZINE PDF (22 PAGES) <i data-lucide="file-text" class="icon-inline"></i>';
+    const pdfBtn = projData?.pdfBtn?.[lang] || 'OPEN FULL MAGAZINE PDF (22 PAGES) <i class="ph-duotone ph-file-text icon-inline"></i>';
 
     shell.innerHTML = `
       ${tabsHtml}
@@ -6455,9 +6456,9 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 revealTargets.forEach(el => revealObserver.observe(el));
 
-if(window.lucide) lucide.createIcons();
+if (window.lucide) lucide.createIcons();
 
-window.selectKioskPersona = function(index) {
+window.selectKioskPersona = function (index) {
   const cards = document.querySelectorAll('.kiosk-persona-detail-card');
   const tabs = document.querySelectorAll('.kiosk-persona-tab-btn');
   cards.forEach((card, idx) => {
@@ -6476,7 +6477,7 @@ window.selectKioskPersona = function(index) {
   });
 };
 
-window.openJourneyLightbox = function(imgSrc, altText) {
+window.openJourneyLightbox = function (imgSrc, altText) {
   let modal = document.getElementById('journeyLightboxModal');
   if (!modal) {
     modal = document.createElement('div');
@@ -6531,7 +6532,7 @@ window.openJourneyLightbox = function(imgSrc, altText) {
   document.addEventListener('keydown', handleEsc);
 };
 
-window.changeKioskFloor = function(delta) {
+window.changeKioskFloor = function (delta) {
   const floorImages = [
     'projects/Keyosk redesign/floor 1.png',
     'projects/Keyosk redesign/floor 2.png',
