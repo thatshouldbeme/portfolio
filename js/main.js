@@ -75,7 +75,7 @@ const i18n = {
     },
     heading: {
       EN: 'MY DESIGN<br/><span class="outline">TOOLKIT.</span>',
-      TH: '<br/>คลังเครื่องมือ<span class="outline">ในการออกแบบ</span>'
+      TH: '<br/>เครื่องมือที่ใช้<span class="outline">สร้างสรรค์ผลงาน</span>'
     },
     techTitle: {
       EN: "TECHNICAL SKILLS",
@@ -377,7 +377,7 @@ const i18n = {
     },
     caseStudyTag: {
       EN: "CASE STUDY / SELECTED WORK",
-      TH: "กรณีศึกษา / ผลงานคัดสรร"
+      TH: "กรณีศึกษา / ผลงานที่คัดมาแล้ว"
     },
     figmaBtn: {
       EN: "VIEW FIGMA PROTOTYPE ↗",
@@ -1843,14 +1843,14 @@ const i18n = {
         },
         items: {
           EN: [
-            "Important dormitory tasks are used occasionally but are often time-sensitive.",
+            "Dormitory services may not be used regularly, but many tasks are time-sensitive.",
             "Students need to return to the website to check announcements and application results.",
             "Request and form statuses are not always visible at a glance.",
             "Information about expenses, activities, and dormitory points is not centralized.",
             "The existing experience provides limited proactive notifications for important updates."
           ],
           TH: [
-            "บริการหอพักไม่ได้ถูกใช้งานบ่อย แต่หลายรายการมีกรอบเวลาที่สำคัญ",
+            "แม้บริการหอพักจะไม่ได้ใช้งานบ่อย แต่หลายรายการเป็นงานสำคัญที่ต้องดำเนินการภายในเวลาที่กำหนด",
             "นักศึกษาต้องกลับเข้าสู่เว็บไซต์เพื่อตรวจสอบข่าวสารและผลการดำเนินการด้วยตนเอง",
             "สถานะของแบบฟอร์มและคำร้องยังไม่สามารถมองเห็นได้อย่างรวดเร็ว",
             "ข้อมูลค่าใช้จ่าย กิจกรรม และคะแนนหอพักยังไม่ได้รวบรวมไว้ในพื้นที่เดียว",
