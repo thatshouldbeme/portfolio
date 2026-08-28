@@ -3077,7 +3077,7 @@ const i18n = {
       },
       title: {
         EN: "Simple Soul Magazine",
-        TH: "Simple Soul Magazine — นิตยสารสหกิจศึกษา"
+        TH: "Simple Soul Magazine — นิตยสารชีวิตในรูปแบบชุมชน"
       },
       pdfBtn: {
         EN: 'OPEN FULL MAGAZINE PDF (22 PAGES) <i class="ph-duotone ph-file-text icon-inline"></i>',
