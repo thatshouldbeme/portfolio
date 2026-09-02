@@ -458,8 +458,8 @@ const i18n = {
           TH: "อยู่ระหว่างดำเนินการ"
         },
         phase: {
-          EN: "Flutter Development",
-          TH: "พัฒนาส่วน Flutter"
+          EN: "preparing for deployment",
+          TH: "เตรียม deploy"
         },
         labels: {
           role: { EN: "Role", TH: "บทบาท" },
@@ -1024,11 +1024,11 @@ const i18n = {
         },
         badge: {
           EN: "Ongoing — Prototype Development",
-          TH: "อยู่ระหว่างดำเนินการ — ขั้นพัฒนาต้นแบบ"
+          TH: "อยู่ระหว่างดำเนินการ — ขั้นพัฒนาโค้ด"
         },
         intro: {
-          EN: "My SUTH App is an ongoing cooperative education project currently in the prototype development stage. The main workflows have been designed, and selected screens are being implemented in Flutter. The next steps include refining the prototype, gathering additional feedback where possible, and preparing the design for further development and validation.",
-          TH: "My SUTH App เป็นโปรเจกต์สหกิจศึกษาที่ยังอยู่ระหว่างดำเนินการ ปัจจุบันได้ออกแบบกระบวนการหลักแล้ว และกำลังพัฒนาหน้าจอบางส่วนเป็น Flutter Prototype ขั้นตอนถัดไปคือปรับปรุงต้นแบบ เก็บ Feedback เพิ่มเติมเท่าที่สามารถทำได้ และเตรียมดีไซน์สำหรับการพัฒนาและตรวจสอบกับผู้ใช้ต่อไป"
+          EN: "My SUTH App is an ongoing cooperative education project. The core user flows and interfaces have been designed, and the application is currently being prepared for release on the App Store and Google Play. The next phase will focus on frontend-backend integration, deployment, and testing with real users to gather feedback for further improvements.",
+          TH: "My SUTH App เป็นโปรเจกต์สหกิจศึกษาที่ยังอยู่ระหว่างดำเนินการ ปัจจุบันได้ออกแบบกระบวนการหลักแล้ว และกำลังเตรียมนำแอปขึ้นไปบน App store และ play store ขั้นตอนถัดไปคือ เชื่อมต่อ frontend เข้ากับ backend และเตรียม deploy เพื่อตรวจสอบกับผู้ใช้จริงต่อไป"
         },
         completed: {
           heading: {
@@ -1037,16 +1037,16 @@ const i18n = {
           },
           items: [
             {
-              EN: "Main workflows and user flows designed",
-              TH: "ออกแบบกระบวนการหลักและ User Flow"
+              EN: "Flutter codeing",
+              TH: "พัฒนา Flutter code"
             },
             {
               EN: "High-fidelity interface screens completed",
               TH: "ออกแบบหน้าจอ High-fidelity"
             },
             {
-              EN: "Selected screens being implemented in Flutter",
-              TH: "เริ่มพัฒนาหน้าจอบางส่วนด้วย Flutter"
+              EN: "Check in and check out menu testing",
+              TH: "ทดสอบเมนูเช็คเข้า-ออกงาน"
             }
           ]
         },
@@ -1058,15 +1058,11 @@ const i18n = {
           items: [
             {
               EN: "Refine the existing prototype",
-              TH: "ปรับปรุงต้นแบบที่มีอยู่"
+              TH: "เพิ่มเมนูแดชบอ์ดสำหรับผู้บริหาร"
             },
             {
               EN: "Gather additional feedback where access allows",
-              TH: "เก็บ Feedback เพิ่มเติมตามโอกาสและข้อจำกัดในการเข้าถึงผู้ใช้"
-            },
-            {
-              EN: "Prepare the design for further development and user validation",
-              TH: "เตรียมดีไซน์สำหรับการพัฒนาและตรวจสอบกับผู้ใช้ในขั้นต่อไป"
+              TH: "เชื่อมต่อ frontend กับ backend"
             }
           ]
         }
