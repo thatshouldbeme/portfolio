@@ -326,8 +326,8 @@ const i18n = {
   },
   contact: {
     kicker: {
-      EN: "08 / CONTACT",
-      TH: "08 / ติดต่อ"
+      EN: "07 / CONTACT",
+      TH: "07 / ติดต่อ"
     },
     heading: {
       EN: 'LET\'S MAKE<br/>SOMETHING<br/><span class="outline">GREAT.</span>',
@@ -3141,7 +3141,6 @@ function setLanguage(lang) {
     i18n.nav?.otherProjects,
     i18n.nav?.certificates,
     i18n.nav?.activities,
-    i18n.nav?.cv,
     i18n.nav?.contact
   ];
   desktopNavBtns.forEach((btn, idx) => {
@@ -3160,7 +3159,6 @@ function setLanguage(lang) {
     i18n.nav?.mobile?.otherProjects || i18n.nav?.otherProjects,
     i18n.nav?.mobile?.certificates || i18n.nav?.certificates,
     i18n.nav?.mobile?.activities || i18n.nav?.activities,
-    i18n.nav?.mobile?.cv || i18n.nav?.cv,
     i18n.nav?.mobile?.contact || i18n.nav?.contact
   ];
   mobileNavBtns.forEach((btn, idx) => {
@@ -3321,24 +3319,13 @@ function setLanguage(lang) {
     }
   }
 
-  // Section 7: CV
-  const cvSec = document.querySelector('.panel[data-panel="6"]');
-  if (cvSec) {
-    const kicker = cvSec.querySelector('.cv-title .kicker');
-    const h2 = cvSec.querySelector('.cv-title h2');
-    const dlBtn = cvSec.querySelector('a.download');
-    if (kicker && i18n.cv?.kicker?.[lang]) kicker.innerHTML = i18n.cv.kicker[lang];
-    if (h2 && i18n.cv?.heading?.[lang]) h2.innerHTML = i18n.cv.heading[lang];
-    if (dlBtn && i18n.cv?.downloadBtn?.[lang]) dlBtn.innerHTML = i18n.cv.downloadBtn[lang];
-  }
-
   const dockResumeBtn = document.getElementById('dockResumeBtn');
   if (dockResumeBtn && i18n.cv?.dockBtn?.[lang]) {
     dockResumeBtn.innerHTML = i18n.cv.dockBtn[lang];
   }
 
-  // Section 8: Contact
-  const contactSec = document.querySelector('.panel[data-panel="7"]');
+  // Section 7: Contact
+  const contactSec = document.querySelector('.panel[data-panel="6"]');
   if (contactSec) {
     const kicker = contactSec.querySelector('.contact-title .kicker');
     const h2 = contactSec.querySelector('.contact-title h2');
@@ -3507,7 +3494,7 @@ function render(now) {
 
   const idx = activeSection();
   nav.forEach((b, i) => b.classList.toggle('active', i === idx));
-  if (meterText) meterText.textContent = String(idx + 1) + ' / 8';
+  if (meterText) meterText.textContent = String(idx + 1).padStart(2, '0') + ' / ' + String(panels.length).padStart(2, '0');
 
   const contentStart = panels[1]?.offsetTop || 0;
   const contentEnd = Math.max(contentStart + 1, document.documentElement.scrollHeight - innerHeight);
