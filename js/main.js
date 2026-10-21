@@ -131,6 +131,10 @@ const i18n = {
       EN: 'CASE<br/><span class="outline">STUDIES.</span>',
       TH: 'กรณีศึกษา<span class="outline">งานออกแบบ</span>'
     },
+    subtitle: {
+      EN: "A curated collection of digital product design case studies — exploring user research, complex workflows, design systems, and tangible outcomes.",
+      TH: "รวบรวมกรณีศึกษาการออกแบบผลิตภัณฑ์ดิจิทัล — ถ่ายทอดกระบวนการวิจัยผู้ใช้ สถาปัตยกรรมปฏิสัมพันธ์ ระบบดีไซน์ และผลลัพธ์ที่ใช้งานได้จริง"
+    },
     items: {
       "mysuth-app": {
         tag: {
@@ -141,23 +145,31 @@ const i18n = {
           EN: "My SUTH App",
           TH: "My SUTH App"
         },
+        role: {
+          EN: "UX/UI Designer & System Architecture",
+          TH: "ผู้ออกแบบ UX/UI และสถาปัตยกรรมระบบ"
+        },
         desc: {
-          EN: "“One App for Essential Hospital Workflows”",
-          TH: "“แอปเดียว เพื่อการทำงานของบุคลากรในโรงพยาบาล”"
+          EN: "A unified mobile hospital management system designed for SUT Healthcare personnel, streamlining attendance, patient queueing, e-consultations, and real-time emergency code alerts into one intuitive interface.",
+          TH: "แอปพลิเคชันจัดการระบบงานโรงพยาบาลสำหรับบุคลากรทางการแพทย์ รพ.มทส. รวบรวมระบบลงเวลาทำงาน จัดการคิวคนไข้ ปรึกษาเคส (E-Consult) และแจ้งเตือนเหตุฉุกเฉินไว้ในที่เดียวอย่างมีประสิทธิภาพ"
         }
       },
       "goal-app": {
         tag: {
-          EN: "Mobile APP / AI ASSISTANT / UX RESEARCH",
+          EN: "MOBILE APP / AI ASSISTANT / UX RESEARCH",
           TH: "แอปมือถือ / ผู้ช่วย AI / การวิจัย UX"
         },
         title: {
           EN: "Goal Management Mobile App",
           TH: "แอปมือถือจัดการเป้าหมายชีวิต"
         },
+        role: {
+          EN: "UX Researcher & UI Designer",
+          TH: "ผู้วิจัย UX และออกแบบ UI"
+        },
         desc: {
-          EN: "“Small steps, big achievements”",
-          TH: "“ก้าวเล็กๆ สู่ความสำเร็จที่ยิ่งใหญ่”"
+          EN: "A habit and goal-tracking mobile app designed around behavioral psychology, helping university students maintain consistency through daily streaks, actionable sub-tasks, and AI-assisted coaching.",
+          TH: "แอปพลิเคชันมือถือช่วยติดตามและพิชิตเป้าหมายชีวิต ออกแบบโดยอิงหลักจิตวิทยาพฤติกรรม ช่วยให้นักศึกษาทำตามเป้าหมายได้อย่างต่อเนื่องด้วยระบบ Streak กิจกรรมย่อย และผู้ช่วย AI แนะนำแบบรายบุคคล"
         }
       },
       "dormitory-app": {
@@ -166,26 +178,34 @@ const i18n = {
           TH: "ปรับปรุง UX / ระบบจัดการหอพัก"
         },
         title: {
-          EN: "Dormitory System",
-          TH: "ระบบจัดการหอพัก"
+          EN: "Smart Dormitory System",
+          TH: "ระบบจัดการหอพักนักศึกษา"
+        },
+        role: {
+          EN: "UX/UI Designer & UX Researcher",
+          TH: "ผู้ออกแบบ UX/UI และวิจัยพฤติกรรมผู้ใช้"
         },
         desc: {
-          EN: "“A smarter way to manage dormitory life.”",
-          TH: "“ยกระดับการใช้ชีวิตในหอพักให้สะดวกยิ่งขึ้น”"
+          EN: "Transforming the outdated university housing portal into a streamlined mobile experience for 67+ surveyed residents, centralizing room booking, maintenance reporting, and monthly utility tracking.",
+          TH: "การปรับปรุงประสบการณ์ผู้ใช้ (UX Redesign) เว็บไซต์หอพัก มทส. สู่แอปพลิเคชันมือถือ จากผลสำรวจนักศึกษา 67 คน รวมการจองและย้ายห้อง แจ้งซ่อม ตรวจสอบค่าไฟฟ้า และข่าวสารหอพักไว้ครบวงจร"
         }
       },
       "kiosk-app": {
         tag: {
-          EN: "INTERACTION DESIGN / WAYFINDING / REDESIGN",
+          EN: "INTERACTION DESIGN / WAYFINDING / KIOSK",
           TH: "ตู้คีออส / การนำทาง / ออกแบบใหม่"
         },
         title: {
           EN: "Kiosk Redesign",
           TH: "ปรับปรุงดีไซน์ตู้คีออส"
         },
+        role: {
+          EN: "Interaction & Wayfinding Designer",
+          TH: "ผู้ออกแบบปฏิสัมพันธ์และการนำทาง"
+        },
         desc: {
-          EN: "“Find Your Way, Faster.”",
-          TH: "“ค้นหาห้องที่คุณต้องการได้รวดเร็วยิ่งขึ้น”"
+          EN: "Interactive wayfinding redesign for a 5-story university complex, replacing static directories with floor-by-floor route animation, accessible color-coded categories, and mobile QR handoff.",
+          TH: "การออกแบบระบบแผนที่ดิจิทัลและตู้คีออสนำทางอาคารเรียน 5 ชั้น เปลี่ยนจากแผนที่ภาพนิ่งสู่ระบบค้นหาห้องที่เข้าใจง่าย มีเส้นทางนำทางแบบเคลื่อนไหว และส่งต่อแผนที่ไปยังมือถือผ่าน QR Code"
         }
       }
     }
@@ -3238,20 +3258,29 @@ function setLanguage(lang) {
   if (projectsSec) {
     const kicker = projectsSec.querySelector('.projects-title .kicker');
     const h2 = projectsSec.querySelector('.projects-title h2');
+    const subtitleDesc = projectsSec.querySelector('.projects-title-desc');
     if (kicker && i18n.projects?.kicker?.[lang]) kicker.innerHTML = i18n.projects.kicker[lang];
     if (h2 && i18n.projects?.heading?.[lang]) h2.innerHTML = i18n.projects.heading[lang];
+    if (subtitleDesc && i18n.projects?.subtitle?.[lang]) subtitleDesc.innerHTML = i18n.projects.subtitle[lang];
 
     const projectArticles = projectsSec.querySelectorAll('article.project');
     projectArticles.forEach(article => {
       const key = article.dataset.project;
       const data = i18n.projects?.items?.[key];
       if (data) {
-        const small = article.querySelector('small');
-        const h3 = article.querySelector('h3');
-        const p = article.querySelector('p');
-        if (small && data.tag?.[lang]) small.innerHTML = data.tag[lang];
+        const kickerEl = article.querySelector('.editorial-kicker') || article.querySelector('small');
+        const h3 = article.querySelector('.editorial-heading') || article.querySelector('h3');
+        const p = article.querySelector('.editorial-desc') || article.querySelector('p');
+        const roleLabel = article.querySelector('.role-badge');
+        const roleTitle = article.querySelector('.role-title');
+        const ctaSpan = article.querySelector('.editorial-cta-link span');
+
+        if (kickerEl && data.tag?.[lang]) kickerEl.innerHTML = data.tag[lang];
         if (h3 && data.title?.[lang]) h3.innerHTML = data.title[lang];
         if (p && data.desc?.[lang]) p.innerHTML = data.desc[lang];
+        if (roleLabel) roleLabel.innerHTML = lang === 'TH' ? 'บทบาท' : 'ROLE';
+        if (roleTitle && data.role?.[lang]) roleTitle.innerHTML = data.role[lang];
+        if (ctaSpan) ctaSpan.innerHTML = lang === 'TH' ? 'ดูกรณีศึกษา' : 'VIEW CASE STUDY';
       }
     });
   }
@@ -3443,9 +3472,13 @@ function verticalParallax() {
     const panelCenter = panel.offsetTop + panel.offsetHeight / 2;
     const norm = clamp((center - panelCenter) / (innerHeight * 1.15), -1.25, 1.25);
     panel.querySelectorAll('[data-speed]').forEach(el => {
+      if (el.classList.contains('projects-rail')) {
+        el.style.translate = '0px 0px';
+        return;
+      }
       const speed = parseFloat(el.dataset.speed || 1);
       const isTitle = /(about-copy|skills-title|projects-title|mini-title|cert-title|activity-title|cv-title|contact-title)/.test(el.className);
-      const isHero = /(edu|projects-rail|devices|folder|film|resume|contact-panel|contact-links)/.test(el.className);
+      const isHero = /(edu|devices|folder|film|resume|contact-panel|contact-links)/.test(el.className);
       let y = norm * (1 - speed) * (isTitle ? 120 : isHero ? 90 : 65);
       if (isTitle) y += norm * -28;
       if (isHero) y += norm * 18;
@@ -5994,6 +6027,49 @@ document.querySelectorAll('[data-project]').forEach(p => p.addEventListener('cli
   const pid = p.dataset.project;
   renderCaseModal(pid, true);
 }));
+
+// Keyboard accessibility for case study links & cards
+document.querySelectorAll('[data-project], .editorial-cta-link').forEach(el => {
+  el.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      const pid = el.dataset.project || el.closest('[data-project]')?.dataset.project;
+      if (pid) renderCaseModal(pid, true);
+    }
+  });
+});
+
+// Smooth Scroll-Triggered Reveals for Editorial Projects
+function initEditorialScrollReveals() {
+  const projects = document.querySelectorAll('.editorial-project');
+  if (!projects.length) return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    projects.forEach(p => p.classList.add('is-revealed'));
+    return;
+  }
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-revealed');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, {
+      rootMargin: '0px 0px -10% 0px',
+      threshold: 0.12
+    });
+    projects.forEach(p => observer.observe(p));
+  } else {
+    projects.forEach(p => p.classList.add('is-revealed'));
+  }
+}
+if (document.readyState === 'loading') {
+  window.addEventListener('DOMContentLoaded', initEditorialScrollReveals);
+} else {
+  initEditorialScrollReveals();
+}
+
 document.getElementById('back').addEventListener('click', () => { closeModal(true); });
 
 document.getElementById('contactForm').addEventListener('submit', async (e) => {
