@@ -445,50 +445,84 @@ const i18n = {
         TH: "My SUTH App"
       },
       subtitle: {
-        EN: "“One App for Essential Hospital Workflows”",
-        TH: "“แอปเดียว เพื่อการทำงานของบุคลากรในโรงพยาบาลที่ดียิ่งขึ้น”"
+        EN: "Designing a more connected digital experience for hospital personnel.",
+        TH: "ออกแบบประสบการณ์ดิจิทัลที่เชื่อมโยงยิ่งขึ้น เพื่อบุคลากรโรงพยาบาลสุรนารี"
       },
       overview: {
-        EN: "My SUTH App is a mobile application designed to centralize essential hospital workflows for SUT Hospital personnel. I worked as a UX/UI Designer during my cooperative education placement, conducting requirement gathering, designing user flows and high-fidelity interfaces, and supporting the implementation of the Flutter prototype.",
-        TH: "My SUTH App คือแอปพลิเคชันบนมือถือที่ออกแบบมาเพื่อรวบรวมกระบวนการทำงานที่สำคัญของบุคลากรโรงพยาบาลมหาวิทยาลัยเทคโนโลยีสุรนารีไว้ในที่เดียว<br><br>ในระหว่างการปฏิบัติงานสหกิจศึกษา ฉันทำหน้าที่เป็น UX/UI Designer โดยมีส่วนร่วมตั้งแต่การเก็บรวบรวมความต้องการของผู้ใช้งาน การออกแบบ User Flow และหน้าจอ High-Fidelity ไปจนถึงการสนับสนุนการพัฒนา Prototype ด้วย Flutter"
+        EN: "My SUTH App is a mobile application designed to support hospital personnel across different roles, including doctors, nurses, administrative staff, and executives. The project focuses on making everyday hospital workflows more accessible and convenient through a centralized mobile experience.",
+        TH: "My SUTH App คือแอปพลิเคชันบนมือถือที่ออกแบบมาเพื่อสนับสนุนบุคลากรโรงพยาบาลในหลากหลายบทบาท ทั้งแพทย์ พยาบาล เจ้าหน้าที่ธุรการ และผู้บริหาร โดยมุ่งเน้นการพัฒนากระบวนการทำงานประจำวันของโรงพยาบาลให้เข้าถึงได้สะดวกรวดเร็ว ผ่านศูนย์รวมการทำงานดิจิทัลบนมือถือที่เชื่อมต่อถึงกันอย่างราบรื่น"
       },
       meta: {
         role: {
-          EN: "UX/UI Designer",
-          TH: "UX/UI Designer"
+          EN: "UX/UI Designer & Flutter Front-end Contributor",
+          TH: "UX/UI Designer & ผู้ร่วมพัฒนา Flutter Front-end"
         },
-        team: {
-          EN: "UX/UI Designer · Developer · Hospital Stakeholders",
-          TH: "UX/UI Designer · Developer · บุคลากรที่มีส่วนได้ส่วนเสีย"
+        organization: {
+          EN: "Suranaree University of Technology Hospital",
+          TH: "โรงพยาบาลมหาวิทยาลัยเทคโนโลยีสุรนารี"
+        },
+        projectType: {
+          EN: "Cooperative Education / Healthcare Mobile Application",
+          TH: "สหกิจศึกษา / แอปพลิเคชันมือถือสำหรับระบบสาธารณสุข"
+        },
+        tools: {
+          EN: "Figma, Flutter, Dart",
+          TH: "Figma, Flutter, Dart"
         },
         duration: {
           EN: "June–September 2026 (4 Months)",
           TH: "มิถุนายน–กันยายน 2569 (4 เดือน)"
         },
-        responsibilities: {
-          EN: "Requirement Gathering, User Flow, UI Design, Prototyping, Usability Testing",
-          TH: "รวบรวมความต้องการของผู้ใช้, ออกแบบเส้นทางผู้ใช้, ออกแบบหน้าจออินเทอร์เฟซ, สร้างตัวต้นแบบ, สร้างหน้าจอ UI flutter, ทดสอบกับผู้ใช้จริง"
-        },
-        tools: {
-          EN: "Figma, Maze, Flutter, GiHub",
-          TH: "Figma, Maze, Flutter, GiHub"
-        },
         status: {
-          EN: "Ongoing",
-          TH: "อยู่ระหว่างดำเนินการ"
+          EN: "Ongoing / Prototype Verification",
+          TH: "อยู่ระหว่างดำเนินการ / ตรวจสอบ Prototype"
         },
         phase: {
-          EN: "preparing for deployment",
-          TH: "เตรียม deploy"
+          EN: "Preparing for Deployment & User Testing",
+          TH: "เตรียมการ Deploy และทดสอบกับบุคลากรจริง"
         },
         labels: {
           role: { EN: "Role", TH: "บทบาท" },
-          team: { EN: "Team", TH: "ทีม" },
-          duration: { EN: "Duration", TH: "ระยะเวลา" },
-          responsibilities: { EN: "Responsibilities", TH: "ส่วนที่รับผิดชอบ" },
+          organization: { EN: "Organization", TH: "หน่วยงาน" },
+          projectType: { EN: "Project Type", TH: "ประเภทโปรเจกต์" },
           tools: { EN: "Tools", TH: "เครื่องมือที่ใช้" },
+          duration: { EN: "Duration", TH: "ระยะเวลา" },
           status: { EN: "Project Status", TH: "สถานะโปรเจกต์" },
           phase: { EN: "Current Phase", TH: "ขั้นตอนปัจจุบัน" }
+        }
+      },
+      responsibilitiesSplit: {
+        uxUi: {
+          title: { EN: "UX/UI Design", TH: "การออกแบบ UX/UI" },
+          items: {
+            EN: [
+              "User flow and information architecture",
+              "Wireframing and high-fidelity UI design",
+              "Interactive prototyping",
+              "Design consistency across different user roles"
+            ],
+            TH: [
+              "ออกแบบ User Flow และโครงสร้างข้อมูล (Information Architecture)",
+              "จัดทำ Wireframe และออกแบบหน้าจอ UI High-Fidelity",
+              "สร้าง Interactive Prototype สำหรับทดสอบกระบวนการใช้งาน",
+              "รักษาความสม่ำเสมอของ Design System ในทุกกลุ่มบทบาทผู้ใช้"
+            ]
+          }
+        },
+        flutter: {
+          title: { EN: "Flutter Front-end Contribution", TH: "การร่วมพัฒนา Flutter Front-end" },
+          items: {
+            EN: [
+              "Implementing assigned mobile screens",
+              "Building reusable UI components",
+              "Collaborating with developers during integration"
+            ],
+            TH: [
+              "พัฒนาหน้าจอโมบายแอปพลิเคชันด้วย Flutter ตามที่ได้รับมอบหมาย",
+              "สร้าง Reusable UI Components ที่สอดคล้องกับ Figma Design Tokens",
+              "ทำงานร่วมกับทีมผู้พัฒนา (Developer) ในขั้นตอนเชื่อมต่อระบบ"
+            ]
+          }
         }
       },
       contextConstraints: {
@@ -1174,7 +1208,233 @@ const i18n = {
             TH: "ประกอบด้วยหน้าหลัก (Home), การแจ้งเตือน (Notifications), โปรไฟล์ (Profile) และระบบงาน (Work Systems) ที่เชื่อมโยงบริการหลักของแอปพลิเคชันเข้าด้วยกัน หน้าหลักช่วยให้เข้าถึงฟีเจอร์สำคัญได้อย่างรวดเร็ว ศูนย์แจ้งเตือนรวมอัปเดตสำคัญ ส่วนโปรไฟล์จัดการข้อมูลตั้งค่า และระบบงานจัดระเบียบเครื่องมือตามบทบาทหน้าที่ของบุคลากร"
           }
         }
-      ]
+      ],
+      editorialNav: [
+        { id: "sec-01", label: { EN: "01 Context", TH: "01 บริบท" } },
+        { id: "sec-02", label: { EN: "02 Challenges", TH: "02 ความท้าทาย" } },
+        { id: "sec-03", label: { EN: "03 Process", TH: "03 กระบวนการ" } },
+        { id: "sec-04", label: { EN: "04 Key Solutions", TH: "04 ฟีเจอร์หลัก" } },
+        { id: "sec-05", label: { EN: "05 Decisions", TH: "05 การตัดสินใจ" } },
+        { id: "sec-06", label: { EN: "06 Dev & Code", TH: "06 การเขียนโค้ด" } },
+        { id: "sec-07", label: { EN: "07 Reflection", TH: "07 ผลลัพธ์และบทเรียน" } }
+      ],
+      contextStory: {
+        kicker: { EN: "01 — Project Context", TH: "01 — บริบทของโครงการ" },
+        title: { EN: "Centralizing Hospital Workflows for Multi-Role Clinical Teams", TH: "ศูนย์รวมการทำงานดิจิทัลเพื่อบุคลากรทางการแพทย์ทุกฝ่าย" },
+        lead: {
+          EN: "Suranaree University of Technology Hospital (SUTH) operates in a high-demand healthcare environment. Previously, internal operations relied on fragmented third-party legacy tools that lacked unified data governance and mobile agility.",
+          TH: "โรงพยาบาลมหาวิทยาลัยเทคโนโลยีสุรนารี ดำเนินงานในสภาพแวดล้อมที่ต้องการความคล่องตัวสูง โดยก่อนหน้านี้ ระบบภายในพึ่งพาเครื่องมือจากภายนอกหลายระบบที่แยกจากกัน ทำให้ขาดการจัดการข้อมูลอย่างเป็นเอกภาพและไม่สะดวกต่อการทำงานผ่านมือถือ"
+        },
+        body: {
+          EN: "To regain system control and streamline daily clinical tasks, the hospital initiated My SUTH App—an internally managed mobile platform tailored for hospital staff across varied roles: doctors, nurses, administrative personnel, and hospital executives. The primary objective was making essential daily workflows accessible anywhere on the hospital campus.",
+          TH: "เพื่อสร้างระบบที่โรงพยาบาลบริหารจัดการข้อมูลได้เอง และช่วยให้การทำงานประจำวันสะดวกยิ่งขึ้น จึงเกิดโครงการ My SUTH App เพื่อเป็นโมบายพอร์ทัลกลางสำหรับบุคลากรทุกกลุ่ม ทั้งแพทย์ พยาบาล เจ้าหน้าที่ทั่วไป และผู้บริหาร โดยมีเป้าหมายหลักในการเชื่อมต่อระบบงานสำคัญให้เข้าถึงได้สะดวกรวดเร็วจากทุกจุดในโรงพยาบาล"
+        }
+      },
+      challengesStory: {
+        kicker: { EN: "02 — Problems & Design Challenges", TH: "02 — ปัญหาและความท้าทายในการออกแบบ" },
+        title: { EN: "Fragmented Systems in a Fast-Paced Clinical Environment", TH: "ความกระจัดกระจายของระบบงานในบริบทโรงพยาบาลที่เร่งรีบ" },
+        lead: {
+          EN: "Medical personnel work under tight schedules and demanding shifts. Interacting with disparate physical and digital systems introduced real friction, operational delays, and potential communication errors.",
+          TH: "บุคลากรทางการแพทย์ทำงานภายใต้ข้อจำกัดด้านเวลาและความกดดันสูง การต้องสลับใช้งานระบบที่กระจัดกระจาย ทั้งอุปกรณ์กายภาพและแอปพลิเคชันภายนอก ทำให้เกิดความล่าช้าและเพิ่มความเสี่ยงต่อข้อผิดพลาดในการประสานงาน"
+        },
+        items: [
+          {
+            num: "01",
+            title: { EN: "Physical Attendance Bottleneck", TH: "คอขวดจากการลงเวลาด้วยเครื่องสแกนนิ้ว" },
+            desc: {
+              EN: "Staff were required to record attendance using physical fingerprint scanners available at only two designated points across the entire hospital, causing rush and queues during shift handovers.",
+              TH: "เดิมบุคลากรต้องลงเวลาด้วยเครื่องสแกนลายนิ้วมือซึ่งมีเพียงสองจุดทั่วทั้งโรงพยาบาล ทำให้เกิดการเร่งรีบและคิวยาวแออัดในช่วงเวลาเปลี่ยนกะการทำงาน"
+            }
+          },
+          {
+            num: "02",
+            title: { EN: "Unstructured Consultation Messaging", TH: "คำขอปรึกษาแพทย์กระจัดกระจายในกลุ่ม LINE" },
+            desc: {
+              EN: "E-Consult requests were previously sent through disparate LINE chat groups without urgency tagging or read receipts, making it easy to overlook time-sensitive clinical cases.",
+              TH: "ฟอร์มคำขอปรึกษาเคส (E-Consult) ถูกส่งผ่านกลุ่ม LINE หลายกลุ่มโดยไม่มีการระบุระดับความเร่งด่วนหรือสถานะการเปิดอ่าน ทำให้เคสสำคัญอาจตกหล่นหรือได้รับการตอบสนองล่าช้า"
+            }
+          },
+          {
+            num: "03",
+            title: { EN: "Missing Examination Room Hardware", TH: "ห้องตรวจหลายจุดขาดแคลนอุปกรณ์เรียกคิว" },
+            desc: {
+              EN: "Outpatient clinics frequently lacked dedicated queue-calling hardware (speakers or digital displays), forcing triage nurses to manually look for patients and announce numbers verbally.",
+              TH: "หลายแผนกตรวจไม่มีไมโครโฟนหรือจอแสดงผลสำหรับเรียกคิวเฉพาะจุด ทำให้พยาบาลหน้าห้องตรวจต้องคอยเดินตามหาและตะโกนเรียกผู้ป่วยด้วยตนเอง"
+            }
+          },
+          {
+            num: "04",
+            title: { EN: "Strict Role Permissions vs. Simple Navigation", TH: "ข้อจำกัดด้านสิทธิ์ตามบทบาทกับความเรียบง่ายในการใช้งาน" },
+            desc: {
+              EN: "Personnel roles have vastly different access permissions, requiring a navigation model that accommodates multiple access levels without disorienting users or building separate apps.",
+              TH: "บุคลากรแต่ละตำแหน่งมีสิทธิ์เข้าถึงข้อมูลและเมนูต่างกัน ระบบจึงต้องรองรับการตรวจสอบสิทธิ์ที่รัดกุม โดยไม่ทำให้โครงสร้างเมนูซับซ้อนจนผู้ใช้เกิดความสับสน"
+            }
+          }
+        ]
+      },
+      processStory: {
+        kicker: { EN: "03 — Design Process", TH: "03 — กระบวนการออกแบบและวิเคราะห์ผู้ใช้" },
+        title: { EN: "Requirement Gathering, Role Mapping & Core Priorities", TH: "การรวบรวมความต้องการ การจำแนกบทบาท และการกำหนดลำดับความสำคัญ" },
+        lead: {
+          EN: "Due to high clinical workloads of on-duty doctors and nurses, requirements were gathered through structured interviews with hospital IT leaders and operational stakeholders, synthesized into role-based workflows.",
+          TH: "เนื่องจากแพทย์และพยาบาลมีเวลาจำกัดในการปฏิบัติงาน การเก็บข้อมูลจึงดำเนินการผ่านการสัมภาษณ์เชิงลึกกับฝ่ายไอทีและผู้ประสานงานโครงการ เพื่อจำแนกความต้องการตามกลุ่มผู้ใช้และลำดับความสำคัญในการออกแบบ"
+        }
+      },
+      designDecisions: {
+        heading: {
+          EN: "Key Design Decisions",
+          TH: "การตัดสินใจสำคัญในการออกแบบ"
+        },
+        subheading: {
+          EN: "Challenge → Design Decision → UX Rationale",
+          TH: "ปัญหาและความท้าทาย → การตัดสินใจออกแบบ → เหตุผลทาง UX"
+        },
+        items: [
+          {
+            badge: { EN: "Architecture", TH: "โครงสร้างระบบ" },
+            title: { EN: "Role-Based Experience", TH: "โครงสร้างที่ปรับตามบทบาท (Role-Based Experience)" },
+            challenge: {
+              EN: "Hospital staff spans doctors, nurses, and administrative personnel with strictly differentiated access rights. Creating disparate sub-apps would fragment the hospital experience and inflate engineering overhead.",
+              TH: "บุคลากรโรงพยาบาลประกอบด้วยแพทย์ พยาบาล และเจ้าหน้าที่ที่มีสิทธิ์เข้าถึงต่างกันมาก หากแยกเป็นหลายแอปจะทำให้โครงสร้างกระจัดกระจายและเพิ่มภาระในการดูแลระบบ"
+            },
+            decision: {
+              EN: "A unified application shell (Home, Notifications, Profile) with dynamic service access. All staff share the same navigation baseline, while service actions actively validate permissions and deliver clear feedback.",
+              TH: "ใช้โครงสร้างหลักร่วมกัน (หน้าหลัก, การแจ้งเตือน, โปรไฟล์) โดยควบคุมสิทธิ์การเข้าถึงในระดับเมนูบริการ เมื่อเลือกเมนูที่ไม่มีสิทธิ์ ระบบจะแจ้งเตือนข้อจำกัดอย่างสุภาพและชัดเจน"
+            },
+            rationale: {
+              EN: "Maintains a predictable mental model across all hospital departments, eliminates disorientation during cross-role workflows, and reduces support overhead.",
+              TH: "ช่วยให้ผู้ใช้ทุกฝ่ายเข้าใจโครงสร้างแอปได้ในทิศทางเดียวกัน ลดความสับสนเมื่อต้องประสานงานข้ามแผนก และง่ายต่อการขยายฟีเจอร์ในอนาคต"
+            },
+            images: [
+              "projects/My SUTH App/core Screen/HOME.png",
+              "projects/My SUTH App/core Screen/work.png"
+            ]
+          },
+          {
+            badge: { EN: "Interaction", TH: "การโต้ตอบ" },
+            title: { EN: "Attendance Interaction & Geofencing", TH: "ระบบลงเวลาเข้า–ออกงานและการยืนยันตำแหน่ง" },
+            challenge: {
+              EN: "Physical fingerprint stations at only 2 locations caused severe shift-change bottlenecks. Mobile attendance had to be effortless yet strictly verified against location spoofing.",
+              TH: "เครื่องสแกนนิ้วมือเดิมมีเพียง 2 จุดทำให้เกิดการรอคิวยาวช่วงเปลี่ยนกะ การลงเวลาผ่านมือถือจึงต้องสะดวกรวดเร็ว แต่ต้องป้องกันการลงเวลานอกพื้นที่อย่างรัดกุม"
+            },
+            decision: {
+              EN: "A context-aware primary button dynamically toggling between Check In and Check Out based on the latest record, combined with GPS geofencing, biometric confirmation (Face ID/Fingerprint), and PIN fallback.",
+              TH: "ออกแบบปุ่มดำเนินการหลักให้สลับสถานะ เข้างาน ↔ ออกงาน อัตโนมัติตามบันทึกล่าสุด ควบคู่กับการตรวจจับพิกัด GPS แผนที่ และการยืนยันตัวตนด้วยไบโอเมตริกพร้อม PIN สำรอง"
+            },
+            rationale: {
+              EN: "Prevents duplicate check-ins and human error. Staff immediately see location status and clear out-of-boundary warnings before recording.",
+              TH: "ขจัดข้อผิดพลาดจากการกดซ้ำ แสดงพิกัดและแจ้งเตือนทันทีหากอยู่นอกพื้นที่ ช่วยให้การลงเวลาถูกต้อง แม่นยำ และปลอดภัย"
+            },
+            images: [
+              "projects/My SUTH App/check in-check out/clockin.png",
+              "projects/My SUTH App/check in-check out/clockin-GPS.png"
+            ]
+          },
+          {
+            badge: { EN: "Workflow", TH: "กระบวนการทำงาน" },
+            title: { EN: "Queue Management & Room Assignment", TH: "ระบบจัดการและเรียกคิวผู้ป่วยหน้าห้องตรวจ" },
+            challenge: {
+              EN: "Examination rooms frequently operate without dedicated physical queue microphones or displays, requiring nurses to manually locate and summon patients.",
+              TH: "ห้องตรวจหลายแห่งไม่มีไมโครโฟนหรือจอแสดงคิวเฉพาะจุด ทำให้พยาบาลต้องเดินตามหาและเรียกผู้ป่วยด้วยตนเอง ซึ่งไม่สะดวกในช่วงเวลาเร่งด่วน"
+            },
+            decision: {
+              EN: "A 3-step mobile triage flow: Scan Station QR → Select Room & Session → 1-Tap Queue Controls (Recall, Next, Skip) with real-time patient mobile notifications and conflict alerts.",
+              TH: "ออกแบบโฟลว์ 3 ขั้นตอนบนมือถือ: สแกน Station → เลือกห้องตรวจและช่วงเวลา → สั่งเรียกคิว (เรียกซ้ำ/คิวถัดไป/ข้ามคิว) พร้อมส่งแจ้งเตือนเข้ามือถือผู้ป่วยโดยอัตโนมัติ"
+            },
+            rationale: {
+              EN: "Untethers nurses from fixed desks, reduces waiting room acoustic noise, and guides staff through conflicts (e.g. room occupied) with clear actionable recovery paths.",
+              TH: "ช่วยให้พยาบาลจัดการคิวได้จากทุกจุดหน้าห้องตรวจ ลดความแออัดและเสียงรบกวนในโถงรอตรวจ พร้อมแจ้งเตือนหากสถานะห้องตรวจขัดแย้งกัน"
+            },
+            images: [
+              "projects/My SUTH App/queue management/detail.png",
+              "projects/My SUTH App/queue management/select-room.png"
+            ]
+          }
+        ]
+      },
+      devCollaboration: {
+        heading: {
+          EN: "Development & Front-End Collaboration",
+          TH: "การทำงานร่วมกับทีมพัฒนา (Flutter Front-end)"
+        },
+        intro: {
+          EN: "Bridging the gap between Figma design systems and production Flutter code was a central aspect of this project. Contributing to front-end development ensured technical feasibility and design consistency.",
+          TH: "การเชื่อมโยงระบบการออกแบบใน Figma สู่โค้ดจริงใน Flutter เป็นหัวใจสำคัญของโปรเจกต์นี้ การมีส่วนร่วมพัฒนา Front-end ช่วยให้ดีไซน์ถูกนำไปสร้างได้จริงอย่างแม่นยำและสอดคล้องกัน"
+        },
+        pillars: [
+          {
+            icon: "palette",
+            title: { EN: "Design Tokens to Flutter Theme", TH: "แปลง Design Tokens สู่ Flutter Theme" },
+            desc: {
+              EN: "Mapped Figma typography scales, spacing tokens, and hospital brand colors into centralized ThemeData and AppColors classes in Dart to ensure visual consistency across screens.",
+              TH: "กำหนดค่าสี ฟอนต์ และระยะห่างจาก Figma ให้เป็น ThemeData และชุดตัวแปรสีใน Dart ทำให้หน้าจอทั้งหมดสอดคล้องกับแบรนด์โรงพยาบาล"
+            }
+          },
+          {
+            icon: "cube",
+            title: { EN: "Reusable Widget Architecture", TH: "สร้าง Reusable Widgets นำกลับมาใช้ซ้ำ" },
+            desc: {
+              EN: "Developed modular Flutter widgets, including the dynamic Check-In/Out action button, biometric confirmation modals, and queue status chips, reducing code duplication.",
+              TH: "สร้างวิดเจ็ตโมดูลาร์ เช่น ปุ่มลงเวลาที่เปลี่ยนสถานะได้, โมดอลยืนยันตัวตน, และแท็กสถานะคิว ช่วยลดการเขียนโค้ดซ้ำซ้อนและบำรุงรักษาง่าย"
+            }
+          },
+          {
+            icon: "git-pull-request",
+            title: { EN: "API Contracts & Error States", TH: "ทำงานร่วมกับ Developer กำหนดสถานะ API" },
+            desc: {
+              EN: "Collaborated with backend engineers on JSON contract structures, designing and implementing empty states, loading skeletons, and geofence out-of-bounds error handling.",
+              TH: "ร่วมมือกับฝั่ง Backend ในการกำหนดโครงสร้างข้อมูล API พร้อมพัฒนาหน้าจอรองรับสถานะ Loading, หน้าว่าง (Empty State) และข้อความแจ้งเตือนเมื่ออยู่นอกพื้นที่ GPS"
+            }
+          }
+        ]
+      },
+      outcomesReflection: {
+        heading: {
+          EN: "Outcomes & Reflection",
+          TH: "ผลลัพธ์และสิ่งที่ได้เรียนรู้"
+        },
+        deliverablesHeading: {
+          EN: "Delivered Scope",
+          TH: "ผลงานที่ส่งมอบจริง"
+        },
+        deliverables: [
+          {
+            badge: { EN: "Design Deliverable", TH: "ผลงานออกแบบ" },
+            title: { EN: "Complete UI System & Interactive Prototype", TH: "ระบบ UI และ Interactive Prototype ครบถ้วน" },
+            desc: {
+              EN: "High-fidelity Figma designs covering all 4 core clinical workflows (Queue, E-Consult, Attendance, Emergency Alerts) and primary app dashboards.",
+              TH: "หน้าจอ High-Fidelity ใน Figma ครบทั้ง 4 กระบวนการหลัก (จัดการคิว, E-Consult, ลงเวลา, แจ้งเตือนฉุกเฉิน) และหน้าจอแดชบอร์ดหลัก"
+            }
+          },
+          {
+            badge: { EN: "Engineering Deliverable", TH: "ผลงานโค้ด" },
+            title: { EN: "Assigned Flutter Front-End Implementation", TH: "พัฒนาหน้าจอ Flutter Front-End ตามที่ได้รับมอบหมาย" },
+            desc: {
+              EN: "Implemented assigned mobile screens and reusable Dart UI widgets structured for seamless backend integration.",
+              TH: "เขียนโค้ดหน้าจอแอปและสร้าง Reusable Widgets ด้วย Flutter เตรียมพร้อมสำหรับการเชื่อมต่อกับระบบ Backend"
+            }
+          },
+          {
+            badge: { EN: "Stakeholder Alignment", TH: "การส่งมอบงาน" },
+            title: { EN: "Hospital IT Stakeholder Walkthroughs", TH: "นำเสนอและตรวจสอบร่วมกับทีม IT โรงพยาบาล" },
+            desc: {
+              EN: "Conducted design reviews and prototype walkthroughs with SUTH IT leadership, validating core navigation and permission logic.",
+              TH: "นำเสนอตัวต้นแบบและทบทวนโฟลว์ร่วมกับฝ่าย IT ของโรงพยาบาลสุรนารี เพื่อตรวจสอบความถูกต้องของสิทธิ์การใช้งาน"
+            }
+          }
+        ],
+        statusNote: {
+          label: { EN: "Current Project Phase", TH: "สถานะการดำเนินงานปัจจุบัน" },
+          text: {
+            EN: "The design system and assigned Flutter front-end screens are complete. The project is currently undergoing hospital backend API integration and security auditing in preparation for internal clinical pilot testing.",
+            TH: "ส่วนงานออกแบบและหน้าจอ Flutter ที่ได้รับมอบหมายเสร็จสมบูรณ์แล้ว ขณะนี้โครงการอยู่ระหว่างการเชื่อมต่อ API เบื้องหลังและการตรวจสอบความปลอดภัย เพื่อเตรียมนำไปทดสอบใช้งานจริงภายในโรงพยาบาล"
+          }
+        },
+        reflectionQuote: {
+          EN: "“Designing for healthcare taught me that clarity is critical—in a fast-paced hospital, every superfluous tap or ambiguous status causes real clinical friction. Writing Flutter code alongside Figma designs deepened my respect for technical constraints and modular design systems.”",
+          TH: "“การออกแบบให้กับบุคลากรทางการแพทย์สอนให้รู้ว่า ความชัดเจนคือสิ่งสำคัญที่สุด ในสภาพแวดล้อมที่เร่งรีบ ทุกขั้นตอนที่เกินมาสร้างภาระในการปฏิบัติงานจริง และการได้เขียนโค้ด Flutter ไปพร้อมกับการออกแบบช่วยให้เข้าใจข้อจำกัดทางเทคนิคและการสร้าง Reusable System อย่างแท้จริง”"
+        }
+      }
     },
     goalApp: {
       title: {
@@ -3550,23 +3810,11 @@ nav.forEach((b, i) => b.addEventListener('click', () => {
 /* CASE STUDY DATA & OVERLAY */
 const caseData = {
   'mysuth-app': {
-    title: 'My SUTH App — Hospital Management System',
-    subtitle: '“One App, Smarter Hospital Work.”',
+    title: 'My SUTH App',
+    subtitle: 'Designing a more connected digital experience for hospital personnel.',
     coverImage: 'projects/mySUTH.png',
     figmaLink: 'https://www.figma.com/proto/Y5IY4MV4A7sUO2xvvwBj3o/My-SUTH-App-Design?page-id=0%3A1&node-id=6524-24888&viewport=412%2C-1965%2C0.04&t=fa03tj96ASzrtK07-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=5848%3A45468',
-    overview: 'A mobile application designed for SUT Hospital staff to simplify daily workflows, including attendance, queue management, appointments, and notifications—all in one place.',
-    problem: '• Hospital staff need to use multiple systems and platforms to complete their daily tasks.<br>• Important workflows, such as attendance, queue management, appointments, and notifications, can involve too many steps.<br>• Switching between different systems can be time-consuming and inconvenient.<br>• Important information may be missed or delayed during busy working hours.<br>• Complex workflows can increase the chance of errors and reduce overall work efficiency.',
-    personaName: 'SUT Hospital Staff & Healthcare Personnel',
-    personaDesc: 'The primary users are SUT Hospital staff, including general staff, nurses, doctors, and other healthcare personnel. The application is designed to support different roles and responsibilities while providing quick and convenient access to essential hospital services in one place.',
-    results: {
-      heading: 'Results & Key Outcomes',
-      desc: 'The implementation of My SUTH App successfully streamlined daily hospital operations, significantly improving workflow efficiency for healthcare personnel while ensuring faster service delivery across hospital departments.',
-      highlights: [
-        '• <b>Unified Staff Dashboard:</b> Integrated multiple hospital services (attendance, queue, appointments, announcements) into one accessible mobile portal.',
-        '• <b>Improved Operational Efficiency:</b> Reduced time spent navigating separate systems, minimizing manual steps and potential human errors during busy shifts.',
-        '• <b>Faster Service & Response Time:</b> Enabled real-time notifications and instant queue updates for staff, ensuring smoother coordination between medical departments.'
-      ]
-    },
+    overview: 'A mobile application designed to support hospital personnel across different roles, including doctors, nurses, administrative staff, and executives. The project focuses on making everyday hospital workflows more accessible and convenient through a centralized mobile experience.',
     features: [
       {
         title: '1. Queue Management System',
@@ -3589,14 +3837,11 @@ const caseData = {
       },
       {
         title: '3. Check-In / Check-Out Tracking',
-        desc: 'A staff attendance system that allows users to check in and check out through the mobile application with location verification. The system records each attendance activity with the date, time, and status, helping staff complete attendance tasks quickly and accurately.<br><br> Users can also view their check-in and check-out history, including previous attendance records, timestamps, and work status. Historical records are organized clearly, making it easier to review past attendance and track working patterns over time.',
+        desc: 'A staff attendance system that allows users to check in and check out through the mobile application with location verification. The system records each attendance activity with the date, time, and status, helping staff complete attendance tasks quickly and accurately.<br><br>Users can also view their check-in and check-out history, including previous attendance records, timestamps, and work status. Historical records are organized clearly, making it easier to review past attendance and track working patterns over time.',
         images: [
           'projects/My SUTH App/check in-check out/clockin.png',
           'projects/My SUTH App/check in-check out/clockin-GPS.png',
-          'projects/My SUTH App/check in-check out/clockout.png',
-          'projects/My SUTH App/check in-check out/clockout-GPS.png',
-          'projects/My SUTH App/check in-check out/histortlist.png',
-          'projects/My SUTH App/check in-check out/history-calenda.png'
+          'projects/My SUTH App/check in-check out/clockout.png'
         ],
         align: 'right'
       },
@@ -3607,17 +3852,6 @@ const caseData = {
           'projects/My SUTH App/emergency code/CODE.png'
         ],
         align: 'left'
-      },
-      {
-        title: '5. Core Application Screens',
-        desc: 'Includes the Home, Notifications, Profile, and Work Systems screens that connect the app’s main services. The Home screen provides quick access to essential features, Notifications centralize important updates, Profile manages personal information and settings, while Work Systems organizes role-based tools and services for hospital staff.',
-        images: [
-          'projects/My SUTH App/Screen/HOME.png',
-          'projects/My SUTH App/Screen/Profile.png',
-          'projects/My SUTH App/Screen/notification.png',
-          'projects/My SUTH App/Screen/work.png'
-        ],
-        align: 'right'
       }
     ]
   },
@@ -3781,6 +4015,7 @@ function restoreScrollPosition() {
 }
 
 function closeModal(updateHistory = true) {
+  shell.classList.remove('suth-editorial', 'goal-editorial');
   isModalOpen = false;
   currentActiveModalPid = null;
   currentActiveMiniType = null;
@@ -5892,6 +6127,8 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0) {
     `;
   }
 
+  shell.classList.toggle('suth-editorial', pid === 'mysuth-app');
+  shell.classList.toggle('goal-editorial', pid === 'goal-app');
   shell.innerHTML = `
     ${tabsHtml}
     <section class="hero">
@@ -5998,12 +6235,15 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0) {
       <section class="case">
         <div>
           <h2><i class="ph-duotone ph-sparkle" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--sky-blue)"></i>${modalFeatureHeading}</h2>
-          ${pid === 'mysuth-app' ? (queueManagementHtml + eConsultHtml + attendanceHtml + emergencyCodeHtml + coreScreensHtml + otherFeaturesHtml) : featuresHtml}
+          ${pid === 'mysuth-app' ? featuresHtml + `<div class="suth-workflow-details">${[queueManagementHtml, eConsultHtml, attendanceHtml, emergencyCodeHtml].map((html, i) => `<details><summary>${lang === 'TH' ? 'ดูขั้นตอนและสถานะเพิ่มเติม' : 'Explore workflow & supporting states'} — ${projI18n.features[i].title[lang]}</summary>${html}</details>`).join('')}</div>` + coreScreensHtml + otherFeaturesHtml : featuresHtml}
         </div>
       </section>
     ` : ''}
     ${projectStatusHtml}
   `;
+
+  if (pid === 'mysuth-app') refineSuthCase(shell, projI18n, lang);
+  if (pid === 'goal-app') refineGoalCase(shell, projI18n, lang);
 
   shell.querySelectorAll('[data-switch-project]').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -6622,3 +6862,256 @@ window.changeKioskFloor = function (delta) {
     lucide.createIcons();
   }
 };
+
+// My SUTH refinements reuse the existing hero, feature data and workflow components.
+function refineSuthCase(root, project, lang) {
+  const th = lang === 'TH';
+  const copy = (en, thai) => th ? thai : en;
+  const hero = root.querySelector('.hero');
+  const meta = document.createElement('dl');
+  meta.className = 'suth-metadata';
+  meta.innerHTML = ['role', 'organization', 'projectType', 'tools', 'duration'].map(key =>
+    `<div><dt>${project.meta.labels[key][lang]}</dt><dd>${project.meta[key][lang]}</dd></div>`).join('');
+  // Replace the old metadata panel, retaining the source's supplied project facts.
+  hero.firstElementChild.lastElementChild.replaceWith(meta);
+  const responsibilities = document.createElement('div');
+  responsibilities.className = 'suth-responsibilities';
+  responsibilities.innerHTML = Object.values(project.responsibilitiesSplit).map(item =>
+    `<div><h3>${item.title[lang]}</h3><ul>${item.items[lang].map(text => `<li>${text}</li>`).join('')}</ul></div>`).join('');
+  hero.after(responsibilities);
+
+  const features = [...root.querySelectorAll('.feature-row')];
+  const workflowDetails = [...root.querySelectorAll('.suth-workflow-details > details')];
+  features.forEach((feature, i) => {
+    feature.classList.add('suth-feature');
+    feature.id = `suth-feature-${i + 1}`;
+    const images = feature.querySelector('.feature-img-group');
+    images.style.setProperty('--screen-count', images.children.length);
+    [...images.querySelectorAll('img')].forEach((image, screen) => {
+      image.alt = `${project.features[i].title[lang]} — ${copy('screen', 'หน้าจอ')} ${screen + 1}`;
+      image.loading = 'lazy';
+    });
+    // Keep every detailed flow and its original assets with the corresponding topic.
+    if (workflowDetails[i]) feature.after(workflowDetails[i]);
+  });
+  root.querySelector('.suth-workflow-details')?.remove();
+
+  const decisions = document.createElement('section');
+  decisions.className = 'case suth-decisions';
+  decisions.id = 'suth-decisions';
+  const decisionsData = [
+    [copy('Role-based experience', 'ประสบการณ์ตามบทบาท'),
+     copy('Personnel have different responsibilities and access permissions.', 'บุคลากรแต่ละบทบาทมีหน้าที่และสิทธิ์เข้าถึงต่างกัน'),
+     copy('Keep shared Home, Notifications and Profile navigation; validate access when a service is selected.', 'ใช้หน้าหลัก การแจ้งเตือน และโปรไฟล์ร่วมกัน พร้อมตรวจสอบสิทธิ์เมื่อเลือกบริการ'),
+     copy('A consistent structure makes navigation predictable; an access message explains unavailable actions.', 'โครงสร้างที่สม่ำเสมอช่วยให้เข้าใจการนำทาง และข้อความจำกัดสิทธิ์อธิบายเมื่อไม่สามารถใช้บริการได้'),
+     'projects/My SUTH App/core Screen/work.png'],
+    [copy('Attendance & identity confirmation', 'การลงเวลาและการยืนยันตัวตน'),
+     copy('Attendance needs a valid hospital location and a clear record of the action taken.', 'การลงเวลาต้องอยู่ในพื้นที่โรงพยาบาลที่อนุญาตและระบุการดำเนินการอย่างชัดเจน'),
+     copy('Show the appropriate Check In or Check Out action, verify GPS, and offer PIN fallback when biometrics are unavailable.', 'แสดงปุ่มเข้างานหรือออกงานตามสถานะ ตรวจสอบ GPS และใช้ PIN สำรองเมื่อไม่สามารถยืนยันด้วยไบโอเมตริกได้'),
+     copy('Explicit action labels, location restrictions and confirmation feedback help staff understand what to do and whether attendance was recorded.', 'ปุ่มที่ชัดเจน ข้อความจำกัดพื้นที่ และผลยืนยันช่วยให้ทราบขั้นตอนถัดไปและผลการบันทึกเวลา'),
+     'projects/My SUTH App/check in-check out/PIN.png'],
+    [copy('Queue management', 'การจัดการคิว'),
+     copy('Staff need to identify the right station, room and patient before calling a queue.', 'เจ้าหน้าที่ต้องระบุจุดบริการ ห้องตรวจ และผู้ป่วยให้ถูกต้องก่อนเรียกคิว'),
+     copy('Sequence station and room selection before queue entry or scanning; keep Recall, Next and Skip beside patient details.', 'เลือกจุดบริการและห้องก่อนกรอกหรือสแกนคิว พร้อมแสดงปุ่มเรียกซ้ำ ถัดไป และข้ามใกล้ข้อมูลผู้ป่วย'),
+     copy('Context stays visible at the point of action, while conflict messages explain why a queue cannot be called.', 'ข้อมูลบริบทยังมองเห็นขณะดำเนินการ และข้อความแจ้งข้อขัดแย้งอธิบายเหตุผลที่ยังเรียกคิวไม่ได้'),
+     'projects/My SUTH App/queue management/detail.png']
+  ];
+  decisions.innerHTML = `<span class="kicker">${copy('DESIGN REASONING', 'เหตุผลในการออกแบบ')}</span><h2>${copy('Key Design Decisions', 'การตัดสินใจสำคัญในการออกแบบ')}</h2>` + decisionsData.map(([title, problem, decision, rationale, src]) => `<article class="suth-decision"><div><h3>${title}</h3><dl>${[[copy('Problem', 'ปัญหา'), problem], [copy('Design Decision', 'การตัดสินใจออกแบบ'), decision], [copy('UX Rationale', 'เหตุผลด้าน UX'), rationale]].map(([label, text]) => `<div><dt>${label}</dt><dd>${text}</dd></div>`).join('')}</dl></div><figure><img src="${encodeURI(src)}" alt="${title}" loading="lazy"><figcaption>${copy('Interface evidence · Click to inspect', 'ตัวอย่างหน้าจอ · คลิกเพื่อดูรายละเอียด')}</figcaption></figure></article>`).join('');
+  features[0].closest('section').after(decisions);
+
+  const ending = root.lastElementChild;
+  ending.classList.add('suth-outcomes');
+  ending.querySelector('h2').textContent = copy('Outcomes & Reflection', 'ผลลัพธ์และสิ่งที่ได้เรียนรู้');
+  // Keep completed work separate from integration and future validation.
+  const statusIntro = [...ending.querySelectorAll('p')].find(p => p.textContent.includes('My SUTH App'));
+  if (statusIntro) statusIntro.textContent = copy('The core user flows, high-fidelity interfaces and interactive prototype have been designed. My Flutter contribution covered assigned screens and reusable UI components. The project remains under development; backend integration, deployment and further testing with hospital personnel are next steps.', 'ออกแบบโฟลว์หลัก หน้าจอ High-fidelity และ Interactive Prototype แล้ว โดยร่วมพัฒนา Flutter ในส่วนหน้าจอที่ได้รับมอบหมายและ UI Components ที่นำกลับมาใช้ซ้ำได้ โครงการยังอยู่ระหว่างพัฒนา โดยมีการเชื่อมต่อ Backend การนำระบบไปใช้งาน และการทดสอบเพิ่มเติมกับบุคลากรเป็นขั้นตอนถัดไป');
+  const completed = ending.querySelector('ul');
+  if (completed) completed.innerHTML = [copy('High-fidelity UI designs and interactive prototype', 'หน้าจอ High-fidelity และ Interactive Prototype'), copy('Assigned Flutter screens and reusable UI components', 'หน้าจอ Flutter ที่ได้รับมอบหมายและ UI Components ที่นำกลับมาใช้ซ้ำได้'), copy('Check-in / check-out menu testing within the project scope', 'การทดสอบเมนูเข้างานและออกงานภายในขอบเขตโครงการ')].map(text => `<li>${text}</li>`).join('');
+  ending.insertAdjacentHTML('beforeend', `<div class="suth-collaboration"><h3>${copy('Development & Collaboration', 'การพัฒนาและการทำงานร่วมกัน')}</h3><p>${copy('Alongside the UX/UI design and interactive prototyping, I translated assigned Figma screens into Flutter and Dart, built reusable UI components, and collaborated with developers during integration. My contribution was part of the hospital project team’s work.', 'นอกจากการออกแบบ UX/UI และ Interactive Prototype ฉันยังนำหน้าจอ Figma ที่ได้รับมอบหมายมาพัฒนาด้วย Flutter และ Dart สร้าง UI Components ที่ใช้ซ้ำได้ และทำงานร่วมกับทีมพัฒนาในขั้นตอนเชื่อมต่อระบบ โดยเป็นส่วนหนึ่งของทีมโครงการโรงพยาบาล')}</p><h3>${copy('What I learned', 'สิ่งที่ได้เรียนรู้')}</h3><p>${copy('Designing for a hospital reinforced the importance of clear actions, visible system status and consistent patterns across staff roles. Contributing to Flutter helped me connect interface decisions with implementation constraints and communicate more precisely with developers.', 'การออกแบบสำหรับโรงพยาบาลทำให้เห็นความสำคัญของปุ่มที่ชัดเจน สถานะระบบที่เข้าใจง่าย และรูปแบบที่สม่ำเสมอระหว่างบทบาท การร่วมพัฒนา Flutter ช่วยให้เชื่อมโยงการออกแบบกับข้อจำกัดในการพัฒนา และสื่อสารกับทีมได้ชัดเจนขึ้น')}</p></div><nav class="suth-ending-nav" aria-label="${copy('Case study navigation', 'นำทางกรณีศึกษา')}"><button type="button" data-suth-back>← ${copy('Back to Featured Projects', 'กลับไปที่โปรเจกต์แนะนำ')}</button><button type="button" data-switch-project="goal-app"><small>${copy('NEXT CASE STUDY', 'กรณีศึกษาถัดไป')} ↗</small><span>${i18n.featuredProjects.goalApp.title[lang]}</span></button></nav>`);
+  root.querySelector('[data-suth-back]').onclick = () => {
+    closeModal(true);
+    document.querySelector('[data-project="mysuth-app"]')?.scrollIntoView({behavior:'instant', block:'center'});
+  };
+
+  const sections = [...root.querySelectorAll(':scope > section')];
+  const index = document.createElement('nav');
+  index.className = 'suth-index';
+  index.setAttribute('aria-label', copy('Case study sections', 'หัวข้อกรณีศึกษา'));
+  sections.slice(1).forEach((section, i) => {
+    if (!section.id) section.id = `suth-section-${i + 1}`;
+    const heading = section.querySelector('h2');
+    if (!heading) return;
+    const button = document.createElement('button');
+    button.textContent = `${String(i + 1).padStart(2, '0')} ${heading.textContent.trim()}`;
+    button.onclick = () => section.scrollIntoView({behavior: reduced() ? 'instant' : 'smooth', block:'start'});
+    index.append(button);
+  });
+  responsibilities.after(index);
+  const progress = document.createElement('progress');
+  progress.className = 'suth-reading-progress';
+  progress.max = 100;
+  progress.setAttribute('aria-label', copy('Reading progress', 'ความคืบหน้าการอ่าน'));
+  root.prepend(progress);
+  const updateProgress = () => { progress.value = 100 * overlay.scrollTop / Math.max(1, overlay.scrollHeight - overlay.clientHeight); };
+  overlay.addEventListener('scroll', updateProgress, {passive:true});
+  const observer = new MutationObserver(() => {
+    if (!root.classList.contains('suth-editorial') || !progress.isConnected) {
+      overlay.removeEventListener('scroll', updateProgress);
+      observer.disconnect();
+    }
+  });
+  observer.observe(root, {childList:true, attributes:true, attributeFilter:['class']});
+  updateProgress();
+  enableCaseImageViewer(root, th);
+}
+
+function enableCaseImageViewer(root, th) {
+  const dialog = document.createElement('dialog');
+  dialog.className = 'suth-image-viewer';
+  dialog.setAttribute('aria-label', th ? 'ดูภาพหน้าจอ' : 'Screenshot viewer');
+  dialog.innerHTML = `<div class="suth-viewer-toolbar"><p aria-live="polite"></p><button type="button" data-close aria-label="${th ? 'ปิด' : 'Close screenshot viewer'}">${th ? 'ปิด' : 'Close'} ×</button></div><div class="suth-viewer-stage"><button type="button" data-prev aria-label="${th ? 'ภาพก่อนหน้า' : 'Previous image'}">←</button><figure><img alt=""><figcaption></figcaption></figure><button type="button" data-next aria-label="${th ? 'ภาพถัดไป' : 'Next image'}">→</button></div><a target="_blank" rel="noopener">${th ? 'เปิดภาพขนาดต้นฉบับ ↗' : 'Open original image ↗'}</a>`;
+  const images = [...root.querySelectorAll('img')].filter(img => img.getAttribute('src'));
+  let active = 0;
+  let opener;
+  const show = index => {
+    active = (index + images.length) % images.length;
+    const original = images[active];
+    const image = dialog.querySelector('img');
+    dialog.classList.toggle('long-image', original.naturalHeight / original.naturalWidth > 3);
+    image.src = original.src;
+    image.alt = original.alt || (th ? 'หน้าจอแอป' : 'Application screen');
+    dialog.querySelector('figcaption').textContent = image.alt;
+    dialog.querySelector('p').textContent = `${active + 1} / ${images.length}`;
+    dialog.querySelector('a').href = original.src;
+  };
+  images.forEach((image, i) => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'suth-image-trigger';
+    button.setAttribute('aria-label', `${th ? 'ขยายภาพ' : 'Enlarge'}: ${image.alt || (th ? 'หน้าจอแอป' : 'Application screen')}`);
+    button.setAttribute('aria-haspopup', 'dialog');
+    image.replaceWith(button);
+    button.append(image);
+    button.onclick = () => { opener = button; show(i); dialog.showModal(); };
+  });
+  root.append(dialog);
+  dialog.querySelector('[data-close]').onclick = () => dialog.close();
+  dialog.querySelector('[data-prev]').onclick = () => show(active - 1);
+  dialog.querySelector('[data-next]').onclick = () => show(active + 1);
+  dialog.addEventListener('keydown', event => {
+    if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+      event.preventDefault();
+      show(active + (event.key === 'ArrowLeft' ? -1 : 1));
+    }
+    if (event.key === 'Escape') event.stopPropagation();
+  });
+  dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
+  dialog.addEventListener('close', () => opener?.focus({preventScroll:true}));
+  return { open(image, trigger) {
+    const index = images.indexOf(image);
+    if (index < 0) return;
+    opener = trigger;
+    show(index);
+    dialog.showModal();
+  }};
+}
+
+// Targeted Goal Management presentation, built on the existing section components.
+function refineGoalCase(root, project, lang) {
+  const copy = (en, th) => lang === 'TH' ? th : en;
+  const sectionFor = key => [...root.querySelectorAll(':scope > section')].find(section => section.querySelector('h2')?.textContent.trim() === project[key].heading[lang]);
+  const markPanels = (section, names) => {
+    const panels = [...section.firstElementChild.children].filter(child => child.tagName === 'DIV');
+    panels.forEach((panel, i) => { if (names[i]) panel.classList.add(names[i]); });
+    return panels;
+  };
+  const research = sectionFor('researchPivot');
+  research.classList.add('goal-research');
+  const [initial, survey, findings, pivot] = markPanels(research, ['goal-initial', 'goal-survey', 'goal-findings', 'goal-pivot']);
+  const flow = initial.querySelector(':scope > div');
+  flow.className = 'goal-initial-sequence';
+  flow.textContent = project.researchPivot.initialIdea.flow.map(step => step[lang]).join(' · ');
+  const findingGrid = findings.querySelector(':scope > div');
+  findingGrid.classList.add('goal-finding-list');
+  [...findingGrid.children].forEach((item, i) => {if (project.researchPivot.keyFindings.items[i].highlight) item.classList.add('goal-primary-insight');});
+  const pivotFlow = pivot.querySelector(':scope > div');
+  pivotFlow.classList.add('goal-pivot-flow');
+  const steps = project.researchPivot.productPivot.progression;
+  pivotFlow.innerHTML = steps.map((step, i) => `<div><small>${String(i + 1).padStart(2, '0')}</small><strong>${step[lang]}</strong></div>`).join('');
+
+  const understanding = sectionFor('understandingUser');
+  understanding.classList.add('goal-understanding');
+  markPanels(understanding, ['goal-persona', 'goal-journey', 'goal-user-insight']);
+
+  const opportunities = sectionFor('designOpportunities');
+  opportunities.classList.add('goal-opportunities');
+  const opportunityGrid = opportunities.querySelector(':scope > div > div');
+  opportunityGrid.classList.add('goal-opportunity-list');
+  const direction = document.createElement('blockquote');
+  direction.className = 'goal-direction';
+  direction.innerHTML = `<small>${project.designOpportunities.direction.label[lang]}</small><p>${project.designOpportunities.direction.quote[lang]}</p>`;
+  opportunityGrid.before(direction);
+  const connections = [
+    copy('Visible progress & small achievements', 'ความก้าวหน้าและความสำเร็จเล็ก ๆ'),
+    copy('Consistency is the greater challenge', 'ความท้าทายในการรักษาความสม่ำเสมอ'),
+    copy('Existing goals & flexibility when plans change', 'เป้าหมายที่มีอยู่และความยืดหยุ่นเมื่อแผนเปลี่ยน'),
+    copy('Falling behind reduces motivation', 'แรงจูงใจลดลงเมื่อทำตามแผนไม่ได้')
+  ];
+  [...opportunityGrid.children].forEach((item, i) => item.insertAdjacentHTML('beforeend', `<small class="goal-research-link">${copy('Research / persona', 'การวิจัย / Persona')} → ${connections[i]}</small>`));
+
+  const solutions = sectionFor('keyUxSolutions');
+  solutions.classList.add('goal-solutions');
+  const solutionPanels = markPanels(solutions, ['goal-solution', 'goal-solution', 'goal-solution', 'goal-solution', 'goal-ai']);
+  const features = solutionPanels.slice(0, 4);
+  features.forEach((feature, i) => {
+    feature.dataset.goalFeature = i + 1;
+    const divs = [...feature.children].filter(child => child.tagName === 'DIV');
+    divs[0].classList.add('goal-feature-heading');
+    divs[1].classList.add(i === 0 || i === 3 ? 'goal-showcase' : 'goal-comparison');
+    divs[divs.length - 1].classList.add('goal-purpose');
+    feature.querySelectorAll('img').forEach(image => {image.loading = 'lazy'; image.parentElement.classList.add('goal-screen-frame');});
+  });
+  features[0].querySelector('.goal-showcase > div > div > p').textContent = copy(
+    'Home highlights goals that still need action this week and distinguishes completed weekly targets. All Goals brings ongoing goals and their details together, so users can quickly decide what to work on next.',
+    'หน้าหลักเน้นเป้าหมายที่ยังต้องทำในสัปดาห์นี้และแยกสถานะเป้าหมายที่ทำครบแล้ว ส่วนหน้ารวมเป้าหมายรวบรวมเป้าหมายและรายละเอียดไว้ด้วยกัน ช่วยให้ผู้ใช้ตัดสินใจได้รวดเร็วว่าควรทำอะไรต่อ');
+  features[2].querySelector(':scope > p').innerHTML = copy(
+    'Recurring goals show the weekly check-in target, remaining actions, time available and accumulated streak. Check-ins are limited to once per day to encourage regular action; the familiar 🔥 metaphor makes that consistency visible.<br><br>Structured goals link progress to individual tasks, showing how each small completion contributes to the larger goal. Both views help users understand where they are and what to do next.',
+    'เป้าหมายแบบทำซ้ำแสดงจำนวน Check-in ต่อสัปดาห์ จำนวนครั้งที่ยังเหลือ เวลาที่เหลือ และ Streak สะสม โดย Check-in ได้วันละครั้งเพื่อส่งเสริมการลงมือทำอย่างสม่ำเสมอ และใช้สัญลักษณ์ 🔥 ที่คุ้นเคยเพื่อแสดงความต่อเนื่องให้มองเห็นได้<br><br>เป้าหมายแบบมีภารกิจเชื่อมความก้าวหน้ากับ Task ย่อย ช่วยให้เห็นว่าความสำเร็จเล็ก ๆ พาเข้าใกล้เป้าหมายใหญ่อย่างไร ทั้งสองรูปแบบช่วยให้เข้าใจสถานะปัจจุบันและขั้นตอนถัดไป');
+  const dashboard = features[3].querySelector('.goal-screen-frame');
+  dashboard.classList.add('goal-dashboard-preview');
+  dashboard.tabIndex = 0;
+  dashboard.setAttribute('role', 'region');
+  dashboard.setAttribute('aria-label', copy('Full dashboard screenshot — scroll to explore', 'ภาพ Dashboard ทั้งหมด — เลื่อนเพื่อดูรายละเอียด'));
+  dashboard.insertAdjacentHTML('afterend', `<p class="goal-dashboard-hint">↕ ${copy('Scroll to explore · Click image to enlarge', 'เลื่อนเพื่อดูทั้งหมด · คลิกภาพเพื่อขยาย')}</p>`);
+
+  const ai = solutionPanels[4];
+  ai.querySelector(':scope > p').textContent = copy(
+    'The proposed AI companion would offer personalized suggestions, encouragement and next-step guidance based on each user’s progress, while keeping decisions with the user. Technical and time constraints meant this remained a concept and was not fully implemented in the application.',
+    'แนวคิด AI Companion จะให้คำแนะนำ กำลังใจ และแนวทางขั้นตอนถัดไปตามความก้าวหน้าของผู้ใช้ โดยผู้ใช้ยังเป็นผู้ตัดสินใจเอง ด้วยข้อจำกัดทางเทคนิคและเวลา แนวคิดนี้จึงยังไม่ได้พัฒนาเต็มรูปแบบในแอปพลิเคชัน');
+  // The three summary cards repeat the paragraph above; keep the concept status.
+  ai.querySelector(':scope > div:last-child').remove();
+
+  const testing = sectionFor('testingOutcome');
+  testing.classList.add('goal-testing');
+  const [test, outcome, limitations, status, learning] = markPanels(testing, ['goal-test', 'goal-outcome', 'goal-limitations', 'goal-status', 'goal-learning']);
+  test.querySelector(':scope > div').classList.add('goal-test-metrics');
+  test.querySelector(':scope > p').textContent = copy('Participants completed tasks in the design prototype and then shared feedback through a Google Form. The satisfaction result describes this prototype test.', 'ผู้เข้าร่วมทดลองทำ Task ผ่าน Design Prototype แล้วให้ความคิดเห็นผ่านแบบสอบถาม Google Form ผลความพึงพอใจนี้เป็นผลจากการทดสอบตัวต้นแบบ');
+  const progression = outcome.querySelector(':scope > div');
+  progression.classList.add('goal-outcome-sequence');
+  progression.textContent = project.testingOutcome.outcome.progression.map(step => step[lang]).join(' → ');
+  outcome.querySelector(':scope > p').innerHTML = copy(
+    'Research and the product pivot led to a complete UX/UI prototype covering goal creation, tasks and check-ins, streaks, progress tracking and dashboard views. <strong>The developed application did not fully match the final UX/UI design; evaluation focused on the design prototype.</strong>',
+    'การวิจัยและการเปลี่ยนทิศทางนำไปสู่ UX/UI Prototype ที่ครอบคลุมการสร้างเป้าหมาย Task และ Check-in, Streak, การติดตามความก้าวหน้า และ Dashboard <strong>แอปพลิเคชันที่พัฒนาไม่ได้สะท้อน UX/UI ขั้นสุดท้ายได้ครบถ้วน การประเมินจึงมุ่งที่ Design Prototype เป็นหลัก</strong>');
+
+  const reflection = sectionFor('reflectionFuture');
+  reflection.classList.add('goal-reflection');
+  const [statement, future] = markPanels(reflection, ['goal-reflection-statement', 'goal-future']);
+  future.querySelector(':scope > div').classList.add('goal-future-list');
+  const viewer = enableCaseImageViewer(root, lang === 'TH');
+  const expandDashboard = document.createElement('button');
+  expandDashboard.type = 'button';
+  expandDashboard.className = 'goal-expand-dashboard';
+  expandDashboard.textContent = copy('View full dashboard ↗', 'ดู Dashboard แบบเต็ม ↗');
+  expandDashboard.onclick = () => viewer.open(dashboard.querySelector('img'), expandDashboard);
+  root.querySelector('.goal-dashboard-hint').append(document.createElement('br'), expandDashboard);
+}
