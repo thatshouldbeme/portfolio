@@ -1985,3 +1985,68 @@ body.modal-active .dock-trigger,
 .goal-editorial .goal-opportunity-list > div{padding-block:16px!important}
 .goal-expand-dashboard{font:700 12px/1.5 monospace;min-height:44px;padding:10px 6px;text-decoration:underline;cursor:pointer}
 .goal-expand-dashboard:focus-visible{outline:3px solid var(--sky-blue);outline-offset:3px}
+
+/* Shared case-study section index, including keyboard and current-section feedback. */
+.suth-index{position:relative}
+.suth-index button{padding:0}
+.suth-index button[aria-current="location"]{color:var(--sunset);text-decoration:underline;text-underline-offset:5px}
+.suth-index button:focus-visible{outline:3px solid var(--sky-blue);outline-offset:4px}
+[data-case-section]{scroll-margin-top:80px}
+
+/* Shared typography only: opt-in for the four full case studies. */
+.shell.case-study-type{
+ --case-font-display:Syne,sans-serif;
+ --case-font-text:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+ --case-font-label:monospace;
+ --case-title-size:clamp(28px,4vw,42px);
+ --case-section-size:clamp(28px,3.3vw,44px);
+ --case-subsection-size:clamp(18px,1.6vw,22px);
+ --case-feature-size:clamp(21px,2.2vw,30px);
+ --case-card-size:clamp(15px,1.25vw,17px);
+ --case-body-size:15px;
+ --case-small-body-size:14px;
+}
+.shell.case-study-type.suth-editorial{--case-title-size:clamp(40px,5.4vw,72px)}
+.shell.case-study-type h1{
+ font-family:var(--case-font-display)!important;font-size:var(--case-title-size)!important;
+ font-weight:950!important;line-height:1.02!important;letter-spacing:-.04em!important;text-transform:none!important;
+}
+.shell.case-study-type h2{
+ font-family:var(--case-font-display)!important;font-size:var(--case-section-size)!important;
+ font-weight:700!important;line-height:1.15!important;letter-spacing:-.035em!important;text-transform:none!important;
+}
+.shell.case-study-type h3:not(.case-type-display){
+ font-family:var(--case-font-text)!important;font-size:var(--case-subsection-size)!important;
+ font-weight:900!important;line-height:1.35!important;letter-spacing:-.015em!important;text-transform:none!important;
+}
+.shell.case-study-type h3.case-type-feature{
+ font-family:var(--case-font-text)!important;font-size:var(--case-feature-size)!important;
+ font-weight:900!important;line-height:1.15!important;letter-spacing:-.03em!important;text-transform:none!important;
+}
+.shell.case-study-type h4{
+ font-family:var(--case-font-text)!important;font-size:var(--case-card-size)!important;
+ font-weight:800!important;line-height:1.4!important;letter-spacing:0!important;text-transform:none!important;
+}
+.shell.case-study-type p:is(.case-type-body,.case-type-small-body){
+ font-family:var(--case-font-text)!important;font-size:var(--case-body-size)!important;
+ font-weight:400!important;line-height:1.75!important;letter-spacing:0!important;text-transform:none!important;
+}
+.shell.case-study-type p.case-type-small-body{font-size:var(--case-small-body-size)!important;line-height:1.65!important}
+.shell.case-study-type .case-type-caption{
+ font-family:var(--case-font-label)!important;font-size:11px!important;
+ font-weight:400!important;line-height:1.6!important;letter-spacing:0!important;text-transform:none!important;
+}
+.shell.case-study-type .case-type-label{
+ font-family:var(--case-font-label)!important;font-size:11px!important;
+ font-weight:800!important;line-height:1.5!important;letter-spacing:.04em!important;text-transform:uppercase!important;
+}
+.shell.case-study-type .suth-index button{
+ font-family:var(--case-font-label);font-size:11px;font-weight:700;line-height:1.5;letter-spacing:0;text-transform:none;
+}
+@media(max-width:600px){.shell.case-study-type{--case-small-body-size:13px}}
+
+/* Hero refinement: retain the existing composition and button treatment. */
+#introCopy .nameplate{margin-bottom:24px}
+#introCopy .lead{font-size:clamp(15px,1.35vw,20px);font-weight:400;line-height:1.65;max-width:440px;margin-top:24px;margin-bottom:0;overflow-wrap:break-word}
+#introCopy .hero-cta{width:auto;max-width:100%;display:inline-flex;align-items:center;justify-content:center;gap:8px;margin-top:20px;padding:12px 18px;font-size:14px;font-weight:600;line-height:1.5}
+@media(min-width:821px){#introCopy .lead{max-width:min(440px,44vw)}}

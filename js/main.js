@@ -29,6 +29,7 @@ const i18n = {
     }
   },
   hero: {
+    cta: { EN: "Explore My Work", TH: "ดูผลงานของฉัน" },
     nameplate: {
       EN: "UX/UI DESIGNER",
       TH: "นักออกแบบ UX/UI"
@@ -38,8 +39,8 @@ const i18n = {
       TH: 'ซัลสบีล<br/><span class="outline">เดเระมะ</span>'
     },
     lead: {
-      EN: "A UX/UI Designer passionate about turning ideas and real-world challenges into thoughtful, user-centered digital experiences, with a focus on creating simple and intuitive interfaces.",
-      TH: "UX/UI ที่สนุกกับการเปลี่ยนไอเดียและโจทย์ในชีวิตจริงให้กลายเป็นประสบการณ์ดิจิทัลที่ใส่ใจผู้ใช้ โดยเน้นการออกแบบอินเทอร์เฟซที่เรียบง่ายและใช้งานง่าย"
+      EN: "Designing simple, intuitive experiences with people in mind.",
+      TH: "ออกแบบให้เข้าใจง่าย ใช้งานได้จริง และใส่ใจผู้ใช้"
     }
   },
   about: {
@@ -60,8 +61,8 @@ const i18n = {
       TH: "การศึกษา"
     },
     eduSchool: {
-      EN: "Suranaree University of Technology (2023 - Now)",
-      TH: "มหาวิทยาลัยเทคโนโลยีสุรนารี (2023 - ปัจจุบัน)"
+      EN: "Suranaree University of Technology (2023 - 2026)",
+      TH: "มหาวิทยาลัยเทคโนโลยีสุรนารี (2566 - 2569)"
     },
     eduDegree: {
       EN: "Bachelor of Information Science (Digital Technology) — GPAX 3.50",
@@ -129,11 +130,11 @@ const i18n = {
     },
     heading: {
       EN: 'CASE<br/><span class="outline">STUDIES.</span>',
-      TH: 'กรณีศึกษา<span class="outline">งานออกแบบ</span>'
+      TH: 'โปรเจกต์<span class="outline">ด้าน UX/UI</span>'
     },
     subtitle: {
       EN: "A curated collection of digital product design case studies — exploring user research, complex workflows, design systems, and tangible outcomes.",
-      TH: "รวบรวมกรณีศึกษาการออกแบบผลิตภัณฑ์ดิจิทัล — ถ่ายทอดกระบวนการวิจัยผู้ใช้ สถาปัตยกรรมปฏิสัมพันธ์ ระบบดีไซน์ และผลลัพธ์ที่ใช้งานได้จริง"
+      TH: "รวบรวมโปรเจกต์การออกแบบผลิตภัณฑ์ดิจิทัล — ถ่ายทอดกระบวนการวิจัยผู้ใช้ สถาปัตยกรรมปฏิสัมพันธ์ ระบบดีไซน์ และผลลัพธ์ที่ใช้งานได้จริง"
     },
     items: {
       "mysuth-app": {
@@ -146,18 +147,18 @@ const i18n = {
           TH: "My SUTH App"
         },
         role: {
-          EN: "UX/UI Designer & System Architecture",
-          TH: "ผู้ออกแบบ UX/UI และสถาปัตยกรรมระบบ"
+          EN: "UX/UI Designer",
+          TH: "ผู้ออกแบบ UX/UI"
         },
         desc: {
-          EN: "A unified mobile hospital management system designed for SUT Healthcare personnel, streamlining attendance, patient queueing, e-consultations, and real-time emergency code alerts into one intuitive interface.",
+          EN: "A unified mobile hospital management system designed for SUT Hospital staff, streamlining attendance, patient queue management, e-consultations, and emergency code notifications into one intuitive interface.",
           TH: "แอปพลิเคชันจัดการระบบงานโรงพยาบาลสำหรับบุคลากรทางการแพทย์ รพ.มทส. รวบรวมระบบลงเวลาทำงาน จัดการคิวคนไข้ ปรึกษาเคส (E-Consult) และแจ้งเตือนเหตุฉุกเฉินไว้ในที่เดียวอย่างมีประสิทธิภาพ"
         }
       },
       "goal-app": {
         tag: {
           EN: "MOBILE APP / AI ASSISTANT / UX RESEARCH",
-          TH: "แอปมือถือ / ผู้ช่วย AI / การวิจัย UX"
+          TH: "แอปมือถือ / การวิจัย UX"
         },
         title: {
           EN: "Goal Management Mobile App",
@@ -168,8 +169,8 @@ const i18n = {
           TH: "ผู้วิจัย UX และออกแบบ UI"
         },
         desc: {
-          EN: "A habit and goal-tracking mobile app designed around behavioral psychology, helping university students maintain consistency through daily streaks, actionable sub-tasks, and AI-assisted coaching.",
-          TH: "แอปพลิเคชันมือถือช่วยติดตามและพิชิตเป้าหมายชีวิต ออกแบบโดยอิงหลักจิตวิทยาพฤติกรรม ช่วยให้นักศึกษาทำตามเป้าหมายได้อย่างต่อเนื่องด้วยระบบ Streak กิจกรรมย่อย และผู้ช่วย AI แนะนำแบบรายบุคคล"
+          EN: "A habit and goal-tracking mobile app designed around behavioral psychology, helping university students maintain consistency through daily streaks, actionable sub-tasks, and motivational progress tracking.",
+          TH: "แอปพลิเคชันมือถือช่วยติดตามและจัดการเป้าหมายชีวิต ออกแบบโดยอิงหลักจิตวิทยาพฤติกรรม ช่วยให้นักศึกษาทำตามเป้าหมายได้อย่างต่อเนื่องด้วยระบบ Streak กิจกรรมย่อย"
         }
       },
       "dormitory-app": {
@@ -178,15 +179,15 @@ const i18n = {
           TH: "ปรับปรุง UX / ระบบจัดการหอพัก"
         },
         title: {
-          EN: "Smart Dormitory System",
-          TH: "ระบบจัดการหอพักนักศึกษา"
+          EN: "Smart Dormitory System for Students",
+          TH: "ระบบจัดการหอพักนักศึกษาสำหรับนักศึกษา"
         },
         role: {
           EN: "UX/UI Designer & UX Researcher",
           TH: "ผู้ออกแบบ UX/UI และวิจัยพฤติกรรมผู้ใช้"
         },
         desc: {
-          EN: "Transforming the outdated university housing portal into a streamlined mobile experience for 67+ surveyed residents, centralizing room booking, maintenance reporting, and monthly utility tracking.",
+          EN: "Transforming the outdated university housing portal into a streamlined mobile experience for 67 student survey respondents, centralizing room booking, maintenance reporting, and monthly utility tracking.",
           TH: "การปรับปรุงประสบการณ์ผู้ใช้ (UX Redesign) เว็บไซต์หอพัก มทส. สู่แอปพลิเคชันมือถือ จากผลสำรวจนักศึกษา 67 คน รวมการจองและย้ายห้อง แจ้งซ่อม ตรวจสอบค่าไฟฟ้า และข่าวสารหอพักไว้ครบวงจร"
         }
       },
@@ -204,8 +205,8 @@ const i18n = {
           TH: "ผู้ออกแบบปฏิสัมพันธ์และการนำทาง"
         },
         desc: {
-          EN: "Interactive wayfinding redesign for a 5-story university complex, replacing static directories with floor-by-floor route animation, accessible color-coded categories, and mobile QR handoff.",
-          TH: "การออกแบบระบบแผนที่ดิจิทัลและตู้คีออสนำทางอาคารเรียน 5 ชั้น เปลี่ยนจากแผนที่ภาพนิ่งสู่ระบบค้นหาห้องที่เข้าใจง่าย มีเส้นทางนำทางแบบเคลื่อนไหว และส่งต่อแผนที่ไปยังมือถือผ่าน QR Code"
+          EN: "Interactive wayfinding redesign for a 5-story university complex, replacing static directories with floor-by-floor route animation and color-coded navigation categories",
+          TH: "การออกแบบระบบแผนที่ดิจิทัลและตู้คีออสนำทางอาคารเรียน 5 ชั้น เปลี่ยนจากแผนที่ภาพนิ่งสู่ระบบค้นหาห้องที่เข้าใจง่าย มีเส้นทางนำทางแบบเคลื่อนไหว"
         }
       }
     }
@@ -220,7 +221,7 @@ const i18n = {
       TH: 'งานออกแบบ<br/><span class="outline">อิสระอื่นๆ</span>'
     },
     lead: {
-      EN: "Magazines, Logo design, Event Posters and Infographics.",
+      EN: "Magazine layouts, logos, event posters, and infographics.",
       TH: "นิตยสาร, การออกแบบโลโก้, โปสเตอร์กิจกรรม และ อินโฟกราฟิก"
     },
     cards: {
@@ -397,7 +398,7 @@ const i18n = {
     },
     caseStudyTag: {
       EN: "CASE STUDY / SELECTED WORK",
-      TH: "กรณีศึกษา / ผลงานที่คัดมาแล้ว"
+      TH: "โปรเจกต์ / ผลงานที่คัดมาแล้ว"
     },
     figmaBtn: {
       EN: "VIEW FIGMA PROTOTYPE ↗",
@@ -3459,6 +3460,8 @@ function setLanguage(lang) {
     if (np && i18n.hero?.nameplate?.[lang]) np.innerHTML = i18n.hero.nameplate[lang];
     if (disp && i18n.hero?.display?.[lang]) disp.innerHTML = i18n.hero.display[lang];
     if (lead && i18n.hero?.lead?.[lang]) lead.innerHTML = i18n.hero.lead[lang];
+    const ctaLabel = heroCopy.querySelector('.hero-cta span');
+    if (ctaLabel) ctaLabel.textContent = i18n.hero.cta[lang];
   }
 
   // Section 2: About
@@ -3540,7 +3543,7 @@ function setLanguage(lang) {
         if (p && data.desc?.[lang]) p.innerHTML = data.desc[lang];
         if (roleLabel) roleLabel.innerHTML = lang === 'TH' ? 'บทบาท' : 'ROLE';
         if (roleTitle && data.role?.[lang]) roleTitle.innerHTML = data.role[lang];
-        if (ctaSpan) ctaSpan.innerHTML = lang === 'TH' ? 'ดูกรณีศึกษา' : 'VIEW CASE STUDY';
+        if (ctaSpan) ctaSpan.innerHTML = lang === 'TH' ? 'ดูโปรเจกต์' : 'VIEW CASE STUDY';
       }
     });
   }
@@ -3807,6 +3810,12 @@ nav.forEach((b, i) => b.addEventListener('click', () => {
   panels[i].scrollIntoView({ behavior: reduced() ? 'auto' : 'smooth', block: 'start' });
 }));
 
+document.getElementById('heroWorkBtn')?.addEventListener('click', () => {
+  document.querySelector('.panel[data-panel="2"]')?.scrollIntoView({
+    behavior: reduced() ? 'auto' : 'smooth', block: 'start'
+  });
+});
+
 /* CASE STUDY DATA & OVERLAY */
 const caseData = {
   'mysuth-app': {
@@ -4015,7 +4024,7 @@ function restoreScrollPosition() {
 }
 
 function closeModal(updateHistory = true) {
-  shell.classList.remove('suth-editorial', 'goal-editorial');
+  shell.classList.remove('suth-editorial', 'goal-editorial', 'case-study-type');
   isModalOpen = false;
   currentActiveModalPid = null;
   currentActiveMiniType = null;
@@ -6129,6 +6138,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0) {
 
   shell.classList.toggle('suth-editorial', pid === 'mysuth-app');
   shell.classList.toggle('goal-editorial', pid === 'goal-app');
+  shell.classList.toggle('case-study-type', ['mysuth-app', 'goal-app', 'dormitory-app', 'kiosk-app'].includes(pid));
   shell.innerHTML = `
     ${tabsHtml}
     <section class="hero">
@@ -6244,6 +6254,16 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0) {
 
   if (pid === 'mysuth-app') refineSuthCase(shell, projI18n, lang);
   if (pid === 'goal-app') refineGoalCase(shell, projI18n, lang);
+  if (['goal-app', 'dormitory-app', 'kiosk-app'].includes(pid)) {
+    const sections = [...shell.querySelectorAll(':scope > section')];
+    const entries = sections.map((section, i) => ({
+      section,
+      label: section.querySelector('h2')?.textContent.trim() ||
+        (pid === 'goal-app' && i === 0 ? (lang === 'TH' ? 'ภาพรวม' : 'Overview') : '')
+    })).filter(entry => entry.label);
+    createCaseSectionIndex(shell, entries, sections[0], lang, pid.replace('-app', ''));
+  }
+  if (shell.classList.contains('case-study-type')) applyCaseTypography(shell);
 
   shell.querySelectorAll('[data-switch-project]').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -6927,26 +6947,16 @@ function refineSuthCase(root, project, lang) {
   if (statusIntro) statusIntro.textContent = copy('The core user flows, high-fidelity interfaces and interactive prototype have been designed. My Flutter contribution covered assigned screens and reusable UI components. The project remains under development; backend integration, deployment and further testing with hospital personnel are next steps.', 'ออกแบบโฟลว์หลัก หน้าจอ High-fidelity และ Interactive Prototype แล้ว โดยร่วมพัฒนา Flutter ในส่วนหน้าจอที่ได้รับมอบหมายและ UI Components ที่นำกลับมาใช้ซ้ำได้ โครงการยังอยู่ระหว่างพัฒนา โดยมีการเชื่อมต่อ Backend การนำระบบไปใช้งาน และการทดสอบเพิ่มเติมกับบุคลากรเป็นขั้นตอนถัดไป');
   const completed = ending.querySelector('ul');
   if (completed) completed.innerHTML = [copy('High-fidelity UI designs and interactive prototype', 'หน้าจอ High-fidelity และ Interactive Prototype'), copy('Assigned Flutter screens and reusable UI components', 'หน้าจอ Flutter ที่ได้รับมอบหมายและ UI Components ที่นำกลับมาใช้ซ้ำได้'), copy('Check-in / check-out menu testing within the project scope', 'การทดสอบเมนูเข้างานและออกงานภายในขอบเขตโครงการ')].map(text => `<li>${text}</li>`).join('');
-  ending.insertAdjacentHTML('beforeend', `<div class="suth-collaboration"><h3>${copy('Development & Collaboration', 'การพัฒนาและการทำงานร่วมกัน')}</h3><p>${copy('Alongside the UX/UI design and interactive prototyping, I translated assigned Figma screens into Flutter and Dart, built reusable UI components, and collaborated with developers during integration. My contribution was part of the hospital project team’s work.', 'นอกจากการออกแบบ UX/UI และ Interactive Prototype ฉันยังนำหน้าจอ Figma ที่ได้รับมอบหมายมาพัฒนาด้วย Flutter และ Dart สร้าง UI Components ที่ใช้ซ้ำได้ และทำงานร่วมกับทีมพัฒนาในขั้นตอนเชื่อมต่อระบบ โดยเป็นส่วนหนึ่งของทีมโครงการโรงพยาบาล')}</p><h3>${copy('What I learned', 'สิ่งที่ได้เรียนรู้')}</h3><p>${copy('Designing for a hospital reinforced the importance of clear actions, visible system status and consistent patterns across staff roles. Contributing to Flutter helped me connect interface decisions with implementation constraints and communicate more precisely with developers.', 'การออกแบบสำหรับโรงพยาบาลทำให้เห็นความสำคัญของปุ่มที่ชัดเจน สถานะระบบที่เข้าใจง่าย และรูปแบบที่สม่ำเสมอระหว่างบทบาท การร่วมพัฒนา Flutter ช่วยให้เชื่อมโยงการออกแบบกับข้อจำกัดในการพัฒนา และสื่อสารกับทีมได้ชัดเจนขึ้น')}</p></div><nav class="suth-ending-nav" aria-label="${copy('Case study navigation', 'นำทางกรณีศึกษา')}"><button type="button" data-suth-back>← ${copy('Back to Featured Projects', 'กลับไปที่โปรเจกต์แนะนำ')}</button><button type="button" data-switch-project="goal-app"><small>${copy('NEXT CASE STUDY', 'กรณีศึกษาถัดไป')} ↗</small><span>${i18n.featuredProjects.goalApp.title[lang]}</span></button></nav>`);
+  ending.insertAdjacentHTML('beforeend', `<div class="suth-collaboration"><h3>${copy('Development & Collaboration', 'การพัฒนาและการทำงานร่วมกัน')}</h3><p>${copy('Alongside the UX/UI design and interactive prototyping, I translated assigned Figma screens into Flutter and Dart, built reusable UI components, and collaborated with developers during integration. My contribution was part of the hospital project team’s work.', 'นอกจากการออกแบบ UX/UI และ Interactive Prototype ฉันยังนำหน้าจอ Figma ที่ได้รับมอบหมายมาพัฒนาด้วย Flutter และ Dart สร้าง UI Components ที่ใช้ซ้ำได้ และทำงานร่วมกับทีมพัฒนาในขั้นตอนเชื่อมต่อระบบ โดยเป็นส่วนหนึ่งของทีมโครงการโรงพยาบาล')}</p><h3>${copy('What I learned', 'สิ่งที่ได้เรียนรู้')}</h3><p>${copy('Designing for a hospital reinforced the importance of clear actions, visible system status and consistent patterns across staff roles. Contributing to Flutter helped me connect interface decisions with implementation constraints and communicate more precisely with developers.', 'การออกแบบสำหรับโรงพยาบาลทำให้เห็นความสำคัญของปุ่มที่ชัดเจน สถานะระบบที่เข้าใจง่าย และรูปแบบที่สม่ำเสมอระหว่างบทบาท การร่วมพัฒนา Flutter ช่วยให้เชื่อมโยงการออกแบบกับข้อจำกัดในการพัฒนา และสื่อสารกับทีมได้ชัดเจนขึ้น')}</p></div><nav class="suth-ending-nav" aria-label="${copy('Case study navigation', 'นำทางโปรเจกต์')}"><button type="button" data-suth-back>← ${copy('Back to Featured Projects', 'กลับไปที่โปรเจกต์แนะนำ')}</button><button type="button" data-switch-project="goal-app"><small>${copy('NEXT CASE STUDY', 'โปรเจกต์ถัดไป')} ↗</small><span>${i18n.featuredProjects.goalApp.title[lang]}</span></button></nav>`);
   root.querySelector('[data-suth-back]').onclick = () => {
     closeModal(true);
     document.querySelector('[data-project="mysuth-app"]')?.scrollIntoView({behavior:'instant', block:'center'});
   };
 
   const sections = [...root.querySelectorAll(':scope > section')];
-  const index = document.createElement('nav');
-  index.className = 'suth-index';
-  index.setAttribute('aria-label', copy('Case study sections', 'หัวข้อกรณีศึกษา'));
-  sections.slice(1).forEach((section, i) => {
-    if (!section.id) section.id = `suth-section-${i + 1}`;
-    const heading = section.querySelector('h2');
-    if (!heading) return;
-    const button = document.createElement('button');
-    button.textContent = `${String(i + 1).padStart(2, '0')} ${heading.textContent.trim()}`;
-    button.onclick = () => section.scrollIntoView({behavior: reduced() ? 'instant' : 'smooth', block:'start'});
-    index.append(button);
-  });
-  responsibilities.after(index);
+  createCaseSectionIndex(root, sections.slice(1).map(section => ({
+    section, label: section.querySelector('h2')?.textContent.trim()
+  })).filter(entry => entry.label), responsibilities, lang, 'suth');
   const progress = document.createElement('progress');
   progress.className = 'suth-reading-progress';
   progress.max = 100;
@@ -7114,4 +7124,119 @@ function refineGoalCase(root, project, lang) {
   expandDashboard.textContent = copy('View full dashboard ↗', 'ดู Dashboard แบบเต็ม ↗');
   expandDashboard.onclick = () => viewer.open(dashboard.querySelector('img'), expandDashboard);
   root.querySelector('.goal-dashboard-hint').append(document.createElement('br'), expandDashboard);
+}
+
+
+// Shared in-page index: the same placement rules, buttons and scroll behavior for both cases.
+function createCaseSectionIndex(root, entries, afterElement, lang, prefix) {
+  const index = document.createElement('nav');
+  index.className = 'suth-index';
+  index.setAttribute('aria-label', lang === 'TH' ? 'หัวข้อโปรเจกต์' : 'Case study sections');
+  const offset = () => {
+    const overlayTop = overlay.getBoundingClientRect().top;
+    const controls = [document.getElementById('back'), document.getElementById('modalLangToggleBtn')];
+    return Math.max(20, ...controls.filter(Boolean).map(control => control.getBoundingClientRect().bottom - overlayTop + 16));
+  };
+  const buttons = entries.map(({section, label}, i) => {
+    if (!section.id) section.id = `${prefix}-section-${i + 1}`;
+    section.dataset.caseSection = '';
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.textContent = `${String(i + 1).padStart(2, '0')} ${label}`;
+    button.setAttribute('aria-controls', section.id);
+    button.onclick = () => {
+      section.style.scrollMarginTop = `${offset()}px`;
+      section.scrollIntoView({behavior: reduced() ? 'instant' : 'smooth', block: 'start'});
+    };
+    index.append(button);
+    return button;
+  });
+  afterElement.after(index);
+  let active = -1;
+  let frame = 0;
+  const update = () => {
+    frame = 0;
+    const top = overlay.getBoundingClientRect().top + offset() + 12;
+    let next = 0;
+    entries.forEach(({section}, i) => {
+      if (section.getBoundingClientRect().top <= top) next = i;
+    });
+    if (overlay.scrollTop + overlay.clientHeight >= overlay.scrollHeight - 2) next = entries.length - 1;
+    if (next === active) return;
+    active = next;
+    buttons.forEach((button, i) => {
+      if (i === active) button.setAttribute('aria-current', 'location');
+      else button.removeAttribute('aria-current');
+    });
+    const button = buttons[active];
+    const bounds = index.getBoundingClientRect();
+    const item = button.getBoundingClientRect();
+    const viewport = overlay.getBoundingClientRect();
+    // Do not move the horizontal strip while a visitor is choosing a visible item.
+    const indexOffscreen = bounds.bottom <= viewport.top || bounds.top >= viewport.bottom;
+    if (indexOffscreen && (item.left < bounds.left || item.right > bounds.right)) {
+      index.scrollTo({left: button.offsetLeft - index.offsetLeft - 12, behavior: 'instant'});
+    }
+  };
+  const schedule = () => { if (!frame) frame = requestAnimationFrame(update); };
+  overlay.addEventListener('scroll', schedule, {passive: true});
+  window.addEventListener('resize', schedule, {passive: true});
+  const observer = new MutationObserver(() => {
+    if (!index.isConnected || !overlay.classList.contains('show')) {
+      overlay.removeEventListener('scroll', schedule);
+      window.removeEventListener('resize', schedule);
+      cancelAnimationFrame(frame);
+      observer.disconnect();
+    }
+  });
+  observer.observe(root, {childList:true});
+  observer.observe(overlay, {attributes:true, attributeFilter:['class']});
+  schedule();
+  return index;
+}
+
+
+// Semantic typography roles, scoped to case studies; retain all existing box styles.
+function applyCaseTypography(root) {
+  const changeHeading = (element, tag) => {
+    const display = getComputedStyle(element).display;
+    const heading = document.createElement(tag);
+    for (const attribute of element.attributes) heading.setAttribute(attribute.name, attribute.value);
+    // A bold label has no browser heading margins. Preserve its original box spacing.
+    heading.style.cssText = `margin:0;${element.style.cssText}`;
+    heading.style.display = display;
+    heading.append(...element.childNodes);
+    element.replaceWith(heading);
+    return heading;
+  };
+  root.querySelectorAll('h5').forEach(heading => changeHeading(heading, 'h4'));
+  root.querySelectorAll('b[style]').forEach(label => {
+    const size = parseFloat(label.style.fontSize);
+    if (size >= 14 && size < 24 && !label.style.font.includes('monospace') &&
+        !label.closest('p,li,button,table,h1,h2,h3,h4,nav')) changeHeading(label, 'h4');
+  });
+  root.querySelectorAll('h3').forEach(heading => {
+    if (heading.closest('.goal-user-insight')) {
+      heading.classList.add('case-type-display');
+      return;
+    }
+    const number = heading.parentElement.querySelector(':scope > span');
+    if (number && /^\d+$/.test(number.textContent.trim()) && parseFloat(number.style.fontSize) >= 28) {
+      heading.classList.add('case-type-feature');
+    }
+  });
+  root.querySelectorAll('section p').forEach(paragraph => {
+    const display = paragraph.style.fontStyle === 'italic' || paragraph.closest(
+      '.hero,.goal-direction,.goal-primary-insight,.goal-purpose,.goal-learning,.goal-reflection-statement');
+    if (display) return;
+    const container = paragraph.parentElement;
+    const inCard = container.querySelector('h4') && !container.querySelector('h2,h3');
+    const compact = inCard || paragraph.closest('.goal-comparison,.goal-limitations,.goal-future-list');
+    paragraph.classList.add(compact ? 'case-type-small-body' : 'case-type-body');
+  });
+  root.querySelectorAll('figcaption,img + span,.goal-dashboard-hint,.goal-research-link,[data-goal-feature="1"] .goal-showcase span').forEach(caption => {
+    caption.classList.remove('case-type-body', 'case-type-small-body');
+    caption.classList.add('case-type-caption');
+  });
+  root.querySelectorAll('.suth-metadata dt,.suth-decision dt').forEach(label => label.classList.add('case-type-label'));
 }
