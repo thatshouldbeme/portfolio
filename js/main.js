@@ -255,6 +255,16 @@ const i18n = {
     items: [
       {
         title: {
+          EN: "First Prize in Cooperative Education Project",
+          TH: "รางวัลผลงานสหกิจศึกษาชนะเลิศ อันดับ 1"
+        },
+        issuer: {
+          EN: "Suranaree University of Technology Hospital",
+          TH: "โรงพยาบาลมหาวิทยาลัยเทคโนโลยีสุรนารี"
+        }
+      },
+      {
+        title: {
           EN: "EVENT DOT Connecttive system game",
           TH: "กิจกรรม EVENT DOT Connecttive system game"
         },
@@ -396,10 +406,6 @@ const i18n = {
       EN: "BACK TO PORTFOLIO",
       TH: "กลับสู่หน้าพอร์ตโฟลิโอ"
     },
-    caseStudyTag: {
-      EN: "CASE STUDY / SELECTED WORK",
-      TH: "โปรเจกต์ / ผลงานที่คัดมาแล้ว"
-    },
     figmaBtn: {
       EN: "VIEW FIGMA PROTOTYPE ↗",
       TH: "ดูตัวอย่าง FIGMA PROTOTYPE ↗"
@@ -446,8 +452,8 @@ const i18n = {
         TH: "My SUTH App"
       },
       subtitle: {
-        EN: "Designing a more connected digital experience for hospital personnel.",
-        TH: "ออกแบบประสบการณ์ดิจิทัลที่เชื่อมโยงยิ่งขึ้น เพื่อบุคลากรโรงพยาบาลสุรนารี"
+        EN: "“Designing a more convenient digital experience for hospital personnel.”",
+        TH: "“ออกแบบประสบการณ์ดิจิทัลที่สะดวกยิ่งขึ้น เพื่อบุคลากรโรงพยาบาลสุรนารี”"
       },
       overview: {
         EN: "My SUTH App is a mobile application designed to support hospital personnel across different roles, including doctors, nurses, administrative staff, and executives. The project focuses on making everyday hospital workflows more accessible and convenient through a centralized mobile experience.",
@@ -4097,7 +4103,6 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0) {
   const modalResultsDesc = projI18n?.resultsDesc?.[lang] || (data.results ? data.results.desc : '');
   const modalResultsHighlights = projI18n?.resultsHighlights?.[lang] || (data.results ? data.results.highlights : null);
   const modalFeatureHeading = projI18n?.featureHeading?.[lang] || i18n.projectNav?.featureHeading?.[lang] || data.featureHeading || 'Key UX Solutions &amp; UI Design';
-  const caseTagText = i18n.projectNav?.caseStudyTag?.[lang] || 'CASE STUDY / SELECTED WORK';
   const figmaBtnText = i18n.projectNav?.figmaBtn?.[lang] || 'VIEW FIGMA PROTOTYPE ↗';
   const backBtnText = i18n.projectNav?.backToPortfolio?.[lang] || 'BACK TO PORTFOLIO';
 
@@ -6143,7 +6148,6 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0) {
     ${tabsHtml}
     <section class="hero">
       <div>
-        <span class="kicker">${caseTagText}</span>
         <h1 style="font-size:clamp(28px,4vw,42px)">${modalTitle}</h1>
         <p class="lead" style="color:var(--sunset);font-weight:800">${modalSubtitle}</p>
         <div style="margin:12px 0 18px;display:flex;gap:12px;flex-wrap:wrap">
@@ -6755,9 +6759,45 @@ window.addEventListener('popstate', handleHashModalNavigation);
 window.addEventListener('DOMContentLoaded', handleHashModalNavigation);
 handleHashModalNavigation();
 
+/* Technical Skills only: reveal the six items once, in their existing DOM order. */
+(() => {
+  const card = document.querySelector('.skills-rail .sk-tech');
+  if (!card || !('IntersectionObserver' in window) || !window.matchMedia) return;
+  const motion = matchMedia('(prefers-reduced-motion: reduce)');
+  if (motion.matches) return;
+  const items = [...card.querySelectorAll('.sk-list > .sk-item')];
+  let revealed = false;
+
+  function finish() {
+    revealed = true;
+    items.forEach(item => {
+      item.style.removeProperty('--tech-reveal-delay');
+      item.classList.remove('tech-skill-pending');
+    });
+    observer.disconnect();
+    motion.removeEventListener('change', finish);
+  }
+  const observer = new IntersectionObserver(entries => {
+    if (revealed || !entries.some(entry => entry.isIntersecting)) return;
+    revealed = true;
+    items.forEach((item, index) => {
+      item.style.setProperty('--tech-reveal-delay', `${index * 150}ms`);
+      item.classList.remove('tech-skill-pending');
+    });
+    observer.disconnect();
+  }, { threshold: .25, rootMargin: '0px 0px -12% 0px' });
+
+  // Default HTML stays visible if JavaScript or the observer API is unavailable.
+  items.forEach(item => item.classList.add('tech-skill-pending'));
+  observer.observe(card);
+  motion.addEventListener('change', finish);
+  window.addEventListener('pagehide', finish, { once: true });
+  card.addEventListener('focusin', finish, { once: true });
+})();
+
 /* Scroll Reveal Fade-In Observer (Excluding Section Titles & Leads) */
 const revealTargets = document.querySelectorAll(
-  '.skill-card-box, .project, .cat-card, .cert-item-frameless, .polaroid, .resume, .contact-panel, .contact-links, .portrait, .intro-education'
+  '.project, .cat-card, .cert-item-frameless, .polaroid, .resume, .contact-panel, .contact-links, .portrait, .intro-education'
 );
 
 revealTargets.forEach(el => el.classList.add('scroll-reveal'));
@@ -7240,3 +7280,48 @@ function applyCaseTypography(root) {
   });
   root.querySelectorAll('.suth-metadata dt,.suth-decision dt').forEach(label => label.classList.add('case-type-label'));
 }
+
+// Open certificates at full size with native dialog focus and Escape handling.
+(() => {
+  const images = document.querySelectorAll('.cert-full-img img');
+  if (!images.length) return;
+
+  const dialog = document.createElement('dialog');
+  dialog.className = 'certificate-viewer';
+  dialog.setAttribute('aria-label', 'Certificate / เกียรติบัตร');
+  dialog.innerHTML = '<button type="button" class="certificate-viewer-close" aria-label="Close / ปิด">×</button><img class="certificate-viewer-image" alt=""><p class="certificate-viewer-caption"></p>';
+  document.body.appendChild(dialog);
+  const fullImage = dialog.querySelector('img');
+  const caption = dialog.querySelector('p');
+  let trigger = null;
+  let previousOverflow = '';
+
+  images.forEach(image => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'certificate-preview';
+    button.setAttribute('aria-label', `View certificate / ดูเกียรติบัตร: ${image.alt}`);
+    button.setAttribute('aria-haspopup', 'dialog');
+    image.replaceWith(button);
+    button.appendChild(image);
+    button.addEventListener('click', () => {
+      trigger = button;
+      fullImage.src = image.currentSrc || image.src;
+      fullImage.alt = image.alt;
+      caption.textContent = image.closest('.cert-item-frameless').querySelector('h3')?.textContent || image.alt;
+      previousOverflow = document.body.style.overflow;
+      dialog.showModal();
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  dialog.querySelector('button').addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+  dialog.addEventListener('close', () => {
+    document.body.style.overflow = previousOverflow;
+    trigger?.focus({ preventScroll: true });
+    fullImage.removeAttribute('src');
+  });
+})();

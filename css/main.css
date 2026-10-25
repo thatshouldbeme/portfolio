@@ -200,10 +200,10 @@ body.modal-active .dock-trigger,
 .skills-rail{left:10vw;top:38vh;width:80vw;z-index:10}
 .skills-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;width:100%;align-items:stretch}
 .skill-card-box{background:rgba(255,255,255,0.75);backdrop-filter:blur(16px) saturate(180%);-webkit-backdrop-filter:blur(16px) saturate(180%);border:1px solid rgba(255,255,255,0.8);box-shadow:0 12px 32px rgba(85,104,175,0.08);border-radius:22px;padding:22px;display:flex;flex-direction:column;gap:14px;transition:all .3s cubic-bezier(.34,1.56,.64,1)}
-.sk-tech{background:rgba(248,201,221,0.55);border-top:3px solid var(--electric-rose);transform:rotate(-1deg)}
-.sk-code{background:rgba(206,234,238,0.55);border-top:3px solid var(--sky-blue);transform:rotate(1deg)}
-.sk-lang{background:rgba(205,214,41,0.35);border-top:3px solid var(--lime);transform:rotate(-0.5deg)}
-.sk-soft{background:rgba(243,120,38,0.18);border-top:3px solid var(--sunset);transform:rotate(1deg)}
+.sk-tech{background:rgba(248,201,221,0.55);border-top:3px solid var(--electric-rose)}
+.sk-code{background:rgba(206,234,238,0.55);border-top:3px solid var(--sky-blue)}
+.sk-lang{background:rgba(205,214,41,0.35);border-top:3px solid var(--lime)}
+.sk-soft{background:rgba(243,120,38,0.18);border-top:3px solid var(--sunset)}
 .skill-card-box:hover{transform:translateY(-8px) scale(1.02)!important;box-shadow:0 20px 40px rgba(85,104,175,0.16);z-index:20}
 .sk-header{display:flex;align-items:center;gap:10px;border-bottom:1px solid rgba(30,36,50,0.08);padding-bottom:10px}
 .sk-icon-badge{width:36px;height:36px;background:white;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.06);display:flex;align-items:center;justify-content:center;flex-shrink:0}
@@ -1766,7 +1766,7 @@ body.modal-active .dock-trigger,
 .suth-editorial .case > div[style*="padding"],.suth-editorial details > div[style*="padding"]{padding:0!important}
 .suth-editorial .case div[style*="max-width:240px"]{max-width:280px!important;padding:0!important}
 .suth-editorial table{width:100%;table-layout:fixed;overflow-wrap:anywhere}
-.suth-metadata{display:grid;grid-template-columns:1fr 1fr;gap:18px 24px;margin:24px 0 0}
+.suth-metadata{display:grid;grid-template-columns:1fr 1fr;gap:18px 24px;margin:24px 0 0;padding:16px 18px;background:rgba(255,255,255,0.6);backdrop-filter:blur(12px);border:1px solid rgba(226,232,240,0.85);border-radius:18px}
 .suth-metadata dt,.suth-decision dt{font:800 11px/1.5 monospace;color:var(--sky-blue);letter-spacing:.04em;text-transform:uppercase}
 .suth-metadata dd{margin:5px 0 0;font-size:13px;line-height:1.6}
 .suth-responsibilities{display:grid;grid-template-columns:1fr 1fr;gap:40px;border-top:1px solid #5568af30;padding:24px 0}
@@ -2050,3 +2050,31 @@ body.modal-active .dock-trigger,
 #introCopy .lead{font-size:clamp(15px,1.35vw,20px);font-weight:400;line-height:1.65;max-width:440px;margin-top:24px;margin-bottom:0;overflow-wrap:break-word}
 #introCopy .hero-cta{width:auto;max-width:100%;display:inline-flex;align-items:center;justify-content:center;gap:8px;margin-top:20px;padding:12px 18px;font-size:14px;font-weight:600;line-height:1.5}
 @media(min-width:821px){#introCopy .lead{max-width:min(440px,44vw)}}
+
+/* Technical Skills experiment: never hide or animate the card or its heading. */
+@media(prefers-reduced-motion:no-preference){
+  .skills-rail .sk-tech .sk-list > .sk-item{transition:opacity 400ms ease-out,transform 400ms ease-out;transition-delay:var(--tech-reveal-delay,0ms)}
+  .skills-rail .sk-tech .sk-list > .sk-item.tech-skill-pending{opacity:0;transform:translateY(16px);transition:none}
+}
+
+/* Certificate image viewer */
+.certificate-preview{display:block;width:100%;padding:0;border:0;background:transparent;cursor:zoom-in}
+.certificate-preview:focus-visible{outline:3px solid var(--sky-blue,#5568af);outline-offset:6px}
+.certificate-viewer{position:fixed;inset:0;box-sizing:border-box;width:100vw;max-width:none;height:100dvh;max-height:none;margin:0;padding:64px 24px 24px;border:0;background:rgba(12,17,29,.94);color:#fff;overflow:auto}
+.certificate-viewer[open]{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px}
+.certificate-viewer::backdrop{background:rgba(12,17,29,.8)}
+.certificate-viewer-image{display:block;max-width:100%;max-height:calc(100dvh - 140px);width:auto;height:auto;object-fit:contain;flex-shrink:1;min-height:0}
+.certificate-viewer-caption{margin:0;text-align:center;font-size:14px;flex-shrink:0}
+.certificate-viewer-close{position:fixed;top:16px;right:20px;width:44px;height:44px;border:1px solid #ffffff66;border-radius:50%;background:#202638;color:#fff;font-size:30px;line-height:1;cursor:pointer}
+.certificate-viewer-close:focus-visible{outline:3px solid #fff;outline-offset:3px}
+@media(max-width:640px){.certificate-viewer{padding:72px 12px 20px}.certificate-viewer-caption{font-size:12px}}
+
+/* Match Thai case-study headings and body copy across all projects. */
+body.lang-th .shell.case-study-type{
+ --case-font-display:'IBM Plex Sans Thai Looped',sans-serif;
+ --case-font-text:'IBM Plex Sans Thai Looped',sans-serif;
+ --case-font-label:'IBM Plex Sans Thai Looped',sans-serif;
+}
+body.lang-th .shell :is(h1,h2,h3,h4,h5,h6){
+ font-family:'IBM Plex Sans Thai Looped',sans-serif!important;
+}
