@@ -489,6 +489,7 @@ body.modal-active .dock-trigger,
 .editorial-visual-inner {
   position: relative;
   width: 100%;
+  aspect-ratio: 4 / 3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -539,6 +540,8 @@ body.modal-active .dock-trigger,
 .editorial-hero-media img {
   width: 100%;
   height: auto;
+  margin: auto;
+  object-position: center center;
   max-height: 480px;
   object-fit: contain;
   display: block;
@@ -546,7 +549,7 @@ body.modal-active .dock-trigger,
   transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease;
 }
 .editorial-project:hover .editorial-hero-media img {
-  transform: translateY(-8px) scale(1.03);
+  transform: scale(1.03);
   filter: drop-shadow(0 28px 50px rgba(85, 104, 175, 0.25));
 }
 
