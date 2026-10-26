@@ -683,6 +683,7 @@ body.modal-active .dock-trigger,
 .cert-full-img{width:100%;border-radius:0!important;overflow:visible!important;background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important;margin:0!important}
 .cert-full-img img{width:100%;height:auto;max-height:320px;object-fit:contain;display:block;border-radius:0!important;border:0!important;box-shadow:none!important;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.08));transition:transform .3s cubic-bezier(.34,1.56,.64,1)}
 .cert-item-frameless:hover .cert-full-img img{transform:translateY(-8px) scale(1.02);filter:drop-shadow(0 8px 20px rgba(85,104,175,0.18))}
+.cert-caption{width:100%;text-align:center;overflow-wrap:anywhere}
 .cert-caption h3{margin:8px 0 2px;font-size:15px;font-weight:950;color:var(--ink);line-height:1.25}
 .cert-caption p{margin:0;font-size:11px;font-weight:700;color:var(--sky-blue)}
 

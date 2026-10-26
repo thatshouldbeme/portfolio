@@ -6267,6 +6267,23 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0) {
     })).filter(entry => entry.label);
     createCaseSectionIndex(shell, entries, sections[0], lang, pid.replace('-app', ''));
   }
+  if (['goal-app', 'dormitory-app', 'kiosk-app'].includes(pid)) {
+    const projectOrder = [
+      { id: 'mysuth-app', key: 'mySuth', fallback: 'My SUTH App' },
+      { id: 'goal-app', key: 'goalApp', fallback: 'Goal Management' },
+      { id: 'dormitory-app', key: 'dormitoryApp', fallback: 'SUT Dorm' },
+      { id: 'kiosk-app', key: 'kioskApp', fallback: 'Kiosk Redesign' }
+    ];
+    const position = projectOrder.findIndex(project => project.id === pid);
+    const previous = projectOrder[(position - 1 + projectOrder.length) % projectOrder.length];
+    const next = projectOrder[(position + 1) % projectOrder.length];
+    const projectButton = (project, label, arrow) =>
+      `<button type="button" data-switch-project="${project.id}"><small>${arrow} ${label}</small><span>${i18n.featuredProjects[project.key]?.title?.[lang] || project.fallback}</span></button>`;
+    shell.insertAdjacentHTML('beforeend', `<nav class="suth-ending-nav" aria-label="${lang === 'TH' ? 'นำทางโปรเจกต์' : 'Case study navigation'}">
+      ${projectButton(previous, lang === 'TH' ? 'โปรเจกต์ก่อนหน้า' : 'PREVIOUS CASE STUDY', '←')}
+      ${projectButton(next, lang === 'TH' ? 'โปรเจกต์ถัดไป' : 'NEXT CASE STUDY', '→')}
+    </nav>`);
+  }
   if (shell.classList.contains('case-study-type')) applyCaseTypography(shell);
 
   shell.querySelectorAll('[data-switch-project]').forEach(btn => {
@@ -6417,7 +6434,8 @@ if (dockCopyEmail) {
 if (dockMessageBtn) {
   dockMessageBtn.addEventListener('click', () => {
     toggleDock(false);
-    panels[7].scrollIntoView({ behavior: 'smooth' });
+    const contactSection = document.querySelector('.panel[data-panel="6"]');
+    contactSection?.scrollIntoView({ behavior: reduced() ? 'auto' : 'smooth', block: 'start' });
   });
 }
 
@@ -6987,7 +7005,7 @@ function refineSuthCase(root, project, lang) {
   if (statusIntro) statusIntro.textContent = copy('The core user flows, high-fidelity interfaces and interactive prototype have been designed. My Flutter contribution covered assigned screens and reusable UI components. The project remains under development; backend integration, deployment and further testing with hospital personnel are next steps.', 'ออกแบบโฟลว์หลัก หน้าจอ High-fidelity และ Interactive Prototype แล้ว โดยร่วมพัฒนา Flutter ในส่วนหน้าจอที่ได้รับมอบหมายและ UI Components ที่นำกลับมาใช้ซ้ำได้ โครงการยังอยู่ระหว่างพัฒนา โดยมีการเชื่อมต่อ Backend การนำระบบไปใช้งาน และการทดสอบเพิ่มเติมกับบุคลากรเป็นขั้นตอนถัดไป');
   const completed = ending.querySelector('ul');
   if (completed) completed.innerHTML = [copy('High-fidelity UI designs and interactive prototype', 'หน้าจอ High-fidelity และ Interactive Prototype'), copy('Assigned Flutter screens and reusable UI components', 'หน้าจอ Flutter ที่ได้รับมอบหมายและ UI Components ที่นำกลับมาใช้ซ้ำได้'), copy('Check-in / check-out menu testing within the project scope', 'การทดสอบเมนูเข้างานและออกงานภายในขอบเขตโครงการ')].map(text => `<li>${text}</li>`).join('');
-  ending.insertAdjacentHTML('beforeend', `<div class="suth-collaboration"><h3>${copy('Development & Collaboration', 'การพัฒนาและการทำงานร่วมกัน')}</h3><p>${copy('Alongside the UX/UI design and interactive prototyping, I translated assigned Figma screens into Flutter and Dart, built reusable UI components, and collaborated with developers during integration. My contribution was part of the hospital project team’s work.', 'นอกจากการออกแบบ UX/UI และ Interactive Prototype ฉันยังนำหน้าจอ Figma ที่ได้รับมอบหมายมาพัฒนาด้วย Flutter และ Dart สร้าง UI Components ที่ใช้ซ้ำได้ และทำงานร่วมกับทีมพัฒนาในขั้นตอนเชื่อมต่อระบบ โดยเป็นส่วนหนึ่งของทีมโครงการโรงพยาบาล')}</p><h3>${copy('What I learned', 'สิ่งที่ได้เรียนรู้')}</h3><p>${copy('Designing for a hospital reinforced the importance of clear actions, visible system status and consistent patterns across staff roles. Contributing to Flutter helped me connect interface decisions with implementation constraints and communicate more precisely with developers.', 'การออกแบบสำหรับโรงพยาบาลทำให้เห็นความสำคัญของปุ่มที่ชัดเจน สถานะระบบที่เข้าใจง่าย และรูปแบบที่สม่ำเสมอระหว่างบทบาท การร่วมพัฒนา Flutter ช่วยให้เชื่อมโยงการออกแบบกับข้อจำกัดในการพัฒนา และสื่อสารกับทีมได้ชัดเจนขึ้น')}</p></div><nav class="suth-ending-nav" aria-label="${copy('Case study navigation', 'นำทางโปรเจกต์')}"><button type="button" data-suth-back>← ${copy('Back to Featured Projects', 'กลับไปที่โปรเจกต์แนะนำ')}</button><button type="button" data-switch-project="goal-app"><small>${copy('NEXT CASE STUDY', 'โปรเจกต์ถัดไป')} ↗</small><span>${i18n.featuredProjects.goalApp.title[lang]}</span></button></nav>`);
+  ending.insertAdjacentHTML('beforeend', `<div class="suth-collaboration"><h3>${copy('Development & Collaboration', 'การพัฒนาและการทำงานร่วมกัน')}</h3><p>${copy('Alongside the UX/UI design and interactive prototyping, I translated assigned Figma screens into Flutter and Dart, built reusable UI components, and collaborated with developers during integration. My contribution was part of the hospital project team’s work.', 'นอกจากการออกแบบ UX/UI และ Interactive Prototype ฉันยังนำหน้าจอ Figma ที่ได้รับมอบหมายมาพัฒนาด้วย Flutter และ Dart สร้าง UI Components ที่ใช้ซ้ำได้ และทำงานร่วมกับทีมพัฒนาในขั้นตอนเชื่อมต่อระบบ โดยเป็นส่วนหนึ่งของทีมโครงการโรงพยาบาล')}</p><h3>${copy('What I learned', 'สิ่งที่ได้เรียนรู้')}</h3><p>${copy('Designing for a hospital reinforced the importance of clear actions, visible system status and consistent patterns across staff roles. Contributing to Flutter helped me connect interface decisions with implementation constraints and communicate more precisely with developers.', 'การออกแบบสำหรับโรงพยาบาลทำให้เห็นความสำคัญของปุ่มที่ชัดเจน สถานะระบบที่เข้าใจง่าย และรูปแบบที่สม่ำเสมอระหว่างบทบาท การร่วมพัฒนา Flutter ช่วยให้เชื่อมโยงการออกแบบกับข้อจำกัดในการพัฒนา และสื่อสารกับทีมได้ชัดเจนขึ้น')}</p></div><nav class="suth-ending-nav" aria-label="${copy('Case study navigation', 'นำทางโปรเจกต์')}"><button type="button" data-suth-back>← ${copy('Back to Featured Projects', 'กลับไปที่โปรเจกต์แนะนำ')}</button><button type="button" data-switch-project="goal-app"><small>${copy('NEXT CASE STUDY', 'โปรเจกต์ถัดไป')} →</small><span>${i18n.featuredProjects.goalApp.title[lang]}</span></button></nav>`);
   root.querySelector('[data-suth-back]').onclick = () => {
     closeModal(true);
     document.querySelector('[data-project="mysuth-app"]')?.scrollIntoView({behavior:'instant', block:'center'});
