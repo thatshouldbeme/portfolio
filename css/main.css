@@ -2010,7 +2010,7 @@ body.modal-active .dock-trigger,
  --case-body-size:15px;
  --case-small-body-size:14px;
 }
-.shell.case-study-type.suth-editorial{--case-title-size:clamp(40px,5.4vw,72px)}
+
 .shell.case-study-type h1{
  font-family:var(--case-font-display)!important;font-size:var(--case-title-size)!important;
  font-weight:950!important;line-height:1.02!important;letter-spacing:-.04em!important;text-transform:none!important;
@@ -2081,4 +2081,13 @@ body.lang-th .shell.case-study-type{
 }
 body.lang-th .shell :is(h1,h2,h3,h4,h5,h6){
  font-family:'IBM Plex Sans Thai Looped',sans-serif!important;
+}
+
+/* Keep prose and list typography consistent within each case-study section. */
+.shell.case-study-type .case :is(li,dd){font-family:var(--case-font-text)!important;font-size:var(--case-body-size)!important;line-height:1.75!important}
+.shell.case-study-type .suth-metadata dd{font-size:var(--case-small-body-size)!important}
+
+/* Keep only the outcomes section divider after the final design decision. */
+.suth-editorial .suth-decisions > .suth-decision:last-child{
+ border-bottom:0;
 }
