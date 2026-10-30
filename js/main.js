@@ -3481,7 +3481,7 @@ function setLanguage(lang) {
     const eduSmall = aboutSec.querySelector('.intro-education small');
 
     if (kicker && i18n.about?.kicker?.[lang]) kicker.innerHTML = i18n.about.kicker[lang];
-    if (h2 && i18n.about?.heading?.[lang]) h2.innerHTML = i18n.about.heading[lang];
+    if (h2 && i18n.about?.heading?.[lang]) prepareAboutName(h2, lang);
     if (lead && i18n.about?.lead?.[lang]) lead.innerHTML = i18n.about.lead[lang];
     if (eduB && i18n.about?.eduTitle?.[lang]) eduB.innerHTML = i18n.about.eduTitle[lang];
     if (eduSpan && i18n.about?.eduSchool?.[lang]) eduSpan.innerHTML = i18n.about.eduSchool[lang];
@@ -3778,6 +3778,8 @@ function render(now) {
   } else {
     setIntroAnimation(current);
   }
+
+  updateAboutName();
 
   // Vertical Parallax for all devices
   verticalParallax();
@@ -7344,3 +7346,31 @@ function applyCaseTypography(root) {
     fullImage.removeAttribute('src');
   });
 })();
+
+
+function prepareAboutName(heading, lang) {
+  const name = lang === 'TH' ? 'ซัลสบีล' : 'Salsabeel.';
+  const nameMarkup = `<span class="about-name"><span class="about-name-space" aria-hidden="true">${name}</span><span class="about-name-text" aria-hidden="true"></span></span>`;
+  heading.innerHTML = lang === 'TH' ? `${nameMarkup}<br><span class="about-role">นักออกแบบ UX/UI</span>` : `HI! I'M<br>${nameMarkup}`;
+  heading.setAttribute('aria-label', lang === 'TH' ? 'ซัลสบีล นักออกแบบ UX/UI' : "Hi! I'm Salsabeel.");
+  const segmenter = new Intl.Segmenter(lang === 'TH' ? 'th' : 'en', {granularity:'grapheme'});
+  prepareAboutName.state = {heading, letters:[...segmenter.segment(name)].map(item => item.segment), start:null};
+}
+
+function updateAboutName() {
+  const state = prepareAboutName.state;
+  if (!state) return;
+  const section = state.heading.closest('#introAbout');
+  const rect = state.heading.getBoundingClientRect();
+  const visible = Number(getComputedStyle(section).opacity) > .5 && rect.top < innerHeight * .9 && rect.bottom > 0;
+  const text = state.heading.querySelector('.about-name-text');
+  if (!visible) {
+    state.start = null;
+    text.textContent = '';
+    return;
+  }
+  if (state.start === null) state.start = performance.now();
+  const count = Math.min(state.letters.length, Math.floor((performance.now() - state.start) / 150));
+  const value = state.letters.slice(0, count).join('');
+  if (text.textContent !== value) text.textContent = value;
+}
