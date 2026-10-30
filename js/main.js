@@ -54,7 +54,7 @@ const i18n = {
     },
     lead: {
       EN: "UX/UI Designer with hands-on experience from digital projects such as My SUTH App, SUT Dorm, and Goal Management. Skilled in UX/UI and Visual Design, including logo design, posters, infographics, and magazine layouts, with a strong interest in continuing to learn and grow through opportunities such as Hackathons and Startup Thailand League.",
-      TH: "UX/UI ที่มีประสบการณ์จากการทำโปรเจกต์ดิจิทัล เช่น My SUTH App, SUT Dorm และ Goal Management มีทักษะด้าน UX/UI และ Visual Design รวมถึงงานออกแบบโลโก้ โปสเตอร์ อินโฟกราฟิก และนิตยสาร พร้อมเปิดรับโอกาสในการเรียนรู้และพัฒนาทักษะผ่านกิจกรรม Hackathon และ Startup Thailand League"
+      TH: "นักออกแบบ UX/UI ที่มีประสบการณ์จากการทำโปรเจกต์ดิจิทัล เช่น My SUTH App, SUT Dorm และ Goal Management มีทักษะด้าน UX/UI และ Visual Design รวมถึงงานออกแบบโลโก้ โปสเตอร์ อินโฟกราฟิก และนิตยสาร พร้อมเปิดรับโอกาสในการเรียนรู้และพัฒนาทักษะผ่านกิจกรรม Hackathon และ Startup Thailand League"
     },
     eduTitle: {
       EN: "EDUCATION",
@@ -92,7 +92,7 @@ const i18n = {
     },
     softTitle: {
       EN: "SOFT SKILLS",
-      TH: "ทักษะทางอารมณ์และสังคม"
+      TH: "ทักษะการทำงานร่วมกับผู้อื่น"
     },
     langThai: {
       EN: '<span class="flag-icon">🇹🇭</span> Thai <small>(Fluent)</small>',
@@ -115,8 +115,8 @@ const i18n = {
         "Willingness to Learn"
       ],
       TH: [
-        "ความคิดสร้างสรรค์และทันเทรนด์ดีไซน์",
-        "เปิดรับคำแนะนำเพื่อการปรับปรุง",
+        "มีความคิดสร้างสรรค์และติดตามแนวโน้มการออกแบบ",
+        "เปิดรับคำแนะนำและนำมาพัฒนางาน",
         "บริหารเวลาและจดจ่อกับงานได้ดี",
         "มีความรับผิดชอบต่อหน้าที่",
         "พร้อมเปิดรับการเรียนรู้สิ่งใหม่"
@@ -134,7 +134,7 @@ const i18n = {
     },
     subtitle: {
       EN: "A curated collection of digital product design case studies — exploring user research, complex workflows, design systems, and tangible outcomes.",
-      TH: "รวบรวมโปรเจกต์การออกแบบผลิตภัณฑ์ดิจิทัล — ถ่ายทอดกระบวนการวิจัยผู้ใช้ สถาปัตยกรรมปฏิสัมพันธ์ ระบบดีไซน์ และผลลัพธ์ที่ใช้งานได้จริง"
+      TH: "รวบรวมโปรเจกต์การออกแบบผลิตภัณฑ์ดิจิทัล — ถ่ายทอดกระบวนการวิจัยผู้ใช้ การออกแบบขั้นตอนการใช้งานและระบบการออกแบบ และผลลัพธ์ที่ใช้งานได้จริง"
     },
     items: {
       "mysuth-app": {
@@ -198,7 +198,7 @@ const i18n = {
         },
         title: {
           EN: "Kiosk Redesign",
-          TH: "ปรับปรุงดีไซน์ตู้คีออส"
+          TH: "ปรับปรุงการออกแบบตู้คีออส"
         },
         role: {
           EN: "Interaction & Wayfinding Designer",
@@ -362,7 +362,7 @@ const i18n = {
     },
     heading: {
       EN: 'LET\'S MAKE<br/>SOMETHING<br/><span class="outline">GREAT.</span>',
-      TH: 'มาร่วมกันสร้าง<br/><span class="outline">ผลงานไปด้วยกัน</span>'
+      TH: 'มาสร้าง<br/><span class="outline">ผลงานดี ๆ ร่วมกัน</span>'
     },
     labels: {
       name: {
@@ -389,7 +389,7 @@ const i18n = {
       },
       message: {
         EN: "Tell me about your opportunity...",
-        TH: "พิมพ์ข้อความ หรือข้อเสนอโอกาสทำงาน..."
+        TH: "ฝากข้อความหรือพูดคุยเกี่ยวกับโอกาสร่วมงาน..."
       }
     },
     sendBtn: {
@@ -398,7 +398,7 @@ const i18n = {
     },
     note: {
       EN: "Connected to Formspree endpoint — salsasira@gmail.com",
-      TH: "เชื่อมต่อระบบส่งข้อมูลตรงเข้าอีเมล — salsasira@gmail.com"
+      TH: "ส่งข้อความถึงฉันได้ทางแบบฟอร์มนี้ หรืออีเมล — salsasira@gmail.com"
     }
   },
   projectNav: {
@@ -441,7 +441,7 @@ const i18n = {
       },
       kiosk: {
         EN: "04 / KIOSK REDESIGN",
-        TH: "04 / ปรับปรุงดีไซน์ตู้คีออส"
+        TH: "04 / ปรับปรุงการออกแบบตู้คีออส"
       }
     }
   },
@@ -633,7 +633,7 @@ const i18n = {
         },
         intro: {
           EN: "My SUTH App supports hospital personnel with different responsibilities and access permissions. Based on the initial requirements provided by the project stakeholders, users were grouped by their primary tasks within the application.",
-          TH: "My SUTH App รองรับบุคลากรในโรงพยาบาลที่มีหน้าที่และสิทธิ์การเข้าถึงฟีเจอร์ที่แตกต่างกัน จาก Requirement เบื้องต้นของ Stakeholder ผู้ใช้จึงถูกแบ่งตามงานหลักที่ต้องดำเนินการภายในแอปพลิเคชัน"
+          TH: "My SUTH App รองรับบุคลากรในโรงพยาบาลที่มีหน้าที่และสิทธิ์การเข้าถึงฟีเจอร์ที่แตกต่างกัน จากความต้องการเบื้องต้นที่รวบรวมจากผู้เกี่ยวข้อง ผู้ใช้จึงถูกแบ่งตามงานหลักที่ต้องดำเนินการภายในแอปพลิเคชัน"
         },
         table: {
           headers: {
@@ -679,7 +679,7 @@ const i18n = {
         },
         outro: {
           EN: "All users share the same core navigation and can see the available service menus. Access is controlled according to each user’s role. If a user selects a service outside their permission level, the system displays a clear access-restriction message.<br><br>This behavior was defined as a project requirement to maintain a consistent application structure and simplify the development process across multiple user roles.",
-          TH: "ผู้ใช้ทุกกลุ่มใช้โครงสร้างเมนูหลักร่วมกันและสามารถมองเห็นเมนูบริการภายในแอปได้ แต่สิทธิ์การใช้งานแต่ละเมนูจะถูกควบคุมตามบทบาท หากผู้ใช้เลือกเมนูที่ไม่มีสิทธิ์เข้าถึง ระบบจะแสดงข้อความแจ้งข้อจำกัดอย่างชัดเจน<br><br>รูปแบบนี้เป็น Requirement ของหัวหน้าโครงการ เพื่อรักษาโครงสร้างแอปให้สอดคล้องกันระหว่างผู้ใช้หลายบทบาท และช่วยลดความซับซ้อนในการพัฒนาระบบ"
+          TH: "ผู้ใช้ทุกกลุ่มใช้โครงสร้างเมนูหลักร่วมกันและสามารถมองเห็นเมนูบริการภายในแอปได้ แต่สิทธิ์การใช้งานแต่ละเมนูจะถูกควบคุมตามบทบาท หากผู้ใช้เลือกเมนูที่ไม่มีสิทธิ์เข้าถึง ระบบจะแสดงข้อความแจ้งข้อจำกัดอย่างชัดเจน<br><br>รูปแบบนี้เป็นข้อกำหนดของหัวหน้าโครงการ เพื่อรักษาโครงสร้างแอปให้สอดคล้องกันระหว่างผู้ใช้หลายบทบาท และช่วยลดความซับซ้อนในการพัฒนาระบบ"
         }
       },
       designPriorities: {
@@ -1346,7 +1346,7 @@ const i18n = {
             },
             decision: {
               EN: "A 3-step mobile triage flow: Scan Station QR → Select Room & Session → 1-Tap Queue Controls (Recall, Next, Skip) with real-time patient mobile notifications and conflict alerts.",
-              TH: "ออกแบบโฟลว์ 3 ขั้นตอนบนมือถือ: สแกน Station → เลือกห้องตรวจและช่วงเวลา → สั่งเรียกคิว (เรียกซ้ำ/คิวถัดไป/ข้ามคิว) พร้อมส่งแจ้งเตือนเข้ามือถือผู้ป่วยโดยอัตโนมัติ"
+              TH: "ออกแบบขั้นตอนการใช้งาน 3 ขั้นตอนบนมือถือ: สแกน Station → เลือกห้องตรวจและช่วงเวลา → สั่งเรียกคิว (เรียกซ้ำ/คิวถัดไป/ข้ามคิว) พร้อมส่งแจ้งเตือนเข้ามือถือผู้ป่วยโดยอัตโนมัติ"
             },
             rationale: {
               EN: "Untethers nurses from fixed desks, reduces waiting room acoustic noise, and guides staff through conflicts (e.g. room occupied) with clear actionable recovery paths.",
@@ -1426,7 +1426,7 @@ const i18n = {
             title: { EN: "Hospital IT Stakeholder Walkthroughs", TH: "นำเสนอและตรวจสอบร่วมกับทีม IT โรงพยาบาล" },
             desc: {
               EN: "Conducted design reviews and prototype walkthroughs with SUTH IT leadership, validating core navigation and permission logic.",
-              TH: "นำเสนอตัวต้นแบบและทบทวนโฟลว์ร่วมกับฝ่าย IT ของโรงพยาบาลสุรนารี เพื่อตรวจสอบความถูกต้องของสิทธิ์การใช้งาน"
+              TH: "นำเสนอต้นแบบและทบทวนขั้นตอนการใช้งานร่วมกับฝ่าย IT ของโรงพยาบาลสุรนารี เพื่อตรวจสอบความถูกต้องของสิทธิ์การใช้งาน"
             }
           }
         ],
@@ -1454,7 +1454,7 @@ const i18n = {
       },
       overview: {
         EN: "A mobile goal-tracking application designed to help users stay consistent with their personal goals through lightweight check-ins, streak-based motivation, progress tracking, and AI-assisted guidance.",
-        TH: "แอปพลิเคชันบนมือถือสำหรับติดตามเป้าหมาย ออกแบบมาเพื่อช่วยให้ผู้ใช้สามารถทำเป้าหมายส่วนตัวได้อย่างสม่ำเสมอ ผ่านการ Check-in ที่เรียบง่าย การสร้างแรงจูงใจด้วยระบบ Streak การติดตามความก้าวหน้า และแนวคิดการใช้ AI เป็นผู้ช่วยในการทำเป้าหมาย"
+        TH: "แอปพลิเคชันบนมือถือสำหรับติดตามเป้าหมาย ออกแบบมาเพื่อช่วยให้ผู้ใช้สามารถลงมือทำตามเป้าหมายส่วนตัวได้อย่างสม่ำเสมอ ผ่านการ Check-in ที่เรียบง่าย การสร้างแรงจูงใจด้วยระบบ Streak การติดตามความก้าวหน้า และแนวคิดการใช้ AI เป็นผู้ช่วยในการลงมือทำตามเป้าหมาย"
       },
       meta: {
         role: {
@@ -1511,7 +1511,7 @@ const i18n = {
           statSub: { EN: "16 Male · 16 Female", TH: "ชาย 16 คน · หญิง 16 คน" },
           desc: {
             EN: "Before moving forward with the concept, we conducted a survey with <b>32 participants — 16 male and 16 female —</b> to better understand their behaviors, motivations, and challenges.<br><br>The research revealed a broader problem: <b>many participants already had personal goals they wanted to achieve, but struggled to take consistent action or maintain progress over time.</b> Falling behind often made it harder to stay motivated and continue toward those goals.",
-            TH: "ก่อนพัฒนาแนวคิดต่อ ทีมได้ทำแบบสำรวจกับผู้เข้าร่วมจำนวน <b>32 คน — ผู้ชาย 16 คน และผู้หญิง 16 คน —</b> เพื่อทำความเข้าใจพฤติกรรม แรงจูงใจ และปัญหาของผู้ใช้มากขึ้น<br><br>ผลการสำรวจทำให้พบปัญหาที่กว้างกว่าแนวคิดตั้งต้น คือ <b>ผู้เข้าร่วมจำนวนมากมีเป้าหมายที่อยากทำให้สำเร็จอยู่แล้ว แต่มีปัญหาในการลงมือทำอย่างสม่ำเสมอและรักษาความต่อเนื่องในระยะยาว</b> และเมื่อทำตามแผนไม่ได้ แรงจูงใจในการทำเป้าหมายต่อก็มักลดลง"
+            TH: "ก่อนพัฒนาแนวคิดต่อ ทีมได้ทำแบบสำรวจกับผู้เข้าร่วมจำนวน <b>32 คน — ผู้ชาย 16 คน และผู้หญิง 16 คน —</b> เพื่อทำความเข้าใจพฤติกรรม แรงจูงใจ และปัญหาของผู้ใช้มากขึ้น<br><br>ผลการสำรวจทำให้พบปัญหาที่กว้างกว่าแนวคิดตั้งต้น คือ <b>ผู้เข้าร่วมจำนวนมากมีเป้าหมายที่อยากทำให้สำเร็จอยู่แล้ว แต่มีปัญหาในการลงมือทำอย่างสม่ำเสมอและรักษาความต่อเนื่องในระยะยาว</b> และเมื่อทำตามแผนไม่ได้ แรงจูงใจในการลงมือทำตามเป้าหมายต่อก็มักลดลง"
           }
         },
         keyFindings: {
@@ -1549,7 +1549,7 @@ const i18n = {
           },
           desc: {
             EN: "These findings shifted the direction of the project from helping users stay focused during individual work sessions to helping them <b>stay consistent with their longer-term goals</b>.<br><br>This led to the concept of a <b>Goal Management App</b> focused on progress tracking, consistency, and motivation, with AI-assisted guidance envisioned to support users throughout their goal journey.",
-            TH: "ผลการวิจัยทำให้ทีมเปลี่ยนทิศทางของโปรเจกต์ จากการช่วยให้ผู้ใช้ <b>โฟกัสกับงานในแต่ละครั้ง</b> ไปสู่การช่วยให้ผู้ใช้ <b>รักษาความสม่ำเสมอในการทำเป้าหมายระยะยาว</b><br><br>จึงพัฒนาแนวคิดมาเป็น <b>Goal Management App</b> ที่เน้นการติดตามความก้าวหน้า การสร้างความสม่ำเสมอ และแรงจูงใจ โดยมีแนวคิดให้ AI เป็นผู้ช่วยแนะนำและสนับสนุนผู้ใช้ระหว่างการทำเป้าหมาย"
+            TH: "ผลการวิจัยทำให้ทีมเปลี่ยนทิศทางของโปรเจกต์ จากการช่วยให้ผู้ใช้ <b>โฟกัสกับงานในแต่ละครั้ง</b> ไปสู่การช่วยให้ผู้ใช้ <b>รักษาความสม่ำเสมอในการลงมือทำตามเป้าหมายระยะยาว</b><br><br>จึงพัฒนาแนวคิดมาเป็น <b>Goal Management App</b> ที่เน้นการติดตามความก้าวหน้า การสร้างความสม่ำเสมอ และแรงจูงใจ โดยมีแนวคิดให้ AI เป็นผู้ช่วยแนะนำและสนับสนุนผู้ใช้ระหว่างการลงมือทำตามเป้าหมาย"
           },
           progression: [
             { EN: "Focus & Healthy Productivity", TH: "Focus & Healthy Productivity" },
@@ -1566,7 +1566,7 @@ const i18n = {
         },
         intro: {
           EN: "Based on the research findings, we developed a primary persona to represent users who have clear goals but struggle to maintain consistent progress. The persona helped us better understand the user's motivations, frustrations, and behaviors before exploring where challenges occurred throughout their journey.",
-          TH: "จากผลการวิจัย ทีมได้พัฒนา Persona หลักเพื่อเป็นตัวแทนของผู้ใช้ที่มีเป้าหมายชัดเจน แต่มีปัญหาในการรักษาความสม่ำเสมอในการทำเป้าหมาย Persona ช่วยให้ทีมเข้าใจแรงจูงใจ ปัญหา และพฤติกรรมของผู้ใช้ ก่อนนำมาวิเคราะห์ต่อว่าปัญหาเกิดขึ้นในช่วงใดของเส้นทางการทำเป้าหมาย"
+          TH: "จากผลการวิจัย ทีมได้พัฒนา Persona หลักเพื่อเป็นตัวแทนของผู้ใช้ที่มีเป้าหมายชัดเจน แต่มีปัญหาในการรักษาความสม่ำเสมอในการลงมือทำตามเป้าหมาย Persona ช่วยให้ทีมเข้าใจแรงจูงใจ ปัญหา และพฤติกรรมของผู้ใช้ ก่อนนำมาวิเคราะห์ต่อว่าปัญหาเกิดขึ้นในช่วงใดของเส้นทางการลงมือทำตามเป้าหมาย"
         },
         persona: {
           title: {
@@ -1585,7 +1585,7 @@ const i18n = {
           goalsHeading: { EN: "Goals", TH: "เป้าหมาย" },
           goals: [
             { EN: "Complete assignments and projects on time", TH: "ทำงานและโปรเจกต์ให้เสร็จตามกำหนด" },
-            { EN: "Maintain consistent progress toward her goals", TH: "รักษาความสม่ำเสมอในการทำเป้าหมาย" },
+            { EN: "Maintain consistent progress toward her goals", TH: "รักษาความสม่ำเสมอในการลงมือทำตามเป้าหมาย" },
             { EN: "Achieve a satisfying academic performance", TH: "มีผลการเรียนที่น่าพึงพอใจ" }
           ],
           painHeading: { EN: "Pain Points", TH: "ปัญหา" },
@@ -1599,7 +1599,7 @@ const i18n = {
           needs: [
             { EN: "A simple way to track progress", TH: "วิธีติดตามความก้าวหน้าที่เข้าใจง่าย" },
             { EN: "Flexibility when plans change", TH: "ความยืดหยุ่นเมื่อแผนเปลี่ยนแปลง" },
-            { EN: "Motivation to keep moving forward", TH: "แรงจูงใจให้กลับมาทำเป้าหมายต่อ" }
+            { EN: "Motivation to keep moving forward", TH: "แรงจูงใจให้กลับมาลงมือทำตามเป้าหมายต่อ" }
           ],
           quote: {
             EN: "“I already have a plan, but sometimes I don't have the motivation to start.”",
@@ -1613,7 +1613,7 @@ const i18n = {
           },
           intro: {
             EN: "We mapped Suthida's existing journey to understand how her motivation and behavior changed while working toward a goal.",
-            TH: "ทีมได้นำ Persona มาสร้าง As-Is User Journey เพื่อดูว่าพฤติกรรมและความรู้สึกของผู้ใช้เปลี่ยนแปลงอย่างไรระหว่างการทำเป้าหมาย"
+            TH: "ทีมได้นำ Persona มาสร้าง As-Is User Journey เพื่อดูว่าพฤติกรรมและความรู้สึกของผู้ใช้เปลี่ยนแปลงอย่างไรระหว่างการลงมือทำตามเป้าหมาย"
           },
           flow: [
             { EN: "Plan", TH: "วางแผน" },
@@ -1635,7 +1635,7 @@ const i18n = {
           },
           desc: {
             EN: "This insight became the foundation for exploring ways to make progress more visible, encourage consistency, and help users continue even when their original plans did not go as expected.",
-            TH: "Insight นี้จึงกลายเป็นพื้นฐานในการหาแนวทางออกแบบที่ช่วยให้ผู้ใช้ มองเห็นความก้าวหน้า รักษาความสม่ำเสมอ และสามารถกลับมาทำเป้าหมายต่อได้ แม้แผนเดิมจะไม่เป็นไปตามที่ตั้งใจไว้"
+            TH: "Insight นี้จึงกลายเป็นพื้นฐานในการหาแนวทางออกแบบที่ช่วยให้ผู้ใช้ มองเห็นความก้าวหน้า รักษาความสม่ำเสมอ และสามารถกลับมาลงมือทำตามเป้าหมายต่อได้ แม้แผนเดิมจะไม่เป็นไปตามที่ตั้งใจไว้"
           }
         }
       },
@@ -1646,7 +1646,7 @@ const i18n = {
         },
         intro: {
           EN: "Insights from the research, persona, and user journey highlighted several opportunities to help users maintain progress without making goal management feel overwhelming. These opportunities became the foundation for the key design decisions.",
-          TH: "จากข้อมูลการวิจัย Persona และ User Journey ทำให้เห็นโอกาสในการออกแบบที่สามารถช่วยให้ผู้ใช้รักษาความต่อเนื่องในการทำเป้าหมาย โดยไม่ทำให้การจัดการเป้าหมายรู้สึกซับซ้อนหรือสร้างแรงกดดัน แนวคิดเหล่านี้จึงถูกนำมาใช้เป็นพื้นฐานในการตัดสินใจด้านการออกแบบ"
+          TH: "จากข้อมูลการวิจัย Persona และ User Journey ทำให้เห็นโอกาสในการออกแบบที่สามารถช่วยให้ผู้ใช้รักษาความต่อเนื่องในการลงมือทำตามเป้าหมาย โดยไม่ทำให้การจัดการเป้าหมายรู้สึกซับซ้อนหรือสร้างแรงกดดัน แนวคิดเหล่านี้จึงถูกนำมาใช้เป็นพื้นฐานในการตัดสินใจด้านการออกแบบ"
         },
         cards: [
           {
@@ -1670,7 +1670,7 @@ const i18n = {
             },
             desc: {
               EN: "Turn repeated actions into visible progress to encourage users to keep working toward their goals over time.",
-              TH: "เปลี่ยนการลงมือทำอย่างต่อเนื่องให้กลายเป็นความก้าวหน้าที่มองเห็นได้ เพื่อกระตุ้นให้ผู้ใช้อยากทำเป้าหมายต่อไป"
+              TH: "เปลี่ยนการลงมือทำอย่างต่อเนื่องให้กลายเป็นความก้าวหน้าที่มองเห็นได้ เพื่อกระตุ้นให้ผู้ใช้อยากลงมือทำตามเป้าหมายต่อไป"
             }
           },
           {
@@ -1887,7 +1887,7 @@ const i18n = {
           },
           desc: {
             EN: "AI was originally envisioned as a supportive companion throughout the goal journey, providing personalized suggestions, encouragement, and guidance based on each user's progress.<br><br>Rather than replacing the user's decisions, the concept was intended to help users determine their next step and maintain motivation when progress slowed down.<br><br>Due to the project's technical and time constraints, this concept was not fully implemented and remained part of the proposed experience.",
-            TH: "เดิม AI ถูกวางแนวคิดให้ทำหน้าที่เป็นผู้ช่วยระหว่างการทำเป้าหมาย โดยสามารถให้คำแนะนำ กำลังใจ และแนวทางที่เหมาะสมตามความก้าวหน้าของผู้ใช้แต่ละคน<br><br>แนวคิดนี้ไม่ได้ต้องการให้ AI ตัดสินใจแทนผู้ใช้ แต่ช่วยให้ผู้ใช้มองเห็นว่าควรทำอะไรต่อ และช่วยรักษาแรงจูงใจเมื่อความก้าวหน้าเริ่มลดลง<br><br>อย่างไรก็ตาม ด้วยข้อจำกัดด้านเทคนิคและระยะเวลาของโครงการ แนวคิด AI ดังกล่าวยังไม่สามารถพัฒนาได้อย่างเต็มรูปแบบ และยังคงอยู่ในระดับแนวคิดของประสบการณ์ที่วางแผนไว้"
+            TH: "เดิม AI ถูกวางแนวคิดให้ทำหน้าที่เป็นผู้ช่วยระหว่างการลงมือทำตามเป้าหมาย โดยสามารถให้คำแนะนำ กำลังใจ และแนวทางที่เหมาะสมตามความก้าวหน้าของผู้ใช้แต่ละคน<br><br>แนวคิดนี้ไม่ได้ต้องการให้ AI ตัดสินใจแทนผู้ใช้ แต่ช่วยให้ผู้ใช้มองเห็นว่าควรทำอะไรต่อ และช่วยรักษาแรงจูงใจเมื่อความก้าวหน้าเริ่มลดลง<br><br>อย่างไรก็ตาม ด้วยข้อจำกัดด้านเทคนิคและระยะเวลาของโครงการ แนวคิด AI ดังกล่าวยังไม่สามารถพัฒนาได้อย่างเต็มรูปแบบ และยังคงอยู่ในระดับแนวคิดของประสบการณ์ที่วางแผนไว้"
           },
           pillars: [
             {
@@ -1976,7 +1976,7 @@ const i18n = {
         keyLearning: {
           quote: {
             EN: "These limitations highlighted the importance of continuous designer–developer communication, shared product requirements, and early implementation reviews throughout the development process.",
-            TH: "ข้อจำกัดเหล่านี้ทำให้เห็นถึงความสำคัญของการสื่อสารระหว่าง Designer และ Developer อย่างต่อเนื่อง การกำหนด Product Requirements ร่วมกัน และการตรวจสอบ Implementation ตั้งแต่ช่วงต้นของกระบวนการพัฒนา"
+            TH: "ข้อจำกัดเหล่านี้ทำให้เห็นถึงความสำคัญของการสื่อสารระหว่าง Designer และ Developer อย่างต่อเนื่อง การกำหนด ความต้องการของผลิตภัณฑ์ ร่วมกัน และการตรวจสอบ Implementation ตั้งแต่ช่วงต้นของกระบวนการพัฒนา"
           }
         }
       },
@@ -2105,7 +2105,7 @@ const i18n = {
         },
         responsibilities: {
           EN: "User Research, Requirement Analysis, User Flow, Information Architecture, Wireframing, High-fidelity UI Design, Prototyping, Presentation, and Design Iteration",
-          TH: "ทำแบบสอบถามและวิเคราะห์ข้อมูล ระบุความต้องการของผู้ใช้ ออกแบบ User Flow และ Information Architecture จัดทำ Wireframe ออกแบบหน้าจอ High-fidelity สร้าง Prototype นำเสนอผลงาน และปรับปรุงดีไซน์ตาม Feedback"
+          TH: "ทำแบบสอบถามและวิเคราะห์ข้อมูล ระบุความต้องการของผู้ใช้ ออกแบบ User Flow และ Information Architecture จัดทำ Wireframe ออกแบบหน้าจอ High-fidelity สร้าง Prototype นำเสนอผลงาน และปรับปรุงการออกแบบตาม ข้อเสนอแนะ"
         },
         tools: {
           EN: "Figma, Google Forms",
@@ -2197,11 +2197,11 @@ const i18n = {
         requirements: {
           subheading: {
             EN: "Requirements Derived from the Research",
-            TH: "Requirement ที่ได้จาก Research"
+            TH: "ความต้องการที่สรุปได้จากการวิจัย"
           },
           intro: {
             EN: "The research was translated into the following design requirements:",
-            TH: "ผลการสำรวจถูกนำมาสรุปเป็น Requirement สำหรับการออกแบบดังนี้:"
+            TH: "ผลการสำรวจถูกนำมาสรุปเป็น ความต้องการ สำหรับการออกแบบดังนี้:"
           },
           items: {
             EN: [
@@ -2505,7 +2505,7 @@ const i18n = {
             ],
             TH: [
               "โปรเจกต์นี้ได้ผลลัพธ์เป็นต้นแบบ Mobile Application ระดับ High-fidelity ที่พัฒนาจากข้อมูลแบบสอบถามนักศึกษา 67 คน โดยรวบรวมบริการสำคัญของหอพัก เช่น การสมัคร แบบฟอร์ม ข่าวประกาศ กิจกรรม ค่าน้ำ–ค่าไฟ การแจ้งซ่อม และการเลือกตั้งคณะกรรมการหอพักไว้ในประสบการณ์เดียว",
-              "ระหว่างดำเนินโครงการ มีการนำเสนอผลงานและปรับปรุงดีไซน์ตามข้อเสนอแนะของอาจารย์ผู้สอนอย่างต่อเนื่อง"
+              "ระหว่างดำเนินโครงการ มีการนำเสนอผลงานและปรับปรุงการออกแบบตามข้อเสนอแนะของอาจารย์ผู้สอนอย่างต่อเนื่อง"
             ]
           }
         },
@@ -2647,7 +2647,7 @@ const i18n = {
     kioskApp: {
       title: {
         EN: "Kiosk Redesign – Ratthasima Khunakon Building",
-        TH: "ปรับปรุงดีไซน์ตู้คีออสอาคารรัฐสีมาคุณากร"
+        TH: "ปรับปรุงการออกแบบตู้คีออสอาคารรัฐสีมาคุณากร"
       },
       subtitle: {
         EN: "“Find Your Way, Faster.”",
@@ -2671,7 +2671,7 @@ const i18n = {
         tools: { EN: "Figma", TH: "Figma" },
         responsibilities: {
           EN: "Existing Interface Analysis, Assumption-Based Personas, Journey Mapping, Design Opportunities, Moodboard, Information Architecture, User Flow, High-fidelity UI Design, Prototyping, Presentation, and Design Iteration",
-          TH: "วิเคราะห์ Interface เดิม สร้าง Persona จากสมมติฐาน จัดทำ Journey Map สรุปโอกาสในการออกแบบ สร้าง Moodboard ออกแบบ Information Architecture และ User Flow ออกแบบหน้าจอ High-fidelity สร้าง Prototype นำเสนอผลงาน และปรับปรุงดีไซน์"
+          TH: "วิเคราะห์ Interface เดิม สร้าง Persona จากสมมติฐาน จัดทำ Journey Map สรุปโอกาสในการออกแบบ สร้าง Moodboard ออกแบบ Information Architecture และ User Flow ออกแบบหน้าจอ High-fidelity สร้าง Prototype นำเสนอผลงาน และปรับปรุงการออกแบบ"
         }
       },
       contextExistingInterface: {
@@ -3222,7 +3222,7 @@ const i18n = {
         paragraphs: [
           {
             EN: "The project resulted in a high-fidelity interactive kiosk prototype that connects room discovery, destination highlighting, and visual route guidance within one experience. The design was presented and iteratively refined based on feedback from the course instructor.",
-            TH: "โปรเจกต์นี้ได้ผลลัพธ์เป็นต้นแบบตู้คีออสก์แบบ Interactive ระดับ High-fidelity ที่เชื่อมการค้นหาห้อง การเน้นตำแหน่งจุดหมาย และการแสดงเส้นทางไว้ในประสบการณ์เดียว โดยมีการนำเสนอและปรับปรุงดีไซน์ตามข้อเสนอแนะของอาจารย์อย่างต่อเนื่อง"
+            TH: "โปรเจกต์นี้ได้ผลลัพธ์เป็นต้นแบบตู้คีออสก์แบบ Interactive ระดับ High-fidelity ที่เชื่อมการค้นหาห้อง การเน้นตำแหน่งจุดหมาย และการแสดงเส้นทางไว้ในประสบการณ์เดียว โดยมีการนำเสนอและปรับปรุงการออกแบบตามข้อเสนอแนะของอาจารย์อย่างต่อเนื่อง"
           },
           {
             EN: "This project showed that displaying a floor plan alone may not be enough to support wayfinding. Users also need clear methods for finding a room, confirming its location, and understanding how to reach it. It also highlighted the importance of pairing color with labels and symbols rather than relying on color alone.",
@@ -3306,7 +3306,7 @@ const i18n = {
       },
       resultsDesc: {
         EN: "The original interface displayed multiple floors and room information at once, making it difficult for users to quickly understand where a room was located. The redesigned system transforms the kiosk from a static building directory into a clearer and more interactive wayfinding experience through:",
-        TH: "หน้าจอคีออสเดิมแสดงข้อมูลหลายชั้นและหลายห้องพร้อมกันในหน้าเดียว ทำให้ยากต่อการระบุตำแหน่งห้องได้อย่างรวดเร็ว ระบบที่ปรับปรุงใหม่เปลี่ยนจากผังอาคารแบบนิ่ง ให้กลายเป็นประสบการณ์การนำทางแบบตอบโต้ที่ชัดเจนและใช้งานง่ายยิ่งขึ้น ผ่าน:"
+        TH: "หน้าจอคีออสเดิมแสดงข้อมูลหลายชั้นและหลายห้องพร้อมกันในหน้าเดียว ทำให้ยากต่อการระบุตำแหน่งห้องได้อย่างรวดเร็ว ระบบที่ปรับปรุงใหม่เปลี่ยนจากผังอาคารแบบนิ่ง ให้กลายเป็นระบบนำทางที่ผู้ใช้โต้ตอบได้ที่ชัดเจนและใช้งานง่ายยิ่งขึ้น ผ่าน:"
       },
       resultsHighlights: {
         EN: [

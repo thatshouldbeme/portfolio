@@ -2115,3 +2115,11 @@ body.lang-th .shell :is(h1,h2,h3,h4,h5,h6){
 
 .portrait .portrait-availability{display:inline-flex;align-items:center;gap:8px}
 .portrait-availability .availability-dot{display:inline-block;width:8px;height:8px;flex:0 0 8px;border-radius:50%;background:#16a34a;box-shadow:0 0 0 3px rgba(22,163,74,.14)}
+
+/* Let every certificate row determine section height before activities begin. */
+@media(min-width:821px){
+ .panel[data-panel="4"]{min-height:0;padding:10vh 0 12vh;display:flex;flex-direction:column;gap:48px}
+ .panel[data-panel="4"] > .cert-title,
+ .panel[data-panel="4"] > .cert-rail{position:relative;left:auto;top:auto;width:80vw;margin:0 auto;translate:0 0!important}
+ .cert-grid-frameless{row-gap:40px}
+}
