@@ -2111,3 +2111,7 @@ body.lang-th .shell :is(h1,h2,h3,h4,h5,h6){
 #introAbout .about-name-space{visibility:hidden}
 #introAbout .about-name-text{position:absolute;left:0;top:0;white-space:nowrap}
 #introAbout .about-role{font-family:inherit;font-size:.65em;font-weight:600;color:var(--ink);letter-spacing:0}
+
+
+.portrait .portrait-availability{display:inline-flex;align-items:center;gap:8px}
+.portrait-availability .availability-dot{display:inline-block;width:8px;height:8px;flex:0 0 8px;border-radius:50%;background:#16a34a;box-shadow:0 0 0 3px rgba(22,163,74,.14)}
