@@ -632,7 +632,7 @@ const i18n = {
             },
             {
               num: "4",
-              title: "การแจ้งเตือนเหตุฉุกเฉิน (Emergency Code)",
+              title: "การแจ้งเตือนเหตุฉุกเฉิน",
               problem: "เมื่อเกิดเหตุฉุกเฉิน บุคลากรต้องทราบรหัสเหตุ สถานที่ และเวลาอย่างรวดเร็วและชัดเจน เพื่อเข้าใจสถานการณ์และเข้าช่วยเหลือได้ถูกจุด โดยยังต้องใช้รหัสตัวอักษรตามนโยบายเดิมของโรงพยาบาล",
               opportunityLabel: "จุดที่สามารถพัฒนาได้:",
               opportunity: "แสดงการแจ้งเตือนบนมือถือที่เห็นได้ชัด พร้อมรวมรหัสเหตุ สถานที่ เวลา และรายละเอียดสำคัญไว้ในจุดเดียว เพื่อให้บุคลากรรับรู้สถานการณ์และตอบสนองได้รวดเร็ว"
@@ -5345,30 +5345,12 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0) {
   if (projI18n?.emergencyCode) {
     const ec = projI18n.emergencyCode;
     emergencyCodeHtml = `
-      <div class="suth-emergency-overview" style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:24px;margin-bottom:32px">
-        <h3 style="font-size:22px;font-weight:900;color:#0f172a;margin:0 0 20px">${ec.title[lang]}</h3>
-        
-        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:24px;align-items:center">
-          <!-- Left Column: Challenge & Solution -->
-          <div style="display:flex;flex-direction:column;gap:16px">
-            <div style="background:rgba(241,245,249,0.7);padding:16px 20px;border-radius:16px;border-left:4px solid var(--sunset)">
-              <b style="font-size:12px;color:var(--sunset);display:block;margin-bottom:4px;text-transform:uppercase;letter-spacing:.05em">${ec.challengeLabel[lang]}</b>
-              <p style="font-size:14px;line-height:1.65;color:#334155;margin:0">${ec.challenge[lang]}</p>
-            </div>
-            <div style="background:rgba(241,245,249,0.7);padding:16px 20px;border-radius:16px;border-left:4px solid var(--teal)">
-              <b style="font-size:12px;color:var(--teal);display:block;margin-bottom:4px;text-transform:uppercase;letter-spacing:.05em">${ec.solutionLabel[lang]}</b>
-              <p style="font-size:14px;line-height:1.65;color:#334155;margin:0">${ec.solution[lang]}</p>
-            </div>
-          </div>
-
-          <!-- Right Column: Emergency Code Pop-up Screenshot -->
-          <div style="display:flex;justify-content:center;align-items:center">
-            <div style="width:100%;max-width:240px;border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(30,36,50,0.12);background:#fff;padding:8px;box-sizing:border-box">
-              <img src="${encodeURI(ec.image)}" alt="${ec.title[lang]}" style="width:100%;height:auto;display:block;border-radius:12px;object-fit:contain"/>
-            </div>
-          </div>
+      <div class="suth-emergency-overview">
+        <h3>${ec.title[lang]}</h3>
+        <div class="suth-emergency-summary">
+          <div><b>${ec.challengeLabel[lang]}</b><p>${lang === 'TH' ? 'บุคลากรต้องรับรู้ประเภทเหตุและสถานที่ได้อย่างรวดเร็ว โดยคงรหัสฉุกเฉินที่โรงพยาบาลใช้อยู่เดิม' : 'Staff need to identify the incident and location quickly while retaining the hospital’s established emergency codes.'}</p></div>
+          <div><b>${ec.solutionLabel[lang]}</b><p>${lang === 'TH' ? 'รวมการประกาศ การรับทราบ และการยกเลิกไว้ในแอป พร้อมแสดงรหัสเหตุ สถานที่ และข้อมูลสำคัญอย่างชัดเจน' : 'Bring announcement creation, acknowledgement and cancellation into the app, with clear codes, locations and essential details.'}</p></div>
         </div>
-
       </div>
     `;
   }
@@ -7015,22 +6997,22 @@ function refineSuthCase(root, project, lang) {
   decisions.innerHTML = `<span class="kicker">${copy('DESIGN REASONING', 'เหตุผลในการออกแบบ')}</span><h2>${copy('Key Design Decisions', 'การตัดสินใจสำคัญในการออกแบบ')}</h2>` + decisionsData.map(([title, problem, decision, rationale, src]) => `<article class="suth-decision"><div><h3>${title}</h3><dl>${[[copy('Problem', 'ปัญหา'), problem], [copy('Design Decision', 'การตัดสินใจออกแบบ'), decision], [copy('UX Rationale', 'เหตุผลด้าน UX'), rationale]].map(([label, text]) => `<div><dt>${label}</dt><dd>${text}</dd></div>`).join('')}</dl></div><figure><img src="${encodeURI(src)}" alt="${title}" loading="lazy"><figcaption>${copy('Interface evidence · Click to inspect', 'ตัวอย่างหน้าจอ · คลิกเพื่อดูรายละเอียด')}</figcaption></figure></article>`).join('');
   features[0].closest('section').after(decisions);
 
-  // Emergency workflow supported by cooperative report section 4.1.5, figures 4-21–4-24.
+  // Preserve all six emergency screens in their original workflow order.
   const emergencyDetails = workflowDetails[3];
   if (emergencyDetails) {
     const screens = [
-      ['ประกาศ code.png', copy('Create an emergency announcement', 'กรอกข้อมูลเพื่อประกาศเหตุฉุกเฉิน'), copy('The form groups code type and severity, incident location, and notes. Staff can select the building and floor, specify the area or department, and add up to 150 characters of context before sending the alert.', 'แบบฟอร์มแบ่งข้อมูลเป็นประเภทโค้ดและระดับความรุนแรง สถานที่เกิดเหตุ และหมายเหตุ ผู้ประกาศเลือกอาคารและชั้น ระบุบริเวณหรือแผนก และเพิ่มรายละเอียดได้ไม่เกิน 150 ตัวอักษรก่อนส่งการแจ้งเตือน')],
-      ['CODE.png', copy('Read and acknowledge the alert', 'อ่านรายละเอียดและรับทราบเหตุ'), copy('The alert appears over the current screen, highlighting the code, incident description and location. Supporting instructions and an acknowledgement button are kept together so recipients can read the essential information before returning to the app.', 'หน้าต่างแจ้งเตือนแสดงทับหน้าที่กำลังใช้งาน โดยเน้นรหัสเหตุ คำอธิบาย และสถานที่ พร้อมข้อความแนะนำและปุ่มรับทราบ เพื่อให้ผู้รับอ่านข้อมูลสำคัญก่อนกลับไปใช้งานแอป')],
-      ['หน้าหลักประกาศ code-1.png', copy('Confirm cancellation', 'ยืนยันก่อนยกเลิกประกาศ'), copy('The cancellation dialog identifies the selected code and offers separate Back and Cancel Announcement actions. This confirmation gives staff a chance to review the selected announcement before cancelling it.', 'หน้าต่างยืนยันระบุโค้ดที่กำลังจะยกเลิก และแยกปุ่มกลับกับยกเลิกประกาศอย่างชัดเจน เพื่อให้ผู้ใช้งานตรวจสอบประกาศที่เลือกอีกครั้งก่อนยกเลิก')]
+      ['ประกาศ code.png', copy('Create an announcement', 'สร้างประกาศ'), copy('Select the code and severity, specify the location, and add a short note before sending.', 'เลือกโค้ดและระดับความรุนแรง ระบุสถานที่ และเพิ่มหมายเหตุก่อนส่งประกาศ')],
+      ['report-manage-code.png', copy('Review active announcements', 'ตรวจสอบประกาศ'), copy('Review the code, location and time to select the announcement to manage.', 'ตรวจสอบโค้ด สถานที่ และเวลา เพื่อเลือกประกาศที่ต้องการจัดการ')],
+      ['CODE.png', copy('Read and acknowledge', 'อ่านและรับทราบ'), copy('A prominent alert brings the incident, location and instructions together with an acknowledgement action.', 'แสดงรหัสเหตุ สถานที่ และคำแนะนำในหน้าต่างแจ้งเตือน พร้อมปุ่มรับทราบ')],
+      ['หน้าหลักประกาศ code-1.png', copy('Confirm cancellation', 'ยืนยันการยกเลิก'), copy('Review the selected code before cancelling, with a clear option to go back.', 'ตรวจสอบโค้ดที่เลือกก่อนยืนยันยกเลิก หรือกดกลับเพื่อทบทวน')],
+      ['report-cancelled-alert.png', copy('Receive a cancellation notice', 'รับแจ้งการยกเลิก'), copy('A green code and explicit cancellation label distinguish the notice from an active alert.', 'ใช้โค้ดสีเขียวและข้อความยกเลิก เพื่อแยกจากประกาศเหตุที่ยังมีผล')],
+      ['report-code-detail.png', copy('Read announcement details', 'อ่านรายละเอียดประกาศ'), copy('View the incident, date, time and instructions, together with the read timestamp.', 'เปิดดูรายละเอียดเหตุ วันที่ เวลา และคำแนะนำ พร้อมเวลาที่อ่านประกาศ')]
     ];
-    screens.splice(1, 0,
-      ['report-manage-code.png', copy('Review active announcements', 'ตรวจสอบประกาศที่ต้องการจัดการ'), copy('The management screen lists announcements with their code, incident description, location and relative time. Users with the appropriate permissions can select the announcement to cancel or create a new announcement.', 'หน้าจัดการแสดงประกาศพร้อมรหัสเหตุ คำอธิบาย สถานที่ และเวลาที่ประกาศ เพื่อให้ผู้มีสิทธิ์เลือกประกาศที่ต้องการยกเลิก หรือสร้างประกาศใหม่ได้')]
-    );
-    screens.push(
-      ['report-cancelled-alert.png', copy('Receive a cancellation notice', 'รับแจ้งการยกเลิกประกาศ'), copy('Figure 4-21 distinguishes an active alert from a cancellation notice: the cancellation uses a green code and an explicit cancellation label, while the incident and location remain visible to identify the affected announcement.', 'ภาพที่ 4-21 แยกหน้ารับประกาศเหตุออกจากหน้ารับแจ้งยกเลิก โดยใช้โค้ดสีเขียวพร้อมข้อความยกเลิก และคงข้อมูลเหตุและสถานที่ไว้ให้ทราบว่าประกาศใดถูกยกเลิกแล้ว')],
-      ['report-code-detail.png', copy('Read announcement details', 'เปิดอ่านรายละเอียดประกาศ'), copy('Figure 4-22 shows an announcement detail page with the code, date and time, location, supporting instructions and a read timestamp. This provides more context than the initial alert.', 'ภาพที่ 4-22 แสดงหน้ารายละเอียดประกาศที่มีรหัสเหตุ วันที่ เวลา สถานที่ และคำแนะนำเพิ่มเติม พร้อมเวลาที่เปิดอ่าน เพื่อให้บุคลากรตรวจสอบข้อมูลได้ละเอียดกว่าหน้าต่างแจ้งเตือน')]
-    );
-    emergencyDetails.insertAdjacentHTML('beforeend', `<div class="suth-emergency-screens">${screens.map(([file, title, description], index) => `<article><h4>${index + 1}. ${title}</h4><p>${description}</p><figure><img src="${encodeURI('projects/My SUTH App/emergency code/' + file)}" alt="${title}" loading="lazy"><figcaption>${title}</figcaption></figure></article>`).join('')}</div>`);
+    const groups = [
+      [copy('Creating & Managing Emergency Alerts', 'สร้างและจัดการประกาศเหตุฉุกเฉิน'), copy('From entering incident details to receiving the alert, keep essential information clear at each step.', 'ตั้งแต่ระบุข้อมูลเหตุจนถึงรับประกาศ แสดงข้อมูลสำคัญให้ชัดเจนในแต่ละขั้นตอน')],
+      [copy('Cancellation & Alert Details', 'ยกเลิกและตรวจสอบรายละเอียดประกาศ'), copy('Confirm the announcement to cancel, communicate its updated status, and keep the details available to review.', 'ยืนยันประกาศที่ต้องการยกเลิก แจ้งสถานะที่เปลี่ยนไป และเปิดอ่านรายละเอียดได้')]
+    ];
+    emergencyDetails.insertAdjacentHTML('beforeend', `<div class="suth-emergency-workflow">${groups.map(([title, intro], groupIndex) => `<section class="suth-emergency-group"><div class="suth-emergency-heading"><span>${groupIndex + 1}</span><i aria-hidden="true"></i><h4>${title}</h4></div><p class="suth-emergency-intro">${intro}</p><div class="suth-emergency-screens">${screens.slice(groupIndex * 3, groupIndex * 3 + 3).map(([file, title, description], index) => `<figure><div class="suth-emergency-screen"><img src="${encodeURI('projects/My SUTH App/emergency code/' + file)}" alt="${title}" loading="lazy"></div><figcaption><b>${groupIndex * 3 + index + 1}. ${title}</b><p>${description}</p></figcaption></figure>`).join('')}</div></section>`).join('')}</div>`);
   }
 
   const ending = root.lastElementChild;

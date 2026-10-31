@@ -2125,15 +2125,36 @@ body.lang-th .shell :is(h1,h2,h3,h4,h5,h6){
 }
 
 
-.suth-emergency-screens{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:28px}
-.suth-emergency-screens article{min-width:0}
-.suth-emergency-screens figure{margin:20px auto 0;width:100%;max-width:230px}
-.suth-emergency-screens img{display:block;width:auto;height:auto;max-width:100%;max-height:480px;object-fit:contain;margin:0 auto;cursor:zoom-in}
-.suth-emergency-screens figcaption{margin-top:12px;text-align:center}
-@media(max-width:820px){.suth-emergency-screens{grid-template-columns:1fr;gap:32px}}
+/* Emergency details share E-Consult's width, two-column summary and numbered rhythm. */
+.suth-editorial .suth-emergency-overview{margin-bottom:28px}
+.suth-editorial .suth-emergency-overview > h3{margin:0 0 16px}
+.suth-editorial .suth-emergency-summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.suth-editorial .suth-emergency-summary > div{padding:16px 20px;min-width:0}
+.suth-editorial .suth-emergency-summary b{display:block;font-size:12px;color:var(--sky-blue);margin-bottom:4px;text-transform:uppercase;letter-spacing:.05em}
+.suth-editorial .suth-emergency-summary > div:first-child b{color:var(--sunset)}
+.suth-editorial .suth-emergency-summary p{margin:0;color:#334155}
+.suth-editorial .suth-emergency-workflow{display:grid;gap:32px}
+.suth-editorial .suth-emergency-heading{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.suth-editorial .suth-emergency-heading > span{font:950 32px/1 Syne,sans-serif;color:var(--sky-blue);flex-shrink:0}
+.suth-editorial .suth-emergency-heading > i{height:24px;width:2px;background:rgba(85,104,175,.25);flex-shrink:0}
+.suth-editorial .suth-emergency-heading h4{margin:0;min-width:0}
+.suth-editorial .suth-emergency-intro{margin:0 0 16px;color:#475569}
+.suth-editorial .suth-emergency-screens{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.suth-editorial .suth-emergency-screens figure{margin:0;min-width:0}
+.suth-editorial .suth-emergency-screen{height:480px;display:flex;align-items:flex-end;justify-content:center}
+.suth-editorial .suth-emergency-screen img{display:block;width:auto;height:auto;max-width:100%;max-height:480px;object-fit:contain;margin:0 auto;cursor:zoom-in}
+.suth-editorial .suth-emergency-screens figcaption{margin:14px auto 0;max-width:32ch;text-align:left;color:#475569}
+.suth-editorial .suth-emergency-screens figcaption b{display:block;font-size:13px;font-weight:700;line-height:1.5;color:var(--ink)}
+.suth-editorial .suth-emergency-screens figcaption p{margin:6px 0 0;font-size:13px;line-height:1.65}
+@media(max-width:640px){
+ .suth-editorial .suth-emergency-summary{grid-template-columns:1fr;gap:12px}
+ .suth-editorial .suth-emergency-summary > div{padding:12px 0}
+ .suth-editorial .suth-emergency-screens{grid-template-columns:1fr;gap:28px}
+ .suth-editorial .suth-emergency-screen{height:auto}
+ .suth-editorial .suth-emergency-screen img{max-width:min(100%,260px);max-height:520px}
+ .suth-editorial .suth-emergency-screens figcaption{max-width:36ch}
+}
 
 /* Match the primary emergency preview to adjacent multi-screen features. */
 .suth-editorial #suth-feature-4 .feature-img-card{max-width:230px!important}
 .suth-editorial #suth-feature-4 img{max-height:500px;object-fit:contain}
-
-.suth-editorial .suth-emergency-overview img{width:auto!important;max-width:100%;max-height:480px;margin:auto;object-fit:contain}
