@@ -664,7 +664,7 @@ const i18n = {
               },
               services: {
                 EN: "Attendance check-in/out, attendance history, notifications, announcements, and profile settings.",
-                TH: "ลงเวลาเข้า–ออกงาน ประวัติการลงเวลา การแจ้งเตือน ข่าวประกาศ และการตั้งค่าโปรไฟล์"
+                TH: "ลงเวลาเข้า-ออกงาน ประวัติการลงเวลา การแจ้งเตือน ข่าวประกาศ และการตั้งค่าโปรไฟล์"
               }
             },
             {
@@ -687,6 +687,17 @@ const i18n = {
               services: {
                 EN: "E-Consult request viewing, important notifications, queue management where applicable, emergency notifications, attendance, and shared staff services.",
                 TH: "เปิดอ่านคำขอ E-Consult การแจ้งเตือนที่สำคัญ ระบบจัดการคิวในแผนกที่เกี่ยวข้อง การแจ้งเตือนเหตุฉุกเฉิน การลงเวลา และฟีเจอร์พื้นฐานสำหรับบุคลากร"
+              }
+            },
+            {
+              role: { EN: "Operator", TH: "เจ้าหน้าที่ Operator" },
+              needs: {
+                EN: "Announce emergency codes and cancel the appropriate announcement according to assigned permissions.",
+                TH: "ประกาศโค้ดฉุกเฉินและยกเลิกประกาศที่เกี่ยวข้องตามสิทธิ์ที่ได้รับ"
+              },
+              services: {
+                EN: "Create Emergency Code announcements, review active announcements, and confirm cancellation.",
+                TH: "สร้างประกาศ Emergency Code ตรวจสอบประกาศที่มีอยู่ ยืนยันการยกเลิกประกาศ และฟีเจอร์พื้นฐานสำหรับบุคลากร"
               }
             }
           ]
@@ -5449,9 +5460,10 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0) {
 
         <!-- 01 — Context-Aware Attendance Action -->
         <div style="margin-bottom:32px">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
-            <span style="font:900 13px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 10px;border-radius:8px">${g[0].num}</span>
-            <h4 style="font-size:18px;font-weight:800;color:#1e293b;margin:0">${g[0].heading[lang]}</h4>
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+            <span style="font-size:32px;font-weight:950;color:var(--sky-blue);line-height:1;font-family:Syne,sans-serif">${g[0].num}</span>
+            <div style="height:24px;width:2px;background:rgba(85,104,175,0.25)"></div>
+            <h4 style="font-size:clamp(18px,2.5vw,22px);font-weight:900;color:#0f172a;margin:0">${g[0].heading[lang]}</h4>
           </div>
           <p style="font-size:14px;line-height:1.7;color:#475569;margin-bottom:16px">${g[0].desc[lang]}</p>
           <div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:18px">
@@ -5473,9 +5485,10 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0) {
 
         <!-- 02 — Location Verification -->
         <div style="margin-bottom:32px">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
-            <span style="font:900 13px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 10px;border-radius:8px">${g[1].num}</span>
-            <h4 style="font-size:18px;font-weight:800;color:#1e293b;margin:0">${g[1].heading[lang]}</h4>
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+            <span style="font-size:32px;font-weight:950;color:var(--sky-blue);line-height:1;font-family:Syne,sans-serif">${g[1].num}</span>
+            <div style="height:24px;width:2px;background:rgba(85,104,175,0.25)"></div>
+            <h4 style="font-size:clamp(18px,2.5vw,22px);font-weight:900;color:#0f172a;margin:0">${g[1].heading[lang]}</h4>
           </div>
           <p style="font-size:14px;line-height:1.7;color:#475569;margin-bottom:16px">${g[1].desc[lang]}</p>
           
@@ -5497,9 +5510,10 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0) {
 
         <!-- 03 — Secure Identity Confirmation -->
         <div style="margin-bottom:32px">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
-            <span style="font:900 13px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 10px;border-radius:8px">${g[2].num}</span>
-            <h4 style="font-size:18px;font-weight:800;color:#1e293b;margin:0">${g[2].heading[lang]}</h4>
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+            <span style="font-size:32px;font-weight:950;color:var(--sky-blue);line-height:1;font-family:Syne,sans-serif">${g[2].num}</span>
+            <div style="height:24px;width:2px;background:rgba(85,104,175,0.25)"></div>
+            <h4 style="font-size:clamp(18px,2.5vw,22px);font-weight:900;color:#0f172a;margin:0">${g[2].heading[lang]}</h4>
           </div>
           <p style="font-size:14px;line-height:1.7;color:#475569;margin-bottom:16px">${g[2].desc[lang]}</p>
           
@@ -5528,9 +5542,10 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0) {
 
         <!-- 04 — Confirmation & Attendance History -->
         <div>
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
-            <span style="font:900 13px/1 monospace;color:var(--sky-blue);background:rgba(85,104,175,0.12);padding:4px 10px;border-radius:8px">${g[3].num}</span>
-            <h4 style="font-size:18px;font-weight:800;color:#1e293b;margin:0">${g[3].heading[lang]}</h4>
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+            <span style="font-size:32px;font-weight:950;color:var(--sky-blue);line-height:1;font-family:Syne,sans-serif">${g[3].num}</span>
+            <div style="height:24px;width:2px;background:rgba(85,104,175,0.25)"></div>
+            <h4 style="font-size:clamp(18px,2.5vw,22px);font-weight:900;color:#0f172a;margin:0">${g[3].heading[lang]}</h4>
           </div>
           <p style="font-size:14px;line-height:1.7;color:#475569;margin-bottom:16px">${g[3].desc[lang]}</p>
           
@@ -6249,7 +6264,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0) {
       <section class="case">
         <div>
           <h2><i class="ph-duotone ph-sparkle" style="font-size:1em;margin-right:12px;vertical-align:-0.12em;color:var(--sky-blue)"></i>${modalFeatureHeading}</h2>
-          ${pid === 'mysuth-app' ? featuresHtml + `<div class="suth-workflow-details">${[queueManagementHtml, eConsultHtml, attendanceHtml, emergencyCodeHtml].map((html, i) => `<details><summary>${lang === 'TH' ? 'ดูขั้นตอนและสถานะเพิ่มเติม' : 'Explore workflow & supporting states'} — ${projI18n.features[i].title[lang]}</summary>${html}</details>`).join('')}</div>` + coreScreensHtml + otherFeaturesHtml : featuresHtml}
+          ${pid === 'mysuth-app' ? featuresHtml + `<div class="suth-workflow-details">${[queueManagementHtml, eConsultHtml, attendanceHtml, emergencyCodeHtml].map((html, i) => `<details><summary>${lang === 'TH' ? 'ดูขั้นตอนและสถานะเพิ่มเติม' : 'Explore workflow & supporting states'} - ${projI18n.features[i].title[lang]}</summary>${html}</details>`).join('')}</div>` + coreScreensHtml + otherFeaturesHtml : featuresHtml}
         </div>
       </section>
     ` : ''}
@@ -7012,7 +7027,7 @@ function refineSuthCase(root, project, lang) {
       [copy('Creating & Managing Emergency Alerts', 'สร้างและจัดการประกาศเหตุฉุกเฉิน'), copy('From entering incident details to receiving the alert, keep essential information clear at each step.', 'ตั้งแต่ระบุข้อมูลเหตุจนถึงรับประกาศ แสดงข้อมูลสำคัญให้ชัดเจนในแต่ละขั้นตอน')],
       [copy('Cancellation & Alert Details', 'ยกเลิกและตรวจสอบรายละเอียดประกาศ'), copy('Confirm the announcement to cancel, communicate its updated status, and keep the details available to review.', 'ยืนยันประกาศที่ต้องการยกเลิก แจ้งสถานะที่เปลี่ยนไป และเปิดอ่านรายละเอียดได้')]
     ];
-    emergencyDetails.insertAdjacentHTML('beforeend', `<div class="suth-emergency-workflow">${groups.map(([title, intro], groupIndex) => `<section class="suth-emergency-group"><div class="suth-emergency-heading"><span>${groupIndex + 1}</span><i aria-hidden="true"></i><h4>${title}</h4></div><p class="suth-emergency-intro">${intro}</p><div class="suth-emergency-screens">${screens.slice(groupIndex * 3, groupIndex * 3 + 3).map(([file, title, description], index) => `<figure><div class="suth-emergency-screen"><img src="${encodeURI('projects/My SUTH App/emergency code/' + file)}" alt="${title}" loading="lazy"></div><figcaption><b>${groupIndex * 3 + index + 1}. ${title}</b><p>${description}</p></figcaption></figure>`).join('')}</div></section>`).join('')}</div>`);
+    emergencyDetails.insertAdjacentHTML('beforeend', `<div class="suth-emergency-workflow">${groups.map(([title, intro], groupIndex) => `<section class="suth-emergency-group"><div class="suth-emergency-heading"><span>${groupIndex + 1}</span><h4>${title}</h4></div><p class="suth-emergency-intro">${intro}</p><div class="suth-emergency-screens">${screens.slice(groupIndex * 3, groupIndex * 3 + 3).map(([file, title, description], index) => `<figure><div class="suth-emergency-screen"><img src="${encodeURI('projects/My SUTH App/emergency code/' + file)}" alt="${title}" loading="lazy"></div><figcaption><b>${groupIndex * 3 + index + 1}. ${title}</b><p>${description}</p></figcaption></figure>`).join('')}</div></section>`).join('')}</div>`);
   }
 
   const ending = root.lastElementChild;

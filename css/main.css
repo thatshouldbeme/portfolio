@@ -2136,7 +2136,6 @@ body.lang-th .shell :is(h1,h2,h3,h4,h5,h6){
 .suth-editorial .suth-emergency-workflow{display:grid;gap:32px}
 .suth-editorial .suth-emergency-heading{display:flex;align-items:center;gap:12px;margin-bottom:14px}
 .suth-editorial .suth-emergency-heading > span{font:950 32px/1 Syne,sans-serif;color:var(--sky-blue);flex-shrink:0}
-.suth-editorial .suth-emergency-heading > i{height:24px;width:2px;background:rgba(85,104,175,.25);flex-shrink:0}
 .suth-editorial .suth-emergency-heading h4{margin:0;min-width:0}
 .suth-editorial .suth-emergency-intro{margin:0 0 16px;color:#475569}
 .suth-editorial .suth-emergency-screens{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
