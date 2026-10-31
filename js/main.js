@@ -133,8 +133,8 @@ const i18n = {
       TH: 'โปรเจกต์<span class="outline">ด้าน UX/UI</span>'
     },
     subtitle: {
-      EN: "A curated collection of digital product design case studies — exploring user research, complex workflows, design systems, and tangible outcomes.",
-      TH: "รวบรวมโปรเจกต์การออกแบบผลิตภัณฑ์ดิจิทัล — ถ่ายทอดกระบวนการวิจัยผู้ใช้ การออกแบบขั้นตอนการใช้งานและระบบการออกแบบ และผลลัพธ์ที่ใช้งานได้จริง"
+      EN: "A curated collection of digital product design case studies by exploring user research, complex workflows, design systems, and tangible outcomes.",
+      TH: "โปรเจกต์ออกแบบเว็บไซต์หรือแอปมือถือ โดยถ่ายทอดกระบวนการวิจัยผู้ใช้ การออกแบบขั้นตอนการใช้งานและระบบการออกแบบ และผลลัพธ์ที่ใช้งานได้จริง"
     },
     items: {
       "mysuth-app": {
@@ -152,7 +152,7 @@ const i18n = {
         },
         desc: {
           EN: "A unified mobile hospital management system designed for SUT Hospital staff, streamlining attendance, patient queue management, e-consultations, and emergency code notifications into one intuitive interface.",
-          TH: "แอปพลิเคชันจัดการระบบงานโรงพยาบาลสำหรับบุคลากรทางการแพทย์ รพ.มทส. รวบรวมระบบลงเวลาทำงาน จัดการคิวคนไข้ ปรึกษาเคส (E-Consult) และแจ้งเตือนเหตุฉุกเฉินไว้ในที่เดียวอย่างมีประสิทธิภาพ"
+          TH: "แอปพลิเคชันจัดการระบบงานโรงพยาบาลสำหรับบุคลากรทางการแพทย์ รพ.มทส. รวบรวมระบบลงเวลาทำงาน จัดการคิวคนไข้ ปรึกษาเคสของแพทย์ (E-Consult) และแจ้งเตือนเหตุฉุกเฉินไว้ในที่เดียวอย่างมีประสิทธิภาพ"
         }
       },
       "goal-app": {
@@ -201,8 +201,8 @@ const i18n = {
           TH: "ปรับปรุงการออกแบบตู้คีออส"
         },
         role: {
-          EN: "Interaction & Wayfinding Designer",
-          TH: "ผู้ออกแบบปฏิสัมพันธ์และการนำทาง"
+          EN: "UX/UI & Wayfinding Designer",
+          TH: "นักออกแบบ UX/UI และระบบนำทาง"
         },
         desc: {
           EN: "Interactive wayfinding redesign for a 5-story university complex, replacing static directories with floor-by-floor route animation and color-coded navigation categories",
@@ -599,6 +599,13 @@ const i18n = {
               problem: "Some departments lack dedicated queue-calling equipment, making it difficult for nurses to manage patient queues efficiently.",
               opportunityLabel: "Design opportunity:",
               opportunity: "Allow nurses to call and manage queues directly from their mobile devices."
+            },
+            {
+              num: "4",
+              title: "Emergency Code",
+              problem: "Emergency announcements need to communicate the code, location and time clearly and quickly so staff can understand the situation, while retaining the hospital’s existing letter-based codes.",
+              opportunityLabel: "Design opportunity:",
+              opportunity: "Bring the emergency code, location, time and essential details together in a prominent mobile alert so staff can quickly identify the situation and respond."
             }
           ],
           TH: [
@@ -622,6 +629,13 @@ const i18n = {
               problem: "บางแผนกไม่มีอุปกรณ์สำหรับเรียกคิวโดยเฉพาะ เช่น ไมโครโฟน ลำโพง หรือจอแสดงหมายเลข ทำให้พยาบาลหน้าห้องตรวจจัดการและเรียกคิวผู้ป่วยได้ไม่สะดวก",
               opportunityLabel: "จุดที่สามารถพัฒนาได้:",
               opportunity: "ช่วยให้พยาบาลสามารถเรียกและจัดการคิวผ่านโทรศัพท์มือถือได้โดยตรง"
+            },
+            {
+              num: "4",
+              title: "การแจ้งเตือนเหตุฉุกเฉิน (Emergency Code)",
+              problem: "เมื่อเกิดเหตุฉุกเฉิน บุคลากรต้องทราบรหัสเหตุ สถานที่ และเวลาอย่างรวดเร็วและชัดเจน เพื่อเข้าใจสถานการณ์และเข้าช่วยเหลือได้ถูกจุด โดยยังต้องใช้รหัสตัวอักษรตามนโยบายเดิมของโรงพยาบาล",
+              opportunityLabel: "จุดที่สามารถพัฒนาได้:",
+              opportunity: "แสดงการแจ้งเตือนบนมือถือที่เห็นได้ชัด พร้อมรวมรหัสเหตุ สถานที่ เวลา และรายละเอียดสำคัญไว้ในจุดเดียว เพื่อให้บุคลากรรับรู้สถานการณ์และตอบสนองได้รวดเร็ว"
             }
           ]
         }
@@ -5331,7 +5345,7 @@ function renderCaseModal(pid, pushHistory = true, navScrollLeft = 0) {
   if (projI18n?.emergencyCode) {
     const ec = projI18n.emergencyCode;
     emergencyCodeHtml = `
-      <div style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:24px;margin-bottom:32px">
+      <div class="suth-emergency-overview" style="background:rgba(255,255,255,0.75);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.9);box-shadow:0 8px 24px rgba(30,36,50,0.05);padding:24px 28px;border-radius:24px;margin-bottom:32px">
         <h3 style="font-size:22px;font-weight:900;color:#0f172a;margin:0 0 20px">${ec.title[lang]}</h3>
         
         <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:24px;align-items:center">
@@ -7000,6 +7014,24 @@ function refineSuthCase(root, project, lang) {
   ];
   decisions.innerHTML = `<span class="kicker">${copy('DESIGN REASONING', 'เหตุผลในการออกแบบ')}</span><h2>${copy('Key Design Decisions', 'การตัดสินใจสำคัญในการออกแบบ')}</h2>` + decisionsData.map(([title, problem, decision, rationale, src]) => `<article class="suth-decision"><div><h3>${title}</h3><dl>${[[copy('Problem', 'ปัญหา'), problem], [copy('Design Decision', 'การตัดสินใจออกแบบ'), decision], [copy('UX Rationale', 'เหตุผลด้าน UX'), rationale]].map(([label, text]) => `<div><dt>${label}</dt><dd>${text}</dd></div>`).join('')}</dl></div><figure><img src="${encodeURI(src)}" alt="${title}" loading="lazy"><figcaption>${copy('Interface evidence · Click to inspect', 'ตัวอย่างหน้าจอ · คลิกเพื่อดูรายละเอียด')}</figcaption></figure></article>`).join('');
   features[0].closest('section').after(decisions);
+
+  // Emergency workflow supported by cooperative report section 4.1.5, figures 4-21–4-24.
+  const emergencyDetails = workflowDetails[3];
+  if (emergencyDetails) {
+    const screens = [
+      ['ประกาศ code.png', copy('Create an emergency announcement', 'กรอกข้อมูลเพื่อประกาศเหตุฉุกเฉิน'), copy('The form groups code type and severity, incident location, and notes. Staff can select the building and floor, specify the area or department, and add up to 150 characters of context before sending the alert.', 'แบบฟอร์มแบ่งข้อมูลเป็นประเภทโค้ดและระดับความรุนแรง สถานที่เกิดเหตุ และหมายเหตุ ผู้ประกาศเลือกอาคารและชั้น ระบุบริเวณหรือแผนก และเพิ่มรายละเอียดได้ไม่เกิน 150 ตัวอักษรก่อนส่งการแจ้งเตือน')],
+      ['CODE.png', copy('Read and acknowledge the alert', 'อ่านรายละเอียดและรับทราบเหตุ'), copy('The alert appears over the current screen, highlighting the code, incident description and location. Supporting instructions and an acknowledgement button are kept together so recipients can read the essential information before returning to the app.', 'หน้าต่างแจ้งเตือนแสดงทับหน้าที่กำลังใช้งาน โดยเน้นรหัสเหตุ คำอธิบาย และสถานที่ พร้อมข้อความแนะนำและปุ่มรับทราบ เพื่อให้ผู้รับอ่านข้อมูลสำคัญก่อนกลับไปใช้งานแอป')],
+      ['หน้าหลักประกาศ code-1.png', copy('Confirm cancellation', 'ยืนยันก่อนยกเลิกประกาศ'), copy('The cancellation dialog identifies the selected code and offers separate Back and Cancel Announcement actions. This confirmation gives staff a chance to review the selected announcement before cancelling it.', 'หน้าต่างยืนยันระบุโค้ดที่กำลังจะยกเลิก และแยกปุ่มกลับกับยกเลิกประกาศอย่างชัดเจน เพื่อให้ผู้ใช้งานตรวจสอบประกาศที่เลือกอีกครั้งก่อนยกเลิก')]
+    ];
+    screens.splice(1, 0,
+      ['report-manage-code.png', copy('Review active announcements', 'ตรวจสอบประกาศที่ต้องการจัดการ'), copy('The management screen lists announcements with their code, incident description, location and relative time. Users with the appropriate permissions can select the announcement to cancel or create a new announcement.', 'หน้าจัดการแสดงประกาศพร้อมรหัสเหตุ คำอธิบาย สถานที่ และเวลาที่ประกาศ เพื่อให้ผู้มีสิทธิ์เลือกประกาศที่ต้องการยกเลิก หรือสร้างประกาศใหม่ได้')]
+    );
+    screens.push(
+      ['report-cancelled-alert.png', copy('Receive a cancellation notice', 'รับแจ้งการยกเลิกประกาศ'), copy('Figure 4-21 distinguishes an active alert from a cancellation notice: the cancellation uses a green code and an explicit cancellation label, while the incident and location remain visible to identify the affected announcement.', 'ภาพที่ 4-21 แยกหน้ารับประกาศเหตุออกจากหน้ารับแจ้งยกเลิก โดยใช้โค้ดสีเขียวพร้อมข้อความยกเลิก และคงข้อมูลเหตุและสถานที่ไว้ให้ทราบว่าประกาศใดถูกยกเลิกแล้ว')],
+      ['report-code-detail.png', copy('Read announcement details', 'เปิดอ่านรายละเอียดประกาศ'), copy('Figure 4-22 shows an announcement detail page with the code, date and time, location, supporting instructions and a read timestamp. This provides more context than the initial alert.', 'ภาพที่ 4-22 แสดงหน้ารายละเอียดประกาศที่มีรหัสเหตุ วันที่ เวลา สถานที่ และคำแนะนำเพิ่มเติม พร้อมเวลาที่เปิดอ่าน เพื่อให้บุคลากรตรวจสอบข้อมูลได้ละเอียดกว่าหน้าต่างแจ้งเตือน')]
+    );
+    emergencyDetails.insertAdjacentHTML('beforeend', `<div class="suth-emergency-screens">${screens.map(([file, title, description], index) => `<article><h4>${index + 1}. ${title}</h4><p>${description}</p><figure><img src="${encodeURI('projects/My SUTH App/emergency code/' + file)}" alt="${title}" loading="lazy"><figcaption>${title}</figcaption></figure></article>`).join('')}</div>`);
+  }
 
   const ending = root.lastElementChild;
   ending.classList.add('suth-outcomes');
